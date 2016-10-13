@@ -49,7 +49,8 @@ end
 
 local function HideTooltip() GameTooltip:Hide() end
 
-local function ShowTooltip(f)
+local function ShowTooltip()
+	local f = this
 	if f.text:GetStringWidth() <= f:GetWidth() then return end
 
 	GameTooltip:SetOwner(f, "ANCHOR_RIGHT")
@@ -107,14 +108,16 @@ function TourGuide:CreateObjectivePanel()
 	scrollbar, upbutt, downbutt = ww.ConjureScrollBar(frame)
 	scrollbar:SetPoint("TOPRIGHT", frame, -7, -21)
 	scrollbar:SetPoint("BOTTOM", frame, 0, 22+22)
-	scrollbar:SetScript("OnValueChanged", function(f, val) self:UpdateOHPanel(val) end)
+	scrollbar:SetScript("OnValueChanged", function() local f,val = this,arg1 self:UpdateOHPanel(val) end)
 
-	upbutt:SetScript("OnClick", function(f)
+	upbutt:SetScript("OnClick", function()
+		local f = this
 		scrollbar:SetValue(offset - NUMROWS + 1)
 		PlaySound("UChatScrollButton")
 	end)
 
-	downbutt:SetScript("OnClick", function(f)
+	downbutt:SetScript("OnClick", function()
+		local f = this
 		scrollbar:SetValue(offset + NUMROWS - 1)
 		PlaySound("UChatScrollButton")
 	end)
@@ -144,7 +147,7 @@ function TourGuide:CreateObjectivePanel()
 		detail:SetTextColor(240/255, 121/255, 2/255)
 		detailhover.text = detail
 
-		check:SetScript("OnClick", function(f) self:SetTurnedIn(row.i, f:GetChecked()) end)
+		check:SetScript("OnClick", function() local f = this self:SetTurnedIn(row.i, f:GetChecked()) end)
 
 		row.text = text
 		row.detail = detail
@@ -154,7 +157,8 @@ function TourGuide:CreateObjectivePanel()
 	end
 
 	frame:EnableMouseWheel()
-	frame:SetScript("OnMouseWheel", function(f, val)
+	frame:SetScript("OnMouseWheel", function()
+		local f, val = this, arg1
 		scrollbar:SetValue(offset - val)
 	end)
 

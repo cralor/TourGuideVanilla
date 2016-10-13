@@ -30,7 +30,7 @@ f:SetPoint("BOTTOMRIGHT", QuestWatchFrame, "TOPRIGHT", -60, -15)
 f:SetHeight(24)
 f:SetFrameStrata("LOW")
 f:EnableMouse(true)
-f:RegisterForClicks("anyUp")
+f:RegisterForClicks("LeftButtonUp","RightButtonUp")
 f:SetBackdrop(bg)
 f:SetBackdropColor(0.09, 0.09, 0.19, 0.5)
 f:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
@@ -45,7 +45,7 @@ item:SetFrameStrata("LOW")
 item:SetHeight(36)
 item:SetWidth(36)
 item:SetPoint("BOTTOMRIGHT", QuestWatchFrame, "TOPRIGHT", -62, 10)
-item:RegisterForClicks("anyUp")
+item:RegisterForClicks("LeftButtonUp","RightButtonUp")
 local itemicon = ww.SummonTexture(item, "ARTWORK", 24, 24, "Interface\\Icons\\INV_Misc_Bag_08")
 itemicon:SetAllPoints(item)
 item:Hide()
@@ -267,7 +267,8 @@ end
 
 f:SetScript("OnClick", function()
 	local self, btn = this, arg1
-	if TourGuide.db.char.currentguide == "No Guide" then OptionHouse:Open("Tour Guide", "Guides")
+	if TourGuide.db.char.currentguide == "No Guide" then 
+		OptionHouse:Open("Tour Guide", "Guides")
 	else
 		if btn == "RightButton" then
 			if TourGuide.objectiveframe:IsVisible() then

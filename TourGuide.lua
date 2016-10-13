@@ -12,6 +12,7 @@ TourGuide.guides = {}
 TourGuide.guidelist = {}
 TourGuide.nextzones = {}
 TourGuide.Locale = L
+TourGuide.optionHouse = OptionHouse
 
 
 TourGuide.icons = setmetatable({
