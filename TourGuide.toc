@@ -1,0 +1,33 @@
+## Interface: 11200
+
+## Title: Tour Guide
+## Notes: Powerleveling guide framework
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
+## X-Category: Quest
+
+## SavedVariables: TourGuideAlphaDB
+
+## OptionalDeps: Dongle, Optionhouse, TomTom, tekDebug
+
+lua52to50compat.lua
+LibStub.lua
+Dongle.lua
+OptionHouse.lua
+WidgetWarlock.lua
+
+Locale.lua
+TourGuide.lua
+Parser.lua
+Mapping.lua
+StatusFrame.lua
+Config.lua
+ObjectivesFrame.lua
+GuideList.lua
+UnlistedQuest.lua
+QuestTracking.lua
+
+NilGuide.lua
+
+TourGuide_Alliance\Guides.xml
+TourGuide_Horde\Guides.xml
