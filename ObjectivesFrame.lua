@@ -84,7 +84,6 @@ end
 
 
 function TourGuide:CreateObjectivePanel()
-	local self = TourGuide
 	local guidebutton = CreateButton(frame, "BOTTOMRIGHT", -6, 6)
 	guidebutton:SetText("Guides")
 	guidebutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Guides") end)
@@ -172,7 +171,6 @@ end
 local accepted = {}
 function TourGuide:UpdateOHPanel(value)
 	if not frame or not frame:IsVisible() then return end
-	local self = TourGuide
 	title:SetText(self.db.char.currentguide or "No Guide Loaded")
 	local r,g,b = self.ColorGradient((self.current-1)/table.getn(self.actions))
 	completed:SetText(string.format("|cff%02x%02x%02x%d%% complete", r*255, g*255, b*255, (self.current-1)/table.getn(self.actions)*100))

@@ -18,7 +18,6 @@ local actiontypes = {
 
 
 function TourGuide:GetObjectiveTag(tag, i)
-	local self = TourGuide
 	self:Debug(11, "GetObjectiveTag", tag, i)
 	i = i or self.current
 	local tags = self.tags[i]
@@ -123,11 +122,11 @@ end
 
 function TourGuide:LoadGuide(name, complete)
 	if not name then return end
-	local self = TourGuide
 	if complete then self.db.char.completion[self.db.char.currentguide] = 1
 	elseif self.actions then self.db.char.completion[self.db.char.currentguide] = (self.current-1)/table.getn(self.actions) end
 
 	self.db.char.currentguide = self.guides[name] and name or self.guidelist[1]
+
 	self:DebugF(1, "Loading guide: %s", name)
 	self.guidechanged = true
 	local _, _, zonename = string.find(name,"^(.*) %(.*%)$")
@@ -140,7 +139,6 @@ end
 
 
 function TourGuide:DebugGuideSequence(dumpquests)
-	local self = TourGuide
 	local accepts, turnins, completes = {}, {}, {}
 	local function DebugParse(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 		local uniqueid, haserrors = 1

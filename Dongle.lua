@@ -46,7 +46,6 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 	})
 
 	function lib:IsNewerVersion(major, minor)
-		local self = this or lib
 		local versionData = self.versions and self.versions[major]
 
 		-- If DongleStub versions have differing major version names
@@ -76,7 +75,6 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 	end
 
 	function lib:Register(newInstance, activate, deactivate)
-		local self = this or lib
 		assert(type(newInstance.GetVersion) == "function",
 			"Attempt to register a library with DongleStub that does not have a 'GetVersion' method.")
 
@@ -261,7 +259,6 @@ end
 ---------------------------------------------------------------------------]]
 
 function Dongle:New(name, obj)
-	local self = Dongle
 	argcheck(name, 1, "string")
 	argcheck(obj, 2, "table", "nil")
 
@@ -289,7 +286,6 @@ function Dongle:New(name, obj)
 end
 
 function Dongle:NewModule(name, obj)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "NewModule"))
 	argcheck(name, 1, "string")
@@ -305,7 +301,6 @@ function Dongle:NewModule(name, obj)
 end
 
 function Dongle:HasModule(module)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "HasModule"))
 	argcheck(module, 1, "string", "table")
@@ -324,7 +319,6 @@ local function ModuleIterator(t, name)
 end
 
 function Dongle:IterateModules()
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "IterateModules"))
 
@@ -356,7 +350,6 @@ local specialEvents = {
 }
 
 function Dongle:RegisterEvent(event, func)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "RegisterEvent"))
 	argcheck(event, 1, "string")
@@ -378,7 +371,6 @@ function Dongle:RegisterEvent(event, func)
 end
 
 function Dongle:UnregisterEvent(event)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "UnregisterEvent"))
 	argcheck(event, 1, "string")
@@ -394,7 +386,6 @@ function Dongle:UnregisterEvent(event)
 end
 
 function Dongle:UnregisterAllEvents()
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "UnregisterAllEvents"))
 
@@ -408,7 +399,6 @@ function Dongle:UnregisterAllEvents()
 end
 
 function Dongle:IsEventRegistered(event)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "IsEventRegistered"))
 	argcheck(event, 1, "string")
@@ -422,7 +412,6 @@ end
 ---------------------------------------------------------------------------]]
 
 function Dongle:RegisterMessage(msg, func)
-	local self = Dongle
 	argcheck(self, 1, "table")
 	argcheck(msg, 1, "string")
 	argcheck(func, 2, "string", "function", "nil")
@@ -437,7 +426,6 @@ function Dongle:RegisterMessage(msg, func)
 end
 
 function Dongle:UnregisterMessage(msg)
-	local self = Dongle
 	argcheck(self, 1, "table")
 	argcheck(msg, 1, "string")
 
@@ -451,7 +439,6 @@ function Dongle:UnregisterMessage(msg)
 end
 
 function Dongle:UnregisterAllMessages()
-	local self = Dongle
 	argcheck(self, 1, "table")
 
 	for msg,tbl in pairs(messages) do
@@ -463,7 +450,6 @@ function Dongle:UnregisterAllMessages()
 end
 
 function Dongle:TriggerMessage(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	argcheck(self, 1, "table")
 	argcheck(msg, 1, "string")
 	local msgTbl = messages[msg]
@@ -481,7 +467,6 @@ function Dongle:TriggerMessage(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a
 end
 
 function Dongle:IsMessageRegistered(msg)
-	local self = Dongle
 	argcheck(self, 1, "table")
 	argcheck(msg, 2, "string")
 
@@ -494,7 +479,6 @@ end
 ---------------------------------------------------------------------------]]
 
 function Dongle:EnableDebug(level, frame)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "EnableDebug"))
 	argcheck(level, 1, "number", "nil")
@@ -506,7 +490,6 @@ function Dongle:EnableDebug(level, frame)
 end
 
 function Dongle:IsDebugEnabled()
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "EnableDebug"))
 
@@ -560,7 +543,6 @@ local function printFHelp(obj, method, header, frame, msg, a1,a2,a3,a4,a5,a6,a7,
 end
 
 function Dongle:Print(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(1, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "Print"))
 	argcheck(msg, 1, "number", "string", "boolean", "table", "function", "thread", "userdata")
@@ -568,7 +550,6 @@ function Dongle:Print(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a1
 end
 
 function Dongle:PrintF(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(1, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "PrintF"))
 	argcheck(msg, 1, "number", "string", "boolean", "table", "function", "thread", "userdata")
@@ -576,7 +557,6 @@ function Dongle:PrintF(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a
 end
 
 function Dongle:Echo(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(1, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "Echo"))
 	argcheck(msg, 1, "number", "string", "boolean", "table", "function", "thread", "userdata")
@@ -584,7 +564,6 @@ function Dongle:Echo(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16
 end
 
 function Dongle:EchoF(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(1, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "EchoF"))
 	argcheck(msg, 1, "number", "string", "boolean", "table", "function", "thread", "userdata")
@@ -592,7 +571,6 @@ function Dongle:EchoF(msg, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a1
 end
 
 function Dongle:Debug(level, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "Debug"))
 	argcheck(level, 1, "number")
@@ -603,7 +581,6 @@ function Dongle:Debug(level, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,
 end
 
 function Dongle:DebugF(level, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "DebugF"))
 	argcheck(level, 1, "number")
@@ -787,12 +764,13 @@ local function initdb(parent, name, defaults, defaultProfile, olddb)
 	end
 
 	-- Generate the database keys for each section
-	local char = string.format("%s - %s", UnitName("player"), GetRealmName())
-	local realm = GetRealmName()
+	local player = UnitName("player")
+	local realm = GetRealmName()~=nil and GetRealmName() or GetCVar("realmName")
+	local char = string.format("%s - %s", player, realm)
 	local class = select(2, UnitClass("player"))
 	local race = select(2, UnitRace("player"))
-	local faction = UnitFactionGroup("player")
-	local factionrealm = string.format("%s - %s", faction, realm)
+	local faction = UnitFactionGroup("player") or false
+	local factionrealm = faction and string.format("%s - %s", faction, realm) or false
 
 	-- Make a container for profile keys
 	if not sv.profileKeys then sv.profileKeys = {} end
@@ -840,7 +818,6 @@ local function initdb(parent, name, defaults, defaultProfile, olddb)
 end
 
 function Dongle:InitializeDB(name, defaults, defaultProfile)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "InitializeDB"))
 	argcheck(name, 1, "string", "table")
@@ -1048,7 +1025,6 @@ local function OnSlashCommand(cmd, cmd_line)
 end
 
 function Dongle:InitializeSlashCommand(desc, name, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = Dongle
 	local reg = lookup[self]
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "InitializeSlashCommand"))
 	argcheck(desc, 1, "string")
@@ -1243,7 +1219,6 @@ end
 function Dongle:GetVersion() return major,minor end
 
 local function Activate(self, old)
-	local self = Dongle
 	if old then
 		registry = old.registry or registry
 		lookup = old.lookup or lookup

@@ -32,7 +32,6 @@ end
 
 
 function TourGuide:ParseAndMapCoords(note, desc, zone)
-	local self = TourGuide
 	if TomTom then
 		local Astrolabe = DongleStub("Astrolabe-0.4")
 		local TomTom = TomTom

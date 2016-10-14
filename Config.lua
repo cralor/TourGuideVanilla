@@ -6,7 +6,6 @@ local ww = WidgetWarlock
 
 
 function TourGuide:CreateConfigPanel()
-	local self = TourGuide
 	local frame = CreateFrame("Frame", nil, UIParent)
 	frame:SetFrameStrata("DIALOG")
 

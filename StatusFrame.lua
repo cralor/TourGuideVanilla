@@ -81,7 +81,6 @@ end)
 
 
 function TourGuide:PositionStatusFrame()
-	local self = TourGuide
 	if self.db.profile.statusframepoint then
 		f:ClearAllPoints()
 		f:SetPoint(self.db.profile.statusframepoint, self.db.profile.statusframex, self.db.profile.statusframey)
@@ -95,7 +94,6 @@ end
 
 
 function TourGuide:SetText(i)
-	local self = TourGuide
 	self.current = i
 	local action, quest = self:GetObjectiveInfo(i)
 	local note = self:GetObjectiveTag("N")
@@ -133,7 +131,6 @@ end
 
 local lastmapped, lastmappedaction, tex, uitem
 function TourGuide:UpdateStatusFrame()
-	local self = TourGuide
 	self:Debug(1, "UpdateStatusFrame", self.current)
 
 	if self.updatedelay then
@@ -253,7 +250,6 @@ end
 
 
 function TourGuide:PLAYER_REGEN_ENABLED()
-	local self = TourGuide
 	if tex then
 		itemicon:SetTexture(tex)
 		item:SetAttribute("type1", "item")

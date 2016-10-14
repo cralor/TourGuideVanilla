@@ -3,7 +3,7 @@
 ## Title: Tour Guide
 ## Notes: Powerleveling guide framework
 ## Author: Tekkub Stoutwrithe
-## Version: Alpha
+## Version: 0.9-11200
 ## X-Category: Quest
 
 ## SavedVariables: TourGuideAlphaDB

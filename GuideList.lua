@@ -56,7 +56,6 @@ end
 
 function TourGuide:CreateGuidesPanel()
 	frame = CreateFrame("Frame", nil, UIParent)
-	local self = TourGuide
 	rows = {}
 	for i=1,NUMROWS*3 do
 		local anchor, point = rows[i-1], "BOTTOMLEFT"
@@ -103,7 +102,6 @@ end
 
 function TourGuide:UpdateGuidesPanel()
 	if not frame or not frame:IsVisible() then return end
-	local self = TourGuide
 	for i,row in ipairs(rows) do
 		row.i = i + offset + 1
 

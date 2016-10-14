@@ -11,7 +11,6 @@ TourGuide.TrackEvents = {"UI_INFO_MESSAGE", "CHAT_MSG_LOOT", "CHAT_MSG_SYSTEM", 
 
 function TourGuide:ADDON_LOADED(event, addon)
 	if addon ~= "Blizzard_TrainerUI" then return end
-	local self = TourGuide
 
 	self:UnregisterEvent("ADDON_LOADED")
 
@@ -21,7 +20,6 @@ end
 
 
 function TourGuide:PLAYER_LEVEL_UP(event, newlevel)
-	local self = TourGuide
 	local level = tonumber((self:GetObjectiveTag("LV")))
 	self:Debug(1, "PLAYER_LEVEL_UP", newlevel, level)
 	if level and newlevel >= level then self:SetTurnedIn() end
@@ -29,7 +27,6 @@ end
 
 
 function TourGuide:ZONE_CHANGED(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-	local self = TourGuide
 	local zonetext, subzonetext, subzonetag, action, quest = GetZoneText(), GetSubZoneText(), self:GetObjectiveTag("SZ"), self:GetObjectiveInfo()
 	if (action == "RUN" or action == "FLY" or action == "HEARTH" or action == "BOAT") and (subzonetext == quest or subzonetext == subzonetag or zonetext == quest or zonetext == subzonetag) then
 		self:DebugF(1, "Detected zone change %q - %q", action, quest)
@@ -42,7 +39,6 @@ TourGuide.ZONE_CHANGED_NEW_AREA = TourGuide.ZONE_CHANGED
 
 
 function TourGuide:CHAT_MSG_SYSTEM(event, msg)
-	local self = TourGuide
 	local action, quest = self:GetObjectiveInfo()
 
 	local _, _, loc = string.find(msg,L["(.*) is now your home."])
@@ -73,13 +69,11 @@ end
 
 
 function TourGuide:QUEST_WATCH_UPDATE(event)
-	local self = TourGuide
 	if self:GetObjectiveInfo() == "COMPLETE" then self:UpdateStatusFrame() end
 end
 
 
 function TourGuide:QUEST_LOG_UPDATE(event)
-	local self = TourGuide
 	local action, _, logi, complete = self:GetObjectiveInfo(), self:GetObjectiveStatus()
 	self:Debug(10, "QUEST_LOG_UPDATE", action, logi, complete)
 
@@ -98,7 +92,6 @@ end
 
 
 function TourGuide:CHAT_MSG_LOOT(event, msg)
-	local self = TourGuide
 	local action, quest = self:GetObjectiveInfo()
 	local lootitem, lootqty = self:GetObjectiveTag("L")
 	local _, _, itemid, name = string.find(msg,L["^You .*Hitem:(%d+).*(%[.+%])"])
@@ -112,7 +105,6 @@ end
 
 
 function TourGuide:UI_INFO_MESSAGE(event, msg)
-	local self = TourGuide
 	if msg == ERR_NEWTAXIPATH and self:GetObjectiveInfo() == "GETFLIGHTPOINT" then
 		self:Debug(1, "Discovered flight point")
 		self:SetTurnedIn()
@@ -121,7 +113,6 @@ end
 
 
 function TourGuide:CRAFT_SHOW()
-	local self = TourGuide
 	if not CraftIsPetTraining() then return end
 	for i=1,GetNumCrafts() do
 		local name, rank = GetCraftInfo(i)

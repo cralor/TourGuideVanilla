@@ -34,8 +34,36 @@ TourGuide.icons = setmetatable({
 }, {__index = function() return "Interface\\Icons\\INV_Misc_QuestionMark" end})
 
 
+function TourGuide:PLAYER_ENTERING_WORLD()
+	myfaction = UnitFactionGroup("player")
+	-- load static guides
+	for i,t in ipairs(self.deferguides) do
+		local name,nextzone,faction,sequencefunc = unpack(t)
+		if faction == myfaction then
+			self.guides[name] = sequencefunc
+			self.nextzones[name] = nextzone
+			table.insert(self.guidelist, name)			
+		end
+	end
+	self.deferguides = {}
+	-- deferred Initialize (VARIABLES_LOADED)
+	if not self.initializeDone then
+		self.db.char.currentguide = self.db.char.currentguide or self.guidelist[1]
+		self:LoadGuide(self.db.char.currentguide)
+	end
+	-- deferred Enable (PLAYER_LOGIN)
+	if not self.enableDone then
+		for _,event in pairs(self.TrackEvents) do self:RegisterEvent(event) end
+		self:RegisterEvent("QUEST_COMPLETE", "UpdateStatusFrame")
+		self:RegisterEvent("QUEST_DETAIL", "UpdateStatusFrame")
+		self.TrackEvents = nil
+		self:UpdateStatusFrame()
+	end
+	self.initDone = true
+	self:UnregisterEvent("PLAYER_ENTERING_WORLD")
+end
+
 function TourGuide:Initialize()
-	local self = TourGuide
 	self.db = self:InitializeDB("TourGuideAlphaDB", {
 		char = {
 			hearth = "Unknown",
@@ -51,39 +79,51 @@ function TourGuide:Initialize()
 	if self.db.char.turnedin then self.db.char.turnedin = nil end -- Purge old table if present
 	self.cachedturnins = self.db.char.cachedturnins
 
-	self.db.char.currentguide = self.db.char.currentguide or self.guidelist[1]
-	self:LoadGuide(self.db.char.currentguide)
+	if myfaction == nil then
+		self:RegisterEvent("PLAYER_ENTERING_WORLD")
+	else
+		self.db.char.currentguide = self.db.char.currentguide or self.guidelist[1]
+		self:LoadGuide(self.db.char.currentguide)
+		self.initializeDone = true
+	end
 	self:PositionStatusFrame()
 end
 
 
 function TourGuide:Enable()
-	local self = TourGuide
 	local _, title = GetAddOnInfo("TourGuide")
 	local author, version = GetAddOnMetadata("TourGuide", "Author"), GetAddOnMetadata("TourGuide", "Version")
 	local oh = OptionHouse:RegisterAddOn("Tour Guide", title, author, version)
 	oh:RegisterCategory("Guides", self, "CreateGuidesPanel")
 	oh:RegisterCategory("Config", self, "CreateConfigPanel")
 
-	for _,event in pairs(self.TrackEvents) do self:RegisterEvent(event) end
-	self:RegisterEvent("QUEST_COMPLETE", "UpdateStatusFrame")
-	self:RegisterEvent("QUEST_DETAIL", "UpdateStatusFrame")
-	self.TrackEvents = nil
-	self:UpdateStatusFrame()
+	if myfaction == nil then
+		self:RegisterEvent("PLAYER_ENTERING_WORLD")
+	else
+		for _,event in pairs(self.TrackEvents) do self:RegisterEvent(event) end
+		self:RegisterEvent("QUEST_COMPLETE", "UpdateStatusFrame")
+		self:RegisterEvent("QUEST_DETAIL", "UpdateStatusFrame")
+		self.TrackEvents = nil
+		self:UpdateStatusFrame()
+		self.enableDone = true
+	end
 end
 
 
 function TourGuide:RegisterGuide(name, nextzone, faction, sequencefunc)
-	local self = TourGuide
-	if faction ~= myfaction then return end
-	self.guides[name] = sequencefunc
-	self.nextzones[name] = nextzone
-	table.insert(self.guidelist, name)
+	if myfaction == nil then
+		self.deferguides = self.deferguides or {}
+		table.insert(self.deferguides,{name,nextzone,faction,sequencefunc})
+	else
+		if faction ~= myfaction then return end
+		self.guides[name] = sequencefunc
+		self.nextzones[name] = nextzone
+		table.insert(self.guidelist, name)		
+	end
 end
 
 
 function TourGuide:LoadNextGuide()
-	local self = TourGuide
 	self:LoadGuide(self.nextzones[self.db.char.currentguide] or "No Guide", true)
 	self:UpdateGuidesPanel()
 	return true
@@ -92,7 +132,6 @@ end
 
 local firstcall = true
 function TourGuide:GetQuestLogIndexByName(name)
-	local self = TourGuide
 	name = name or self.quests[self.current]
 	name = string.gsub(name,L.PART_GSUB, "")
 	for i=1,GetNumQuestLogEntries() do
@@ -107,7 +146,6 @@ end
 
 function TourGuide:GetQuestDetails(name)
 	if not name then return end
-	local self = TourGuide
 	local i = self:GetQuestLogIndexByName(name)
 	local complete = i and select(7, GetQuestLogTitle(i)) == 1
 	return i, complete
@@ -125,7 +163,6 @@ end
 
 
 function TourGuide:GetObjectiveInfo(i)
-	local self = TourGuide
 	local i = i or self.current
 	if not self.actions[i] then return end
 
@@ -134,7 +171,6 @@ end
 
 
 function TourGuide:GetObjectiveStatus(i)
-	local self = TourGuide
 	local i = i or self.current
 	if not self.actions[i] then return end
 
@@ -143,7 +179,6 @@ end
 
 
 function TourGuide:SetTurnedIn(i, value, noupdate)
-	local self = TourGuide
 	if not i then
 		i = self.current
 		value = true
@@ -159,7 +194,6 @@ end
 
 
 function TourGuide:CompleteQuest(name, noupdate)
-	local self = TourGuide
 	if not self.current then
 		self:DebugF(1, "Cannot complete %q, no guide loaded", name)
 		return
@@ -194,7 +228,6 @@ end
 
 
 function TourGuide:DumpLoc()
-	local self = TourGuide
 	if IsShiftKeyDown() then
 		if not self.db.global.savedpoints then self:Print("No saved points")
 		else for t in string.gmatch(self.db.global.savedpoints, "([^\n]+)") do self:Print(t) end end

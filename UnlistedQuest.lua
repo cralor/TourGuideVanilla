@@ -4,7 +4,6 @@ local L = TourGuide.Locale
 
 
 function TourGuide:IsQuestAcceptable(name)
-  local self = TourGuide
 	for i,v in pairs(self.actions) do
 		if (v == "ACCEPT" or v == "COMPLETE") and string.gsub(self.quests[i],L.PART_GSUB, "") == name then return true end
 	end
@@ -22,7 +21,7 @@ notlisted:RegisterEvent("QUEST_DETAIL")
 notlisted:RegisterEvent("QUEST_COMPLETE")
 notlisted:RegisterEvent("QUEST_FINISHED")
 notlisted:SetScript("OnEvent", function()
-  local self = notlisted
+  local self = this
 	if event ~= "QUEST_DETAIL" then return self:Hide() end
 	local quest = GetTitleText()
 	if quest and TourGuide:IsQuestAcceptable(quest) then self:Hide()
