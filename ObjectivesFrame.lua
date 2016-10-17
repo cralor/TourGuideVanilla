@@ -34,7 +34,7 @@ table.insert(UISpecialFrames, "TourGuideObjectives")
 
 
 local function OnShow()
-	local self = this
+	local f = this
 	local newval = math.max(0, (TourGuide.current or 0) - NUMROWS/2 - 1)
 
 	scrollbar:SetMinMaxValues(0, math.max(table.getn(TourGuide.actions) - NUMROWS, 1))
@@ -42,8 +42,13 @@ local function OnShow()
 
 	TourGuide:UpdateOHPanel()
 
-	self:SetAlpha(0)
-	self:SetScript("OnUpdate", ww.FadeIn)
+	f:SetAlpha(0)
+	f:SetScript("OnUpdate", ww.FadeIn)
+
+	f = TourGuide.optionsframe
+	if f:IsVisible() then f:Hide() end
+	f = TourGuide.guidelistframe
+	if f:IsVisible() then f:Hide() end
 end
 
 
@@ -86,11 +91,13 @@ end
 function TourGuide:CreateObjectivePanel()
 	local guidebutton = CreateButton(frame, "BOTTOMRIGHT", -6, 6)
 	guidebutton:SetText("Guides")
-	guidebutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Guides") end)
+	--guidebutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Guides") end)
+	guidebutton:SetScript("OnClick", function() frame:Hide(); TourGuide.guidelistframe:Show() end)
 
 	local configbutton = CreateButton(frame, "RIGHT", guidebutton, "LEFT")
 	configbutton:SetText("Config")
-	configbutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Config") end)
+	--configbutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Config") end)
+	configbutton:SetScript("OnClick", function() frame:Hide(); TourGuide.optionsframe:Show() end)
 
 	if tekDebug then
 		local b = CreateButton(frame, "RIGHT", configbutton, "LEFT")
@@ -146,7 +153,11 @@ function TourGuide:CreateObjectivePanel()
 		detail:SetTextColor(240/255, 121/255, 2/255)
 		detailhover.text = detail
 
-		check:SetScript("OnClick", function() local f = this self:SetTurnedIn(row.i, f:GetChecked()) end)
+		check:SetScript("OnClick", function() 
+			--local f = this
+			self:SetTurnedIn(row.i, f:GetChecked())
+			--f:SetTurnedIn(row.i, this:GetChecked())
+		end)
 
 		row.text = text
 		row.detail = detail
@@ -187,7 +198,9 @@ function TourGuide:UpdateOHPanel(value)
 
 	for i in pairs(self.actions) do
 		local action, name = self:GetObjectiveInfo(i)
-		local _, _, quest, part = string.find(name,L.PART_FIND)
+		--local _, _, quest, part = string.find(name,L.PART_FIND)
+		local _, _, quest = string.find(name,L.PART_FIND)
+		local _, _, part = string.find(name, ".*%(Part (%d+)%)")
 		if quest and not accepted[quest] and not self:GetObjectiveStatus(i) then accepted[quest] = name end
 	end
 
