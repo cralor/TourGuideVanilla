@@ -154,9 +154,8 @@ function TourGuide:CreateObjectivePanel()
 		detailhover.text = detail
 
 		check:SetScript("OnClick", function() 
-			--local f = this
+			local f = this
 			self:SetTurnedIn(row.i, f:GetChecked())
-			--f:SetTurnedIn(row.i, this:GetChecked())
 		end)
 
 		row.text = text

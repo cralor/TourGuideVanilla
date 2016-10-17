@@ -74,7 +74,9 @@ end
 
 
 function TourGuide:QUEST_LOG_UPDATE(event)
-	local action, _, logi, complete = self:GetObjectiveInfo(), self:GetObjectiveStatus()
+	local action = self:GetObjectiveInfo()
+	local _, logi, complete = self:GetObjectiveStatus()
+
 	self:Debug(10, "QUEST_LOG_UPDATE", action, logi, complete)
 
 	if (self.updatedelay and not logi) or action == "ACCEPT" or action == "COMPLETE" and complete then self:UpdateStatusFrame() end
