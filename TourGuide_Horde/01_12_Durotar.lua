@@ -1,7 +1,7 @@
 TourGuide:RegisterGuide("Durotar (1-12)", "The Barrens (12-20)", "Horde", function()
     return [[
-A Your Place in the World
-T Your Place in the World
+A Your Place In The World
+T Your Place In The World
 A Cutting Teeth
 C Cutting Teeth
 A Sarkoth (Part 1) |N|(40,62)|
