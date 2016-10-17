@@ -25,7 +25,7 @@ if not string.split then
     local sep, fields = sep or ":", {}
     local pattern = string.format("([^%s]+)", sep)
     string.gsub(s, pattern, function(c) fields[table.getn(fields)+1] = c end)
-    return unpack(fields)
+    return fields
   end
 end
 if not math.modf then

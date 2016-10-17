@@ -84,17 +84,16 @@ end
 
 
 local myclass, myrace = UnitClass("player"), UnitRace("player")
-local function ParseQuests(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
+local function StepParse(guide)
 	local accepts, turnins, completes = {}, {}, {}
 	local uniqueid = 1
 	local actions, quests, tags = {}, {}, {}
 	local i, haserrors = 1, false
+	local guidet = string.split("\n", guide)
 
-	for j=1,select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
-		local text = select(j, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
+	for _,text in pairs(guidet) do
 		local _, _, class = string.find(text,"|C|([^|]+)|")
 		local _, _, race = string.find(text,"|R|([^|]+)|")
-
 		if text ~= "" and (not class or class == myclass) and (not race or race == myrace) then
 			local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
 			assert(actiontypes[action], "Unknown action: "..text)
@@ -103,17 +102,12 @@ local function ParseQuests(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a1
 				quest = quest.."@"..uniqueid.."@"
 				uniqueid = uniqueid + 1
 			end
-
 			actions[i], quests[i], tags[i] = actiontypes[action], quest, tag
-
 			i = i + 1
-
 			haserrors = DebugQuestObjective(text, action, quest, accepts, turnins, completes) or haserrors
 		end
 	end
-
 	DumpQuestDebug(accepts, turnins, completes)
-
 	if haserrors and TourGuide:IsDebugEnabled() then TourGuide:Print("This guide contains errors") end
 
 	return actions, quests, tags
@@ -131,7 +125,7 @@ function TourGuide:LoadGuide(name, complete)
 	self.guidechanged = true
 	local _, _, zonename = string.find(name,"^(.*) %(.*%)$")
 	self.zonename = zonename
-	self.actions, self.quests, self.tags = ParseQuests(string.split("\n", self.guides[self.db.char.currentguide]()))
+	self.actions, self.quests, self.tags = StepParse(self.guides[self.db.char.currentguide]())
 
 	if not self.db.char.turnins[name] then self.db.char.turnins[name] = {} end
 	self.turnedin = self.db.char.turnins[name]
@@ -140,12 +134,10 @@ end
 
 function TourGuide:DebugGuideSequence(dumpquests)
 	local accepts, turnins, completes = {}, {}, {}
-	local function DebugParse(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
+	local function DebugParse(guide)
 		local uniqueid, haserrors = 1
-
-		for j=1,select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
-			local text = select(j, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
-
+		local guidet = string.split("\n", guide)
+		for _,text in pairs(guidet) do
 			if text ~= "" then
 				local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
 				if not actiontypes[action] then TourGuide:Debug(1, "Unknown action: "..text) end
@@ -154,7 +146,6 @@ function TourGuide:DebugGuideSequence(dumpquests)
 					quest = quest.."@"..uniqueid.."@"
 					uniqueid = uniqueid + 1
 				end
-
 				haserrors = DebugQuestObjective(text, action, quest, accepts, turnins, completes) or haserrors
 			end
 		end
@@ -169,7 +160,7 @@ function TourGuide:DebugGuideSequence(dumpquests)
 		if not self.guides[name] then
 			self:DebugF(1, "Cannot find guide %q", name)
 			name, lastzone = nil, name
-		elseif DebugParse(string.split("\n", self.guides[name]())) then
+		elseif DebugParse(self.guides[name]()) then
 			self:DebugF(1, "Errors in guide: %s", name)
 			self:Debug(1, "---------------------------")
 		end
