@@ -135,7 +135,7 @@ function TourGuide:GetQuestLogIndexByName(name)
 	name = name or self.quests[self.current]
 	name = string.gsub(name,L.PART_GSUB, "")
 	for i=1,GetNumQuestLogEntries() do
-		local title, _, _, _, isHeader = GetQuestLogTitle(i)
+		local title, _, _, isHeader = GetQuestLogTitle(i)
 		if firstcall and not isHeader then
 			firstcall = nil
 			if string.sub(title, 1, 1) == "[" then self:Print("Another addon, most likely a \"Quest Level\" addon, is preventing TourGuide's quest detection from working correctly.") end
@@ -147,7 +147,13 @@ end
 function TourGuide:GetQuestDetails(name)
 	if not name then return end
 	local i = self:GetQuestLogIndexByName(name)
-	local complete = i and select(6, GetQuestLogTitle(i)) == 1
+	if not i or i < 1 then return end
+
+	--local complete = i and select(7, GetQuestLogTitle(i)) == 1
+	local _, _, _, _, _, isComplete = GetQuestLogTitle(i)
+	local complete = i and isComplete == 1
+	--local complete = i and select(5, GetQuestLogTitle(i)) == 1
+
 	return i, complete
 end
 
