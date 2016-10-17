@@ -242,6 +242,7 @@ function TourGuide:UpdateStatusFrame()
 
 	tex = useitem and select(9, GetItemInfo(tonumber(useitem)))
 	uitem = useitem
+	item.uitem = tex and uitem or nil
 	if InCombatLockdown() then self:RegisterEvent("PLAYER_REGEN_ENABLED")
 	else self:PLAYER_REGEN_ENABLED() end
 
@@ -252,8 +253,9 @@ end
 function TourGuide:PLAYER_REGEN_ENABLED()
 	if tex then
 		itemicon:SetTexture(tex)
-		item:SetAttribute("type1", "item")
-		item:SetAttribute("item1", "item:"..uitem)
+		-- SetAttribute applies only to SecureFrames, not in Vanilla yet...
+		--item:SetAttribute("type1", "item")
+		--item:SetAttribute("item1", "item:"..uitem)
 		item:Show()
 		tex = nil
 	else item:Hide() end
@@ -290,6 +292,7 @@ check:SetScript("OnClick", function(self, btn) TourGuide:SetTurnedIn() end)
 
 item:SetScript("OnClick", function()
 	if TourGuide:GetObjectiveInfo() == "USE" then TourGuide:SetTurnedIn() end
+	if item.uitem then UseContainerItem(TourGuide:FindBagSlot(item.uitem)) end
 end)
 
 
@@ -335,7 +338,7 @@ f:SetScript("OnDragStop", function()
 	TourGuide:Debug(1, "Status frame moved", GetUIParentAnchor(frame))
 	local _
 	TourGuide.db.profile.statusframepoint, _, _, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey = frame:GetPoint()
---	TourGuide.db.profile.statusframepoint, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey = GetUIParentAnchor(frame)
+	--TourGuide.db.profile.statusframepoint, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey = GetUIParentAnchor(frame)
 	frame:ClearAllPoints()
 	frame:SetPoint(TourGuide.db.profile.statusframepoint, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey)
 	ShowTooltip(frame)
@@ -345,13 +348,13 @@ end)
 item:RegisterForDrag("LeftButton")
 item:SetMovable(true)
 item:SetClampedToScreen(true)
-item:SetScript("OnDragStart", item.StartMoving)
+item:SetScript("OnDragStart", function() local frame = this frame:StartMoving() end)
 item:SetScript("OnDragStop", function()
 	local frame = this
 	frame:StopMovingOrSizing()
 	TourGuide:Debug(1, "Item frame moved", GetUIParentAnchor(frame))
 	local _
 	TourGuide.db.profile.itemframepoint, _, _, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = frame:GetPoint()
---	TourGuide.db.profile.itemframepoint, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = GetUIParentAnchor(frame)
+	--TourGuide.db.profile.itemframepoint, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = GetUIParentAnchor(frame)
 end)
 
