@@ -147,7 +147,7 @@ end
 function TourGuide:GetQuestDetails(name)
 	if not name then return end
 	local i = self:GetQuestLogIndexByName(name)
-	local complete = i and select(7, GetQuestLogTitle(i)) == 1
+	local complete = i and select(6, GetQuestLogTitle(i)) == 1
 	return i, complete
 end
 

@@ -240,7 +240,7 @@ function TourGuide:UpdateStatusFrame()
 	if not f2:IsVisible() then f:SetWidth(FIXEDWIDTH + text:GetWidth()) end
 	newsize = FIXEDWIDTH + text:GetWidth()
 
-	tex = useitem and select(10, GetItemInfo(tonumber(useitem)))
+	tex = useitem and select(9, GetItemInfo(tonumber(useitem)))
 	uitem = useitem
 	if InCombatLockdown() then self:RegisterEvent("PLAYER_REGEN_ENABLED")
 	else self:PLAYER_REGEN_ENABLED() end
