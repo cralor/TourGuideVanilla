@@ -1,6 +1,6 @@
 --[[
   Some shims for Lua and WoW API not available in 1.12.x
-  -- Roadblock
+  -- Roadblock & rsheep
 ]]
 local _G = getfenv(0)
 if not _G.select then 
