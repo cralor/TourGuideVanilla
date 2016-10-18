@@ -115,6 +115,7 @@ end)
 
 ww.SetFadeTime(frame, 0.7)
 
+table.insert(UISpecialFrames, "TourGuideGuideList")
 --[[
 function TourGuide:CreateGuideListPanel()
 	frame = CreateFrame("Frame", nil, UIParent)

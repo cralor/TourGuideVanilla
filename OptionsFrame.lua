@@ -42,12 +42,12 @@ trackquestcheck.text:SetText("Automatically Track Quests")
 ww.SetFadeTime(frame, 0.7)
 
 trackquestcheck:SetScript("OnClick", function() 
-	self.db.char.trackquests = not self.db.char.trackquests
+	TourGuide.db.char.trackquests = not TourGuide.db.char.trackquests
 end)
 
 trackquestcheck:SetScript("OnShow", function()
 	f = f or this
-	qtrack:SetChecked(self.db.char.trackquests)
+	f:SetChecked(TourGuide.db.char.trackquests)
 	f:SetAlpha(0)
 	f:SetScript("OnUpdate", ww.FadeIn)
 end)
