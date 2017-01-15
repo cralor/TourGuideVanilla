@@ -1,0 +1,12 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Alchemy.lua"/>
+	<Script file="Blacksmithing.lua"/>
+	<Script file="Cooking_Horde.lua"/>
+	<Script file="Cooking_Alliance.lua"/>
+	<Script file="Enchanting.lua"/>
+	<Script file="Engineering.lua"/>
+	<Script file="Leatherworking.lua"/>
+	<Script file="Tailoring.lua"/>
+
+
+</Ui>

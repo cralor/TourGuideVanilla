@@ -42,7 +42,7 @@ function TourGuide:PLAYER_ENTERING_WORLD()
 		if faction == myfaction then
 			self.guides[name] = sequencefunc
 			self.nextzones[name] = nextzone
-			table.insert(self.guidelist, name)			
+			table.insert(self.guidelist, name)
 		end
 	end
 	self.deferguides = {}
@@ -118,7 +118,7 @@ function TourGuide:RegisterGuide(name, nextzone, faction, sequencefunc)
 		if faction ~= myfaction then return end
 		self.guides[name] = sequencefunc
 		self.nextzones[name] = nextzone
-		table.insert(self.guidelist, name)		
+		table.insert(self.guidelist, name)
 	end
 end
 
@@ -236,12 +236,12 @@ end
 function TourGuide:DumpLoc()
 	if IsShiftKeyDown() then
 		if not self.db.global.savedpoints then self:Print("No saved points")
-		else for t in string.gmatch(self.db.global.savedpoints, "([^\n]+)") do self:Print(t) end end
+		else for t in string.gfind(self.db.global.savedpoints, "([^\n]+)") do self:Print(t) end end
 	elseif IsControlKeyDown() then
 		self.db.global.savedpoints = nil
 		self:Print("Saved points cleared")
 	else
-		local _, _, x, y = DongleStub("Astrolabe-0.4"):GetCurrentPlayerPosition()
+		local _, _, x, y = Astrolabe:GetCurrentPlayerPosition()
 		local s = string.format("%s, %s, (%.2f, %.2f) -- %s %s", GetZoneText(), GetSubZoneText(), x*100, y*100, self:GetObjectiveInfo())
 		self.db.global.savedpoints = (self.db.global.savedpoints or "") .. s .. "\n"
 		self:Print(s)

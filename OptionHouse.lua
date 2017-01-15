@@ -661,7 +661,7 @@ local function displayCategoryRow(type, text, data, tooltip, highlighted)
 	if( frame.totalRows <= frame.scroll.offset or frame.rowID >= 15 ) then
 		return
 	end
-	
+
 	frame.rowID = frame.rowID + 1
 
 	local button = frame.buttons[frame.rowID]
@@ -692,7 +692,7 @@ local function displayCategoryRow(type, text, data, tooltip, highlighted)
 		line:SetTexCoord(0, 0.4375, 0, 0.625)
 		line:Show()
 	end
-	
+
 	button.fs = button:GetFontString()
 	button.tooltip = tooltip
 	button.data = data
@@ -749,7 +749,7 @@ local function updateConfigList(openAlso)
 									-- Total sub categories of the selected addons selected category
 									displayCategoryRow(subCat.type, subCat.name, subCat.data, subCat.tooltip, subCat.name == frame.selectedSubCat)
 									lastID = frame.rowID
-									
+
 									if( openAlso ) then
 										opened = subCat.data
 									end
@@ -760,7 +760,7 @@ local function updateConfigList(openAlso)
 							if( lastID ) then
 								frame.lines[lastID]:SetTexCoord(0.4375, 0.875, 0, 0.625)
 							end
-							
+
 							-- Okay open the category then
 							if( not opened and openAlso ) then
 								opened = cat.data
@@ -770,7 +770,7 @@ local function updateConfigList(openAlso)
 						end
 					end
 				end
-				
+
 				if( not opened and openAlso ) then
 					opened = addon.data
 				end
@@ -779,7 +779,7 @@ local function updateConfigList(openAlso)
 			end
 		end
 	end
-	
+
 	if( opened ) then
 		openConfigFrame(opened)
 	end
@@ -798,7 +798,7 @@ local function updateConfigList(openAlso)
 		else
 			button:SetWidth(156)
 		end
-		
+
 		if( button.fs ) then
 			local wrapAt = wrapSize
 			if( button.type == "category" ) then
@@ -813,7 +813,7 @@ local function updateConfigList(openAlso)
 				button.fs:SetWidth(button.fs:GetStringWidth())
 			end
 		end
-		
+
 		-- We have less then 15 rows used
 		-- and our index is equal or past our current
 		if( frame.rowID < 15 and i > frame.rowID ) then
@@ -931,7 +931,7 @@ local function createAddonFrame(hide)
 	if( frame.shownFrame ) then
 		frame.shownFrame:Hide()
 	end
-	
+
 	updateConfigList()
 	ShowUIPanel(frame)
 end
@@ -1100,7 +1100,7 @@ function OptionHouse.RegisterFrame(self, type, frame)
 	if( type ~= "addon" and type ~= "manage" and type ~= "perf" and type ~= "main" ) then
 		error(string.format(L["UNKNOWN_FRAMETYPE"], type), 3)
 	end
-	
+
 	regFrames[type] = frame
 	OptionHouseFrames[type] = frame
 end
@@ -1126,11 +1126,11 @@ function OptionHouse:Open(addonName, parentCat, childCat)
 		ShowUIPanel(frame)
 		return
 	end
-	
+
 	regFrames.addon.selectedAddon = addonName or ""
 	regFrames.addon.selectedCategory = parentCat or ""
 	regFrames.addon.selectedSubCat = childCat or ""
-	
+
 	updateConfigList(true)
 	ShowUIPanel(frame)
 end
@@ -1258,7 +1258,7 @@ local function instanceLoaded()
 	if( oldRevision ) then
 		addons = OHInstance.addons or addons
 		evtFrame = OHInstance.evtFrame or evtFrame
-		tabfunctions = OHInstance.tabfunctions or tabfunctions		
+		tabfunctions = OHInstance.tabfunctions or tabfunctions
 	else
 		-- Secure headers are supported so don't want the window stuck open in combat
 		evtFrame = CreateFrame("Frame")
@@ -1275,20 +1275,20 @@ local function instanceLoaded()
 		-- don't have to upgrade the referance because it just uses the slash command
 		-- which will upgrade below to use the current version anyway
 		if( not GameMenuButtonOptionHouse ) then
-			local menubutton = CreateFrame("Button", "GameMenuButtonOptionHouse", GameMenuFrame, "GameMenuButtonTemplate")
-			menubutton:SetText(L["OPTION_HOUSE"])
-			menubutton:SetScript("OnClick", function()
-				PlaySound("igMainMenuOption")
-				HideUIPanel(GameMenuFrame)
-				SlashCmdList["OPTHOUSE"]()
-			end)
-
-			-- Position below "Interface Options"
-			local a1, fr, a2, x, y = GameMenuButtonKeybindings:GetPoint()
-			menubutton:SetPoint(a1, fr, a2, x, y)
-
-			GameMenuButtonKeybindings:SetPoint(a1, menubutton, a2, x, y)
-			GameMenuFrame:SetHeight(GameMenuFrame:GetHeight() + 25)
+			-- local menubutton = CreateFrame("Button", "GameMenuButtonOptionHouse", GameMenuFrame, "GameMenuButtonTemplate")
+			-- menubutton:SetText(L["OPTION_HOUSE"])
+			-- menubutton:SetScript("OnClick", function()
+			-- 	PlaySound("igMainMenuOption")
+			-- 	HideUIPanel(GameMenuFrame)
+			-- 	SlashCmdList["OPTHOUSE"]()
+			-- end)
+			--
+			-- -- Position below "Interface Options"
+			-- local a1, fr, a2, x, y = GameMenuButtonKeybindings:GetPoint()
+			-- menubutton:SetPoint(a1, fr, a2, x, y)
+			--
+			-- GameMenuButtonKeybindings:SetPoint(a1, menubutton, a2, x, y)
+			-- GameMenuFrame:SetHeight(GameMenuFrame:GetHeight() + 25)
 		end
 	end
 
@@ -1314,7 +1314,7 @@ local function instanceLoaded()
 			OptionHouse:Open(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 		end
 	end
-	
+
 	-- Now make it active
 	for k, v in pairs(OptionHouse) do
 		OHInstance[k] = v

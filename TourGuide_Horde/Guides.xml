@@ -1,7 +1,4 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-	<Script file="01_13_Eversong.lua"/>
-	<Script file="13_20_Ghostlands.lua"/>
-
 	<Script file="01_12_TirisfalGlades.lua"/>
 	<Script file="01_12_Mulgore.lua"/>
 	<Script file="01_12_Durotar.lua"/>
@@ -51,13 +48,4 @@
 	<Script file="56_Western_Plaguelands.lua"/>
 	<Script file="56_57_Eastern_Plaguelands.lua"/>
 	<Script file="57_59_Western_Plaguelands.lua"/>
-	<Script file="59_60_Hellfire_Peninsula.lua"/>
-
-	<Script file="60_61_Hellfire_Peninsula.lua"/>
-	<Script file="61_63_Zangarmarsh.lua"/>
-	<Script file="63_65_Terokkar_Forest.lua"/>
-	<Script file="65_67_Nagrand.lua"/>
-	<Script file="67_68_Blades_Edge_Mountains.lua"/>
-	<Script file="68_69_Netherstorm.lua"/>
-	<Script file="69_70_Shadowmoon_Valley.lua"/>
 </Ui>

@@ -1,10 +1,10 @@
 ## Interface: 11200
 
-## Title: Tour Guide (Horde Data)
+## Title: Tour Guide (Professions Leveling)
 ## Notes: Powerleveling guide framework
-## Author: Tekkub Stoutwrithe
+## Author: Velenran
 ## Version: Alpha
-## X-Category: Quest
+## X-Category: Professions
 
 ## RequiredDeps: TourGuide
 ## OptionalDeps: Dongle, Optionhouse, TomTom, tekDebug

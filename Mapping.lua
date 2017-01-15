@@ -22,7 +22,8 @@ local function MapPoint(zone, x, y, desc)
 		zone = zonenames[zc][zi]
 	end
 
-	if TomTom then TomTom:AddZWaypoint(zc, zi, x, y, "[TG] "..desc) --AddZWaypoint(c,z,x,y,desc)  select(z, GetMapZones(c))
+	local opts = { title = "[TG] "..desc }
+	if TomTom then TomTom:AddMFWaypoint(zc, zi, x/100, y/100, opts) --AddZWaypoint(c,z,x,y,desc)  select(z, GetMapZones(c))
 	elseif Cartographer_Waypoints then
 		local pt = NotePoint:new(zone, x/100, y/100, "[TG] "..desc)
 		Cartographer_Waypoints:AddWaypoint(pt)
@@ -31,9 +32,9 @@ local function MapPoint(zone, x, y, desc)
 end
 
 
-function TourGuide:ParseAndMapCoords(note, desc, zone)
+function TourGuide:ParseAndMapCoords(action, note, desc, zone)
 	if TomTom then
-		local Astrolabe = DongleStub("Astrolabe-0.4")
+		local Astrolabe = Astrolabe
 		local TomTom = TomTom
 
 		if TomTom.m_points then
@@ -72,8 +73,19 @@ function TourGuide:ParseAndMapCoords(note, desc, zone)
 		end
 	end
 
-	if not note then return end
-
-	for x,y in note:gmatch(L.COORD_MATCH) do MapPoint(zone, tonumber(x), tonumber(y), desc) end
+	if (action == "ACCEPT" or action == "TURNIN") and (questDB and spawnDB and zoneDB) then
+		local coordx, coordy, zone
+		local questTitle = string.gsub(desc, '%([^)]*%)', "")
+		if questDB[questTitle] == nil then return end
+		for monsterName, monsterDrop in pairs(questDB[questTitle]) do
+			for cid, cdata in pairs(spawnDB[monsterName]["coords"]) do
+				_, _, coordx, coordy, zone = strfind(spawnDB[monsterName]["coords"][cid], "(.*),(.*),(.*)")
+			end
+			MapPoint(zoneDB[tonumber(zone)], coordx, coordy, desc)
+			return
+		end
+	else
+		if not note then return end
+		for x,y in string.gfind(note, L.COORD_MATCH) do MapPoint(zone, tonumber(x), tonumber(y), desc) end
+	end
 end
-

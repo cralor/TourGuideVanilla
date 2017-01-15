@@ -2,10 +2,6 @@
 	<Script file="01_11_Dun_Morogh.lua"/>
 	<Script file="01_12_Elwynn_Forest.lua"/>
 
-	<Script file="01_12_Azuremyst_Isle.lua"/>
-	<Script file="12_20_Bloodmyst_Isle.lua"/>
-	<Script file="20_21_Darkshore_Draenei.lua"/>
-
 	<Script file="01_12_Teldrassil.lua"/>
 	<Script file="12_17_Darkshore.lua"/>
 
@@ -51,12 +47,4 @@
 	<Script file="58_Western_Plaguelands.lua"/>
 	<Script file="58_Eastern_Plaguelands.lua"/>
 	<Script file="58_59_Western_Plaguelands.lua"/>
-
-	<Script file="60_62_Hellfire_Peninsula.lua"/>
-	<Script file="62_63_Zangarmarsh.lua"/>
-	<Script file="64_65_Terokkar.lua"/>
-	<Script file="65_66_Nagrand.lua"/>
-	<Script file="66_67_BladesEdge.lua"/>
-	<Script file="67_70_Netherstorm.lua"/>
-	<Script file="70_Shadowmoon_Valley.lua"/>
 </Ui>

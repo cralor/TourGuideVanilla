@@ -1,7 +1,7 @@
 TourGuide:RegisterGuide("Dun Morogh (1-11)", "Darkshore (12-17)", "Alliance", function()
 return [[
 A Dwarven Outfitters
-C Dwarven Outfitters
+C Dwarven Outfitters |N|(28,73)|
 T Dwarven Outfitters
 
 A Encrypted Rune |C|Rogue| |R|Dwarf|
@@ -17,7 +17,7 @@ A Simple Memorandum |C|Warrior| |R|Gnome|
 
 A Coldridge Valley Mail Delivery (Part 1)
 A A New Threat
-C A New Threat
+C A New Threat |N|(26,72)|
 T A New Threat
 
 T Tainted Memorandum |C|Warlock| |R|Dwarf|
