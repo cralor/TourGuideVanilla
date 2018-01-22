@@ -1,36 +1,33 @@
 TourGuide:RegisterGuide("Stranglethorn Vale (30-31)", "Thousand Needles (31-32)", "Horde", function()
 return [[
-F Grom'gol Base Camp |N|Hearth to Orgrimmar and ride zeppelin to Grom'Gol|
-f Grab flight point
+H Orgrimmar |NORAF|
+F Orgrimmar |RAF|
+h Orgrimmar |RAF|
+F Grom'gol Base Camp |N|Take zeppelin to Grom'Gol|
 
-R Nesingwary's Expedition |N|Follow the road north, look for a little camp by the river (35,10)|
-A Welcome to the Jungle
-T Welcome to the Jungle
+A Welcome to the Jungle |QID|583| |N|Follow the road north to Nesingwary's Expedition (35.61, 10.50), a little camp by the river.|
+T Welcome to the Jungle |QID|583|
+A Raptor Mastery (Part 1) |QID|194|
+A Tiger Mastery (Part 1) |QID|185|
+A Panther Mastery (Part 1) |QID|190|
 
-A Tiger Mastery (Part 1)
-A Panther Mastery (Part 1)
-A Raptor Mastery (Part 1)
+C Tiger Mastery (Part 1) |QID|185| |N|Around the camp.|
+T Tiger Mastery (Part 1) |QID|185|
+A Tiger Mastery (Part 2) |QID|186|
 
-C Tiger Mastery (Part 1) |N|Near the camp, slightly to the east|
-C Panther Mastery (Part 1) |N|Near camp and to the north|
+C Panther Mastery (Part 1) |QID|190| |N|Near camp and to the northeast across the river (41,10).|
+C Tiger Mastery (Part 2) |QID|186| |N|East of the lake (45,15).|
 
-T Panther Mastery (Part 1)
-A Panther Mastery (Part 2)
+T Panther Mastery (Part 1) |QID|190| |N|Back at Nesingwary's Expedition (35.59, 10.59)|
+A Panther Mastery (Part 2) |QID|191|
+T Tiger Mastery (Part 2) |QID|186|
+A Tiger Mastery (Part 3) |QID|187|
 
-T Tiger Mastery (Part 1)
-A Tiger Mastery (Part 2)
+C Panther Mastery (Part 2) |QID|191| |N|Due west of camp, up the hill, before the troll ruins (18,10).|
+C Raptor Mastery (Part 1) |QID|194| |N|Same level, south of the ruins (27,15).|
 
-C Panther Mastery (Part 2) |N|West of camp|
-C Tiger Mastery (Part 2) |N|Northwest and northeast of the camp|
-C Raptor Mastery (Part 1) |N|East near the ruins (28,14)|
-
-T Raptor Mastery (Part 1)
-A Raptor Mastery (Part 2)
-
-T Panther Mastery (Part 2)
-A Panther Mastery (Part 3)
-
-T Tiger Mastery (Part 2)
-A Tiger Mastery (Part 3)
-]]
-end)
+T Panther Mastery (Part 2) |QID|191| |N|Back at Nesingwary's Expedition (35.55, 10.49)|
+A Panther Mastery (Part 3) |QID|192|
+T Raptor Mastery (Part 1) |QID|194|
+A Raptor Mastery (Part 2) |QID|195|
+]] end)

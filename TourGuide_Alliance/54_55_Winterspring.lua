@@ -1,62 +1,72 @@
 
 TourGuide:RegisterGuide("Winterspring (54-55)", "Burning Steppes (55-56)", "Alliance", function()
 return [[
-F Winterspring
-A Enraged Wildkin (Part 1)
-h Everlook
-A The Everlook Report
-A Duke Nicholas Zverenhoff
-A Sister Pamela
-A Are We There, Yeti? (Part 1)
+R Moonglade |N|You need to be Unfriendly or higher and not At War with the Timbermaw Hold to go through the cave| |C|Death Knight, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock, Warrior| |QID|8465|
+f Get Fight Point |N|(48.1,67.3)| |C|Death Knight, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock, Warrior| |Z|Moonglade| |QID|8465|
 
-N Grab feathers you see |N|For "Moontouched Wildkin"|
-C Strange Sources |N|Follow the road far to the south (60,73)|
+R Winterspring |N|You need to be Unfriendly or higher and not At War with the Timbermaw Hold to go through the cave| |QID|8465|
+T Speak to Salfa |QID|8465|
+A Winterfall Activity |QID|8464|
+N Grab feathers you see |N|For "Moontouched Wildkin"| |QID|978| |NORAF|
+T The New Springs |N|To the south near the hot springs (31.27, 45.20)| |Z|Winterspring| |QID|980|
+A Strange Sources |QID|4842|
+T It's a Secret to Everybody (Part 3) |QID|3908| |N|Skip the follow-up.|
+A Threat of the Winterfall |QID|5082|
 
-H Everlook
-C Are We There, Yeti? (Part 1) |N|Just southeast of town.  Kill yeti outside the cave.|
-T Are We There, Yeti? (Part 1) |N|Back in Everlook|
-A Are We There, Yeti? (Part 2)
-C Are We There, Yeti? (Part 2) |N|Back in the yeti cave (67,42)|
-T Are We There, Yeti? (Part 2)
-A Are We There, Yeti? (Part 3)
-N Scare Legacki |N|East of the inn, use the Yeti| |U|12928| |Q|Are We There, Yeti?| |QO|Scare Legacki: 1/1|
+R Everlook |N|Follow the road east|
+A Enraged Wildkin (Part 1) |QID|6604|
+h Everlook |QID|977|
+A The Everlook Report |QID|6028|
+A Duke Nicholas Zverenhoff |QID|6030|
+A Sister Pamela |QID|5601|
+A Are We There, Yeti? (Part 1) |QID|3783| |NORAF|
 
-C Winterfall Activity |N|East of town (66,34)|
-T To Winterspring! |N|At Starfall Village (51,30)|
-A The Ruins of Kel'Theril
-T Enraged Wildkin (Part 1) |N|Skip the follow-up|
-T The Ruins of Kel'Theril
-A Troubled Spirits of Kel'Theril
+C Strange Sources |N|Follow the road far to the south (60.12,73.44)| |QID|4842|
 
-C Troubled Spirits of Kel'Theril |N|Find the relics scattered around Ruins of Kel'Theril (55.15, 42.93), (53.34, 43.41), (52.43, 41.52) (50.89, 41.73)|
-C Threat of the Winterfall |N|Kill furblogs near the hot springs (30,37) or south of the road east of the springs (39,43)|
-C Moontouched Wildkin
-A Winterfall Firewater |U|12771| |N|Kill furblogs until you get an Empty Firewater Flask|
-T Strange Sources |N|Back at the camp near the south spring|
-T Threat of the Winterfall
-T Winterfall Firewater
-A Falling to Corruption
-T Winterfall Activity |N|Back up at the entrance to Timbermaw Hold|
+H Everlook |QID|977|
+C Are We There, Yeti? (Part 1) |N|Just southeast of town.  Kill yeti outside the cave.| |QID|3783| |NORAF|
+T Are We There, Yeti? (Part 1) |N|Back in Everlook| |QID|3783| |NORAF|
+A Are We There, Yeti? (Part 2) |QID|977| |NORAF|
+C Are We There, Yeti? (Part 2) |N|Back in the yeti cave (67,42)| |QID|977| |NORAF|
+T Are We There, Yeti? (Part 2) |QID|977| |NORAF|
+A Are We There, Yeti? (Part 3) |QID|5163| |NORAF|
+N Scare Legacki |N|East of the inn, use the Yeti| |U|12928| |QID|5163| |QO|Scare Legacki: 1/1| |NORAF|
 
-R Felwood
-T Falling to Corruption |N|Talk to the cauldren in the Deadwood furbolg camp (60.2, 5.9)| |Z|Felwood|
-A Mystery Goo
-A Deadwood Ritual Totem |NODEBUG| |O| |U|20741|
-T Deadwood Ritual Totem |NODEBUG| |O| |N|Turn-in at a furblog halfway thru the hold|
+C Winterfall Activity |N|East of town (66,34)| |QID|8464|
+T To Winterspring! |QID|5249| |O|
+T Starfall |QID|5250| |O|
+A The Ruins of Kel'Theril |QID|5244|
+T Enraged Wildkin (Part 1) |N|Skip the follow-up| |QID|6604|
+T The Ruins of Kel'Theril |QID|5244|
+A Troubled Spirits of Kel'Theril |QID|5245|
 
-F Darnassus
-T Moontouched Wildkin
-A Find Ranshalla
+C Troubled Spirits of Kel'Theril |N|Find the relics scattered around Ruins of Kel'Theril (55.15, 42.93), (53.34, 43.41), (52.43, 41.52) (50.89, 41.73)| |QID|5245|
+C Threat of the Winterfall |N|Kill furblogs near the hot springs (30,37) or south of the road east of the springs (39,43)| |QID|5082|
+C Moontouched Wildkin |QID|978| |NORAF|
+A Winterfall Firewater |U|12771| |N|Kill furblogs until you get an Empty Firewater Flask| |QID|5083|
+T Strange Sources |N|Back at the camp near the south spring| |QID|4842|
+T Threat of the Winterfall |QID|5082|
+T Winterfall Firewater |QID|5083|
+A Falling to Corruption |QID|5084|
+T Winterfall Activity |N|Back up at the entrance to Timbermaw Hold| |QID|8464|
 
-A The New Frontier (Part 1) |N|From Herald Moonstalker, she wanders in a figure eight around town and across the bridge.  From the bank run north and around coming back across the bridge, then south and around until you find her.  She also walks behind the bank!|
-T The New Frontier (Part 1) |N|In the tree house in Cenarion Enclave (34,8)| |Z|Darnassus|
-A The New Frontier (Part 2)
-T The New Frontier (Part 2)
-A Rabine Saturna
+R Felwood |QID|5085|
+T Falling to Corruption |N|Talk to the cauldron in the Deadwood furbolg camp (60.2, 5.9)| |Z|Felwood| |QID|5084|
+A Mystery Goo |QID|5085|
+T Mystery Goo |N|Back in Winterspring. Skip the follow-up.| |QID|5085|
 
-F Moonglade
-T Rabine Saturna |N|In Nighthaven (51.69, 45.03)| |Z|Moonglade|
-A Wasteland
+F Rut'theran Village |QID|6762|
+T Moontouched Wildkin |N|Skip the follow-up| |QID|978| |NORAF|
+
+A The New Frontier (Part 1) |QID|1047| |N|From Herald Moonstalker in Darnassus, she wanders in a figure eight around town and across the bridge.  From the bank run north and around coming back across the bridge, then south and around until you find her.  She also walks behind the bank!|
+T The New Frontier (Part 1) |QID|1047|
+A The New Frontier (Part 2) |QID|6761|
+T The New Frontier (Part 2) |QID|6761|
+A Rabine Saturna |QID|6762|
+
+F Moonglade |QID|1124| |N|Teleport there if you are a Druid, or fly to Talonbranch Glade and run there if you didn't get the flight path earlier|
+T Rabine Saturna |N|In Nighthaven (51.69, 45)| |Z|Moonglade| |QID|6762|
+A Wasteland |QID|1124|
 ]]
 
 end)

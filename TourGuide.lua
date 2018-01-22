@@ -5,9 +5,11 @@ local OptionHouse = LibStub("OptionHouse-1.1")
 local myfaction = UnitFactionGroup("player")
 local L = TOURGUIDE_LOCALE
 TOURGUIDE_LOCALE = nil
+local debugframe = TourGuideOHDebugFrame
+TourGuideOHDebugFrame = nil
 
 TourGuide = DongleStub("Dongle-1.0"):New("TourGuide")
-if tekDebug then TourGuide:EnableDebug(10, tekDebug:GetFrame("TourGuide")) end
+TourGuide:EnableDebug(1, debugframe)
 TourGuide.guides = {}
 TourGuide.guidelist = {}
 TourGuide.nextzones = {}
@@ -42,7 +44,7 @@ function TourGuide:PLAYER_ENTERING_WORLD()
 		if faction == myfaction then
 			self.guides[name] = sequencefunc
 			self.nextzones[name] = nextzone
-			table.insert(self.guidelist, name)			
+			table.insert(self.guidelist, name)
 		end
 	end
 	self.deferguides = {}
@@ -73,6 +75,11 @@ function TourGuide:Initialize()
 			trackquests = true,
 			completion = {},
 			currentguide = "No Guide",
+			mapquestgivers = true,
+			mapnotecoords = true,
+			showstatusframe = true,
+			showuseitem = true,
+			showuseitemcomplete = true,
 			petskills = {},
 		},
 	})
@@ -96,6 +103,7 @@ function TourGuide:Enable()
 	local oh = OptionHouse:RegisterAddOn("Tour Guide", title, author, version)
 	oh:RegisterCategory("Guides", self, "CreateGuidesPanel")
 	oh:RegisterCategory("Config", self, "CreateConfigPanel")
+	oh:RegisterCategory("Debug", function() return debugframe end)
 
 	if myfaction == nil then
 		self:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -118,7 +126,7 @@ function TourGuide:RegisterGuide(name, nextzone, faction, sequencefunc)
 		if faction ~= myfaction then return end
 		self.guides[name] = sequencefunc
 		self.nextzones[name] = nextzone
-		table.insert(self.guidelist, name)		
+		table.insert(self.guidelist, name)
 	end
 end
 
@@ -207,14 +215,17 @@ function TourGuide:CompleteQuest(name, noupdate)
 
 	local i = self.current
 	local action, quest
-	repeat
+	while not action do
 		action, quest = self:GetObjectiveInfo(i)
+		self:DebugF(1, "Action %q Quest %q",action,quest)
+		print("status "..tostring(self:GetObjectiveStatus(i)))
+		print(name.." gsub "..string.gsub(quest,L.PART_GSUB, ""))
 		if action == "TURNIN" and not self:GetObjectiveStatus(i) and name == string.gsub(quest,L.PART_GSUB, "") then
 			self:DebugF(1, "Saving quest turnin %q", quest)
 			return self:SetTurnedIn(i, true, noupdate)
 		end
 		i = i + 1
-	until not action
+	end
 	self:DebugF(1, "Quest %q not found!", name)
 end
 
@@ -236,12 +247,12 @@ end
 function TourGuide:DumpLoc()
 	if IsShiftKeyDown() then
 		if not self.db.global.savedpoints then self:Print("No saved points")
-		else for t in string.gmatch(self.db.global.savedpoints, "([^\n]+)") do self:Print(t) end end
+		else for t in string.gfind(self.db.global.savedpoints, "([^\n]+)") do self:Print(t) end end
 	elseif IsControlKeyDown() then
 		self.db.global.savedpoints = nil
 		self:Print("Saved points cleared")
 	else
-		local _, _, x, y = DongleStub("Astrolabe-0.4"):GetCurrentPlayerPosition()
+		local _, _, x, y = Astrolabe:GetCurrentPlayerPosition()
 		local s = string.format("%s, %s, (%.2f, %.2f) -- %s %s", GetZoneText(), GetSubZoneText(), x*100, y*100, self:GetObjectiveInfo())
 		self.db.global.savedpoints = (self.db.global.savedpoints or "") .. s .. "\n"
 		self:Print(s)

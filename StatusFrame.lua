@@ -188,7 +188,7 @@ function TourGuide:UpdateStatusFrame()
 				repeat
 					action = self:GetObjectiveInfo(j)
 					turnedin, logi, complete = self:GetObjectiveStatus(j)
-					if action == "COMPLETE" and logi and not complete then AddQuestWatch(logi) -- Watch if we're in a 'COMPLETE' block
+					if action == "COMPLETE" and logi and not complete then if not IsQuestWatched(logi) then AddQuestWatch(logi) end-- Watch if we're in a 'COMPLETE' block
 					elseif action == "COMPLETE" and logi then RemoveQuestWatch(logi) end -- or unwatch if done
 					j = j + 1
 				until action ~= "COMPLETE"
@@ -206,14 +206,14 @@ function TourGuide:UpdateStatusFrame()
 	self.current = nextstep
 	local action, quest, fullquest = self:GetObjectiveInfo(nextstep)
 	local turnedin, logi, complete = self:GetObjectiveStatus(nextstep)
-	local note, useitem, optional = self:GetObjectiveTag("N", nextstep), self:GetObjectiveTag("U", nextstep), self:GetObjectiveTag("O", nextstep)
+	local note, useitem, optional, qid = self:GetObjectiveTag("N", nextstep), self:GetObjectiveTag("U", nextstep), self:GetObjectiveTag("O", nextstep), self:GetObjectiveTag("QID", nextstep)
 	local zonename = self:GetObjectiveTag("Z", nextstep) or self.zonename
 	self:DebugF(1, "Progressing to objective \"%s %s\"", action, quest)
 
 	-- Mapping
 	if (TomTom or Cartographer_Waypoints) and (lastmapped ~= quest or lastmappedaction ~= action) then
 		lastmappedaction, lastmapped = action, quest
-		self:ParseAndMapCoords(note, quest, zonename) --, zone)
+		self:ParseAndMapCoords(qid, action, note, quest, zonename) --, zone)
 	end
 
 
@@ -265,7 +265,7 @@ end
 
 f:SetScript("OnClick", function()
 	local self, btn = this, arg1
-	if TourGuide.db.char.currentguide == "No Guide" then 
+	if TourGuide.db.char.currentguide == "No Guide" then
 		OptionHouse:Open("Tour Guide", "Guides")
 	else
 		if btn == "RightButton" then
@@ -357,4 +357,3 @@ item:SetScript("OnDragStop", function()
 	TourGuide.db.profile.itemframepoint, _, _, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = frame:GetPoint()
 	--TourGuide.db.profile.itemframepoint, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = GetUIParentAnchor(frame)
 end)
-

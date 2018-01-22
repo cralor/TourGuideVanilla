@@ -23,8 +23,9 @@ function TourGuide:GetObjectiveTag(tag, i)
 	local tags = self.tags[i]
 	if not tags then return end
 
-	if tag == "O" then return string.find(tags,"|O|")
-	elseif tag == "T" then return string.find(tags,"|T|")
+	if tag == "O" then return select(3, string.find(tags,"|O|"))
+	elseif tag == "T" then return select(3, string.find(tags,"|T|"))
+	elseif tag == "QID" then return select(3, string.find(tags, "|QID|(%d+)|"))
 	elseif tag == "L" then
 		local _, _, lootitem, lootqty = string.find(tags,"|L|(%d+)%s?(%d*)|")
 		lootqty = tonumber(lootqty) or 1
@@ -68,7 +69,7 @@ local function DebugQuestObjective(text, action, quest, accepts, turnins, comple
 		end
 	end
 
-	if string.find(text,"[“”’]") then
+	if string.find(text,"[ï¿½ï¿½ï¿½]") then
 		TourGuide:DebugF(1, "%s %s -- Contains bad char", action, quest)
 		haserrors = true
 	end
@@ -174,5 +175,3 @@ function TourGuide:DebugGuideSequence(dumpquests)
 	self:Debug(1, "Last zone loaded:", lastzone)
 	self:Debug(1, "------ End Full Debug ------")
 end
-
-

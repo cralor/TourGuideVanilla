@@ -1,88 +1,75 @@
 
-TourGuide:RegisterGuide("Tanaris (47-48)", "Stranglethorn Vale (48-49)", "Alliance", function()
+TourGuide:RegisterGuide("Tanaris (47-48)", "Blasted Lands (49-50)", "Alliance", function()
 return [[
-B [Elixir of Fortitude] x2 |L|3825 2| |N|From the auction house or find yourself an alchemist|
+F Gadgetzan |QID|3445|
+A The Thirsty Goblin |QID|2605|
+h Gadgetzan |QID|113|
+A The Dunemaul Compound |QID|5863|
+A Thistleshrub Valley |QID|3362|
+T The Sunken Temple |N|South of town at the Broken Pillar (52.72, 45.92)| |QID|3445|
+A The Stone Circle |QID|3444|
+A Gahz'ridian |QID|3161|
 
-F Gadgetzan
-A The Thirsty Goblin
-h Gadgetzan
-A The Dunemaul Compound
-A Thistleshrub Valley
-C Rhapsody's Kalimdor Kocktail |N|Kill Rocs around the big skeletons (49,36), (44,39), (47,45)|
-T The Sunken Temple |N|(52.72,45.92)|
-A The Stone Circle
-A Gahz'ridian
+U Put on the helmet |U|9978| |QID|3161|
+C The Dunemaul Compound |N|Kill Gor'marok in a small cave at the Dunemaul Compound (41.48, 57.81), then head to the ruins (47,66).  Collect stuff for "Gahz'ridian" anytime it shows up on the minimap.| |QID|5863|
+C Gahz'ridian |N|Find large clusters of these in the ruins (40,73) (47,66)| |QID|3161|
 
-U Put on the helmet |U|9978|
-C The Dunemaul Compound |N|Kill Gor'marok in a small cave (41.11,57.31), then head to the ruins (47,66).  Collect stuff for "Gahz'ridian" anytime it shows up on the minimap.|
-C Gahz'ridian |N|Find large clusters of these in the ruins (40,73) (47,66)|
+C Thistleshrub Valley |N|To the west (29,66)| |QID|3362|
+C The Thirsty Goblin |QID|2605|
 
-T Seeing What Happens |O|
-A The Stone Watcher |O| |PRE|Seeing What Happens|
-T The Stone Watcher |O|
-A Return to Ironforge |O| |PRE|The Stone Watcher|
+N If you find Tooga... |QID|1560| |N|Accept his quest.  He'll follow you, so you can complete "Noxious Lair Investigation" with him on your tail.  Just make sure you leave there with at least 10 minutes left on his timer.|
+C Noxious Lair Investigation |N|At the Noxious Lair (34,46)| |QID|82|
+T Tooga's Quest |O| |QID|1560|
+A Yuka Screwspigot |QID|4324| |N|Back at Steamwheedle Port|
+T Screecher Spirits |N|Skip the follow-up| |QID|3520|
 
-C Thistleshrub Valley |N|To the west (29,66)|
-C The Thirsty Goblin
+T The Thirsty Goblin |QID|2605| |N|Back at Gadgetzan|
+A In Good Taste |QID|2606|
+T The Dunemaul Compound |QID|5863|
+T Thistleshrub Valley |QID|3362|
+T In Good Taste |QID|2606|
+A Sprinkle's Secret Ingredient |QID|2641| |NORAF|
+T Noxious Lair Investigation |QID|82|
+A The Scrimshank Redemption |N|Goblin on the hill to the west| |QID|10|
+T Gahz'ridian |N|To the south (52,45)| |QID|3161|
 
-N If you find Tooga... |N|Accept his quest.  He'll follow you, so you can complete "Noxious Lair Investigation" with him on your tail.  Just make sure you leave there with at least 10 minutes left on his timer.|
-C Noxious Lair Investigation |N|At the Noxious Lair (34,46)|
-T Tooga's Quest |O|
-A Yuka Screwspigot
-T Screecher Spirits |N|Skip the follow-up|
+C The Scrimshank Redemption |N|To the south at The Gaping Chasm (55,70), go to the bottom.  Take the southewest entrance, hang left until you get to the gear (55.96, 71.17)| |QID|10|
 
-H Gadgetzan
-T The Thirsty Goblin
-A In Good Taste
-T The Dunemaul Compound
-T Thistleshrub Valley
-T In Good Taste
-A Sprinkle's Secret Ingredient
-T Noxious Lair Investigation
-A The Scrimshank Redemption
-T Gahz'ridian |N|To the south (52,45)|
+A Find OOX-17/TN! |O| |QID|351|
+T OOX-17/TN Distress Beacon |O| |N|Up in the hills north on the silithid at (60,64)| |QID|351|
+A Rescue OOX-17/TN! |O| |QID|648|
+C Rescue OOX-17/TN! |O| |QID|648|
 
-C The Scrimshank Redemption |N|To the south at The Gaping Chasm (55,70), go to the bottom.  Take the southewest entrance, hang left until you get to the gear (55.96, 71.17)|
+H Gadgetzan |QID|113|
+T The Scrimshank Redemption |QID|10|
+A Insect Part Analysis (Part 1) |QID|110|
+T Insect Part Analysis (Part 1) |QID|110|
+A Insect Part Analysis (Part 2) |QID|113|
+T Insect Part Analysis (Part 2) |QID|113|
+A Rise of the Silithid |NODEBUG| |QID|162|
 
-H Gadgetzan |N|Or deathport|
-T The Scrimshank Redemption
-A Insect Part Analysis (Part 1)
-T Insect Part Analysis (Part 1)
-A Insect Part Analysis (Part 2)
-T Insect Part Analysis (Part 2)
-A Rise of the Silithid |NODEBUG|
+T An Orphan Looking For a Home |NODEBUG| |N|Up at the raceway in Shimmering Flats (78.38, 74.68)| |Z|Thousand Needles| |QID|3841| |NORAF|
+A A Short Incubation |QID|3842| |NORAF|
+T A Short Incubation |QID|3842| |NORAF|
+N The next quest is timed! |QID|3843| |NORAF|
+A The Newest Member of the Family |QID|3843| |NORAF|
 
-T Safety First (Part 2) |N|Up at the raceway in Shimmering Flats| |NODEBUG|
-T An Orphan Looking For a Home |NODEBUG|
-A A Short Incubation
-T A Short Incubation
-N The next quest is timed!
-A The Newest Member of the Family
+F Theramore |QID|623|
+T Akiris by the Bundle |QID|623|
 
-F City of Ironforge |N|Fly to Theramore, boat to Menethil, fly to IF|
-h City of Ironforge
-T Return to Ironforge |O| |N|In the Hall of Explorers|
-A A Future Task
-A Passing the Burden
-T A Future Task
-T Passing the Burden |N|In the Mystic Ward (31.20,4.70)| |Z|City of Ironforge|
-A Arcane Runes
-A An Easy Pickup
-T An Easy Pickup |N|In the Military Ward|
-A Signal for Pickup
-T Signal for Pickup
+F City of Ironforge |N|Boat to Menethil, fly to IF|
+h Ironforge |QID|3182|
 
-F Aeire Peak |N|Hinterlands!|
-T The Newest Member of the Family |N|In the inn, downstairs|
-A Food for Baby
-T Rhapsody's Kalimdor Kocktail |N|Up at the camp (26,48)| |N|The Hinterlands|
-A Rhapsody's Tale
-C Sprinkle's Secret Ingredient |N|Grind over to the lake, it is at the bottom (40,59)| |N|The Hinterlands|
-C Food for Baby |N|Grind over to the east, kill stealth wolves|
+F Aerie Peak |N|Hinterlands!| |QID|4298| |NORAF|
+T The Newest Member of the Family |N|In the inn, downstairs| |QID|3843| |NORAF|
+A Food for Baby |QID|4297| |NORAF|
 
-T Food for Baby |N|Back at the inn|
-A Becoming a Parent
-T Becoming a Parent
+C Sprinkle's Secret Ingredient |N|At the bottom of a lake to the east near the Altar of Zul (40,59)| |Z|The Hinterlands| |QID|2641| |NORAF|
+C Food for Baby |N|Kill stealth wolves to the east| |QID|4297| |NORAF|
+
+T Food for Baby |N|Back at the inn| |QID|4297| |NORAF|
+A Becoming a Parent |QID|4298| |NORAF|
+T Becoming a Parent |QID|4298| |NORAF|
 ]]
 
 end)
