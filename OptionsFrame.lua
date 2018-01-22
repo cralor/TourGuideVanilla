@@ -41,7 +41,7 @@ trackquestcheck.text:SetText("Automatically Track Quests")
 
 ww.SetFadeTime(frame, 0.7)
 
-trackquestcheck:SetScript("OnClick", function() 
+trackquestcheck:SetScript("OnClick", function()
 	TourGuide.db.char.trackquests = not TourGuide.db.char.trackquests
 end)
 
@@ -56,8 +56,9 @@ end)
 
 table.insert(UISpecialFrames, "TourGuideOptions")
 
-	--if tekDebug then
-	--	local b = CreateButton(frame, "TOP", trackquestcheck, "BOTTOM")
-	--	b:SetText("Debug All")
-	--	b:SetScript("OnClick", function() frame:Hide(); self:DebugGuideSequence(true) LibStub("OptionHouse-1.1"):Open("tekDebug", "TourGuide") end)
-	--end
+-- if tekDebug then
+-- 	local b = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+-- 	b:SetPoint("TOP", trackquestcheck, "BOTTOM", 0, -10)
+-- 	b:SetText("Debug All")
+-- 	b:SetScript("OnClick", function() frame:Hide(); self:DebugGuideSequence(true) LibStub("OptionHouse-1.1"):Open("tekDebug", "TourGuide") end)
+-- end

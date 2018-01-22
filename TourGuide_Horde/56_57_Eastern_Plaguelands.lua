@@ -1,68 +1,63 @@
 
 TourGuide:RegisterGuide("Eastern Plaguelands (56-57)", "Western Plaguelands (57-59)", "Horde", function()
 return [[
-R Eastern Plaguelands
-A Demon Dogs |N|Follow the river north (7,43)|
-A Blood Tinged Skies
-A Carrion Grubbage
+A Demon Dogs |QID|5542| |N|Fly to the east edge of WPL, run across the bridge into EPL and follow the river north (4.56, 38.29).|
+A Blood Tinged Skies |QID|5543|
+A Carrion Grubbage |QID|5544| |NORAF|
 
-N Kill crap... |N|Kill any plaguehounds, carrion worms, and plaguebats you encounter in EPL for each respective quest.|
-A To Kill With Purpose |N|At the Marris Stead (26,74)|
-A Un-Life's Little Annoyances
-A Hameya's Plea |N|From the scroll on the ground at (27,85)|
+N Kill crap... |N|Kill any plaguehounds, carrion worms, and plaguebats you encounter.| |NORAF|
+N Kill crap... |N|Kill any plaguehounds and plaguebats you encounter.| |RAF|
+A Un-Life's Little Annoyances |QID|6042| |N|Follow the road east to the Marris Stead (23.00, 68.17).|
+A To Kill With Purpose |QID|6022| |NORAF|
 
-T Sister Pamela |N|In a house in Darrowshire (36,90)|
-A Pamela's Doll
-C Pamela's Doll |N|Parts are found in the houses nearby.  Ghosts spawn when you get near them.|
-T Pamela's Doll
-A Auntie Marlene
-A Uncle Carlin
+T Sister Pamela |QID|5601|
+A Pamela's Doll |QID|5149|
+C Pamela's Doll |QID|5149| |N|Parts are found in the houses nearby.  Ghosts spawn when you get near them.|
+T Pamela's Doll |QID|5149|
+A Auntie Marlene |QID|5152|
+A Uncle Carlin |QID|5241|
 
-K Plaguehounds |Q|Demon Dogs| |QO|Plaguehound Runt slain: 20/20| |N|All over the southwestern section of the zone|
-C Blood Tinged Skies
+K Plaguehounds |QID|5542| |QO|Plaguehound Runt slain: 20/20| |N|All over the southwestern section of the zone|
+C Blood Tinged Skies |QID|5543|
 
-T Uncle Carlin |N|East at Light's Hope Chapel (81,58)|
-A Defenders of Darrowshire
-A The Restless Souls
-T Duke Nicholas Zverenhoff
-A Zaeldarr the Outcast |N|Southwest near the corpse pits (79,63)|
+T Uncle Carlin |N|East at Light's Hope Chapel (81,58)| |QID|5241|
+A Defenders of Darrowshire |QID|5211| |NORAF|
+A The Restless Souls |QID|5281| |NORAF|
+T Duke Nicholas Zverenhoff |QID|6030|
+h Light's Hope Chapel
+A Zaeldarr the Outcast |QID|6021| |N|Southwest near the corpse pits (79,63)|
 
-N Free Spirits... |N|Kill any cannibal ghouls, gibbering ghouls and diseased flayers you come across.  Speak to any ghosts that spawn for "Defenders of Darrowshire".|
-C Demon Dogs |N|Plaguehounds near Light's Hope to the east, Frenzied Plaguehound in the north half of the zone.|
-C A Plague Upon Thee (Part 1) |N|Find termite mounds all around the northern part of the zone.|
+N Free Spirits... |N|Kill any cannibal ghouls, gibbering ghouls and diseased flayers you come across.  Speak to any ghosts that spawn for "Defenders of Darrowshire".| |NORAF|
+C Demon Dogs |QID|5542|
+C A Plague Upon Thee (Part 1) |QID|5901| |NORAF|
 
-C To Kill With Purpose
-C Defenders of Darrowshire
-C Carrion Grubbage
-C Un-Life's Little Annoyances
+C To Kill With Purpose |QID|6022| |NORAF|
+C Defenders of Darrowshire |QID|5211| |NORAF|
+C Carrion Grubbage |QID|5544| |NORAF|
+C Un-Life's Little Annoyances |QID|6042|
 
-A Augustus' Receipt Book |N|From hut at (13,34)|
-C Augustus' Receipt Book |N|Book is upstairs in the inn at (15,33)|
-T The Restless Souls |N|Egan is in the hut at (13,34)|
-T Augustus' Receipt Book
+T The Restless Souls |QID|5281| |NORAF|
+A Augustus' Receipt Book |QID|6164| |NORAF|
+C Augustus' Receipt Book |QID|6164| |NORAF|
+T Augustus' Receipt Book |QID|6164| |NORAF|
 
-T Demon Dogs |N|On the west edge of the zone|
-T Blood Tinged Skies
-T Carrion Grubbage
-A Redemption
-C Redemption |N|Blah blah blah... he talks to much.|
-T Redemption
-A Of Forgotten Memories
+H Light's Hope Chapel
+T Defenders of Darrowshire |QID|5211|
 
-T To Kill With Purpose |N|at (26,74)|
-T Un-Life's Little Annoyances
+T Demon Dogs |QID|5542| |N|Fly back over to the border of WPL/EPL, of course.|
+T Blood Tinged Skies |QID|5543|
+T Carrion Grubbage |QID|5544| |NORAF|
+A Redemption |QID|5742| |NORAF|
+C Redemption |QID|5742| |NORAF| |N|Blah blah blah... he talks to much.|
+T Redemption |QID|5742| |NORAF|
+A Of Forgotten Memories |QID|5781| |NORAF|
 
-C Of Forgotten Memories |N|South at the Undercroft (28,86).  Talk to the grave and Mercutio and his adds will walk in (not spawn).  Try to pull him away from the adds, kill and loot him, and get out.  You might need help.|
-C Zaeldarr the Outcast |N|(27,85)|
-A Hameya's Plea |N|From the scroll near Zaeldarr|
+T To Kill With Purpose |QID|6022| |NORAF|
+T Un-Life's Little Annoyances |QID|6042|
 
-T Of Forgotten Memories |N|Back on the west edge of the zone|
-A Of Lost Honor
+C Of Forgotten Memories |N|South at the Undercroft (24.6,80).  Talk to the grave and Mercutio and his adds will walk in (not spawn).  Try to pull him away from the adds, kill and loot him, and get out.  You might need help.| |QID|5781| |NORAF|
+C Zaeldarr the Outcast |QID|6021| |N|Inside the crypt at the bottom (23.8,78.4)|
 
-H Undercity
-T Better Late Than Never
-A The Jeremiah Blues
-T The Jeremiah Blues |N|Right underneath the bank|
-A Good Luck Charm
+T Of Forgotten Memories |QID|5781| |NORAF|
 ]]
 end)

@@ -6,7 +6,13 @@ local _G = getfenv(0)
 if not _G.select then
   select = function(index,...)
     assert(tonumber(index) or index=="#","Invalid argument #1 to select(). Usage: select(\"#\"|int,...)")
-    if index == "#" then return arg.n end
+    if index == "#" then
+      local n = 0
+      for i=0,arg.n do
+        if arg[i] then n = n + 1 end
+      end
+      return n
+    end
     local sub = {}
     for i=index,arg.n do
       sub[table.getn(sub)+1] = arg[i]
@@ -65,4 +71,9 @@ if not _G.GetItemCount then
     return totalItemCount
   end
   _G.GetItemCount = GetItemCount
+end
+
+if not _G.print then
+  print = function(str) DEFAULT_CHAT_FRAME:AddMessage(str) end
+  _G.print = print
 end

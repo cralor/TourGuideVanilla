@@ -354,14 +354,14 @@ end
 
 local function createScrollFrame(frame, displayNum, onScroll)
 	frame:EnableMouseWheel(true)
-	frame:SetScript("OnMouseWheel", onParentMouseWheel)
+	frame:SetScript("OnMouseWheel", function() onMouseWheel(frame, arg1) end)
 
 	frame.scroll = CreateFrame("ScrollFrame", nil, frame)
 	frame.scroll:EnableMouseWheel(true)
 	frame.scroll:SetWidth(16)
 	frame.scroll:SetHeight(270)
-	frame.scroll:SetScript("OnVerticalScroll", onVerticalScroll)
-	frame.scroll:SetScript("OnMouseWheel", onMouseWheel)
+	frame.scroll:SetScript("OnVerticalScroll", function() onVerticalScroll(frame.scroll, arg1) end)
+	frame.scroll:SetScript("OnMouseWheel", function() onMouseWheel(frame.scroll, arg1) end)
 
 	frame.scroll.offset = 0
 	frame.scroll.displayNum = displayNum
@@ -614,7 +614,7 @@ local function openConfigFrame(data)
 			data.frame:SetHeight(305)
 		end
 
-		data.frame:SetParent(frame)
+		--data.frame:SetParent(frame)
 		data.frame:SetFrameStrata("DIALOG")
 
 		if( not data.noCache ) then

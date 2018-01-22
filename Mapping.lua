@@ -9,7 +9,6 @@ for ci,c in pairs{GetMapContinents()} do
 	end
 end
 
-
 local cache = {}
 local function MapPoint(zone, x, y, desc)
 	TourGuide:DebugF(1, "Mapping %q - %s (%.2f, %.2f)", desc, zone, x, y)
@@ -31,8 +30,25 @@ local function MapPoint(zone, x, y, desc)
 	end
 end
 
+function TourGuide:MapLightHeadedNPC(qid, action)
+	if not self.db.char.mapquestgivers then return end
+	local npcid, npcname, stype
+	LightHeaded:LoadQIDData(qid)
 
-function TourGuide:ParseAndMapCoords(action, note, desc, zone)
+	local title, level = LightHeaded:QIDToTitleLevel(qid)
+	if action == "ACCEPT" then _, _, _, _, stype, npcname, npcid = LightHeaded:GetQuestInfo(title, level)
+	else _, _, _, _, _, _, _, stype, npcname, npcid = LightHeaded:GetQuestInfo(title, level) end
+	self:DebugF(1, "LightHeaded lookup", action, qid, stype, npcname, npcid)
+	if stype ~= "npc" then return end
+
+	local data = LightHeaded:LoadNPCData(tonumber(npcid))
+	if not data then return end
+	local _,_,cid,zid,x,y = string.find(data,"([^,]+),([^,]+),([^,]+),([^:]+):")
+	MapPoint(zonenames[tonumber(cid)][tonumber(zid)], tonumber(x), tonumber(y), title.." ("..npcname..")")
+	return true
+end
+
+function TourGuide:ParseAndMapCoords(qid, action, note, desc, zone)
 	if TomTom then
 		local Astrolabe = Astrolabe
 		local TomTom = TomTom
@@ -73,17 +89,8 @@ function TourGuide:ParseAndMapCoords(action, note, desc, zone)
 		end
 	end
 
-	if (action == "ACCEPT" or action == "TURNIN") and (questDB and spawnDB and zoneDB) then
-		local coordx, coordy, zone
-		local questTitle = string.gsub(desc, '%([^)]*%)', "")
-		if questDB[questTitle] == nil then return end
-		for monsterName, monsterDrop in pairs(questDB[questTitle]) do
-			for cid, cdata in pairs(spawnDB[monsterName]["coords"]) do
-				_, _, coordx, coordy, zone = strfind(spawnDB[monsterName]["coords"][cid], "(.*),(.*),(.*)")
-			end
-			MapPoint(zoneDB[tonumber(zone)], coordx, coordy, desc)
-			return
-		end
+	if (action == "ACCEPT" or action == "TURNIN") and LightHeaded then
+		self:MapLightHeadedNPC(qid, action)
 	else
 		if not note then return end
 		for x,y in string.gfind(note, L.COORD_MATCH) do MapPoint(zone, tonumber(x), tonumber(y), desc) end

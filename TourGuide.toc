@@ -8,13 +8,15 @@
 
 ## SavedVariables: TourGuideAlphaDB
 
-## OptionalDeps: Dongle, Optionhouse, TomTom, tekDebug
+## OptionalDeps: Dongle, TomTom, pfQuest
 
 lua52to50compat.lua
 LibStub.lua
 Dongle.lua
 OptionHouse.lua
+OHDebug.lua
 WidgetWarlock.lua
+#Astrolabe\Astrolabe.lua
 
 Locale.lua
 TourGuide.lua
@@ -33,3 +35,4 @@ NilGuide.lua
 
 TourGuide_Alliance\Guides.xml
 TourGuide_Horde\Guides.xml
+TourGuide_Professions\Guides.xml

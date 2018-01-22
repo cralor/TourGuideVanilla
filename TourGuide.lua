@@ -5,9 +5,11 @@ local OptionHouse = LibStub("OptionHouse-1.1")
 local myfaction = UnitFactionGroup("player")
 local L = TOURGUIDE_LOCALE
 TOURGUIDE_LOCALE = nil
+local debugframe = TourGuideOHDebugFrame
+TourGuideOHDebugFrame = nil
 
 TourGuide = DongleStub("Dongle-1.0"):New("TourGuide")
-if tekDebug then TourGuide:EnableDebug(10, tekDebug:GetFrame("TourGuide")) end
+TourGuide:EnableDebug(1, debugframe)
 TourGuide.guides = {}
 TourGuide.guidelist = {}
 TourGuide.nextzones = {}
@@ -73,6 +75,11 @@ function TourGuide:Initialize()
 			trackquests = true,
 			completion = {},
 			currentguide = "No Guide",
+			mapquestgivers = true,
+			mapnotecoords = true,
+			showstatusframe = true,
+			showuseitem = true,
+			showuseitemcomplete = true,
 			petskills = {},
 		},
 	})
@@ -96,6 +103,7 @@ function TourGuide:Enable()
 	local oh = OptionHouse:RegisterAddOn("Tour Guide", title, author, version)
 	oh:RegisterCategory("Guides", self, "CreateGuidesPanel")
 	oh:RegisterCategory("Config", self, "CreateConfigPanel")
+	oh:RegisterCategory("Debug", function() return debugframe end)
 
 	if myfaction == nil then
 		self:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -207,14 +215,17 @@ function TourGuide:CompleteQuest(name, noupdate)
 
 	local i = self.current
 	local action, quest
-	repeat
+	while not action do
 		action, quest = self:GetObjectiveInfo(i)
+		self:DebugF(1, "Action %q Quest %q",action,quest)
+		print("status "..tostring(self:GetObjectiveStatus(i)))
+		print(name.." gsub "..string.gsub(quest,L.PART_GSUB, ""))
 		if action == "TURNIN" and not self:GetObjectiveStatus(i) and name == string.gsub(quest,L.PART_GSUB, "") then
 			self:DebugF(1, "Saving quest turnin %q", quest)
 			return self:SetTurnedIn(i, true, noupdate)
 		end
 		i = i + 1
-	until not action
+	end
 	self:DebugF(1, "Quest %q not found!", name)
 end
 
