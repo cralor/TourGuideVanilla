@@ -12,7 +12,6 @@
 ## OptionalDeps: Dongle, TomTom, pfQuest, LightHeaded
 
 lua52to50compat.lua
-LibStub.lua
 Dongle.lua
 WidgetWarlock.lua
 

@@ -7,7 +7,7 @@
 ## X-Category: Quest
 
 ## RequiredDeps: TourGuide
-## OptionalDeps: Dongle, Optionhouse, TomTom, tekDebug
+## OptionalDeps: Dongle, TomTom, LightHeaded, pfQuest
 
 ## DefaultState: disabled
 

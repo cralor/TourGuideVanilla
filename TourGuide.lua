@@ -4,11 +4,7 @@ local L = TOURGUIDE_LOCALE
 TOURGUIDE_LOCALE = nil
 
 TourGuide = DongleStub("Dongle-1.0"):New("TourGuide")
-if self.db.char.debug then
-	self:EnableDebug(1)
-else
-	self:EnableDebug()
-end
+
 TourGuide.guides = {}
 TourGuide.guidelist = {}
 TourGuide.nextzones = {}
@@ -98,10 +94,12 @@ end
 function TourGuide:Enable()
 	local _, title = GetAddOnInfo("TourGuide")
 	local author, version = GetAddOnMetadata("TourGuide", "Author"), GetAddOnMetadata("TourGuide", "Version")
-	-- local oh = OptionHouse:RegisterAddOn("Tour Guide", title, author, version)
-	-- oh:RegisterCategory("Guides", self, "CreateGuidesPanel")
-	-- oh:RegisterCategory("Config", self, "CreateConfigPanel")
-	-- oh:RegisterCategory("Debug", function() return debugframe end)
+
+	if TourGuide.db.char.debug then
+		self:EnableDebug(1)
+	else
+		self:EnableDebug()
+	end
 
 	if myfaction == nil then
 		self:RegisterEvent("PLAYER_ENTERING_WORLD")

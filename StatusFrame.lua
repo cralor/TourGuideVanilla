@@ -265,7 +265,6 @@ end
 f:SetScript("OnClick", function()
 	local self, btn = this, arg1
 	if TourGuide.db.char.currentguide == "No Guide" then
-		-- OptionHouse:Open("Tour Guide", "Guides")
 		TourGuide.optionsframe:Show()
 	else
 		if btn == "RightButton" then

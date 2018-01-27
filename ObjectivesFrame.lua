@@ -91,18 +91,16 @@ end
 function TourGuide:CreateObjectivePanel()
 	local guidebutton = CreateButton(frame, "BOTTOMRIGHT", -6, 6)
 	guidebutton:SetText("Guides")
-	--guidebutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Guides") end)
 	guidebutton:SetScript("OnClick", function() frame:Hide(); TourGuide.guidelistframe:Show() end)
 
 	local configbutton = CreateButton(frame, "RIGHT", guidebutton, "LEFT")
 	configbutton:SetText("Config")
-	--configbutton:SetScript("OnClick", function() frame:Hide(); LibStub("OptionHouse-1.1"):Open("Tour Guide", "Config") end)
 	configbutton:SetScript("OnClick", function() frame:Hide(); TourGuide.optionsframe:Show() end)
 
-	if tekDebug then
+	if TourGuide.db.char.debug then
 		local b = CreateButton(frame, "RIGHT", configbutton, "LEFT")
 		b:SetText("Debug All")
-		b:SetScript("OnClick", function() frame:Hide(); self:DebugGuideSequence(true) LibStub("OptionHouse-1.1"):Open("tekDebug", "TourGuide") end)
+		b:SetScript("OnClick", function() frame:Hide(); self:DebugGuideSequence(true) end)
 	end
 
 	title = ww.SummonFontString(frame, nil, "SubZoneTextFont", nil, "BOTTOM", frame, "TOP")
@@ -153,7 +151,7 @@ function TourGuide:CreateObjectivePanel()
 		detail:SetTextColor(240/255, 121/255, 2/255)
 		detailhover.text = detail
 
-		check:SetScript("OnClick", function() 
+		check:SetScript("OnClick", function()
 			local f = this
 			self:SetTurnedIn(row.i, f:GetChecked())
 		end)
@@ -238,6 +236,3 @@ function TourGuide:UpdateOHPanel(value)
 		end
 	end
 end
-
-
-

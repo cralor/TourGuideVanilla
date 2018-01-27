@@ -52,13 +52,4 @@ trackquestcheck:SetScript("OnShow", function()
 	f:SetScript("OnUpdate", ww.FadeIn)
 end)
 
---OnShow(frame)
-
 table.insert(UISpecialFrames, "TourGuideOptions")
-
--- if tekDebug then
--- 	local b = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
--- 	b:SetPoint("TOP", trackquestcheck, "BOTTOM", 0, -10)
--- 	b:SetText("Debug All")
--- 	b:SetScript("OnClick", function() frame:Hide(); self:DebugGuideSequence(true) LibStub("OptionHouse-1.1"):Open("tekDebug", "TourGuide") end)
--- end
