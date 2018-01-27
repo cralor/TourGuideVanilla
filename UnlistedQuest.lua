@@ -5,6 +5,7 @@ local L = TourGuide.Locale
 
 function TourGuide:IsQuestAcceptable(name)
 	for i,v in pairs(self.actions) do
+		local name = string.gsub(name, "%[%d*%??%]%s", "")
 		if (v == "ACCEPT" or v == "COMPLETE") and string.gsub(self.quests[i],L.PART_GSUB, "") == name then return true end
 	end
 end

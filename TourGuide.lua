@@ -1,21 +1,18 @@
 
-local OptionHouse = LibStub("OptionHouse-1.1")
-
-
 local myfaction = UnitFactionGroup("player")
 local L = TOURGUIDE_LOCALE
 TOURGUIDE_LOCALE = nil
-local debugframe = TourGuideOHDebugFrame
-TourGuideOHDebugFrame = nil
 
 TourGuide = DongleStub("Dongle-1.0"):New("TourGuide")
-TourGuide:EnableDebug(1, debugframe)
+if self.db.char.debug then
+	self:EnableDebug(1)
+else
+	self:EnableDebug()
+end
 TourGuide.guides = {}
 TourGuide.guidelist = {}
 TourGuide.nextzones = {}
 TourGuide.Locale = L
-TourGuide.optionHouse = OptionHouse
-
 
 TourGuide.icons = setmetatable({
 	ACCEPT = "Interface\\GossipFrame\\AvailableQuestIcon",
@@ -68,6 +65,7 @@ end
 function TourGuide:Initialize()
 	self.db = self:InitializeDB("TourGuideAlphaDB", {
 		char = {
+			debug = false,
 			hearth = "Unknown",
 			turnedin = {},
 			turnins = {},
@@ -100,10 +98,10 @@ end
 function TourGuide:Enable()
 	local _, title = GetAddOnInfo("TourGuide")
 	local author, version = GetAddOnMetadata("TourGuide", "Author"), GetAddOnMetadata("TourGuide", "Version")
-	local oh = OptionHouse:RegisterAddOn("Tour Guide", title, author, version)
-	oh:RegisterCategory("Guides", self, "CreateGuidesPanel")
-	oh:RegisterCategory("Config", self, "CreateConfigPanel")
-	oh:RegisterCategory("Debug", function() return debugframe end)
+	-- local oh = OptionHouse:RegisterAddOn("Tour Guide", title, author, version)
+	-- oh:RegisterCategory("Guides", self, "CreateGuidesPanel")
+	-- oh:RegisterCategory("Config", self, "CreateConfigPanel")
+	-- oh:RegisterCategory("Debug", function() return debugframe end)
 
 	if myfaction == nil then
 		self:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -218,8 +216,6 @@ function TourGuide:CompleteQuest(name, noupdate)
 	while not action do
 		action, quest = self:GetObjectiveInfo(i)
 		self:DebugF(1, "Action %q Quest %q",action,quest)
-		print("status "..tostring(self:GetObjectiveStatus(i)))
-		print(name.." gsub "..string.gsub(quest,L.PART_GSUB, ""))
 		if action == "TURNIN" and not self:GetObjectiveStatus(i) and name == string.gsub(quest,L.PART_GSUB, "") then
 			self:DebugF(1, "Saving quest turnin %q", quest)
 			return self:SetTurnedIn(i, true, noupdate)

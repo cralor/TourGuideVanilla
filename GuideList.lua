@@ -1,6 +1,5 @@
 
 local TourGuide = TourGuide
-local OptionHouse = LibStub("OptionHouse-1.1")
 local ww = WidgetWarlock
 WidgetWarlock = nil
 
@@ -115,4 +114,3 @@ function TourGuide:UpdateGuidesPanel()
 		row:SetChecked(self.db.char.currentguide == name)
 	end
 end
-

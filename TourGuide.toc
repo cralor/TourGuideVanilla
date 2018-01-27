@@ -3,20 +3,18 @@
 ## Title: Tour Guide
 ## Notes: Powerleveling guide framework
 ## Author: Tekkub Stoutwrithe
-## Version: 0.9-11200
+## Credits: Road-block, rsheep, cralor
+## Version: 1.0-11200
 ## X-Category: Quest
 
 ## SavedVariables: TourGuideAlphaDB
 
-## OptionalDeps: Dongle, TomTom, pfQuest
+## OptionalDeps: Dongle, TomTom, pfQuest, LightHeaded
 
 lua52to50compat.lua
 LibStub.lua
 Dongle.lua
-OptionHouse.lua
-OHDebug.lua
 WidgetWarlock.lua
-#Astrolabe\Astrolabe.lua
 
 Locale.lua
 TourGuide.lua
