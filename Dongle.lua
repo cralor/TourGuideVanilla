@@ -36,8 +36,8 @@ local g = getfenv(0)
 
 if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 	local lib = setmetatable({}, {
-		__call = function(t,k) 
-			if type(t.versions) == "table" and t.versions[k] then 
+		__call = function(t,k)
+			if type(t.versions) == "table" and t.versions[k] then
 				return t.versions[k].instance
 			else
 				error("Cannot find a library with name '"..tostring(k).."'", 2)
@@ -68,7 +68,7 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 		local oldmajor,oldminor = versionData.instance:GetVersion()
 		return minor > oldminor
 	end
-	
+
 	local function NilCopyTable(src, dest)
 		for k,v in pairs(dest) do dest[k] = nil end
 		for k,v in pairs(src) do dest[k] = v end
@@ -98,7 +98,7 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 				["instance"] = newInstance,
 				["deactivate"] = deactivate,
 			}
-			
+
 			self.versions[major] = versionData
 			if type(activate) == "function" then
 				table.insert(self.log, string.format("Activate: %s, %s", major, minor))
@@ -106,12 +106,12 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 			end
 			return newInstance
 		end
-		
+
 		local oldDeactivate = versionData.deactivate
 		local oldInstance = versionData.instance
-		
+
 		versionData.deactivate = deactivate
-		
+
 		local skipCopy
 		if type(activate) == "function" then
 			table.insert(self.log, string.format("Activate: %s, %s", major, minor))
@@ -136,7 +136,7 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 
 	local function Activate(new, old)
 		-- This code ensures that we'll move the versions table even
-		-- if the major version names are different, in the case of 
+		-- if the major version names are different, in the case of
 		-- DongleStub
 		if not old then old = g.DongleStub end
 
@@ -146,7 +146,7 @@ if not g.DongleStub or g.DongleStub:IsNewerVersion(major, minor) then
 		end
 		g.DongleStub = new
 	end
-	
+
 	-- Actually trigger libary activation here
 	local stub = g.DongleStub or lib
 	lib = stub:Register(lib, Activate)
@@ -515,7 +515,7 @@ local function printHelp(obj, method, header, frame, msg, a1,a2,a3,a4,a5,a6,a7,a
 	end
 
 	if select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) > 0 then
-		msg = string.join(", ", msg, argsToStrings(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20))
+		msg = string.join(", ", {msg, argsToStrings(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)})
 	end
 
 	frame:AddMessage(msg)

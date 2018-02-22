@@ -106,14 +106,13 @@ function TourGuide:ParseAndMapCoords(qid, action, note, desc, zone)
 		end
 	end
 
-	if (action == "ACCEPT" or action == "TURNIN") then
+	if note and string.find(note, L.COORD_MATCH) then
+		for x,y in string.gfind(note, L.COORD_MATCH) do MapPoint(zone, tonumber(x), tonumber(y), desc) end
+	elseif (action == "ACCEPT" or action == "TURNIN") then
 		if pfQuest then
 			self:MapPfQuestNPC(desc, action)
 		elseif LightHeaded then
 			self:MapLightHeadedNPC(qid, action)
 		end
-	else
-		if not note then return end
-		for x,y in string.gfind(note, L.COORD_MATCH) do MapPoint(zone, tonumber(x), tonumber(y), desc) end
 	end
 end

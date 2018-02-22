@@ -21,6 +21,19 @@ if not _G.select then
   end
   _G.select = select
 end
+if not string.join then
+  string.join = function(delimiter, list)
+     local len = getn(list)
+     if len == 0 then
+        return ""
+     end
+     local string = list[1]
+     for i = 2, len do
+        string = string .. delimiter .. list[i]
+     end
+     return string
+  end
+end
 if not string.trim then
   string.trim = function(s)
     return (string.gsub(s,"^%s*(.-)%s*$", "%1"))
