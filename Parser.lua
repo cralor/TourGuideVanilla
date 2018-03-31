@@ -95,7 +95,7 @@ local function StepParse(guide)
 	for _,text in pairs(guidet) do
 		local _, _, class = string.find(text,"|C|([^|]+)|")
 		local _, _, race = string.find(text,"|R|([^|]+)|")
-		if text ~= "" and (not class or class == myclass) and (not race or race == myrace) then
+		if text ~= "" and (not class or string.find(class, myclass)) and (not race or string.find(race,myrace)) then
 			local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
 			assert(actiontypes[action], "Unknown action: "..text)
 			quest = string.trim(quest)

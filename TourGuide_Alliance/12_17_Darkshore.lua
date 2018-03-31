@@ -1,7 +1,7 @@
 
 TourGuide:RegisterGuide("Darkshore (12-17)", "Loch Modan (17-18)", "Alliance", function()
 return [[
-b Auberdine |N|Take the boat from Stormwind or fly from Teldrassil|
+b Auberdine |N|Take the boat from Menethil Harbor or fly from Teldrassil|
 
 A Washed Ashore (Part 1) |QID|3524|
 T Flight to Auberdine |R|Night Elf| |QID|6342|
