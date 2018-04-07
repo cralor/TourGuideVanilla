@@ -2,18 +2,18 @@
 	<Script file="01_12_TirisfalGlades.lua"/>
 	<Script file="01_12_Mulgore.lua"/>
 	<Script file="01_12_Durotar.lua"/>
-	<Script file="12_20_Barrens.lua"/>
+	<Script file="12_15_Barrens.lua"/>
+	<Script file="15_16_Stonetalon_Mountains.lua"/>
+	<Script file="16_20_Barrens.lua"/>
 
-	<Script file="20_Barrens.lua"/>
 	<Script file="20_21_Stonetalon_Mountains.lua"/>
 	<Script file="21_22_Ashenvale.lua"/>
 	<Script file="22_23_Southern_Barrens.lua"/>
 	<Script file="23_25_Stonetalon_Mountains.lua"/>
-	<Script file="25_Southern_Barrens.lua"/>
 	<Script file="25_26_Thousand_Needles.lua"/>
-	<Script file="26_27_Ashenvale.lua"/>
-	<Script file="27_StonetalonMountains.lua"/>
-	<Script file="27_29_ThousandNeedles.lua"/>
+	<Script file="26_28_Ashenvale.lua"/>
+	<Script file="28_StonetalonMountains.lua"/>
+	<Script file="28_29_ThousandNeedles.lua"/>
 	<Script file="29_30_HillsbradFoothills.lua"/>
 
 	<Script file="30_ArathiHighlands.lua"/>

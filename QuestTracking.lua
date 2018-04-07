@@ -115,7 +115,7 @@ end
 
 
 function TourGuide:CRAFT_SHOW()
-	if not CraftIsPetTraining() then return end
+	if not GetCraftName() == "Beast Training" then return end
 	for i=1,GetNumCrafts() do
 		local name, rank = GetCraftInfo(i)
 		self.db.char.petskills[name.. (rank == "" and "" or (" (" .. rank .. ")"))] = true

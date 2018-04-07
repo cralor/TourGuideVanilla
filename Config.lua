@@ -27,6 +27,3 @@ function TourGuide:CreateConfigPanel()
 	OnShow(frame)
 	return frame
 end
-
-
-

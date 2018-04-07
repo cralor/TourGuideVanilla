@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Tirisfal Glades (1-12)", "The Barrens (12-20)", "Horde", function()
+TourGuide:RegisterGuide("Tirisfal Glades (1-12)", "The Barrens (12-15)", "Horde", function()
 return [[
 A Rude Awakening |N|The guy right outside of the starting crypt| |QID|363| |T|
 T Rude Awakening |N|Right down the hill| |QID|363| |T|
@@ -157,8 +157,6 @@ T At War With The Scarlet Crusade (Part 4) |N|Back in Brill| |QID|372| |NODEBUG|
 C The Family Crypt |N|At Agamand Mills| |QID|408|
 T The Family Crypt |QID|408|
 T The Prodigal Lich Returns |N|Back in Undercity| |QID|411|
-
-N Ghostlands? |N|You may wish to level until 20 in Ghostlands instead of the Barrens.  There are some very nice rewards from Tranquillien for all classes.  If you wish to do this, port to Silvermoon from the device in the ruins above Undercity, then run south to the Ghostlands.  Switch over to the Ghostlands guide, of course.|
 
 F Orgrimmar |N|Take the zepplin outside Undercity|
 f Grab flight point

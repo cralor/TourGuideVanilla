@@ -1,8 +1,6 @@
 TourGuide:RegisterGuide("Stranglethorn Vale (30-31)", "Thousand Needles (31-32)", "Horde", function()
 return [[
-H Orgrimmar |NORAF|
-F Orgrimmar |RAF|
-h Orgrimmar |RAF|
+H Orgrimmar
 F Grom'gol Base Camp |N|Take zeppelin to Grom'Gol|
 
 A Welcome to the Jungle |QID|583| |N|Follow the road north to Nesingwary's Expedition (35.61, 10.50), a little camp by the river.|

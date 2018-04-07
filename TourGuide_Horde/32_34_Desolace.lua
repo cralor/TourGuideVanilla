@@ -103,4 +103,5 @@ T Goblin Sponsorship (Part 1) |QID|1178| |NORAF|
 A Goblin Sponsorship (Part 2) |QID|1180| |NORAF|
 T Wharfmaster Dizzywig |QID|1111| |N|Out on the dock (63.36, 38.40).| |Z|The Barrens|
 A Parts for Kravel |QID|1112| |NORAF|
-]] end)
+]]
+end)
