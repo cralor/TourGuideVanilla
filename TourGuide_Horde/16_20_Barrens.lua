@@ -20,7 +20,7 @@ A Tribes at War |QID|878| |N|Follow the road south to Camp Taurajo (44.53, 59.20
 f Get Flight Path
 R Travel to Mulgore
 T Apothecary Zamah |QID|853| |Z|Thunder Bluff| |N|The apothecary is in the Pools of Vision below Spirit Rise (23.08, 20.88).|
-f Get Flight Path |N|(47, 50)|
+f Get Flight Path |N|(47, 50)| |Z|Thunder Bluff|
 A Lessons Anew |QID|6126| |Z|Thunder Bluff| |N|Head to the druid trainer on Elder Rise (76.44, 27.58)| |C|DRUID|
 T Lessons Anew |QID|6126| |Z|Moonglade| |N|Teleport to Moonglade (56.19, 30.55)| |C|DRUID|
 A The Principal Source |QID|6127| |C|DRUID|
@@ -66,7 +66,7 @@ T Prowlers of the Barrens |QID|903|
 A Echeyakee |QID|881|
 T The Principal Source |QID|6127| |C|DRUID|
 A Gathering the Cure |QID|6128| |C|DRUID|
-A Report to Kadrak |QID|6541| |N|(52, 31)|
+A Report to Kadrak |QID|6541|
 T Harpy Lieutenants |QID|875|
 A Serena Bloodfeather |QID|876|
 
@@ -74,7 +74,7 @@ T Verog the Dervish |QID|851| |N|At the bunker to the west of the Crossroads (45
 T Centaur Bracers |QID|855| |N|Skip Hezrul Bloodmark|
 
 C Serena Bloodfeather |N|Serena Bloodfeather - Northwest Barrens (38,11)| |QID|876|
-C Echeyakee |QID|881|
+C Echeyakee |QID|881| |N|Located at (55.83, 17.08)|
 C Raptor Thieves |QID|869|
 H The Crossroads
 
@@ -86,7 +86,7 @@ T Serena Bloodfeather |QID|876| |T|
 A Letter to Jin'Zil |QID|1060| |T|
 
 C Altered Beings |QID|880| |N|Southeast at the Stagnant Oasis (55.74, 43.05)|
-C Stolen Silver |QID|3281| |N|To the east at the Raptor Grounds befor Northwatch Hold... towards the back (58.06, 53.90).  You can sneak around on the mountain and drop in.|
+C Stolen Silver |QID|3281| |N|To the east at the Raptor Grounds before Northwatch Hold... towards the back (58.06, 53.90).  You can sneak around on the mountain and drop in.|
 C The Angry Scytheclaws |QID|905| |N|Kill raptors for feathers, then place a feather at each nest.  Blue (52.58, 46.14), Yellow (52.07, 46.43), Red (52.43, 46.52)|
 C Raptor Horns |QID|865|
 K Lakota'mani |N|Around (47, 51)|
@@ -122,7 +122,8 @@ H The Crossroads
 F Ratchet
 T Raptor Horns |QID|865| |T|
 A Deepmoss Spider Eggs |QID|1069| |T|
-T Chen's Empty Keg |O| |QID|822| |T|
+T Chen's Empty Keg |O| |QID|821| |T|
+A Chen's Empty Keg |O| |QID|822| |T|
 
 C The Guns of Northwatch |QID|891| |N|Kill the officers in each tower: Cannoneer Smythe (63.15, 56.73), Cannoneer Whessan (60.51, 54.81), Captain Fairmount (61.90, 55.06)|
 H The Crossroads |N|If it is still on cooldown, die on purpose|

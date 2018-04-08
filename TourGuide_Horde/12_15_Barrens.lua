@@ -26,7 +26,7 @@ A The Forgotten Pools |QID|870| |T|
 N Kill crap... |N|Kill any raptors you come across for "Raptor Thieves" and plainstriders for "Plainstrider Menace"|
 C The Demon Seed |QID|924| |N|Ramp begins at (51, 22)| |R|Orc, Troll|
 C Disrupt the Attacks |QID|871| |N|Follow the road north from town, look for razormanes to the east of the road (54,25).|
-A Chen's Empty Keg |U|4926| |O| |QID|822| |N|A barrel at (56, 27)|  |T|
+A Chen's Empty Keg |U|4926| |O| |QID|819| |N|A barrel at (56, 27)|  |T|
 T Disrupt the Attacks |QID|871| |N|Back at the Crossroads (51.53, 30.84)| |T|
 A The Disruption Ends |QID|872| |T|
 
@@ -41,8 +41,8 @@ N Get Flight Path
 A Southsea Freebooters |QID|887| |N|South at Ratchet (62.66, 36.27)| |T|
 T Wharfmaster Dizzywig |QID|1492| |T|
 A Miner's Fortune |QID|896| |T|
-T Chen's Empty Keg |O| |QID|822| |T|
-A Chen's Empty Keg |U|4926| |O| |QID|822| |T|
+T Chen's Empty Keg |O| |QID|819| |T|
+A Chen's Empty Keg |U|4926| |O| |QID|821| |T|
 A The Guns of Northwatch |QID|891| |T|
 C Southsea Freebooters |QID|887| |N|South along the Merchant Coast.  Keep an eye out for Baron Longshore at the camps.|
 C WANTED: Baron Longshore |QID|895| |N|If you haven't found him by now, work your way north checking each camp.|

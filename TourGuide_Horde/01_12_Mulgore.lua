@@ -187,7 +187,7 @@ T Meats to Orgrimmar |QID|6365| |N|Skip the follow-up quest|
 A Fungal Spores |QID|848|
 A Wharfmaster Dizzywig |QID|1492|
 A A Bundle of Hides |QID|6361| |N|In the forge at the north edge of town (51.20, 29.11)| |Z|The Barrens|
-T A Bundle of Hides |QID|6361| |N|Talk to the flight master, skip the follow-up quest (51.51, 30.31)| |Z|The Barrens
+T A Bundle of Hides |QID|6361| |N|Talk to the flight master, skip the follow-up quest (51.51, 30.31)| |Z|The Barrens|
 
 T Body and Heart |QID|6002| |C|Druid| |N|Back in Thunder Bluff|
 ]]

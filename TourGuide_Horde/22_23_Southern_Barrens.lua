@@ -46,7 +46,7 @@ C Ishamuhale |QID|882| |N|Kill a Zhevra to get a carcas, then use it at the tree
 T Further Instructions (Part 1) |N|Down in Ratchet| |T| |QID|1094|
 A Further Instructions (Part 2) |T| |QID|1095|
 T Deepmoss Spider Eggs |O| |T| |QID|1069| |NORAF|
-T Chen's Empty Keg |QID|821|
+T Chen's Empty Keg |QID|822|
 T The Guns of Northwatch |QID|891|
 
 F Orgrimmar |C|Warlock|
