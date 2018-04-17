@@ -10,6 +10,7 @@
 	<Script file="21_22_Ashenvale.lua"/>
 	<Script file="22_23_Southern_Barrens.lua"/>
 	<Script file="23_25_Stonetalon_Mountains.lua"/>
+	<Script file="25_Southern_Barrens.lua"/>
 	<Script file="25_26_Thousand_Needles.lua"/>
 	<Script file="26_28_Ashenvale.lua"/>
 	<Script file="28_StonetalonMountains.lua"/>

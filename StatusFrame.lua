@@ -265,7 +265,7 @@ end
 f:SetScript("OnClick", function()
 	local self, btn = this, arg1
 	if TourGuide.db.char.currentguide == "No Guide" then
-		TourGuide.optionsframe:Show()
+		TourGuide.guidelistframe:Show()
 	else
 		if btn == "RightButton" then
 			if TourGuide.objectiveframe:IsVisible() then

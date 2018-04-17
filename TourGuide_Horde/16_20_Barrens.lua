@@ -96,8 +96,8 @@ C Consumed by Hatred |QID|899|
 A Weapons of Choice |QID|893| |N|Don't sell your Blood Shards|
 T Lakota'mani |QID|883|
 
-A The Ashenvale Hunt |QID|6382| |N|If you are level 20 (45, 59)|
-A Melor Sends Word |QID|1130| |N|If you are level 20|
+A The Ashenvale Hunt |O| |QID|6382| |N|If you are level 20 (45, 59)|
+A Melor Sends Word |O| |QID|1130| |N|If you are level 20|
 
 T Tribes at War |QID|878| |T|
 A Blood Shards of Agamaggan |QID|5052| |T|
@@ -114,8 +114,8 @@ A Hamuul Runetotem |QID|1489|
 N Almost leveled up |N|You should be 20, if not grind to get close|
 F Thunder Bluff
 
-T Melor Sends Word |QID|1130|
-A Steelsnap |QID|1131|
+T Melor Sends Word |QID|1130| |O|
+A Steelsnap |QID|1131| |O|
 A The Ashenvale Hunt |QID|1131| |N|(40, 59)|
 H The Crossroads
 

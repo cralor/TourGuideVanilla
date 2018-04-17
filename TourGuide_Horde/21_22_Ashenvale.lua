@@ -15,7 +15,7 @@ f Get the Flight Path
 T Trouble in the Deeps |QID|6562| |N|Skip The Essence of Aku'Mai|
 
 A Naga at the Zoram Strand
-P Claw (Rank 3) |N|Tame a Clattering Crawler| |C|Hunter|
+P Claw (Rank 3) |C|Hunter| |N|Tame a Clattering Crawler|
 C Naga at the Zoram Strand
 T Naga at the Zoram Strand
 ]]

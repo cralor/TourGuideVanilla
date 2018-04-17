@@ -17,8 +17,8 @@ A Ordanus |QID|1088|
 T Further Instructions (Part 2) |QID|1095|
 A Gerenzo Wrenchwhistle |QID|1096|
 
-C Shredding Machines |QID|1068|
-C Gerenzo Wrenchwhistle |N|At (64,41)| |QID|1096|
+C Shredding Machines |QID|1068| |N|XT4 at (64,46.2) and XT9 at (64,56.4)|
+C Gerenzo Wrenchwhistle |N|Go around the hill to the right, then at (64,41)| |QID|1096|
 T Gerenzo Wrenchwhistle |QID|1096|
 T Jin'Zil's Forest Magic |QID|1058|
 T Shredding Machines |QID|1068|
