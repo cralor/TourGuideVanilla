@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Thousand Needles (25-26)", "Ashenvale (26-27)", "Horde", function()
+TourGuide:RegisterGuide("Thousand Needles (25-26)", "Ashenvale (26-28)", "Horde", function()
 return [[
 T Message to Freewind Post |QID|4542| |N|Follow the road southeast to Freewind Post (45.55, 50.75).|
 A Pacify the Centaur |QID|4841|
@@ -26,7 +26,7 @@ A Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|
 C Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|
 T Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|  |N|Skip the follow-up|
 
-N Get Cooking |N|If you haven't already, go to the trainer at (51, 53)|
+N Get Cooking |N|If you haven't already, go to the trainer at (51, 53)| |Z|The Barrens|
 
 A The Sacred Flame |QID|1195|
 T Melor Sends Word |QID|1130| |N|Fly to Thunder Bluff, on Hunter Rise (61.35, 80.42).| |Z|Thunder Bluff|

@@ -4,7 +4,7 @@ A Satyr Horns |QID|6441|
 A Stonetalon Standstill |QID|25|
 h Splintertree Post
 
-A Ashenvale Outrunners |QID|6503| |N|At the camp southwest of Splintertree Post Splintertree Post (71.20, 68.08)|
+A Ashenvale Outrunners |QID|6503| |N|At the camp southwest of Splintertree Post (71.20, 68.08)|
 K Sharptalon |L|16305| |N|South of Splintertree Post (74,71).  He's level 31, so try kiting him to the guards at the nearby outpost.|
 A Sharptalon's Claw |QID|2| |U|16305|
 C Ashenvale Outrunners |QID|6503| |N|South of Splintertree Post (70,76), stealth mobs!|
