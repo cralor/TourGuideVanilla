@@ -26,7 +26,7 @@ A Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|
 C Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|
 T Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|  |N|Skip the follow-up|
 
-N Get Cooking |N|If you haven't already, go to the trainer at (51, 53)| |Z|The Barrens|
+N Get Cooking |N|If you haven't already, go to the trainer at (51, 53)| |Z|Thunder Bluff|
 
 A The Sacred Flame |QID|1195|
 T Melor Sends Word |QID|1130| |N|Fly to Thunder Bluff, on Hunter Rise (61.35, 80.42).| |Z|Thunder Bluff|
