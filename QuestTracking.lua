@@ -58,8 +58,8 @@ function TourGuide:CHAT_MSG_SYSTEM(event, msg)
 
 	if action == "PET" then
 		local _, _, text = string.find(msg,L["You have learned a new spell: (.*)."])
-		local nextEntry = table.getn(TourGuide.petskills) + 1
-		TourGuide.petskills[nextEntry] = text
+		local nextEntry = table.getn(self.db.char.petskills) + 1
+		self.db.char.petskills[nextEntry] = text
 		if text and quest == text then
 			self:DebugF(1, "Detected pet skill train %q", quest)
 			return self:SetTurnedIn()

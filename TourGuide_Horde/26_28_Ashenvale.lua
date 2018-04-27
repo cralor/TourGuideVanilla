@@ -38,7 +38,7 @@ F Zoram'gar Outpost
 T Je'neu of the Earthen Ring |QID|824| |N|Fly back to Zoram'gar Outpost (11.64, 34.28).|
 A Troll Charm |QID|6462|
 A Between a Rock and a Thistlefur |QID|216|
-A Vorsha the Lasher |QID|6641| |N|Follow the main road west as far as you can, then head west to Zoram'gar Outpost (11.72, 34.80).|
+A Vorsha the Lasher |QID|6641|
 C Vorsha the Lasher |QID|6641| |N|Follow the NPC, help him kill Vorsha (9.53, 27.53).|
 C Between a Rock and a Thistlefur |QID|216| |N|At the Thistlefur camp west of Astranaar (31.18, 45.31).|
 C Troll Charm |QID|6462| |N|In the cave at the back of the Thistlefur camp (38.55, 30.61).|
@@ -52,7 +52,7 @@ T Troll Charm |QID|6462|
 H Splintertree Post
 
 T Freedom to Ruul |QID|6482|
-H Stable your Pet |C|Hunter| |N|Make sure you are level 27 right now|
+N Stable your Pet |C|Hunter| |N|Make sure you are level 27 right now|
 T Ashenvale Outrunners |QID|6503| |N|(71.18, 68.16)|
 P Bite (Rank 4) |C|Hunter| |N|Tame a Ghostpaw Alpha west of Splintertree Post, then abandon.|
 P Claw (Rank 4) |C|Hunter| |N|Tame an Elder Ashenvale Bear along the river|
