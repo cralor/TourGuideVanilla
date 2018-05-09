@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Professions: Engineering", nil, UnitFactionGroup("player"), function()
+TourGuide:RegisterGuide("Professions: Engineering", nil, "Both", function()
 return [[
 C Engineering |N|Aprx. Mats Required: 90x Rough Stone, 80x Coarse Stone, 75x Heavy Stone, 90x Solid Stone, 50x Dense Stone, 10x Wooden Stock, 29x Weak Flux, 50x Heavy Leather, 10x Wool Cloth, 10x Mageweave Cloth, 33x Rune Cloth, 51x Copper Bars, 10x Silver Bars, 55x Bronze Bars, 19x Iron Bars, 4x Steel Bars 126x Mithril Bars, 129x Thorium Bars|
 

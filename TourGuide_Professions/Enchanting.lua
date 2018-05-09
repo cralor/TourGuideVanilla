@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Professions: Enchanting", nil, UnitFactionGroup("player"), function()
+TourGuide:RegisterGuide("Professions: Enchanting", nil, "Both", function()
 return [[
 C Enchanting |N|Aprx. Mats Required: 150x Strange Dust, 90x Soul Dust, 170x Vision Dust, 300x Dream Dust, 90x Illusion Dust, 15x Simple Wood, 15x Lesser Magic Essence, 25x Greater Magic Essence, 15x Lesser Astral Essence, 2x Greater Astral Essence, 25x Lesser Mystic Essence, 2x Greater Mystic Essence, 15x Lesser Nether Essence, 10x Greater Nether Essence, 40x Purple Lotus, 20x Crystal Vial, 4x Greater Eternal Essence, 2x Large Brilliant Shard, 1x Shadowgem, 1x Iridescent Pearl, 1x Black Pearl, 1x Golden Pearl, 1x Copper Rod, 1x Silver Rod, 1x Golden Rod, 1x Truesilver Rod, 1x Arcanite Rod|
 

@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Professions: Blacksmithing", nil, UnitFactionGroup("player"), function()
+TourGuide:RegisterGuide("Professions: Blacksmithing", nil, "Both", function()
 return [[
 C Blacksmithing |N|Aprx. Mats Required: 90x Rough Stone, 380x Copper Bar, 20x Coarse Stone, 5x Silver Bar, 120x Bronze Bar, 150x Heavy Stone, 5x Gold Bar 200x Iron Bar 30x Green Dye, 380x Steel Bar, 80x Solid Stone, 230x Mithril Bar, 20x Dense Stone, 430x Thorium Bar, 10x Core of Earth, 90x Mageweave Cloth, 60x Rugged Leather|
 

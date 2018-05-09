@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Professions: Leatherworking", nil, UnitFactionGroup("player"), function()
+TourGuide:RegisterGuide("Professions: Leatherworking", nil, "Both", function()
 return [[
 C Leatherworking |N|Aprx. Mats Required: [1-205] 275x Light Leather, 20x Light Hide, 25x Medium Hide, 420x Heavy Leather, 10x Heavy Hide, 30x Bolt of Silk Cloth, 10x Iron Buckles|
 

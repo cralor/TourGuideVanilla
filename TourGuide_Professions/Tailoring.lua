@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Professions: Tailoring", nil, UnitFactionGroup("player"), function()
+TourGuide:RegisterGuide("Professions: Tailoring", nil, "Both", function()
 return [[
 C Tailoring |N|Aprx. Mats Required: 160x Linen Cloth, 200x Wool Cloth, 760x Silk Cloth, 520x Mageweave Cloth, 900x Runecloth, 120x Rugged Leather, 75x Coarse Thread, 135x Fine Threa,d 5x Gray Dye, 30x Blue Dye, 10x Bleach, 60x Red Dye, 45x Silken Thread, 60x Heavy Silken Thread, 40x Rune Thread|
 

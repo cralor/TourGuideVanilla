@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Professions: Alchemy", nil, UnitFactionGroup("player"), function()
+TourGuide:RegisterGuide("Professions: Alchemy", nil, "Both", function()
 return [[
 C Alchemy |N|Aprx. Mats Required: 60x Peacebloom, 60x Silverleaf, 75x Empty Vial, 80x Briarthorn, 30x Bruiseweed, 65x Leaded Vial, 15x Mageroyal, 40x Stranglekelp, 30x Liferoot, 30x Kingsblood, 45x Goldthorn, 5x Steelbloom, 70x Sungrass, 15x Khadgars Whisker, 90x Crystal Vial, 20x Arthas Tears,	40x Blindweed, 40x Golden Sansam, 40x Mountain Silversage|
 

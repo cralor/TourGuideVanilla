@@ -33,8 +33,8 @@ function TourGuide:PLAYER_ENTERING_WORLD()
 	myfaction = UnitFactionGroup("player")
 	-- load static guides
 	for i,t in ipairs(self.deferguides) do
-		local name,nextzone,faction,sequencefunc = unpack(t)
-		if faction == myfaction then
+		local name,nextzone,faction,sequencefunc = t[1], t[2], t[3], t[4]
+		if faction == myfaction or faction == "Both" then
 			self.guides[name] = sequencefunc
 			self.nextzones[name] = nextzone
 			table.insert(self.guidelist, name)
@@ -54,7 +54,7 @@ function TourGuide:PLAYER_ENTERING_WORLD()
 		self.TrackEvents = nil
 		self:UpdateStatusFrame()
 	end
-	self.initDone = true
+	self.initializeDone = true
 	self:UnregisterEvent("PLAYER_ENTERING_WORLD")
 end
 
@@ -119,7 +119,7 @@ function TourGuide:RegisterGuide(name, nextzone, faction, sequencefunc)
 		self.deferguides = self.deferguides or {}
 		table.insert(self.deferguides,{name,nextzone,faction,sequencefunc})
 	else
-		if faction ~= myfaction then return end
+		if faction ~= "Both" then if faction ~= myfaction then return end end
 		self.guides[name] = sequencefunc
 		self.nextzones[name] = nextzone
 		table.insert(self.guidelist, name)
