@@ -3,7 +3,7 @@
 
 [**Download Latest Version**](https://github.com/cralor/TourGuideVanilla/releases/latest)
 
-Highly Recommended Downloads: [**pfQuest**](https://github.com/cralor/TomTomVanilla/releases/latest) | [**TomTomVanilla**](https://github.com/shagu/pfQuest/releases/latest)
+Highly Recommended Downloads: [**pfQuest**](https://github.com/shagu/pfQuest/releases/latest) | [**TomTomVanilla**](https://github.com/cralor/TomTomVanilla/releases/latest)
 
 **Features**
 * Automatic detection of objective completion
