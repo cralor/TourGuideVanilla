@@ -1,5 +1,5 @@
 # TourGuideVanilla
-Tekkub's TourGuide Addon backported for WoW 1.12
+*Tekkub's TourGuide Addon backported for WoW 1.12*
 
 [**Download Latest Version**](https://github.com/cralor/TourGuideVanilla/releases/latest)
 
