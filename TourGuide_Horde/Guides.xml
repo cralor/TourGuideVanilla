@@ -24,9 +24,9 @@
 	<Script file="34_36_StranglethornVale.lua"/>
 	<Script file="36_37_Arathi_Highlands.lua"/>
 	<Script file="37_Alterac_Mountains.lua"/>
-	<Script file="37_Thousand_Needles.lua"/>
-	<Script file="37_38_Dustwallow_Marsh.lua"/>
-	<Script file="39_40_Stranglethorn_Vale.lua"/>
+	<Script file="37_38_Thousand_Needles.lua"/>
+	<Script file="38_Dustwallow_Marsh.lua"/>
+	<Script file="38_40_Stranglethorn_Vale.lua"/>
 
 	<Script file="40_41_Badlands.lua"/>
 	<Script file="41_42_Swamp_of_Sorrows.lua"/>

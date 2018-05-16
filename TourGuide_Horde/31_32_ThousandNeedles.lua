@@ -22,14 +22,14 @@ C A Bump in the Road |QID|1175| |N|Kill basilisks at Tahonda Ruins, the little l
 C Rocket Car Parts |QID|1110|
 C Load Lightening |QID|1176| |N|There's a nice group of vultures around some bones on the southeast edge of the race track (84.52, 81.74).|
 
-T A Bump in the Road |QID|1175| |N|Back at the Mirage Raceway (81.61, 78.00)|
-T Load Lightening |QID|1176|
-A Goblin Sponsorship (Part 1) |QID|1178|
+T Rocket Car Parts |QID|1110|
 T Hardened Shells |QID|1105|
 T Salt Flat Venom |QID|1104|
-A Martek the Exiled |QID|1106|
-A Encrusted Tail Fins |QID|1107|
-T Rocket Car Parts |QID|1110|
+
+T Load Lightening |QID|1176|
+A Goblin Sponsorship (Part 1) |QID|1178|
+T A Bump in the Road |QID|1175| |N|Back at the Mirage Raceway (81.61, 78.00)|
 
 R Gadgetzan |N|Due south out of the zone.|
+f Get the flight path
 ]] end)

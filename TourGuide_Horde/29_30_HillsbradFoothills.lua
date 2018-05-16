@@ -6,13 +6,8 @@ h Orgrimmar
 R Hillsbrad Foothills |N|Take the zeppelin outside Orgrimmar to Undercity.  Run down thru Silverpine.|
 A Time To Strike |QID|494| |N|At Southpoint Tower (20.82, 47.31) just as you enter the zone.|
 
-T Time To Strike |QID|494| |N|Follow the road east then north to Tarren Mill (62.33, 20.28).|
-A Regthar Deathgate |QID|1361|
-A The Hammer May Fall |QID|676|
-
-N Are you level 30? |N|If you are, head to Arathi Highlands and continue the guide there.|
-
 A Elixir of Suffering |QID|496|
+T Time To Strike |QID|494| |N|Follow the road east then north to Tarren Mill (62.33, 20.28).|
 A Battle of Hillsbrad |QID|527|
 A Helcular's Revenge |QID|552|
 A Dangerous! |QID|567|
@@ -44,7 +39,6 @@ N Die on Purpose
 T Battle of Hillsbrad |QID|527| |N|Skip follow-up quest|
 T Dangerous! |QID|567|
 
-A The Hammer May Fall |QID|676|
 A Regthar Deathgate |QID|1361|
 
 R The Arathi Highlands
