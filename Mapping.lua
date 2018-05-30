@@ -54,7 +54,7 @@ function TourGuide:MapPfQuestNPC(qid, action)
 					unitId = uid
 				end
 			elseif qLookup[qid]["end"]["O"] then -- Object
-				for _, oid in pairs(qLookup[qid]["start"]["O"]) do
+				for _, oid in pairs(qLookup[qid]["end"]["O"]) do
 					objectId = oid
 				end
 			end
