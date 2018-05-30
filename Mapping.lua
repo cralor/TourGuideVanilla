@@ -32,34 +32,55 @@ end
 
 function TourGuide:MapPfQuestNPC(qid, action)
 	if not self.db.char.mapquestgivers then return end
-	local unitId
-	local qLookup = pfDB["quests"]["data"]
+	local unitId, objectId = "UNKNOWN", "UNKNOWN"
 	local loc, qid = GetLocale(), tonumber(qid)
+	local title = pfDB.quests.loc[qid]["T"]
 
+	local qLookup = pfDB["quests"]["data"]
 	if qLookup[qid] then
 		if action == "ACCEPT" then
-			if qLookup[qid]["start"]["U"] then
+			if qLookup[qid]["start"]["U"] then -- NPC
 				for _, uid in pairs(qLookup[qid]["start"]["U"]) do
 					unitId = uid
 				end
+			elseif qLookup[qid]["start"]["O"] then -- Object
+				for _, oid in pairs(qLookup[qid]["start"]["O"]) do
+					objectId = oid
+				end
 			end
 		else
-			if qLookup[qid]["end"]["U"] then
+			if qLookup[qid]["end"]["U"] then -- NPC
 				for _, uid in pairs(qLookup[qid]["end"]["U"]) do
 					unitId = uid
 				end
+			elseif qLookup[qid]["end"]["O"] then -- Object
+				for _, oid in pairs(qLookup[qid]["start"]["O"]) do
+					objectId = oid
+				end
 			end
 		end
-		self:DebugF(1, "pfQuest lookup %s %s", action, unitId)
+		self:DebugF(1, "pfQuest lookup A:%s U:%s O:%s", action, unitId, objectId)
 
-		local unitLookup = pfDB["units"]["data"]
-		if unitLookup[unitId]["coords"] then
-			for _, data in pairs(unitLookup[unitId]["coords"]) do
-				local x, y, zone, _ = unpack(data)
-				MapPoint(pfDB.zones.loc[zone], x, y, pfDB.quests.loc[qid]["T"].." ("..pfDB.units.loc[unitId]..")")
-				return true
+		if unitId ~= "UNKNOWN" then
+			local unitLookup = pfDB["units"]["data"]
+			if unitLookup[unitId] and unitLookup[unitId]["coords"] then
+				for _, data in pairs(unitLookup[unitId]["coords"]) do
+					local x, y, zone, _ = unpack(data)
+					MapPoint(pfDB.zones.loc[zone], x, y, title.." ("..pfDB.units.loc[unitId]..")")
+					return true
+				end
+			end
+		elseif objectId ~= "UNKNOWN" then
+			local objectLookup = pfDB["objects"]["data"]
+			if objectLookup[objectId] and objectLookup[objectId]["coords"] then
+				for _, data in pairs(objectLookup[objectId]["coords"]) do
+					local x, y, zone, _ = unpack(data)
+					MapPoint(pfDB.zones.loc[zone], x, y, title.." ("..pfDB.objects.loc[objectId]..")")
+					return true
+				end
 			end
 		end
+		self:DebugF(1, "%s: No NPC or Object information found for %s!", action, title)
 	end
 end
 
