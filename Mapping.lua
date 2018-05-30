@@ -30,39 +30,33 @@ local function MapPoint(zone, x, y, desc)
 	end
 end
 
-function TourGuide:MapPfQuestNPC(quest, action)
+function TourGuide:MapPfQuestNPC(qid, action)
 	if not self.db.char.mapquestgivers then return end
-	local npcname, stype
-	local title = quest
+	local unitId
+	local qLookup = pfDB["quests"]["data"]
+	local loc, qid = GetLocale(), tonumber(qid)
 
-	local qLookup = pfDatabase["quests"]
-	if not qLookup[quest] then
-		for name, tab in pairs(qLookup) do
-			local _, _, questname, _ = strfind(name, "(.*),.*")
-			if questname == quest then
-				quest = name
-			end
-		end
-	end
-
-	if qLookup[quest] then
+	if qLookup[qid] then
 		if action == "ACCEPT" then
-			for name, type in pairs(qLookup[quest]["start"]) do
-				npcname, stype = name, type
+			if qLookup[qid]["start"]["U"] then
+				for _, uid in pairs(qLookup[qid]["start"]["U"]) do
+					unitId = uid
+				end
 			end
 		else
-			for name, type in pairs(qLookup[quest]["end"]) do
-				npcname, stype = name, type
+			if qLookup[qid]["end"]["U"] then
+				for _, uid in pairs(qLookup[qid]["end"]["U"]) do
+					unitId = uid
+				end
 			end
 		end
-		self:DebugF(1, "pfQuest lookup %s %s %s", action, stype, npcname)
-		if stype ~= "NPC" then return end
+		self:DebugF(1, "pfQuest lookup %s %s", action, unitId)
 
-		local sLookup = pfDatabase["spawns"]
-		if sLookup[npcname] and sLookup[npcname]["coords"] then
-			for id, data in pairs(sLookup[npcname]["coords"]) do
-				local _, _, x, y, zone = strfind(data, "(.*),(.*),(.*)")
-				MapPoint(pfDatabase["zones"][tonumber(zone)], tonumber(x), tonumber(y), title.." ("..npcname..")")
+		local unitLookup = pfDB["units"]["data"]
+		if unitLookup[unitId]["coords"] then
+			for _, data in pairs(unitLookup[unitId]["coords"]) do
+				local x, y, zone, _ = unpack(data)
+				MapPoint(pfDB.zones.loc[zone], x, y, pfDB.quests.loc[qid]["T"].." ("..pfDB.units.loc[unitId]..")")
 				return true
 			end
 		end
@@ -110,7 +104,7 @@ function TourGuide:ParseAndMapCoords(qid, action, note, desc, zone)
 		for x,y in string.gfind(note, L.COORD_MATCH) do MapPoint(zone, tonumber(x), tonumber(y), desc) end
 	elseif (action == "ACCEPT" or action == "TURNIN") then
 		if pfQuest then
-			self:MapPfQuestNPC(desc, action)
+			self:MapPfQuestNPC(qid, action)
 		elseif LightHeaded then
 			self:MapLightHeadedNPC(qid, action)
 		end
