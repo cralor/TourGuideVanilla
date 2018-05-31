@@ -32,6 +32,8 @@ end
 
 function TourGuide:MapPfQuestNPC(qid, action)
 	if not self.db.char.mapquestgivers then return end
+	if not qid then return false end
+
 	local unitId, objectId = "UNKNOWN", "UNKNOWN"
 	local loc, qid = GetLocale(), tonumber(qid)
 	local title = pfDB.quests.loc[qid]["T"]
