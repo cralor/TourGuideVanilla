@@ -129,7 +129,7 @@ end
 
 function TourGuide:LoadNextGuide()
 	self:LoadGuide(self.nextzones[self.db.char.currentguide] or "No Guide", true)
-	self:UpdateGuidesPanel()
+	self:UpdateGuideListPanel()
 	return true
 end
 

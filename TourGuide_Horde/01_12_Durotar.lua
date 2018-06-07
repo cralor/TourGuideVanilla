@@ -59,12 +59,14 @@ A Call of Earth (Part 3) |QID|1518| |C|Shaman|
 T Call of Earth (Part 3) |QID|1518| |C|Shaman|
 
 T Report to Sen'jin Village |QID|805| |N|Take the path southeast to Sen'jin Village (55.96, 74.67)|
-A Minshina's Skull |QID|808|
+
 A Thwarting Kolkar Aggression |QID|786|
-A Practical Prey |QID|817|
-A A Solvent Spirit |QID|818|
-A Zalazane |QID|826|
+A Minshina's Skull |QID|808|
 A Report to Orgnil |QID|823|
+A Zalazane |QID|826|
+A A Solvent Spirit |QID|818|
+A Practical Prey |QID|817|
+
 A A Peon's Burden |QID|2161| |N|East out of the Valley of Trials (51.98, 68.27)|
 
 T Report to Orgnil |QID|823| |N|Follow the road north to Razor Hill (52.28, 43.18)| |T|
