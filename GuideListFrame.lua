@@ -11,7 +11,11 @@ local ROWHEIGHT = 305/NUMROWS
 local offset = 0
 local rows = {}
 
-local function HideTooltip() GameTooltip:Hide() end
+local function HideTooltip() 
+	if GameTooltip:IsOwned(this) then
+		GameTooltip:Hide() 
+	end
+end
 
 local function ShowTooltip()
 	local f = this

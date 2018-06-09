@@ -298,18 +298,24 @@ end)
 local function ShowTooltip()
 	local self = this
 	local tip = TourGuide:GetObjectiveTag("N")
-	if not tip then return end
-
- 	GameTooltip:SetOwner(self, "ANCHOR_NONE")
+	if not tip or tip == "" then return end
+	tip = tostring(tip)
 	local quad, vhalf, hhalf = GetQuadrant(self)
-	local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
-	TourGuide:Debug(11, "Setting tooltip anchor", anchpoint, quad, hhalf, vhalf)
-	GameTooltip:SetPoint(quad, self, anchpoint)
-	GameTooltip:SetText(tip, nil, nil, nil, nil, true)
+	--local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf	
+	local anchpoint = "ANCHOR_TOP"..hhalf
+	TourGuide:Debug(11, "Setting tooltip anchor", anchpoint)
+ 	GameTooltip:SetOwner(self, anchpoint)
+	GameTooltip:SetText(tip,nil,nil,nil,nil,1)
+	GameTooltip:Show()
 end
 
+local function HideTooltip()
+	if GameTooltip:IsOwned(this) then
+		GameTooltip:Hide()
+	end
+end
 
-f:SetScript("OnLeave", function() GameTooltip:Hide() end)
+f:SetScript("OnLeave", HideTooltip)
 f:SetScript("OnEnter", ShowTooltip)
 
 
