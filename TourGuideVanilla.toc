@@ -31,4 +31,3 @@ NilGuide.lua
 
 TourGuide_Alliance\Guides.xml
 TourGuide_Horde\Guides.xml
-TourGuide_Professions\Guides.xml
