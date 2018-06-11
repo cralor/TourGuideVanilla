@@ -18,7 +18,7 @@ A Bracers of Binding |QID|557|
 
 C Bracers of Binding |QID|557|
 C Dalaran Patrols |QID|545|
-N Die on Purpose |N|Back to Tarren Mill|
+D Die |N|Take Rez Sickness. Back to Tarren Mill|
 
 T Dalaran Patrols |QID|545|
 T Bracers of Binding |QID|557|

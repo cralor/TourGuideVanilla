@@ -26,6 +26,7 @@ TourGuide.icons = setmetatable({
 	BOAT = "Interface\\Icons\\Ability_Druid_AquaticForm",
 	GETFLIGHTPOINT = "Interface\\Icons\\Ability_Hunter_EagleEye",
 	PET = "Interface\\Icons\\Ability_Hunter_BeastCall02",
+	DIE = "Interface\\AddOns\\TourGuide\\dead.tga",
 }, {__index = function() return "Interface\\Icons\\INV_Misc_QuestionMark" end})
 
 

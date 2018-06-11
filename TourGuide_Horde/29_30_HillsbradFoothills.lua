@@ -34,7 +34,7 @@ T Elixir of Pain (Part 2) |QID|502|
 
 C Battle of Hillsbrad |QID|527|
 C Dangerous! |QID|567| |N|Farmer Ray (33,35) Citizen Wilkes (33,38) Farmer Getz (37,39) Farmer Kalaba (35,47) Clerk Horrace Whitesteed (31,42) Miner Hackett (27,59)|
-N Die on Purpose
+D Die |N|Take Rez Sickness|
 
 T Battle of Hillsbrad |QID|527| |N|Skip follow-up quest|
 T Dangerous! |QID|567|

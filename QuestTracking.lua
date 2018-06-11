@@ -6,7 +6,7 @@ local hadquest
 
 
 TourGuide.TrackEvents = {"UI_INFO_MESSAGE", "CHAT_MSG_LOOT", "CHAT_MSG_SYSTEM", "QUEST_WATCH_UPDATE", "QUEST_LOG_UPDATE", "ZONE_CHANGED", "ZONE_CHANGED_INDOORS",
-	"MINIMAP_ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA", "PLAYER_LEVEL_UP", "ADDON_LOADED", "CRAFT_SHOW"}
+	"MINIMAP_ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA", "PLAYER_LEVEL_UP", "ADDON_LOADED", "CRAFT_SHOW", "PLAYER_DEAD"}
 
 
 function TourGuide:ADDON_LOADED(event, addon)
@@ -102,6 +102,14 @@ function TourGuide:CHAT_MSG_LOOT(event, msg)
 	if action == "BUY" and name and name == quest
 	or (action == "BUY" or action == "KILL" or action == "NOTE") and lootitem and itemid == lootitem and (GetItemCount(lootitem) + 1) >= lootqty then
 		return self:SetTurnedIn()
+	end
+end
+
+
+function TourGuide:PLAYER_DEAD()
+	if self:GetObjectiveInfo() == "DIE" then
+		self:Debug(1, "Player has died")
+		self:SetTurnedIn()
 	end
 end
 

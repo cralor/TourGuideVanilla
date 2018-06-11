@@ -96,7 +96,7 @@ C The Mills Overrun |N|At Agamand Mills| |QID|426|
 C The Haunted Mills |QID|362| |N|He is at (47.34, 40.78)|
 C Deaths in the Family |QID|354| |N|These are at (49.74,36.34) (46.74,29.31) (44,33.64)|
 
-N Die on Purpose
+D Die |N|Take Rez Sickness|
 T The Mills Overrun |QID|426|
 A A Letter Undelivered |U|2839| |O| |QID|361|
 T Deaths in the Family |QID|354|
@@ -143,7 +143,7 @@ A Delivery to Silverpine Forest |QID|445|
 
 C The Family Crypt |N|At Agamand Mills| |QID|408|
 
-N Die on Purpose
+D Die |N|Take Rez Sickness|
 T Return to the Magistrate |QID|360|
 T The Family Crypt |QID|408|
 T A New Plague (Part 4) |QID|492|

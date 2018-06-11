@@ -49,10 +49,10 @@ local function OnShow()
 	f:SetAlpha(0)
 	f:SetScript("OnUpdate", ww.FadeIn)
 
-	-- f = TourGuide.optionsframe
-	-- if f:IsVisible() then f:Hide() end
-	-- f = TourGuide.guidelistframe
-	-- if f:IsVisible() then f:Hide() end
+	f = TourGuide.optionsframe
+	if f:IsVisible() then f:Hide() end
+	f = TourGuide.guidelistframe
+	if f:IsVisible() then f:Hide() end
 end
 
 

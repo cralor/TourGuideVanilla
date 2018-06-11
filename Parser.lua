@@ -14,6 +14,7 @@ local actiontypes = {
 	b = "BOAT",
 	U = "USE",
 	P = "PET",
+	D = "DIE",
 }
 
 
@@ -23,8 +24,8 @@ function TourGuide:GetObjectiveTag(tag, i)
 	local tags = self.tags[i]
 	if not tags then return end
 
-	if tag == "O" then return select(3, string.find(tags,"|O|"))
-	elseif tag == "T" then return select(3, string.find(tags,"|T|"))
+	if tag == "O" then return string.find(tags,"|O|")
+	elseif tag == "T" then return string.find(tags,"|T|")
 	elseif tag == "QID" then return select(3, string.find(tags, "|QID|(%d+)|"))
 	elseif tag == "L" then
 		local _, _, lootitem, lootqty = string.find(tags,"|L|(%d+)%s?(%d*)|")

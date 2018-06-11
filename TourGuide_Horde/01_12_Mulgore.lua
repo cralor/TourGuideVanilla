@@ -139,7 +139,7 @@ P The Rake |C|Hunter| |N|Tame him if available, otherwise tame a Flatland Prowle
 
 C Supervisor Fizsprocket |QID|765| |N|In the Venture Co. Mine to the east of the Ravaged Caravan (64.70, 43.70)|
 C The Venture Co. |QID|764|
-N Die on Purpose
+D Die |N|Take Rez Sickness|
 
 T Dwarven Digging |QID|746|
 T Thunderhorn Cleansing |QID|758| |N|Back at Bloodhoof Village (48.48, 60.39)|
@@ -163,8 +163,10 @@ T Wildmane Totem |QID|759| |N|Back at Bloodhoof Village. Hearth if you can. (48.
 A Wildmane Cleansing |QID|760|
 
 N Grind your way... |N|Then die on purpose. (47, 33)|
+D Die |N|Take Rez Sickness|
 C Wildmane Cleansing |QID|760| |N|Find the well north of Bluff (42.61, 14.24), use the totem on it.|
 N Grind your way... |N|Then die on purpose. (47, 38)|
+D Die |N|Take Rez Sickness|
 T Wildmane Cleansing |QID|760| |N|Back at Bloodhoof Village (48.43, 60.35)|
 
 C Body and Heart |QID|6002| |C|Druid| |U|15710| |N|On the edge of the Barrens, just as you leave Mulgore, south of the road behind the hut (42.00, 60.89).  Use the dust, kill the boomkin, talk to him.| |Z|The Barrens|

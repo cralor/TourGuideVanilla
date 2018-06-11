@@ -34,7 +34,7 @@ T Jarl Needs Eyes |QID|1206|
 A The Severed Head |QID|1239| |N|Dig in the dirt near the cabin again.|
 
 C The Theramore Docks |QID|1202| |N|Swim around the north side of Theramore, find the box under the northeast pier (71.50, 51.10).|
-N Die on Purpose |N|Back to Brackenwall Village|
+D Die |N|Take Rez Sickness back to Brackenwall Village|
 T The Theramore Docks |T| |QID|1202|
 T The Severed Head |T| |QID|1239|
 A The Troll Witchdoctor |T| |QID|1240|

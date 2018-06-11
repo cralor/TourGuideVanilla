@@ -83,7 +83,7 @@ N Apprentice First Aid |N|Trained in the Barracks (54, 42)|
 C Vanquish the Betrayers |QID|784| |N|Southeast at Tiragarde Keep. Lieutenant Benedict is inside, upstairs (59.67, 58.36).|
 C Carry Your Weight |QID|791| |N|Keep killing centaurs for the scraps.|
 A The Admiral's Orders (Part 1) |U|4881| |QID|830| |N|Open the box on the ramparts upstairs from Benedict (59.32, 57.67).|
-N Die on Purpose |N|Resurrect at Razor Hill|
+D Die |N|Resurrect at Razor Hill|
 
 T Vanquish the Betrayers |QID|784| |T|
 A From The Wreckage.... |QID|825| |T| |NODEBUG|
@@ -106,7 +106,7 @@ C Break a Few Eggs |QID|815| |N|Look for raptor eggs around the edges of the mai
 C Practical Prey |QID|817|
 C Minshina's Skull |QID|808| |N|Head over to the Echo Isles to the main island.  Near the southern troll camp on the hill near Zalazane, in the ritual circle (67.51, 87.72).|
 C Zalazane |QID|826| |N|Zalazane is in the troll camp near Minshina's skull (67.05, 87.15).|
-N Die on Purpose |N|Res in Sen'jin Village|
+D Die |N|Res in Sen'jin Village|
 
 T Minshina's Skull |QID|808| |N|Back at Sen'jin Village (55.95, 74.82)|
 T Zalazane |QID|826|
