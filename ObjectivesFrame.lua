@@ -52,7 +52,11 @@ local function OnShow()
 end
 
 
-local function HideTooltip() GameTooltip:Hide() end
+local function HideTooltip() 
+	if GameTooltip:IsOwned(this) then
+		GameTooltip:Hide() 
+	end
+end
 
 local function ShowTooltip()
 	local f = this
