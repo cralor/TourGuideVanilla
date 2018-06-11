@@ -4,6 +4,10 @@ R Razor Hill |R|Undead|
 A Conscript of the Horde |R|Undead| |QID|840| |T|
 
 T Conscript of the Horde |QID|840| |N|Just over the bridge from Durotar to The Barrens (62.30, 19.32).| |R|Orc, Troll, Undead|
+
+T Path of Defense |QID|1498| |C|Warrior|
+A Thun'grim Firegaze |QID|1502| |C|Warrior|
+
 A Crossroads Conscription |QID|842| |R|Orc, Troll, Undead|
 T Ak'Zeloth |QID|809| |R|Orc, Troll|
 A The Demon Seed |QID|924| |R|Orc, Troll|
@@ -25,8 +29,18 @@ A The Forgotten Pools |QID|870| |T|
 
 N Kill crap... |N|Kill any raptors you come across for "Raptor Thieves" and plainstriders for "Plainstrider Menace"|
 C The Demon Seed |QID|924| |N|Ramp begins at (51, 22)| |R|Orc, Troll|
+
+T Thun'grim Firegaze |QID|1502| |C|Warrior| |N|Start climbing at (55, 32)|
+A Forged Steel |QID|1502| |C|Warrior|
+
 C Disrupt the Attacks |QID|871| |N|Follow the road north from town, look for razormanes to the east of the road (54,25).|
-A Chen's Empty Keg |U|4926| |O| |QID|819| |N|A barrel at (56, 27)|  |T|
+
+C Forged Steel |QID|1502| |C|Warrior| |N|Found around (55, 26)|
+
+A Chen's Empty Keg |U|4926| |O| |QID|819| |N|A barrel at (56, 27)|
+
+T Forged Steel |QID|1502| |C|Warrior|
+
 T Disrupt the Attacks |QID|871| |N|Back at the Crossroads (51.53, 30.84)| |T|
 A The Disruption Ends |QID|872| |T|
 
@@ -66,6 +80,7 @@ A The Zhevra |QID|845| |T|
 A Consumed by Hatred |QID|899| |T|
 A Lost in Battle |QID|4921| |T|
 
+B Get more bags... |N|Time is money, friend. Bag vendor located at (52.3, 32.0)|
 N Kill Zhevra... |N|Kill any you come across for "The Zhevra"|
 A Kolkar Leaders |QID|850| |N|At the bunker to the west of the Crossroads (45.33, 28.45)|
 A Centaur Bracers |QID|855|

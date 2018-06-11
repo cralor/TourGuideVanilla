@@ -3,7 +3,7 @@ return [[
 A Your Place In The World |QID|4641| |NODEBUG|
 T Your Place In The World |QID|4641| |NODEBUG|
 A Cutting Teeth |QID|788|
-C Cutting Teeth |QID|788|
+C Cutting Teeth |QID|788| |N|Head towards Sarkoth (40.64, 62.61) while completing this quest|
 A Sarkoth (Part 1) |QID|790| |N|Western Valley of Trials, just north of the Den (40.64, 62.61)|
 C Sarkoth (Part 1) |QID|790| |N|South of the questgiver, up the hill (40.43, 67.03)|
 T Sarkoth (Part 1) |QID|790|
@@ -13,15 +13,18 @@ T Cutting Teeth |QID|788| |N|Back at the Den (42.13, 68.37)|
 A Etched Tablet |QID|3082| |C|Hunter|
 A Rune-Inscribed Tablet |QID|3084| |C|Shaman| |R|Troll|
 A Rune-Inscribed Parchment |QID|3089| |C|Shaman| |R|Orc|
+A Simple Parchment |QID|2383| |C|Warrior| |R|Troll|
+A Simple Tablet |QID|3065| |C|Warrior| |R|Orc|
 A Sting of the Scorpid |QID|789|
 
 T Etched Tablet |C|Hunter| |QID|3082|
 T Rune-Inscribed Tablet |C|Shaman| |QID|3084|
 T Rune-Inscribed Parchment |QID|3089| |C|Shaman| |R|Orc|
+T Simple Parchment |QID|2383| |C|Warrior| |R|Troll|
+T Simple Tablet |QID|3065| |C|Warrior| |R|Orc|
 
 A Vile Familiars (Part 1) |QID|1485| |C|Warlock| |R|Orc|
-A Vile Familiars |QID|792| |C|Warlock| |R|Undead, Blood Elf, Goblin|
-A Vile Familiars |QID|792| |C|Priest, Mage, Warrior, Druid, Paladin, Hunter, Shaman, Rogue, Death Knight|
+A Vile Familiars |QID|792| |C|Priest, Mage, Warrior, Druid, Hunter, Shaman, Rogue|
 A Galgar's Cactus Apple Surprise |QID|4402|
 A Lazy Peons |QID|5441|
 
@@ -29,16 +32,14 @@ C Lazy Peons |QID|5441| |U|16114| |N|Run around and beat the sleeping peons.  If
 C Sting of the Scorpid |QID|789|
 C Galgar's Cactus Apple Surprise |QID|4402|
 C Vile Familiars (Part 1) |QID|1485| |C|Warlock| |R|Orc| |N|Kill familiars outside the cave at the north end of the valley.|
-C Vile Familiars |QID|792| |N|Kill familiars outside the cave at the north end of the valley.| |C|Warlock| |R|Undead, Blood Elf, Goblin|
-C Vile Familiars |QID|792| |N|Kill familiars outside the cave at the north end of the valley.| |C|Priest, Mage, Warrior, Druid, Paladin, Hunter, Shaman, Rogue, Death Knight|
+C Vile Familiars |QID|792| |C|Priest, Mage, Warrior, Druid, Hunter, Shaman, Rogue| |N|Kill familiars outside the cave at the north end of the valley.|
 
 T Galgar's Cactus Apple Surprise |QID|4402|
 T Sting of the Scorpid |QID|789|
 A Call of Earth (Part 1) |C|Shaman| |QID|1516|
 T Vile Familiars (Part 1) |QID|1485| |C|Warlock| |R|Orc|
 A Vile Familiars (Part 2) |QID|1499| |C|Warlock| |R|Orc|
-T Vile Familiars |QID|792| |C|Warlock| |R|Undead, Blood Elf, Goblin|
-T Vile Familiars |QID|792| |C|Priest, Mage, Warrior, Druid, Paladin, Hunter, Shaman, Rogue, Death Knight|
+T Vile Familiars |QID|792| |C|Priest, Mage, Warrior, Druid, Hunter, Shaman, Rogue|
 A Burning Blade Medallion |QID|794|
 
 T Lazy Peons |QID|5441|
@@ -58,9 +59,9 @@ T Call of Earth (Part 2) |QID|1517| |C|Shaman| |N|Head south-west to the Hidden 
 A Call of Earth (Part 3) |QID|1518| |C|Shaman|
 T Call of Earth (Part 3) |QID|1518| |C|Shaman|
 
+A Thwarting Kolkar Aggression |QID|786| |N|Lar Prowltusk patrols nearby (54,76)|
 T Report to Sen'jin Village |QID|805| |N|Take the path southeast to Sen'jin Village (55.96, 74.67)|
 
-A Thwarting Kolkar Aggression |QID|786|
 A Minshina's Skull |QID|808|
 A Report to Orgnil |QID|823|
 A Zalazane |QID|826|
@@ -79,7 +80,7 @@ T A Peon's Burden |QID|2161| |T|
 h Razor Hill |T|
 N Apprentice First Aid |N|Trained in the Barracks (54, 42)|
 
-C Vanquish the Betrayers |QID|784| |N|Southeast at Tiragarde Keep.  Lieutenant Benedict is inside, upstairs (59.67, 58.36).|
+C Vanquish the Betrayers |QID|784| |N|Southeast at Tiragarde Keep. Lieutenant Benedict is inside, upstairs (59.67, 58.36).|
 C Carry Your Weight |QID|791| |N|Keep killing centaurs for the scraps.|
 A The Admiral's Orders (Part 1) |U|4881| |QID|830| |N|Open the box on the ramparts upstairs from Benedict (59.32, 57.67).|
 N Die on Purpose |N|Resurrect at Razor Hill|
@@ -92,18 +93,19 @@ T Carry Your Weight |QID|791| |T|
 
 C From The Wreckage.... |QID|825| |N|East of Razor Hill, off the coast (62,50).| |NODEBUG|
 C A Solvent Spirit |QID|818| |N|Along the beaches.|
-C Encroachment |N|To the west of Razor hill, in the camps on both sides of the road (47.60, 48.97) (43.80, 40.55)| |QID|837|
+K Kill Quilboars and Scouts |QID|837| |QO|Razormane Quilboar slain: 4/4| |N|Do the first half, southwest of Razor Hill for Scouts and Quilboars (51.6, 48.6)|
+K Kill Quilboars and Scouts |QID|837| |QO|Razormane Scout slain: 4/4| |N|Do the first half, southwest of Razor Hill for Scouts and Quilboars (51.6, 48.6)|
 N Level 8 |N|Grind to Level 8 if you are not already|
 
 T From The Wreckage.... |QID|825| |N|Back at Razor Hill (51.90, 43.49).  Hearth if you can.| |T| |NODEBUG|
-C Thwarting Kolkar Aggression |N|West of Sen'jin at Kolkar Crag, each camp has an item to burn (49.84, 81.18), (46.22, 78.97), (47.68, 77.44).| |QID|786|
+C Thwarting Kolkar Aggression |QID|786| |N|West of Sen'jin at Kolkar Crag, each camp has an item to burn (49.84, 81.18), (46.22, 78.97), (47.68, 77.44).|
 T Thwarting Kolkar Aggression |QID|786|
 T A Solvent Spirit |QID|818|
 
-C Minshina's Skull |QID|808| |N|Head over to the Echo Isles to the main island.  Near the southern troll camp on the hill near Zalazane, in the ritual circle (67.51, 87.72).|
-C Zalazane |QID|826| |N|Zalazane is in the troll camp near Minshina's skull (67.05, 87.15).|
 C Break a Few Eggs |QID|815| |N|Look for raptor eggs around the edges of the main island and on the other islands.|
 C Practical Prey |QID|817|
+C Minshina's Skull |QID|808| |N|Head over to the Echo Isles to the main island.  Near the southern troll camp on the hill near Zalazane, in the ritual circle (67.51, 87.72).|
+C Zalazane |QID|826| |N|Zalazane is in the troll camp near Minshina's skull (67.05, 87.15).|
 N Die on Purpose |N|Res in Sen'jin Village|
 
 T Minshina's Skull |QID|808| |N|Back at Sen'jin Village (55.95, 74.82)|
@@ -113,6 +115,9 @@ T Practical Prey |QID|817|
 
 H Razor Hill
 T Break a Few Eggs |QID|815| |T|
+
+C Encroachment |QID|837| |N|Razormane Dustrunners and Battleguards west of Razor hill, both sides of road (39.3, 52.8) (43.6, 41.2)|
+
 A Lost But Not Forgotten |QID|816| |N|Northwest of Razor Hill at Tor'kren Farm (43.10, 30.30)|
 A Winds in the Desert |N|Follow the canyon north from Razor Hill (46.42, 22.94)| |QID|834|
 C Winds in the Desert |QID|834| |N|East, then south into Razorwind Canyon.|
@@ -132,6 +137,10 @@ T Taming the Beast |QID|6082| |C|Hunter|
 A Training the Beast |QID|6081| |C|Hunter|
 P Tame Venomtail Scorpid |C|Hunter|
 
+A Veteran Uzzek |QID|1505| |C|Warrior| |T|
+T Veteran Uzzek |QID|1505| |C|Warrior| |T|
+A Path of Defense |QID|1498| |C|Warrior| |T|
+
 A Need for a Cure |QID|812| |N|Troll north of the west zeplin tower (40.95, 16.34)|
 T Training the Beast |QID|6081| |C|Hunter|
 T The Admiral's Orders (Part 2) |QID|831| |N|Head to Orgrimmar, near Thrall in Grommash Hold (34.37, 36.64).| |T| |Z|Orgrimmar|
@@ -144,6 +153,8 @@ T Securing the Lines |QID|835| |N|Back at Rezlak (46.46, 22.92)|
 C Finding the Antidote |QID|813| |N|Back out near the poisoned troll.  Work west towards river.|
 C Lost But Not Forgotten |QID|816| |N|Kill crocs at the river.|
 C Dark Storms |QID|806| |N|In the canyons to the southwest of Orgrimmar (42.23, 26.60)|
+
+C Path of Defense |QID|1498| |C|Warrior| |N|Thunder Lizards & Lightning Hides (39.1, 31.3)| |Z|Durotar|
 
 T Lost But Not Forgotten |QID|816| |N|At the Tor'kren Farm northwest of Razor Hill (43.13, 30.34)|
 T Dark Storms |QID|806| |N|Back at Razor Hill (52.21, 43.09)| |T|
