@@ -95,7 +95,7 @@ C From The Wreckage.... |QID|825| |N|East of Razor Hill, off the coast (62,50).|
 C A Solvent Spirit |QID|818| |N|Along the beaches.|
 K Kill Quilboars and Scouts |QID|837| |QO|Razormane Quilboar slain: 4/4| |N|Do the first half, southwest of Razor Hill for Scouts and Quilboars (51.6, 48.6)|
 K Kill Quilboars and Scouts |QID|837| |QO|Razormane Scout slain: 4/4| |N|Do the first half, southwest of Razor Hill for Scouts and Quilboars (51.6, 48.6)|
-N Level 8 |N|Grind to Level 8 if you are not already|
+N Level 8 |LV|8| |N|Grind to Level 8 if you are not already|
 
 T From The Wreckage.... |QID|825| |N|Back at Razor Hill (51.90, 43.49).  Hearth if you can.| |T| |NODEBUG|
 C Thwarting Kolkar Aggression |QID|786| |N|West of Sen'jin at Kolkar Crag, each camp has an item to burn (49.84, 81.18), (46.22, 78.97), (47.68, 77.44).|
