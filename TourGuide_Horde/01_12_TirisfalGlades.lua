@@ -110,7 +110,7 @@ A Halgar's Summons |C|Warlock| |QID|1478|
 T Speak with Sevren |QID|355|
 A The Family Crypt |QID|408|
 C The Chill Of Death |QID|375| |N|Work your way north from town killing greater duskbats near the road.|
-B Coarse Thread |U|2320| |N|Just one is required|
+B [Coarse Thread] |L|2320| |N|Just one is required|
 T The Chill of Death |QID|375|
 
 R Undercity

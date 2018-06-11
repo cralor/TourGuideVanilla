@@ -25,7 +25,7 @@ T Bracers of Binding |QID|557|
 
 F Undercity
 T To Steal From Thieves |NODEBUG| |QID|1164|
-B Delicious Cave Mold |C|Hunter| |N|Buy 3 to feed a turtle soon, at Mushroom Vendor (63.47,39.37)|
-B Soothing Spices |N|Buy 3 for future quest|
+B Delicious Cave Mold |C|Hunter| |L|4607 3| |N|Buy 3 to feed a turtle soon, at Mushroom Vendor (63.47,39.37)|
+B Soothing Spices |L|3713 3| |N|Buy 3 for future quest|
 ]]
 end)

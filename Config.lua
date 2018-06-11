@@ -10,7 +10,7 @@ function TourGuide:CreateConfigPanel()
 	frame:SetFrameStrata("DIALOG")
 
 	local qtrack = ww.SummonCheckBox(22, frame, "TOPLEFT", 5, -5)
-	ww.SummonFontString(qtrack, "OVERLAY", "GameFontNormalSmall", "Automatically track quests", "LEFT", qtrack, "RIGHT", 5, 0)
+	ww.SummonFontString(qtrack, "OVERLAY", "GameFontNormalSmall", L["Automatically track quests"], "LEFT", qtrack, "RIGHT", 5, 0)
 	qtrack:SetScript("OnClick", function() self.db.char.trackquests = not self.db.char.trackquests end)
 
 

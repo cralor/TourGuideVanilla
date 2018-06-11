@@ -33,7 +33,7 @@ frame:SetScript("OnShow", function() TourGuide:CreateObjectivePanel() end)
 table.insert(UISpecialFrames, "TourGuideObjectives")
 
 
-local function OnShow()
+local function ResetScrollbar()
 	local f = this
 	local newval = math.max(0, (TourGuide.current or 0) - NUMROWS/2 - 1)
 
@@ -41,20 +41,24 @@ local function OnShow()
 	scrollbar:SetValue(newval)
 
 	TourGuide:UpdateOHPanel()
+end
 
+local function OnShow()
+	local f = this
+	ResetScrollbar()
 	f:SetAlpha(0)
 	f:SetScript("OnUpdate", ww.FadeIn)
 
-	f = TourGuide.optionsframe
-	if f:IsVisible() then f:Hide() end
-	f = TourGuide.guidelistframe
-	if f:IsVisible() then f:Hide() end
+	-- f = TourGuide.optionsframe
+	-- if f:IsVisible() then f:Hide() end
+	-- f = TourGuide.guidelistframe
+	-- if f:IsVisible() then f:Hide() end
 end
 
 
-local function HideTooltip() 
+local function HideTooltip()
 	if GameTooltip:IsOwned(this) then
-		GameTooltip:Hide() 
+		GameTooltip:Hide()
 	end
 end
 
@@ -65,7 +69,6 @@ local function ShowTooltip()
 	GameTooltip:SetOwner(f, "ANCHOR_RIGHT")
 	GameTooltip:SetText(f.text:GetText(), nil, nil, nil, nil, true)
 end
-
 
 local function CreateButton(parent, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	local b = CreateFrame("Button", nil, parent)
@@ -98,7 +101,7 @@ function TourGuide:CreateObjectivePanel()
 	guidebutton:SetScript("OnClick", function() frame:Hide(); TourGuide.guidelistframe:Show() end)
 
 	local configbutton = CreateButton(frame, "RIGHT", guidebutton, "LEFT")
-	configbutton:SetText("Config")
+	configbutton:SetText(L["Config"])
 	configbutton:SetScript("OnClick", function() frame:Hide(); TourGuide.optionsframe:Show() end)
 
 	if TourGuide.db.char.debug then
@@ -183,11 +186,15 @@ end
 local accepted = {}
 function TourGuide:UpdateOHPanel(value)
 	if not frame or not frame:IsVisible() then return end
-	title:SetText(self.db.char.currentguide or "No Guide Loaded")
+	title:SetText(self.db.char.currentguide or L["No Guide Loaded"])
 	local r,g,b = self.ColorGradient((self.current-1)/table.getn(self.actions))
-	completed:SetText(string.format("|cff%02x%02x%02x%d%% complete", r*255, g*255, b*255, (self.current-1)/table.getn(self.actions)*100))
+	completed:SetText(string.format(L["|cff%02x%02x%02x%d%% complete"], r*255, g*255, b*255, (self.current-1)/table.getn(self.actions)*100))
 
-	self.guidechanged = nil
+	if self.guidechanged then
+		self.guidechanged = nil
+		ResetScrollbar()
+	end
+
 	if value then offset = math.floor(value) end
 	if (offset + NUMROWS) > table.getn(self.actions) then offset = table.getn(self.actions) - NUMROWS end
 	if offset < 0 then offset = 0 end
@@ -223,7 +230,7 @@ function TourGuide:UpdateOHPanel(value)
 
 			row.icon:SetTexture(self.icons[action])
 			if action ~= "ACCEPT" and action ~= "TURNIN" then row.icon:SetTexCoord(4/48, 44/48, 4/48, 44/48) end
-			row.text:SetText(name..(optional and " |cff808080(Optional)" or ""))
+			row.text:SetText(name..(optional and L[" |cff808080(Optional)"] or ""))
 			row.detail:SetText(self:GetObjectiveTag("N", i + offset))
 			row.check:SetChecked(checked)
 

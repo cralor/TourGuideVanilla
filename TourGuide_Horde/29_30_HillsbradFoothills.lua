@@ -18,7 +18,7 @@ A Elixir of Suffering (Part 2)
 T Elixir of Suffering (Part 2)
 A Elixir of Pain |QID|501|
 A Soothing Turtle Bisque |QID|7321| |N|Requires cooking|
-B Soothing Spices
+B [Soothing Spices] |L|3713|
 T Soothing Turtle Bisque |QID|7321|
 
 C Helcular's Revenge |QID|552| |N|Go to the yeti cave (46, 32)|
