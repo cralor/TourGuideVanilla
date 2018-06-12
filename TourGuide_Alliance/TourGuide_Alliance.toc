@@ -1,15 +1,14 @@
 ## Interface: 11200
 
-## Title: Tour Guide (Alliance Data)
+## Title: TourGuide_Alliance
 ## Notes: Powerleveling guide framework
-## Author: Tekkub Stoutwrithe
-## Version: Alpha
+## Author: cralor
+## Version: 1.0
+## X-Credits: Tekkub
 ## X-Category: Quest
 
-## RequiredDeps: TourGuide
+## RequiredDeps: TourGuideVanilla
 ## OptionalDeps: Dongle, TomTom
-
-## DefaultState: disabled
 
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: delayed

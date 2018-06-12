@@ -1,15 +1,14 @@
 ## Interface: 11200
 
-## Title: Tour Guide (Horde Data)
+## Title: TourGuide_Horde
 ## Notes: Powerleveling guide framework
-## Author: Tekkub Stoutwrithe
-## Version: Alpha
+## Author: cralor
+## Version: 1.0
+## X-Credits: Tekkub
 ## X-Category: Quest
 
-## RequiredDeps: TourGuide
+## RequiredDeps: TourGuideVanilla
 ## OptionalDeps: Dongle, TomTom, LightHeaded, pfQuest
-
-## DefaultState: disabled
 
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: delayed

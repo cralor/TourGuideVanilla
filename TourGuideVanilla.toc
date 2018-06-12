@@ -2,9 +2,9 @@
 
 ## Title: TourGuide
 ## Notes: Powerleveling guide framework
-## Author: Tekkub Stoutwrithe
-## Credits: Road-block, rsheep, cralor
+## Author: cralor
 ## Version: 1.0
+## X-Credits: Tekkub, Road-block, rsheep
 ## X-Category: Quest
 
 ## SavedVariables: TourGuideAlphaDB
