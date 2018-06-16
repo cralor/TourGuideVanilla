@@ -2,6 +2,7 @@ TourGuide:RegisterGuide("Arathi Highlands (30)", "Stranglethorn Vale (30-31)", "
 return [[
 A Hammerfall |QID|655|
 T Hammerfall |QID|655|
+f Hammerfall
 A Raising Spirits (Part 1) |QID|672|
 
 C Raising Spirits (Part 1) |QID|672| |N|Kill raptors west of Hammerfall.|

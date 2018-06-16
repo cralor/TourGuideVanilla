@@ -111,7 +111,7 @@ A Jorn Skyseer |QID|3261| |T|
 T Consumed by Hatred |QID|899| |T|
 T Altered Beings |QID|880| |T|
 A Hamuul Runetotem |QID|1489|
-N Almost leveled up |N|You should be 20, if not grind to get close|
+N Almost leveled up |LV|20| |N|You should be 20, if not grind to get close|
 F Thunder Bluff
 
 T Melor Sends Word |QID|1130| |O|

@@ -29,7 +29,8 @@ A Elixir of Pain (Part 2) |QID|502|
 T Helcular's Revenge |QID|552|
 A Helcular's Revenge (Part 2) |QID|553|
 
-C Helcular's Revenge (Part 2) |QID|553|
+C Helcular's Revenge (Part 2) |QID|553| |QO|Flame of Azel charged|
+C Helcular's Revenge (Part 2) |QID|553| |QO|Flame of Veraz charged|
 T Elixir of Pain (Part 2) |QID|502|
 
 C Battle of Hillsbrad |QID|527|
