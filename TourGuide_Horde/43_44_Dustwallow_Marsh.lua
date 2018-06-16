@@ -55,10 +55,10 @@ T Catch a Dragon by the Tail |T| |QID|11217|
 F Brackenwall Village |QID|1168|
 T Overlord Mok'Morokk's Concern |QID|1166| |T|
 T Army of the Black Dragon |QID|1168| |T|
-T Identifying the Brood |QID|1169| |NORAF| |T|
-A The Brood of Onyxia (Part 1) |QID|1170| |NORAF| |T|
-T The Brood of Onyxia (Part 1) |QID|1170| |NORAF| |T|
-A The Brood of Onyxia (Part 2) |QID|1171| |NORAF| |T|
-T The Brood of Onyxia (Part 2) |QID|1171| |NORAF| |T|
+T Identifying the Brood |QID|1169| |T|
+A The Brood of Onyxia (Part 1) |QID|1170| |T|
+T The Brood of Onyxia (Part 1) |QID|1170| |T|
+A The Brood of Onyxia (Part 2) |QID|1171| |T|
+T The Brood of Onyxia (Part 2) |QID|1171| |T|
 ]]
 end)

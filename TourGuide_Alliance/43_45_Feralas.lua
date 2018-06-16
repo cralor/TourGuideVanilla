@@ -67,7 +67,7 @@ A Rise of the Silithid |NODEBUG| |QID|4267|
 
 F Rut'theran Village |N|Darnassus you dingus| |QID|2940|
 T Handle With Care |QID|3022|
-A Favored of Elune? |QID|3661| |NORAF|
+A Favored of Elune? |QID|3661|
 T In Search of Knowledge |QID|2939|
 A Feralas: A History |N|From the green book| |QID|2940|
 T Feralas: A History |QID|2940|

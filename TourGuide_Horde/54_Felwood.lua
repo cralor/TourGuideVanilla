@@ -10,7 +10,7 @@ A Forces of Jaedenar |QID|5155|
 A Verifying the Corruption |QID|5156|
 A Timbermaw Ally |QID|8460| |N|Down by the road (51,85)|
 
-A Cleansing Felwood |N|On the west side of the road to the north (46.8, 83.1)| |QID|4102| |NORAF|
+A Cleansing Felwood |N|On the west side of the road to the north (46.8, 83.1)| |QID|4102|
 
 R Bloodvenom Post |N|(34,52)|
 A Well of Corruption |QID|4505|
@@ -34,7 +34,7 @@ A Wild Guardians |QID|4741|
 
 C Collection of the Corrupt Water |N|Fill the vial at the corrupted moonwell in Jaedenar (35.25, 59.75)| |U|12922| |QID|5157|
 C Verifying the Corruption |QID|5156|
-C Cleansing Felwood |QID|4102| |NORAF|
+C Cleansing Felwood |QID|4102|
 
 T Speak to Nafien |N|North, at the end of the road (64.8,8.2)| |QID|8462|
 A Deadwood of the North |QID|8461|

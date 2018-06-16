@@ -11,7 +11,7 @@ N Get a Flame in a Bottle |N|From the Box of Incendiaries| |L|12814|
 T The Everlook Report |QID|6029|
 N Get a Commission |N|Talk to the quartermaster and get a commission, you should have this equipped any time you are in the plaguelands.  Turn in any scourgestones you get when you are in town if you have a full stack.| |L|12846|
 A The So-Called Mark of the Lightbringer |QID|9443|
-A A Plague Upon Thee (Part 1) |QID|5901| |NORAF|
+A A Plague Upon Thee (Part 1) |QID|5901|
 
 C Scarlet Diversions |QID|5096| |N|Burn the tent, plant the banner.  Note that if you have a partner he will not get credit, you must wait for the tent to respawn.|
 
@@ -78,6 +78,6 @@ T The Wildlife Suffers Too (Part 2) |QID|4985|
 T Return to the Bulwark (Part 4) |QID|5236|
 A Scholomance |QID|838|
 T Scholomance |QID|838|
-A Skeletal Fragments |QID|964| |NORAF|
+A Skeletal Fragments |QID|964|
 ]]
 end)

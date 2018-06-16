@@ -15,7 +15,7 @@ R Darkshire |N|Usually faster to fly to Redridge and take the road southwest| |Q
 T The Missing Diplomat (Part 4) |N|North of Darkshire walking along the road| |QID|1243|
 A The Missing Diplomat (Part 5) |QID|1244|
 A The Legend of Stalvan (Part 1) |T| |QID|66|
-A The Totem of Infliction |T| |QID|101| |NORAF|
+A The Totem of Infliction |T| |QID|101|
 h Darkshire |T| |QID|158|
 A The Night Watch (Part 1) |T| |QID|56|
 T The Legend of Stalvan (Part 1) |T| |N|Skip the follow-up| |QID|66|
@@ -90,14 +90,14 @@ T Deliver the Thread |N|Shack north of the cemetery| |QID|157|
 A Zombie Juice |QID|158|
 
 C The Night Watch (Part 3) |N|Down in the Dawning Wood Catacombs (23.5, 35.4)| |QID|58|
-C The Totem of Infliction |N|Ghoul fangs only seem to drop in the catacombs.  If you don't get enough venom in the cemetery, kill Black Widow Hatchlings on the ridge east of the cemetery (32,38).| |QID|101| |NORAF|
+C The Totem of Infliction |N|Ghoul fangs only seem to drop in the catacombs.  If you don't get enough venom in the cemetery, kill Black Widow Hatchlings on the ridge east of the cemetery (32,38).| |QID|101|
 
 T Sven's Camp |N|Camp to the west (8,34)| |QID|230|
 A The Shadowy Figure |QID|262|
 
 R Stranglethorn Vale |N|Take the road east towards Darkshire, but head south at the fork in the center of the zone.| |QID|158|
 F Darkshire |N|There is a flight point at the Rebel Camp along the north edge of STV (38.1, 3.8)| |Z|Stranglethorn Vale|
-T The Totem of Infliction |T| |QID|101| |NORAF|
+T The Totem of Infliction |T| |QID|101|
 T The Shadowy Figure |T| |QID|262|
 A The Shadowy Search Continues |T| |QID|265|
 T The Night Watch (Part 3) |T| |QID|58|

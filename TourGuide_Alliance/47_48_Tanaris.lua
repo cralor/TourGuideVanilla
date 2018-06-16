@@ -28,7 +28,7 @@ A In Good Taste |QID|2606|
 T The Dunemaul Compound |QID|5863|
 T Thistleshrub Valley |QID|3362|
 T In Good Taste |QID|2606|
-A Sprinkle's Secret Ingredient |QID|2641| |NORAF|
+A Sprinkle's Secret Ingredient |QID|2641|
 T Noxious Lair Investigation |QID|82|
 A The Scrimshank Redemption |N|Goblin on the hill to the west| |QID|10|
 T Gahz'ridian |N|To the south (52,45)| |QID|3161|
@@ -48,11 +48,11 @@ A Insect Part Analysis (Part 2) |QID|113|
 T Insect Part Analysis (Part 2) |QID|113|
 A Rise of the Silithid |NODEBUG| |QID|162|
 
-T An Orphan Looking For a Home |NODEBUG| |N|Up at the raceway in Shimmering Flats (78.38, 74.68)| |Z|Thousand Needles| |QID|3841| |NORAF|
-A A Short Incubation |QID|3842| |NORAF|
-T A Short Incubation |QID|3842| |NORAF|
-N The next quest is timed! |QID|3843| |NORAF|
-A The Newest Member of the Family |QID|3843| |NORAF|
+T An Orphan Looking For a Home |NODEBUG| |N|Up at the raceway in Shimmering Flats (78.38, 74.68)| |Z|Thousand Needles| |QID|3841|
+A A Short Incubation |QID|3842|
+T A Short Incubation |QID|3842|
+N The next quest is timed! |QID|3843|
+A The Newest Member of the Family |QID|3843|
 
 F Theramore |QID|623|
 T Akiris by the Bundle |QID|623|
@@ -60,16 +60,16 @@ T Akiris by the Bundle |QID|623|
 F City of Ironforge |N|Boat to Menethil, fly to IF|
 h Ironforge |QID|3182|
 
-F Aerie Peak |N|Hinterlands!| |QID|4298| |NORAF|
-T The Newest Member of the Family |N|In the inn, downstairs| |QID|3843| |NORAF|
-A Food for Baby |QID|4297| |NORAF|
+F Aerie Peak |N|Hinterlands!| |QID|4298|
+T The Newest Member of the Family |N|In the inn, downstairs| |QID|3843|
+A Food for Baby |QID|4297|
 
-C Sprinkle's Secret Ingredient |N|At the bottom of a lake to the east near the Altar of Zul (40,59)| |Z|The Hinterlands| |QID|2641| |NORAF|
-C Food for Baby |N|Kill stealth wolves to the east| |QID|4297| |NORAF|
+C Sprinkle's Secret Ingredient |N|At the bottom of a lake to the east near the Altar of Zul (40,59)| |Z|The Hinterlands| |QID|2641|
+C Food for Baby |N|Kill stealth wolves to the east| |QID|4297|
 
-T Food for Baby |N|Back at the inn| |QID|4297| |NORAF|
-A Becoming a Parent |QID|4298| |NORAF|
-T Becoming a Parent |QID|4298| |NORAF|
+T Food for Baby |N|Back at the inn| |QID|4297|
+A Becoming a Parent |QID|4298|
+T Becoming a Parent |QID|4298|
 ]]
 
 end)

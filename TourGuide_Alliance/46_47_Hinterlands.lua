@@ -36,7 +36,7 @@ A Reclaiming the Eggs |QID|9475|
 
 C Reclaiming the Eggs |N|Two eggs at the altar on the south edge of the pond (34.16, 72.91), 3 near Atal'ai Exile in a troff (33,75)| |QID|9475|
 C The Altar of Zul |N|East at the Altar of Zul (48,68).  Just run up the altar and back down, the mob at the top is level 50.| |QID|2989|
-C Favored of Elune? |QID|3661| |NORAF|
+C Favored of Elune? |QID|3661|
 
 A Find OOX-09/HL! |U|8704| |O| |QID|485|
 T Find OOX-09/HL! |O| |N|On an island north of Agor'watha (49,37)| |QID|485|
@@ -49,7 +49,7 @@ T The Altar of Zul |N|Cave again| |QID|2989|
 A Thadius Grimshade |QID|2990|
 
 F Rut'theran Village |QID|2943|
-T Favored of Elune? |QID|3661| |NORAF|
+T Favored of Elune? |QID|3661|
 T The Super Snapper FX |QID|2944|
 A Return to Troyas |QID|2943|
 

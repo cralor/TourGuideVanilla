@@ -5,7 +5,7 @@ T Ishamuhale |QID|882|
 A Enraged Thunder Lizards |QID|907| |PRE|Ishamuhale|
 
 h Camp Taurajo
-A A New Ore Sample |LV|25| |QID|1153| |N|You need to be level 25 to get this|
+A A New Ore Sample |QID|1153| |N|You need to be level 25 to get this|
 
 K Silithid Harvester |N|If you haven't already killed him, go ahead and do so at (43,70)| |O|
 A The Harvester |O| |QID|897|

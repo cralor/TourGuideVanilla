@@ -93,8 +93,8 @@ T Carry Your Weight |QID|791| |T|
 
 C From The Wreckage.... |QID|825| |N|East of Razor Hill, off the coast (62,50).| |NODEBUG|
 C A Solvent Spirit |QID|818| |N|Along the beaches.|
-K Razormane Quilboar |QID|837| |QO|Razormane Quilboar slain: 4/4|
-K Razormane Scout |QID|837| |QO|Razormane Scout slain: 4/4|
+K Kill Razormane Quilboar and Scouts |QID|837| |Q|Encroachment| |QO|Razormane Quilboar slain: 4/4| |N|Do the first half, southwest of Razor Hill for Scouts and Quilboars (51.6, 48.6)|
+K Kill Razormane Quilboar and Scouts |QID|837| |Q|Encroachment| |QO|Razormane Scout slain: 4/4|  |N|Do the first half, southwest of Razor Hill for Scouts and Quilboars (51.6, 48.6)|
 N Level 8 |LV|8| |N|Grind to Level 8 if you are not already|
 
 T From The Wreckage.... |QID|825| |N|Back at Razor Hill (51.90, 43.49).  Hearth if you can.| |T| |NODEBUG|
@@ -138,8 +138,8 @@ A Training the Beast |QID|6081| |C|Hunter|
 P Tame Venomtail Scorpid |C|Hunter|
 
 A Veteran Uzzek |QID|1505| |C|Warrior| |T|
-T Veteran Uzzek |QID|1505| |C|Warrior|
-A Path of Defense |QID|1498| |C|Warrior|
+T Veteran Uzzek |QID|1505| |C|Warrior| |T|
+A Path of Defense |QID|1498| |C|Warrior| |T|
 
 A Need for a Cure |QID|812| |N|Troll north of the west zeplin tower (40.95, 16.34)|
 T Training the Beast |QID|6081| |C|Hunter|

@@ -43,7 +43,7 @@ A Proof of Deed |QID|3182|
 H City of Ironforge |QID|3182|
 T Proof of Deed |N|In the Hall of Explorers| |QID|3182|
 A At Last! |QID|3201|
-A A Little Slime Goes a Long Way |N|In the Hall of Explorers museum (75.82, 23.19)| |Z|Ironforge| |QID|4512| |NORAF|
+A A Little Slime Goes a Long Way |N|In the Hall of Explorers museum (75.82, 23.19)| |Z|Ironforge| |QID|4512|
 
 F Thelsamar |QID|3201|
 T At Last! |N|Valley of Kings again (18.18, 84.06)| |Z|Loch Modan| |QID|3201|

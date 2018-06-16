@@ -33,7 +33,7 @@ A Tomb of the Lightbringer |QID|9446|
 C Tomb of the Lightbringer |N|Escort quest!| |QID|9446|
 T Tomb of the Lightbringer |N|Back at Chillwind Camp| |QID|9446|
 
-F Everlook |N|Hearth to Stormwind, boat to Auberdine, fly to Everlook| |QID|5163| |NORAF|
-T Are We There, Yeti? (Part 3) |QID|5163| |NORAF|
+F Everlook |N|Hearth to Stormwind, boat to Auberdine, fly to Everlook| |QID|5163|
+T Are We There, Yeti? (Part 3) |QID|5163|
 ]]
 end)

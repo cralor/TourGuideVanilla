@@ -3,8 +3,8 @@ return [[
 F Tarren Mill
 A Prison Break In |N|From Magus Wordeen Voidglare (61.6, 20.9)| |Z|Hillsbrad Foothills| |NODEBUG| |QID|544| |NODEBUG|
 A Stone Tokens |N|From Keeper Bel'varil| |QID|556|
-K Mountain Lion |L|5810|
-C Helcular's Revenge (Part 2) |QID|553| |QO|Flame of Uzel charged|
+K Mountain Lion |L|5810| |N|Aquire Fresh Carcass from Mountain Lion, while heading towards (37,66)|
+C Helcular's Revenge (Part 2) |QID|553| |N|Flame located at (41.7, 6.4)|
 C Frostmaw |N|(37,69) up north| |QID|1136|
 
 C Stone Tokens |N|At Dalaran (20,85)| |Z|Hillsbrad Foothills| |QID|556|

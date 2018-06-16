@@ -22,7 +22,7 @@ A Fall of Dun Modr |N|In front of the keep| |T| |QID|472|
 C Lifting the Curse |N|Kill the Captain for the key, walk up the rudder to reach him (15.5, 23.5)| |QID|290|
 T Lifting the Curse |N|Open the box on bottom floor of the boat, it's underwater.| |QID|290|
 A The Eye of Paleth |QID|292|
-T Nek'rosh's Gambit |N|Talk to the catapault (47.5, 46.9).  Skip the follow-up.| |QID|465| |NORAF|
+T Nek'rosh's Gambit |N|Talk to the catapault (47.5, 46.9).  Skip the follow-up.| |QID|465|
 
 T Fall of Dun Modr |QID|472|
 A The Dark Iron War |QID|303|
