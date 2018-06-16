@@ -9,10 +9,11 @@
 
 ## SavedVariables: TourGuideAlphaDB
 
-## OptionalDeps: Dongle, TomTom, pfQuest, LightHeaded
+## OptionalDeps: TomTom, pfQuest, LightHeaded
 
 lua52to50compat.lua
-Dongle.lua
+libs\Sol\Sol.lua
+libs\Dongle\Dongle.lua
 WidgetWarlock.lua
 
 Locale.lua

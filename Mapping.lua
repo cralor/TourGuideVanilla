@@ -41,23 +41,27 @@ function TourGuide:MapPfQuestNPC(qid, action)
 	local qLookup = pfDB["quests"]["data"]
 	if qLookup[qid] then
 		if action == "ACCEPT" then
-			if qLookup[qid]["start"]["U"] then -- NPC
-				for _, uid in pairs(qLookup[qid]["start"]["U"]) do
-					unitId = uid
-				end
-			elseif qLookup[qid]["start"]["O"] then -- Object
-				for _, oid in pairs(qLookup[qid]["start"]["O"]) do
-					objectId = oid
+			if qLookup[qid]["start"] then
+				if qLookup[qid]["start"]["U"] then -- NPC
+					for _, uid in pairs(qLookup[qid]["start"]["U"]) do
+						unitId = uid
+					end
+				elseif qLookup[qid]["start"]["O"] then -- Object
+					for _, oid in pairs(qLookup[qid]["start"]["O"]) do
+						objectId = oid
+					end
 				end
 			end
 		else
-			if qLookup[qid]["end"]["U"] then -- NPC
-				for _, uid in pairs(qLookup[qid]["end"]["U"]) do
-					unitId = uid
-				end
-			elseif qLookup[qid]["end"]["O"] then -- Object
-				for _, oid in pairs(qLookup[qid]["end"]["O"]) do
-					objectId = oid
+			if qLookup[qid]["end"] then
+				if qLookup[qid]["end"]["U"] then -- NPC
+					for _, uid in pairs(qLookup[qid]["end"]["U"]) do
+						unitId = uid
+					end
+				elseif qLookup[qid]["end"]["O"] then -- Object
+					for _, oid in pairs(qLookup[qid]["end"]["O"]) do
+						objectId = oid
+					end
 				end
 			end
 		end

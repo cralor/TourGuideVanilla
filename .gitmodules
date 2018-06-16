@@ -1,0 +1,6 @@
+[submodule "libs/Dongle"]
+	path = libs/Dongle
+	url = https://github.com/martinjlowm/Dongle.git
+[submodule "libs/Sol"]
+	path = libs/Sol
+	url = https://github.com/martinjlowm/Sol.git

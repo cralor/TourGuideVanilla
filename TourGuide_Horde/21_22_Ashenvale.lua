@@ -6,7 +6,7 @@ T The Ashenvale Hunt |T|
 A The Ashenvale Hunt
 T The Ashenvale Hunt
 
-N Stable your pet |C|Hunter|
+N Stable Pet |C|Hunter|
 f Get the Flight Path
 P Bite (Rank 3) |C|Hunter| |N|Tame a Ghostpaw Runner (76, 67)|
 
