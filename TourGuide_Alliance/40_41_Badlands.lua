@@ -22,7 +22,7 @@ A Barbecued Buzzard Wings |N|West, in the center of the zone (42,52)| |QID|703|
 N Kill any buzzards you see |N|For "Barbecued Buzzard Wings" and "Badlands Reagent Run"| |QID|2500|
 
 C Mirages |N|Grind your way to the crate in the northwest at Camp Kosh (66,21)| |QID|718|
-A A Sign of Hope (Part 1) |N|At Hammertoe's Digsite.  Note is on the right side of the dig (53,33)| |QID|720|
+A A Sign of Hope (Part 1) |N|At Hammertoe's Digsite. Note is on the right side of the dig (53,33)| |QID|720|
 C A Dwarf and His Tools |N|Kill the dwarfs at Hammertoe's Digsite or Angor Fortress (43,31)| |QID|719|
 
 T Mirages |N|Back up the hill| |QID|718|
@@ -31,7 +31,7 @@ T A Dwarf and His Tools |QID|719|
 T A Sign of Hope (Part 1) |QID|720|
 
 A Tremors of the Earth (Part 1) |N|From a blood elf to the southeast (61,54).| |QID|732|
-N Keep an eye out for the ogre pack |QID|732| |N|They spawn to the south of the questgiver (62,70).  They patrol down to the southwest side of the zone and back in a circle.  You should be able to pick Boss Tho'grun off the back of the pack easily.|
+N Keep an eye out for the ogre pack |QID|732| |N|They spawn to the south of the questgiver (62,70). They patrol down to the southwest side of the zone and back in a circle. You should be able to pick Boss Tho'grun off the back of the pack easily.|
 
 T Find Agmond |N|Dead dorf to the southwest at Agmond's End (50,62)| |QID|738|
 A Murdaloc |QID|739|
@@ -69,11 +69,11 @@ C This Is Going to Be Hard (Part 3) |O| |N|Kill the summoned elemental!| |QID|77
 T This Is Going to Be Hard (Part 3) |O| |QID|778|
 
 T Scrounging |N|Back at the dwarfs on the hill (53,43)| |QID|733|
-T Tremors of the Earth (Part 1) |N|Back at the blood elf (61,54).  Skip the follow-up| |QID|732|
-C Fiery Blaze Enchantments |N|Kill whelps in the ravine to the east.  Droprate kind sucks, you may want to skip this.| |QID|706|
+T Tremors of the Earth (Part 1) |N|Back at the blood elf (61,54). Skip the follow-up| |QID|732|
+C Fiery Blaze Enchantments |N|Kill whelps in the ravine to the east. Droprate kind sucks, you may want to skip this.| |QID|706|
 T Fiery Blaze Enchantments |QID|706|
 
-T Murdaloc |N|Back at Ironband's Excavation Site in Loch Modan (65,65).  Skip the follow-up.| |Z|Loch Modan| |QID|739|
+T Murdaloc |N|Back at Ironband's Excavation Site in Loch Modan (65,65). Skip the follow-up.| |Z|Loch Modan| |QID|739|
 T Badlands Reagent Run |N|Back at Thelsamar, skip the follow-up.| |QID|2500|
 ]]
 end)

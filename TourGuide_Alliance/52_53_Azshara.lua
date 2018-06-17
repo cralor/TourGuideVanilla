@@ -39,10 +39,10 @@ A Courser Antlers |QID|8153| |C|Hunter|
 T Cenarion Aid |QID|8254| |C|Priest|
 A Of Coursers We Know |QID|8255| |C|Priest|
 
-C Sealed Azure Bag |QID|8234| |C|Rogue| |N|Can be pickpocketed from Timbermaw Shaman (45,25).  If you are Unfriendly or better with them, you will have to check 'At War' in their reputation panel.|
+C Sealed Azure Bag |QID|8234| |C|Rogue| |N|Can be pickpocketed from Timbermaw Shaman (45,25). If you are Unfriendly or better with them, you will have to check 'At War' in their reputation panel.|
 
 A Kim'jael Indeed! |QID|3601| |N|On top of a hill near the satyr camp to the north (53.4, 21.8)|
-C Kim'jael Indeed! |QID|3601| |N|To the south at the Thallasian Base Camp (56,29) (57,28) (60,31) (59,28).  Loot the crates till you find all his stuff.|
+C Kim'jael Indeed! |QID|3601| |N|To the south at the Thallasian Base Camp (56,29) (57,28) (60,31) (59,28). Loot the crates till you find all his stuff.|
 C Magic Dust |QID|8251| |C|Mage| |N|Kill them blood elves!|
 T Kim'jael Indeed! |QID|3601|
 A Kim'jael's "Missing" Equipment |QID|5534|

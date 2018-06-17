@@ -17,7 +17,7 @@ T Fuel for the Zapping |QID|7721|
 C Improved Quality |N|North at Rage Scar Hold (51,31)| |QID|7733|
 
 A The Giant Guardian |N|Find the giant "Rockbiter" north near the twin colossals (42,22)| |QID|2844|
-C The Stave of Equinex |N|Northwest at the Ruins of Ravenwind.  Find the essences (38.52, 15.79), (40.55, 12.64), (39.93, 9.46), (37.76, 12.15). Use the staff at the monolith (38.8, 13.1)| |U|9263| |QID|2879|
+C The Stave of Equinex |N|Northwest at the Ruins of Ravenwind. Find the essences (38.52, 15.79), (40.55, 12.64), (39.93, 9.46), (37.76, 12.15). Use the staff at the monolith (38.8, 13.1)| |U|9263| |QID|2879|
 T The Stave of Equinex |QID|2879|
 A The Morrow Stone |QID|2942|
 T The Giant Guardian |N|Back near the last flame (38.22, 10.30)| |QID|2844|
@@ -33,7 +33,7 @@ T The Morrow Stone |QID|2942|
 A The Sunken Temple |QID|3445|
 
 A An Orphan Looking For a Home |N|East at the grimtotem camp (65.9, 45.6)| |NODEBUG| |QID|3841|
-R Thalanaar |QID|4281| |N|Follow the road east to the border of Thousand Needles.  Watch out for the horde town!|
+R Thalanaar |QID|4281| |N|Follow the road east to the border of Thousand Needles. Watch out for the horde town!|
 A Thalanaar Delivery |QID|4281| |U|11463| |N|You should have recieved a quest starting item when you raided the leather backpacks in an earlier guide. If not, skip this|
 T Thalanaar Delivery |QID|4281|
 ]]

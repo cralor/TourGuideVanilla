@@ -30,7 +30,7 @@ A Super Sticky |QID|4504|
 T March of the Silithid |QID|4493|
 A Bungle in the Jungle |QID|4496|
 
-T The Stone Circle |N|South of Gadget at the ruins (52.7, 45.9).  Skip the follow-up.| |Z|Tanaris| |QID|3444|
+T The Stone Circle |N|South of Gadget at the ruins (52.7, 45.9). Skip the follow-up.| |Z|Tanaris| |QID|3444|
 ]]
 
 end)

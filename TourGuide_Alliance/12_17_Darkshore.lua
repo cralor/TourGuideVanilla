@@ -25,14 +25,14 @@ T Buzzbox 827 |QID|983| |N|Near the Auberdine flight platform (36.66, 46.25)|
 A Buzzbox 411 |QID|1001|
 T Washed Ashore (Part 1) |QID|3524|
 A Washed Ashore (Part 2) |QID|4681|
-C Washed Ashore (Part 2) |QID|4681| |N|Run out onto the dock and jump off the south pier (the one that goes to Menethil).  Find the turtle northeast of the small island, underwater (31.82, 46.28)|
+C Washed Ashore (Part 2) |QID|4681| |N|Run out onto the dock and jump off the south pier (the one that goes to Menethil). Find the turtle northeast of the small island, underwater (31.82, 46.28)|
 C Buzzbox 411 |QID|1001| |N|Threshers are in the sea around the pier|
 T Washed Ashore (Part 2) |QID|4681|
 A The Red Crystal |QID|4811|
 T Buzzbox 411 |QID|1001| |N|Follow the road north out of Auberdine. When you reach Bashal'Aran, head northwest above the cove. Buzzbox is on the beach north of the cove (41.96, 28.62)|
 A Buzzbox 323 |QID|1002|
 
-A Beached Sea Creature (Part 1) |QID|4723| |N|You will see many Beached Sea Creatures and Beached Sea Turtles on the beach while doing Darkshore.  Gather them all if possible!  The first is south of the Buzzbox 411 at the cove (42.05, 32.02)|
+A Beached Sea Creature (Part 1) |QID|4723| |N|You will see many Beached Sea Creatures and Beached Sea Turtles on the beach while doing Darkshore. Gather them all if possible! The first is south of the Buzzbox 411 at the cove (42.05, 32.02)|
 
 T Bashal'Aran (Part 1) |QID|954| |N|Grind your way south to Bashal'Aran (44.18, 36.30)|
 A Bashal'Aran (Part 2) |QID|955|
@@ -75,10 +75,10 @@ C Cleansing of the Infected |N|To the northeast, there are many more bears south
 A Beached Sea Turtle (Part 1) |N|North on the coast (44.17, 20.65)| |QID|4725|
 C Buzzbox 323 |QID|1002| |N|Both Moonstalkers and Moonstalker Runts drop this item.|
 
-C The Cliffspring River |N|Follow the road east to the Cliffspring River.  Go under the bridge into the water at waterfall to get the sample| |U|12350| |QID|4762|
+C The Cliffspring River |N|Follow the road east to the Cliffspring River. Go under the bridge into the water at waterfall to get the sample| |U|12350| |QID|4762|
 T Buzzbox 323 |QID|1002| |N|Buzzbox is on the other side of the bridge, left side|
 A Buzzbox 525 |QID|1003|
-C Cave Mushrooms |N|Follow the east shore of the river south to the waterfall.  Enter the cave above waterfall (55,33).| |QID|947|
+C Cave Mushrooms |N|Follow the east shore of the river south to the waterfall. Enter the cave above waterfall (55,33).| |QID|947|
 T As Water Cascades |N|Back at the red crystal (47.32, 48.70)| |QID|4812|
 A The Fragments Within |QID|4813|
 C How Big a Threat? (Part 2) |N|Grind your way west across the road to Blackwood camp| |QID|985|
@@ -109,14 +109,14 @@ T How Big a Threat? (Part 2) |QID|985|
 N Fill the [Empty Cleansing Bowl] in the Moonwell |U|12346| |L|12347|
 
 C The Blackwood Corrupted |N|Blackwood camps are east of Bashal'Aran. Gather grain (50.65, 34.99), nuts (51.83, 33.56) and fruit (52.87, 33.38). Use the cleansing bowl near the bonfire. Kill Xabraxxis when he spawns.| |U|12347| |QID|4763|
-C Tharnariun's Hope |N|To south between the two camps, up the hill is a cave (51.55, 37.50). Kill the adds, run away and reset the Den Mother.  Return and kill her.| |QID|2139|
+C Tharnariun's Hope |N|To south between the two camps, up the hill is a cave (51.55, 37.50). Kill the adds, run away and reset the Den Mother. Return and kill her.| |QID|2139|
 T The Tower of Althalaxx (Part 1) |QID|965| |N|Go north, over the river until you are at the road to ruins. the NPC is next to two rocks (55.00, 24.89).|
 A The Tower of Althalaxx (Part 2) |QID|966|
 C The Tower of Althalaxx (Part 2) |QID|966| |N|Mobs around the tower, not inside|
 T The Tower of Althalaxx (Part 2) |QID|966|
 A The Tower of Althalaxx (Part 3) |QID|967|
 A Beached Sea Turtle (Part 3) |N|To the northwest on the shore (53.15, 18.13)| |QID|4727|
-C Fruit of the Sea |QID|1138| |N|Kill Encrusted Tide Crawlers between here and the river to the west, or Reef Crawlers west of the river.  DOES NOT DROP from Raging Reef Crawlers to the north.|
+C Fruit of the Sea |QID|1138| |N|Kill Encrusted Tide Crawlers between here and the river to the west, or Reef Crawlers west of the river. DOES NOT DROP from Raging Reef Crawlers to the north.|
 
 H Auberdine
 T Beached Sea Turtle (Part 3) |QID|4727|

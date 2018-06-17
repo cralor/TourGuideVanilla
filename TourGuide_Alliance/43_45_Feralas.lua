@@ -1,7 +1,7 @@
 
 TourGuide:RegisterGuide("Feralas (43-45)", "The Hinterlands (46-47)", "Alliance", function()
 return [[
-R Feathermoon Stronghold |QID|4124| |N|Fly to Desolace and run southwest into Feralas (43,98).  Follow the road until the path down to the docks.  Take the boat if it's there, or swim due west.| |Z|Desolace|
+R Feathermoon Stronghold |QID|4124| |N|Fly to Desolace and run southwest into Feralas (43,98). Follow the road until the path down to the docks. Take the boat if it's there, or swim due west.| |Z|Desolace|
 
 A The Mark of Quality |QID|2821|
 h Feathermoon Stronghold |QID|4266|
@@ -21,14 +21,14 @@ A Against the Hatecrest (Part 2) |QID|2869|
 C Against the Hatecrest (Part 2) |N|Kill naga back at the ruins| |QID|2869|
 T Against the Hatecrest (Part 2) |QID|2869|
 A Against Lord Shalzaru |QID|2870|
-C Against Lord Shalzaru |N|South thru the ruins, across the water, in a cave (26,67).  He is level 47, so he might be hard to solo.| |QID|2870|
+C Against Lord Shalzaru |N|South thru the ruins, across the water, in a cave (26,67). He is level 47, so he might be hard to solo.| |QID|2870|
 
 R Feathermoon Stronghold |N|Or die and rez there| |QID|2871|
 T Against Lord Shalzaru |QID|2870|
 A Delivering the Relic |QID|2871|
 T Delivering the Relic |QID|2871|
 
-C Screecher Spirits |N|Back on the main shore, avoid elementals and giants while killing Rogue Vale Screechers.  Use Yeh'Kinya's Bramble on their corpses and talk to the spirits.  Work your way south.| |U|10699| |QID|3520|
+C Screecher Spirits |N|Back on the main shore, avoid elementals and giants while killing Rogue Vale Screechers. Use Yeh'Kinya's Bramble on their corpses and talk to the spirits. Work your way south.| |U|10699| |QID|3520|
 T The Missing Courier (Part 2) |N|Find the boat wreckage to the south (45.53, 64.98)| |QID|4125|
 A Boat Wreckage |QID|4127|
 
@@ -41,8 +41,8 @@ A The Woodpaw Gnolls |QID|4131|
 
 A Find OOX-22/FE! |O| |U|8705| |QID|2766|
 C The Mark of Quality |N|Back on mainland, follow the road to the yeti cave (56,56).| |QID|2821|
-T Find OOX-22/FE! |O| |N|At the back of the yeti cave.  Don't accept the escort!| |QID|2766|
-C The High Wilderness |N|Shamans are to the south at the temple (59,73).  Brutes at Ruins of Isildien (62,54).  If you have issues finding warlocks, you should be shot.| |QID|2982|
+T Find OOX-22/FE! |O| |N|At the back of the yeti cave. Don't accept the escort!| |QID|2766|
+C The High Wilderness |N|Shamans are to the south at the temple (59,73). Brutes at Ruins of Isildien (62,54). If you have issues finding warlocks, you should be shot.| |QID|2982|
 A Freedom for All Creatures |N|Clear around the cage in the camp, then head up the path behind the camp (65.63, 46.76)| |QID|2969|
 C Freedom for All Creatures |N|Lead Kindal Moonweaver down to the cage, open it, and protect the Sprite Darters as they escape.| |QID|2969|
 T Freedom for All Creatures |QID|2969|
@@ -53,7 +53,7 @@ A Doling Justice (Part 2) |QID|2972|
 
 T The Woodpaw Gnolls |N|Look for a backpack hanging on a tree in one of the gnoll camps (73,56)| |QID|4131|
 A The Writhing Deep |QID|4135|
-T The Writhing Deep |N|In the hive to the south (73,63).  At the bottom, take the southern tunnel and stay right.  Turnin at the Zukk'Ash Pod| |QID|4135|
+T The Writhing Deep |N|In the hive to the south (73,63). At the bottom, take the southern tunnel and stay right. Turnin at the Zukk'Ash Pod| |QID|4135|
 A Freed from the Hive |QID|4265|
 
 H Feathermoon Stronghold |QID|4266|

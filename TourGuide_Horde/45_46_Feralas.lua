@@ -16,7 +16,7 @@ A Return to Witch Doctor Uzer'i |QID|3122|
 C War on the Woodpaw |N|North of Camp Mojache (71,37)| |QID|2862|
 C Gordunni Cobalt |N|North of Camp Mojache, up the path by the waterfall (75,31)| |U|9466| |QID|2987|
 C The Ogres of Feralas (Part 1) |QID|2975|
-A The Gordunni Scroll |N|From the scrolls lying around.  THey don't sparkle so they may be hard to find.| |U|9370| |QID|2978|
+A The Gordunni Scroll |N|From the scrolls lying around. THey don't sparkle so they may be hard to find.| |U|9370| |QID|2978|
 
 T Gordunni Cobalt |T| |QID|2987|
 T The Ogres of Feralas (Part 1) |T| |QID|2975|
@@ -90,7 +90,7 @@ A Service to the Horde |QID|7541| |T|
 T Service to the Horde |QID|7541| |T|
 T The Gordunni Orb |Z|Orgrimmar| |QID|3002| |T|
 
-A A Donation of Silk (Darkspear Trolls) |QID|7834| |T| |N|Easy exp, but prices may be bad on your server.  Skip these quests if the prices suck.|
+A A Donation of Silk (Darkspear Trolls) |QID|7834| |T| |N|Easy exp, but prices may be bad on your server. Skip these quests if the prices suck.|
 T A Donation of Silk (Darkspear Trolls) |QID|7834| |T|
 A A Donation of Mageweave (Darkspear Trolls) |QID|7835| |T|
 T A Donation of Mageweave (Darkspear Trolls) |QID|7835| |T|

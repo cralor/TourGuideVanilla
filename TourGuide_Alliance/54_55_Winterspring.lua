@@ -24,7 +24,7 @@ A Are We There, Yeti? (Part 1) |QID|3783|
 C Strange Sources |N|Follow the road far to the south (60.12,73.44)| |QID|4842|
 
 H Everlook |QID|977|
-C Are We There, Yeti? (Part 1) |N|Just southeast of town.  Kill yeti outside the cave.| |QID|3783|
+C Are We There, Yeti? (Part 1) |N|Just southeast of town. Kill yeti outside the cave.| |QID|3783|
 T Are We There, Yeti? (Part 1) |N|Back in Everlook| |QID|3783|
 A Are We There, Yeti? (Part 2) |QID|977|
 C Are We There, Yeti? (Part 2) |N|Back in the yeti cave (67,42)| |QID|977|
@@ -58,7 +58,7 @@ T Mystery Goo |N|Back in Winterspring. Skip the follow-up.| |QID|5085|
 F Rut'theran Village |QID|6762|
 T Moontouched Wildkin |N|Skip the follow-up| |QID|978|
 
-A The New Frontier (Part 1) |QID|1047| |N|From Herald Moonstalker in Darnassus, she wanders in a figure eight around town and across the bridge.  From the bank run north and around coming back across the bridge, then south and around until you find her.  She also walks behind the bank!|
+A The New Frontier (Part 1) |QID|1047| |N|From Herald Moonstalker in Darnassus, she wanders in a figure eight around town and across the bridge. From the bank run north and around coming back across the bridge, then south and around until you find her. She also walks behind the bank!|
 T The New Frontier (Part 1) |QID|1047|
 A The New Frontier (Part 2) |QID|6761|
 T The New Frontier (Part 2) |QID|6761|

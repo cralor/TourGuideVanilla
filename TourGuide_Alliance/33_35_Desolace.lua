@@ -3,7 +3,7 @@ TourGuide:RegisterGuide("Desolace (33-34)", "Stranglethorn Vale (36-37)", "Allia
 return [[
 N This might be a good guide to skip |N|It's quite a bit out of the way, and there is a lot of running around the zone.|
 F Astranaar |N|Take the boat to Theramore Isle and fly up| |QID|1453|
-R Nijel's Point |N|From Astranaar run south thru the Talondeep Path, southwest thru Windshear Crag to the road, northwest along the road to Mirkfallon Lake, then southwest thru the Charred Veil into Desolace.  Nijel's Point is along the northern edge of Desolace (64,10).| |QID|1453|
+R Nijel's Point |N|From Astranaar run south thru the Talondeep Path, southwest thru Windshear Crag to the road, northwest along the road to Mirkfallon Lake, then southwest thru the Charred Veil into Desolace. Nijel's Point is along the northern edge of Desolace (64,10).| |QID|1453|
 A Vahlarriel's Search (Part 1) |T| |QID|1437|
 A Centaur Bounty |T| |QID|1387|
 T Reclaimers' Business in Desolace |T| |QID|1453|
@@ -34,7 +34,7 @@ T Vahlarriel's Search (Part 3) |N|Turn this in to Dalinda Malem in the main buil
 A Search for Tyranis |QID|1439|
 C Sceptre of Light |N|Kill the Burning Blade Seer at the top of the watchtower just outside (55.23, 30.13)| |QID|5741|
 C Search for Tyranis |N|Found inside the building west (53.0,29.0)| |QID|1439|
-T Search for Tyranis |N|Back in the other building.  Follow-up is an escort so be ready.| |QID|1439|
+T Search for Tyranis |N|Back in the other building. Follow-up is an escort so be ready.| |QID|1439|
 A Return to Vahlarriel |N|Dalinda may ignore mobs, so don't attack anything unless she attacks or is attacked| |QID|1440|
 C Return to Vahlarriel |N|Dalinda may ignore mobs, so don't attack anything unless she attacks or is attacked| |QID|1440|
 

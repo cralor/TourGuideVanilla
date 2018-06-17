@@ -22,7 +22,7 @@ local function ShowTooltip()
 	if TourGuide.db.char.completion[f.guide] ~= 1 then return end
 
 	GameTooltip:SetOwner(f, "ANCHOR_RIGHT")
-	GameTooltip:SetText("This guide has been completed.  Shift-click to reset it.", nil, nil, nil, nil, true)
+	GameTooltip:SetText("This guide has been completed. Shift-click to reset it.", nil, nil, nil, nil, true)
 end
 
 local function OnClick()

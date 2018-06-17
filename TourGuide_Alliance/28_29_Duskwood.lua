@@ -9,7 +9,7 @@ A The Missing Diplomat (Part 3) |T| |QID|1242|
 T The Missing Diplomat (Part 3) |T| |N|In the cheese shop in the Trade District (60.09, 64.45)| |Z|Stormwind City| |QID|1242|
 A The Missing Diplomat (Part 4) |T| |QID|1243|
 
-B [Bronze Tube] |N|Engineering vendor sells this sometimes, but auction or an engineer are your best bets.  Needed for "Look To The Stars".| |L|4371| |QID|174|
+B [Bronze Tube] |N|Engineering vendor sells this sometimes, but auction or an engineer are your best bets. Needed for "Look To The Stars".| |L|4371| |QID|174|
 
 R Darkshire |N|Usually faster to fly to Redridge and take the road southwest| |QID|66|
 T The Missing Diplomat (Part 4) |N|North of Darkshire walking along the road| |QID|1243|
@@ -90,7 +90,7 @@ T Deliver the Thread |N|Shack north of the cemetery| |QID|157|
 A Zombie Juice |QID|158|
 
 C The Night Watch (Part 3) |N|Down in the Dawning Wood Catacombs (23.5, 35.4)| |QID|58|
-C The Totem of Infliction |N|Ghoul fangs only seem to drop in the catacombs.  If you don't get enough venom in the cemetery, kill Black Widow Hatchlings on the ridge east of the cemetery (32,38).| |QID|101|
+C The Totem of Infliction |N|Ghoul fangs only seem to drop in the catacombs. If you don't get enough venom in the cemetery, kill Black Widow Hatchlings on the ridge east of the cemetery (32,38).| |QID|101|
 
 T Sven's Camp |N|Camp to the west (8,34)| |QID|230|
 A The Shadowy Figure |QID|262|

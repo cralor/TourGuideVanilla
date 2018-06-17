@@ -14,7 +14,7 @@ f Grab flight point |N|Up in Morgan's Vigil (83,63)| |QID|3823|
 A Extinguish the Firegut |QID|3823|
 A FIFTY! YEP! |QID|4283|
 
-C Extinguish the Firegut |N|Kill ogres down at the mountain (82,54).  Most of the mages can be found in the cave on the northern face (83,39)| |QID|3823|
+C Extinguish the Firegut |N|Kill ogres down at the mountain (82,54). Most of the mages can be found in the cave on the northern face (83,39)| |QID|3823|
 T Extinguish the Firegut |QID|3823|
 A Gor'tesh the Brute Lord |QID|3824|
 
@@ -27,7 +27,7 @@ C The Smoldering Ruins of Thaurissan (Part 2) |N|Poke the relics around this are
 C Gor'tesh the Brute Lord |N|At Pillar of Ash (40,55)| |QID|3824|
 C FIFTY! YEP! |N|Kill orcs at Blackrock Stronghold (43,36) or Pillar of Ash (49,55)| |QID|4283|
 
-C Broodling Essence |N|Dragons to the northeast.  Use the device on them, then kill them. Get help if you can.| |U|12284| |QID|4726|
+C Broodling Essence |N|Dragons to the northeast. Use the device on them, then kill them. Get help if you can.| |U|12284| |QID|4726|
 
 A A Taste of Flame |N|In the cave at Slither Rock (94,31)| |QID|4024|
 T A Taste of Flame |N|Skip the follow-up| |QID|4024|

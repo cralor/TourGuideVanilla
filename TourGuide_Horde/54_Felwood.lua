@@ -3,7 +3,7 @@ TourGuide:RegisterGuide("Felwood (54)", "Winterspring (54-55)", "Horde", functio
 return [[
 F Splintertree Post
 
-R Felwood |N|Head west out of town.  At the fork near the retreat head north out of the zone (55.75, 29.50)| |Z|Ashenvale|
+R Felwood |N|Head west out of town. At the fork near the retreat head north out of the zone (55.75, 29.50)| |Z|Ashenvale|
 
 R Emerald Sanctuary |N|Just ahead, north of the road (51,81)|
 A Forces of Jaedenar |QID|5155|

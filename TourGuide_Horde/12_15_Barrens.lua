@@ -58,7 +58,7 @@ A Miner's Fortune |QID|896| |T|
 T Chen's Empty Keg |O| |QID|819| |T|
 A Chen's Empty Keg |U|4926| |O| |QID|821| |T|
 A The Guns of Northwatch |QID|891| |T|
-C Southsea Freebooters |QID|887| |N|South along the Merchant Coast.  Keep an eye out for Baron Longshore at the camps.|
+C Southsea Freebooters |QID|887| |N|South along the Merchant Coast. Keep an eye out for Baron Longshore at the camps.|
 C WANTED: Baron Longshore |QID|895| |N|If you haven't found him by now, work your way north checking each camp.|
 
 T Southsea Freebooters |QID|887| |N|Back at Ratchet (62.67, 36.29)| |T|

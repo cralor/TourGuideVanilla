@@ -85,7 +85,7 @@ A Note to William |QID|107|
 T Back to Billy |QID|84|
 A Goldtooth |QID|87|
 
-C Goldtooth |N|Deep inside the Fargodeep Mine (41.60, 77.90).  Take the upper entrance to the mine then head left in the first room.| |QID|87|
+C Goldtooth |N|Deep inside the Fargodeep Mine (41.60, 77.90). Take the upper entrance to the mine then head left in the first room.| |QID|87|
 C Gold Dust Exchange |QID|47|
 C Kobold Candles |QID|60|
 C The Fargodeep Mine |QID|62|
@@ -112,11 +112,11 @@ A Red Linen Goods |N|To the northeast at Eastvale Logging Camp (79.5, 68.7)| |QI
 A A Bundle of Trouble |QID|5545|
 
 N Kill any bears you find
-C The Jasperlode Mine |N|To the northwest (60.5, 50.1).  You only need to run in halfway or so, then hightail it out!| |QID|76|
+C The Jasperlode Mine |N|To the northwest (60.5, 50.1). You only need to run in halfway or so, then hightail it out!| |QID|76|
 
 T Find the Lost Guards |N|Northwest on the southren shore of Stone Cairn Lake (72.7, 60.3)| |QID|37|
 A Discover Rolf's Fate |QID|45|
-T Discover Rolf's Fate |N|On the east shore of Stone Cairn Lake in the middle of a murloc village (79.8, 55.6).  Approach from the east for best results.| |QID|45|
+T Discover Rolf's Fate |N|On the east shore of Stone Cairn Lake in the middle of a murloc village (79.8, 55.6). Approach from the east for best results.| |QID|45|
 A Report to Thomas |QID|71|
 
 C A Bundle of Trouble |N|North of the camp| |QID|5545|
@@ -166,7 +166,7 @@ A Continue to Stormwind |R|Human| |QID|6281|
 
 F Stormwind City
 T Shipment to Stormwind |N|In the Trade District (56,64)| |Z|Stormwind City| |QID|61|
-A Wine Shop Advert |N|In front of the Apothecary.  He won't have a '!' because this is a "Low Level" quest... but hey, free EXP| |QID|332|
+A Wine Shop Advert |N|In front of the Apothecary. He won't have a '!' because this is a "Low Level" quest... but hey, free EXP| |QID|332|
 A Harlan Needs a Resupply |N|North of Weller's Arsenal (55.10, 56.22)| |Z|Stormwind City| |QID|333|
 h Stormwind City
 T Wine Shop Advert |N|Outside the Trade District along the Canals (52.41, 67.65)| |Z|Stormwind City| |QID|332|
@@ -272,5 +272,5 @@ T In Defense of the King's Lands |QID|263|
 T The Trogg Threat |QID|267|
 T Stormpike's Delivery |N|Follow the road north to Algaz Station (24.7, 18.3)| |Z|Loch Modan| |QID|353|
 
-R Darkshore |N|Follow the road to the Wetlands, then west to Menethil Harbor.  Take the north boat to Auberdine.  Don't forget to get the flight point in Menethil Harbor.  Fun trick: if you die, run all the way to the boat as a ghost, you can spirit heal on the other side.  Gravyard is northeast of Auberdine (41.91, 36.45)| |Z|Darkshore|
+R Darkshore |N|Follow the road to the Wetlands, then west to Menethil Harbor. Take the north boat to Auberdine. Don't forget to get the flight point in Menethil Harbor. Fun trick: if you die, run all the way to the boat as a ghost, you can spirit heal on the other side. Gravyard is northeast of Auberdine (41.91, 36.45)| |Z|Darkshore|
 ]]

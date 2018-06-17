@@ -50,7 +50,7 @@ C Beginnings |N|(27.5,80)| |C|Warlock| |QID|1599|
 T Beginnings |C|Warlock| |QID|1599|
 
 T Bring Back the Mug |QID|3365|
-C A Refugee's Quandary |N|At the troll camps to the southwest.  Bucket (26.3, 79.3), Chest (22.8, 78), Box (20.9, 76.1)| |QID|3361|
+C A Refugee's Quandary |N|At the troll camps to the southwest. Bucket (26.3, 79.3), Chest (22.8, 78), Box (20.9, 76.1)| |QID|3361|
 C The Troll Cave |QID|182|
 T The Troll Cave |QID|182|
 A The Stolen Journal |QID|218|

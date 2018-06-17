@@ -43,8 +43,8 @@ A Sceptre of Light |N|From Azore Aldamort on the hill (38.9, 27.1)| |QID|5741|
 
 C The Burning of Spirits |QID|1435| |U|6436|
 C Sceptre of Light |QID|5741| |N|At the top of the tower (55.25, 30.16).| |U|6436|
-C Hand of Iruxos |QID|5381| |N|At Thunder Axe Fortress in the eastern building (55.01, 26.67).  Use the pick on the red crystal, kill the demon.| |U|6436|
-A The Corrupter (Part 1) |QID|1480| |U|20310| |N|From the [Flayed Demon Skin] that dropped.  If you didn't get one, kill more cultists.|
+C Hand of Iruxos |QID|5381| |N|At Thunder Axe Fortress in the eastern building (55.01, 26.67). Use the pick on the red crystal, kill the demon.| |U|6436|
+A The Corrupter (Part 1) |QID|1480| |U|20310| |N|From the [Flayed Demon Skin] that dropped. If you didn't get one, kill more cultists.|
 
 T The Burning of Spirits |QID|1435| |N|Back at Ghost Walker Post (52.22, 53.49)|
 T The Corrupter (Part 1) |QID|1480|
@@ -66,8 +66,8 @@ C Claim Rackmore's Treasure! |N|Kill Drysnap Pincers and Crawlers for the silver
 C Book of the Ancients |QID|6027| |N|Clear the area around the statue (28.31, 6.46), then talk to it and kill the naga that spawns.|
 T Claim Rackmore's Treasure! |QID|6161| |N|Behind a tree on Ranazjar Isle (30.10, 8.70).|
 C The Corrupter (Part 3) |QID|1482| |N|Kill Slitherblade Oracles for the crystal.|
-C Other Fish to Fry |QID|6143| |N|Myrmidon and SorceressesAre mostly near the island and between it and the shore.  Naga are mostly near the shore.|
-C Clam Bait |QID|6142|  |N|Collect clam meat from the clams on the sea floor.|
+C Other Fish to Fry |QID|6143| |N|Myrmidon and SorceressesAre mostly near the island and between it and the shore. Naga are mostly near the shore.|
+C Clam Bait |QID|6142| |N|Collect clam meat from the clams on the sea floor.|
 
 T Book of the Ancients |QID|6027| |N|Back at Ethel Rethor (38.89, 27.25)|
 

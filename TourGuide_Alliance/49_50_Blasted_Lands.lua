@@ -1,10 +1,10 @@
 
 TourGuide:RegisterGuide("Blasted Lands (49-50)", "Searing Gorge (50-51)", "Alliance", function()
 return [[
-N Do you want to grind? |N|This Blasted Lands guide may appear short, but it is a BUNCH of grinding.  If you do not want to do this, skip ahead to "Searing Gorge (50-51)."|
+N Do you want to grind? |N|This Blasted Lands guide may appear short, but it is a BUNCH of grinding. If you do not want to do this, skip ahead to "Searing Gorge (50-51)."|
 
 F Darkshire |QID|624|
-T Cortello's Riddle (Part 1) |O| |N|Run east into Swamp of Sorrows.  Under a bridge on the left fork of the road (22.6,48.0)| |Z|Swamp of Sorrows| |QID|624|
+T Cortello's Riddle (Part 1) |O| |N|Run east into Swamp of Sorrows. Under a bridge on the left fork of the road (22.6,48.0)| |Z|Swamp of Sorrows| |QID|624|
 
 R Blasted Lands |N|Run east into Swamp of Sorrows, then south.| |QID|2990|
 
@@ -32,7 +32,7 @@ T Snickerfang Jowls |QID|2581|
 T A Boar's Vitality |QID|2583|
 T The Decisive Striker |QID|2585|
 
-T Thadius Grimshade |N|In the tower in Nethergarde Keep (67.0,19.4).  Skip the follow-up.| |QID|2990|
+T Thadius Grimshade |N|In the tower in Nethergarde Keep (67.0,19.4). Skip the follow-up.| |QID|2990|
 ]]
 
 end)

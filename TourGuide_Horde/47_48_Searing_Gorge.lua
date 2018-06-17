@@ -1,6 +1,6 @@
 TourGuide:RegisterGuide("Searing Gorge (47-48)", "Swamp of Sorrows (48-49)", "Horde", function()
 return [[
-N Before you leave...  |N|Make sure you have a stack of Silk Cloth|
+N Before you leave... |N|Make sure you have a stack of Silk Cloth|
 F Kargath
 R Searing Gorge |N|West!|
 A Caught! |N|Guy in the outhouse southeast of map (65,62)| |QID|4449|
@@ -29,7 +29,7 @@ A Forging the Shaft |QID|3443|
 A The Key to Freedom |O| |U|11818| |QID|4451|
 T The Key to Freedom |O| |N|Back at the outhouse!| |QID|4451|
 
-C JOB OPPORTUNITY: Culling the Competition |N|Head down into the cauldren.  Enter the second cave from the west end (41,54).  Keep working your way towards the exit.| |QID|7729|
+C JOB OPPORTUNITY: Culling the Competition |N|Head down into the cauldren. Enter the second cave from the west end (41,54). Keep working your way towards the exit.| |QID|7729|
 C Forging the Shaft |QID|3443|
 C Incendosaurs? Whateverosaur is More Like It |N|Jump down after the bridge over the lava, you'll find dino in the big room to the north (51,36) Grind here for a while if you want.| |QID|7727|
 

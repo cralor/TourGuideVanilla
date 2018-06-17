@@ -32,12 +32,12 @@ A Reassignment |QID|563|
 N Kill turtles |N|All along the creek. Need [Turtle Meat] x10 for "Soothing Turtle Bisque"| |L|3712 10| |QID|555|
 C Missing Crystals |N|Tower north of Southshore (55.4,35)| |QID|9435|
 
-A Encrypted Letter |N|Take the road north from the tower to the edge of the Alterac Mountains, then east.  Examine documents on the table in the camp to the east (58,67)| |Z|Alterac Mountains| |QID|511|
+A Encrypted Letter |N|Take the road north from the tower to the edge of the Alterac Mountains, then east. Examine documents on the table in the camp to the east (58,67)| |Z|Alterac Mountains| |QID|511|
 A Foreboding Plans |N|Examine documents on the table in the camp| |QID|510|
 C Syndicate Assassins |N|On this plateau and the next one to the west| |QID|505|
 C Costly Menace |N|West on another plateau (46,81)| |Z|Alterac Mountains| |QID|564|
 
-N Kill yetis |N|In the yeti cave (45.58, 31.40).  Need [Yeti Fur] x10 for "Bartolo's Yeti Fur Cloak".| |L|3720 10| |QID|565|
+N Kill yetis |N|In the yeti cave (45.58, 31.40). Need [Yeti Fur] x10 for "Bartolo's Yeti Fur Cloak".| |L|3720 10| |QID|565|
 
 T Encrypted Letter |QID|511|
 A Letter to Stormpike |QID|514|
@@ -62,12 +62,12 @@ A In Search of Menara Voidrender |N|In The Forlorn Cavern (50.2, 6.2)| |C|Warloc
 F Stormwind City |QID|293|
 T Reassignment |Z|Stormwind City| |N|In Stormwind Keep (73.7, 17.6)| |QID|563|
 T Cleansing the Eye |Z|Stormwind City| |N|In Stormwind Cathedral (39,27)| |QID|293|
-A Brother Anton |N|Downstairs in Stormwind Cathedral.  Requires level 24, skip it if you can't get it.| |QID|6141|
-B Hillman's Cloak |QID|565| |L|3719| |N|Buy from auction or a leatherworker.  If you can't find one, skip buying the other items and the quest "Bartolo's Yeti Fur Cloak".|
+A Brother Anton |N|Downstairs in Stormwind Cathedral. Requires level 24, skip it if you can't get it.| |QID|6141|
+B Hillman's Cloak |QID|565| |L|3719| |N|Buy from auction or a leatherworker. If you can't find one, skip buying the other items and the quest "Bartolo's Yeti Fur Cloak".|
 B Bolt of Woolen Cloth |QID|565| |L|2997| |N|Buy from auction or a tailor.|
 
 H Southshore |QID|525|
-B Fine Thread |L|2321| |N|From vendor in Southshore (49.0, 55.1).  Skip if you couldn't find a Hillman's Cloak.| |QID|565|
+B Fine Thread |L|2321| |N|From vendor in Southshore (49.0, 55.1). Skip if you couldn't find a Hillman's Cloak.| |QID|565|
 T Bartolo's Yeti Fur Cloak |QID|565|
 T Further Mysteries |N|Skip the follow-up| |QID|525|
 

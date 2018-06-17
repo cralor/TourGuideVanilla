@@ -41,7 +41,7 @@ T Ormer's Revenge (Part 1) |QID|294|
 A Ormer's Revenge (Part 2) |QID|295|
 A Uncovering the Past |QID|299|
 N Keep an eye out for relics |QID|299|
-C Uncovering the Past |QID|299| |N|If you can't find the Neru Fragment (loose dirt), check the tree near the ramp up to the questgiver.  If you can't find the Modr Fragment (tall vase), check up on the ledge to the west-southwest side of the dig.|
+C Uncovering the Past |QID|299| |N|If you can't find the Neru Fragment (loose dirt), check the tree near the ramp up to the questgiver. If you can't find the Modr Fragment (tall vase), check up on the ledge to the west-southwest side of the dig.|
 C Ormer's Revenge (Part 2) |QID|295|
 T Ormer's Revenge (Part 2) |QID|295|
 A Ormer's Revenge (Part 3) |QID|296|
@@ -74,7 +74,7 @@ T War Banners |N|In the keep| |T| |QID|464|
 A Nek'rosh's Gambit |T| |QID|465|
 T In Search of The Excavation Team (Part 2) |NODEBUG| |N|On your way out of town| |QID|306|
 
-N Kill stealth elementals... |QID|275| |N|Kill any Fen Creepers you come across for "Blisters on The Land".  They stealth and follow the shallow waters in the west half of the zone.|
+N Kill stealth elementals... |QID|275| |N|Kill any Fen Creepers you come across for "Blisters on The Land". They stealth and follow the shallow waters in the west half of the zone.|
 
 T Reclaiming Goods |N|Damaged Crate at the murloc camp north of Menethil Harbor (13.51, 41.37)| |QID|281|
 A The Search Continues |QID|284|
@@ -83,8 +83,8 @@ A Search More Hovels |QID|285|
 T Search More Hovels |N|Half-buried Barrel at the next murloc camp to the north| |QID|285|
 A Return the Statuette |QID|286|
 
-C The Cursed Crew |N|On the southern shipwreck (13,30).  Snellig is in the bottom of the ship, you can enter thru a hole on the side nearest the shore.| |QID|289|
-C Apprentice's Duties |N|North of the murloc camps and east of Menethil Harbor (19,59) (25,22).  Kill giant crocs near the shore, normal ones don't drop the item.| |QID|471|
+C The Cursed Crew |N|On the southern shipwreck (13,30). Snellig is in the bottom of the ship, you can enter thru a hole on the side nearest the shore.| |QID|289|
+C Apprentice's Duties |N|North of the murloc camps and east of Menethil Harbor (19,59) (25,22). Kill giant crocs near the shore, normal ones don't drop the item.| |QID|471|
 C Blisters on The Land |N|Just run around in the water, they stealth.| |NODEBUG| |QID|275|
 C Digging Through the Ooze |N|Around Ironbeard's Tomb (44,25)| |QID|470|
 

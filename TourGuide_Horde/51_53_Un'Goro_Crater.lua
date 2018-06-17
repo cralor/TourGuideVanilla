@@ -2,7 +2,7 @@
 TourGuide:RegisterGuide( "Un'Goro Crater (51-53)", "Burning Steppes (53-54)", "Horde", function()
 return [[
 R Un'Goro Crater |N|Southewest corner of the zone (26,52)| |Z|Tanaris|
-N Look for loot... |N|There are many loot nodes scattered across this zone.  You'll need 7 of each color of power crystals.  Also loot any dirt piles or sprouts you find.|
+N Look for loot... |N|There are many loot nodes scattered across this zone. You'll need 7 of each color of power crystals. Also loot any dirt piles or sprouts you find.|
 
 A The Apes of Un'Goro |N|Tauren on the hill to the left of the ramp from Tanaris (69,77)|
 A The Fare of Lar'korwi
@@ -44,29 +44,29 @@ A The Western Pylon
 
 N Kill stuff... |N|Kill any bloodpetals, diametradons, and pterrordaxes you come across|
 
-C The Northern Pylon |N|Along the north edge of the zone to the east (56.46, 12.48).  Kill pterrordaxes here.|
-T Chasing A-Me 01 |N|East in the gorilla cave (63,17).  Skip the follow-up.|
+C The Northern Pylon |N|Along the north edge of the zone to the east (56.46, 12.48). Kill pterrordaxes here.|
+T Chasing A-Me 01 |N|East in the gorilla cave (63,17). Skip the follow-up.|
 C The Apes of Un'Goro
 C Super Sticky |N|At the tarpits in the north half of the zone|
 N Find [Crate of Foodstuffs] |N|At the abandoned camp in the east side of the zone (68.52, 36.59)| |L|11113|
-C Larion and Muigin |N|Kill lasher around the camp area.  Also kill any diemetradons or pterrordaxes you come across|
+C Larion and Muigin |N|Kill lasher around the camp area. Also kill any diemetradons or pterrordaxes you come across|
 C The Eastern Pylon |N|To the east, of course (76,51)|
 C The Bait for Lar'korwi |N|Use the meat and mixture at the flat rock behind the east pylon (79.9, 49.9)| |U|11568|
 T The Bait for Lar'korwi
 T The Apes of Un'Goro |N|Skip the follow-up|
 
-C Alien Ecology |N|Down in the Slithering Scar (50,77).  Head left inside to the big room (48.62, 85.33), use the vial| |U|11132|
+C Alien Ecology |N|Down in the Slithering Scar (50,77). Head left inside to the big room (48.62, 85.33), use the vial| |U|11132|
 N Kill bugs for [Gorishi Scent Gland] |L|11837|
 C Expedition Salvation |N|At the other camp (38.5, 66.0)|
 C The Western Pylon |N|(23,59)|
 A Finding the Source |N|From a goblin near the hot springs (30.9, 50.4)|
 C Bone-Bladed Weapons
 
-C Roll the Bones |N|Scattered all over the west half of the zone and drop from diemetradons.  Kill pterrordaxes over here too.|
-C Beware of Pterrordax |N|You can find the Frenzied Pterrordaxes all over the west half of the zone, more towards the northwest part.  Normal Pterrordaxes are in the south half of the zone, and a few near the North pylon.|
+C Roll the Bones |N|Scattered all over the west half of the zone and drop from diemetradons. Kill pterrordaxes over here too.|
+C Beware of Pterrordax |N|You can find the Frenzied Pterrordaxes all over the west half of the zone, more towards the northwest part. Normal Pterrordaxes are in the south half of the zone, and a few near the North pylon.|
 C Shizzle's Flyer |N|Kill diemetradons and pterrordaxes, all over the zone.|
 
-C Finding the Source |N|At the volcano in the center of the zone.  Use the thermometer at "Hot Spots" until you complete the quest.| |U|12472|
+C Finding the Source |N|At the volcano in the center of the zone. Use the thermometer at "Hot Spots" until you complete the quest.| |U|12472|
 C Volcanic Activity |N|Kill elementals, mainly around the cave on the south side of the volcano.|
 T Lost! |N|In the cave on the south side of the volcano (51,49)|
 A A Little Help From My Friends |NODEBUG|

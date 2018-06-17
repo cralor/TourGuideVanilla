@@ -1,7 +1,7 @@
 TourGuide:RegisterGuide("Loch Modan (17-18)", "Redridge Mountains (18-20)", "Alliance", function()
 return [[
 F Loch Modan |N|Boat to Stormwind, then fly there!| |R|Dwarf, Gnome|
-R Loch Modan |N|Boat to Stormwind, take the tram to IF, then run to Loch.  Make sure you grab flight points along the way.| |R|Human, Night Elf, Draenei|
+R Loch Modan |N|Boat to Stormwind, take the tram to IF, then run to Loch. Make sure you grab flight points along the way.| |R|Human, Night Elf, Draenei|
 R Algaz Station |N|In the north of Loch Modan.|
 
 A Filthy Paws |N|Upstairs, inside the tower| |QID|307|

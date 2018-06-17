@@ -27,7 +27,7 @@ T Selling Fish |QID|127|
 T A Free Lunch |N|Return to the guard at Three Corners, South of Lakeshire| |QID|129|
 A Visit the Herbalist |QID|130|
 
-K Spiders |N|Around the Three Corners.  Need [Crisp Spider Meat] x5 for "Redridge Goulash"| |L|1081 5|
+K Spiders |N|Around the Three Corners. Need [Crisp Spider Meat] x5 for "Redridge Goulash"| |L|1081 5|
 C Assessing the Threat |QID|246|
 C Redridge Goulash |N|Condors are east from the gnoll camps| |L|1080 5| |QID|92|
 
@@ -64,6 +64,6 @@ A Devourer of Souls |N|Mage Quarter in Stormwind| |C|Warlock| |QID|1716|
 b Theramore Isle |N|Fly to Menethil Harbor, take the boat on the south dock| |C|Warlock|
 T Devourer of Souls |N|Follow the road west into the Barrens, then north (49.3, 57.1) | |C|Warlock| |Z|The Barrens| |QID|1716|
 A Heartswood |C|Warlock| |QID|1738|
-f Get the Ratchet flightpoint |N|You'll need it later.  Take the road north, then east before the Crossroads (62,37)| |C|Warlock| |Z|The Barrens|
+f Get the Ratchet flightpoint |N|You'll need it later. Take the road north, then east before the Crossroads (62,37)| |C|Warlock| |Z|The Barrens|
 ]]
 end)
