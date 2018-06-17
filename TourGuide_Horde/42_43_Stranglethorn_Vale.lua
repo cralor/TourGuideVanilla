@@ -1,8 +1,9 @@
-TourGuide:RegisterGuide("Stranglethorn Vale (42-43)", "Dustwallow Marsh (43-44)", "Horde", function()
+TourGuide:RegisterGuide("Stranglethorn Vale (42-43)", "Desolace (43)", "Horde", function()
 return [[
 F Booty Bay
+A The Bloodsail Buccaneers (Part 4) |T| |QID|604|
+A Skullsplitter Tusks |T| |QID|209|
 T Dream Dust in the Swamp |T| |QID|1116|
-A Tran'rek |T| |QID|2864|
 A Rumors for Kravel |T| |QID|1117|
 A Up to Snuff |T| |QID|587|
 h Booty Bay |T|
@@ -10,7 +11,6 @@ A Venture Company Mining |T| |QID|600|
 A Zanzil's Secret |T| |QID|621|
 A Akiris by the Bundle |T| |QID|617|
 A Voodoo Dues |T| |QID|609|
-A Stoley's Debt |T| |QID|2872|
 A Keep An Eye Out |T| |QID|576|
 
 C The Bloodsail Buccaneers (Part 4) |N|Along the southern shore of Stranglethorn Vale (31,80)| |QID|604|
@@ -20,26 +20,34 @@ C Keep An Eye Out |N|If you have not found this yet Brutus on the single ship ha
 C Akiris by the Bundle |N|Off the Naga at Nek'mani Wellspring (25,63)| |QID|617|
 C Mok'thardin's Enchantment (Part 4) |QID|573|
 
-C Raptor Mastery (Part 4) |QID|197|
+C Raptor Mastery (Part 4) |N|Kill Tethis. If you fail, skip this. (28.7,44.9)| |QID|197|
 C Voodoo Dues |N|Two of the named mobs are at the ruins just opposite the arena entrance. The third is on the beach (39,58)| |QID|609|
 C Zanzil's Secret |QID|621|
 C Venture Company Mining |N|At (41,44)| |QID|600|
+C Skullsplitter Tusks |N|Near (42,36)| |QID|209|
+C Split Bone Necklace |QID|598|
 
 T Raptor Mastery (Part 4) |N|At Nessingwary's Camp| |QID|197|
 A Big Game Hunter |QID|208|
 
-T Mok'thardin's Enchantment (Part 4) |N|Back at Grom'gol Base Camp (32.1,29.2)| |QID|573| |T|
-C Big Game Hunter |QID|208| |N|On top of a small hill south-east of Grom'gol on the other side of the river.  Clear the tigers nearby first, otherwise they'll join in.  If you fail, skip this.|
+T Split Bone Necklace |QID|598| |T|
+A Grim Message |QID|2932| |T|
+T Mok'thardin's Enchantment (Part 4) |QID|573| |T|
+
+C Big Game Hunter |QID|208| |N|On top of a small hill south-east of Grom'gol on the other side of the river.  Clear the tigers nearby first, otherwise they'll join in.  If you fail, skip this. (38.21,35.58)|
 T Big Game Hunter |QID|208| |N|Back at Nessingwary's Camp|
 
 H Booty Bay |SZ|The Salty Sailor Tavern|
 T Venture Company Mining |T| |QID|600|
 T Zanzil's Secret |T| |QID|621|
 T Up to Snuff |T| |QID|587|
+T Skullsplitter Tusks |T| |QID|209|
+A Tran'rek |T| |QID|2864|
 T The Bloodsail Buccaneers (Part 4) |T| |QID|604|
-A The Bloodsail Buccaneers (Part 5) |T| |QID|608|
 T Akiris by the Bundle |T| |QID|617|
 T Voodoo Dues |T| |QID|609|
+A Stoley's Debt |T| |QID|2872|
 T Keep An Eye Out |T| |QID|576|
+F Ratchet |T| |N|Take the boat|
 ]]
 end)

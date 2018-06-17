@@ -88,7 +88,7 @@ T Hand of Iruxos |QID|5381| |N|Skip the follow-up|
 T Other Fish to Fry |QID|6143|
 T Clam Bait |QID|6142|
 T Stealing Supplies |QID|1370|
-A Ongeku |QID|1373|
+A Ongeku |QID|1373| |NODEBUG|
 P Claw (Rank 5) |C|Hunter| |N|Tame a Scorpashi Lasher (38.05,74.54)|
 
 F Camp Taurajo
@@ -108,6 +108,6 @@ F Ratchet
 T Goblin Sponsorship (Part 1) |QID|1178|
 A Goblin Sponsorship (Part 2) |QID|1180|
 T Wharfmaster Dizzywig |QID|1111| |N|Out on the dock (63.36, 38.40).| |Z|The Barrens|
-A Parts for Kravel |QID|1112| 
+A Parts for Kravel |QID|1112|
 ]]
 end)

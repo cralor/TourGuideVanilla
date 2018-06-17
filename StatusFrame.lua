@@ -242,7 +242,7 @@ function TourGuide:UpdateStatusFrame()
 	tex = useitem and select(9, GetItemInfo(tonumber(useitem)))
 	uitem = useitem
 	item.uitem = tex and uitem or nil
-	if InCombatLockdown() then self:RegisterEvent("PLAYER_REGEN_ENABLED")
+	if UnitAffectingCombat("player") then self:RegisterEvent("PLAYER_REGEN_ENABLED")
 	else self:PLAYER_REGEN_ENABLED() end
 
 	self:UpdateOHPanel()
@@ -291,7 +291,10 @@ check:SetScript("OnClick", function(self, btn) TourGuide:SetTurnedIn() end)
 
 item:SetScript("OnClick", function()
 	if TourGuide:GetObjectiveInfo() == "USE" then TourGuide:SetTurnedIn() end
-	if item.uitem then UseContainerItem(TourGuide:FindBagSlot(item.uitem)) end
+	if item.uitem then
+		local bag, slot = TourGuide:FindBagSlot(item.uitem)
+		if bag and slot then UseContainerItem(bag, slot) else TourGuide:Print("Item not found") end
+	end
 end)
 
 

@@ -170,6 +170,7 @@ function TourGuide:FindBagSlot(itemid)
 			if item and string.find(item, "item:"..itemid) then return bag, slot end
 		end
 	end
+	return false
 end
 
 

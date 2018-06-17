@@ -52,7 +52,7 @@ T Troll Charm |QID|6462|
 H Splintertree Post
 
 T Freedom to Ruul |QID|6482|
-N Stable your Pet |C|Hunter| |N|Make sure you are level 27 right now|
+N Stable Pet |C|Hunter| |N|Make sure you are level 27 right now|
 T Ashenvale Outrunners |QID|6503| |N|(71.18, 68.16)|
 P Bite (Rank 4) |C|Hunter| |N|Tame a Ghostpaw Alpha west of Splintertree Post, then abandon.|
 P Claw (Rank 4) |C|Hunter| |N|Tame an Elder Ashenvale Bear along the river|
