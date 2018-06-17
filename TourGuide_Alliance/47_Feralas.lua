@@ -39,4 +39,3 @@ T Thalanaar Delivery |QID|4281|
 ]]
 
 end)
-

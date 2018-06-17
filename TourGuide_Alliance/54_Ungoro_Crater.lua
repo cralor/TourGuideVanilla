@@ -33,4 +33,3 @@ F Darnassus
 C Felbound Ancients |N|Fill your vial at the temple moonwell| |U|11682| |L|5646|
 ]]
 end)
-

@@ -207,4 +207,3 @@ T The Bounty of Teldrassil |N|At the hippogryph master| |R|Night Elf| |QID|6341|
 A Flight to Auberdine |R|Night Elf| |QID|6342|
 ]]
 end)
-

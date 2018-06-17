@@ -36,4 +36,3 @@ T Thadius Grimshade |N|In the tower in Nethergarde Keep (67.0,19.4). Skip the fo
 ]]
 
 end)
-

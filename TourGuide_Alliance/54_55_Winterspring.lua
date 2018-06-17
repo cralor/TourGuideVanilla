@@ -70,4 +70,3 @@ A Wasteland |QID|1124|
 ]]
 
 end)
-

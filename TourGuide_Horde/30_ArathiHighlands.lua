@@ -13,5 +13,5 @@ T Raising Spirits (Part 1) |QID|672| |N|Back at Hammerfall (74.67, 36.46)|
 A Raising Spirits (Part 2) |QID|674|
 T Raising Spirits (Part 2) |QID|674|
 A Raising Spirits (Part 3) |QID|675|
-T Raising Spirits (Part 3) |QID|675| |N|Skip the follow-up| 
+T Raising Spirits (Part 3) |QID|675| |N|Skip the follow-up|
 ]] end)

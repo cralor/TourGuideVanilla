@@ -58,4 +58,3 @@ T Deadwood of the North |QID|8461|
 A Speak to Salfa |QID|8465|
 ]]
 end)
-

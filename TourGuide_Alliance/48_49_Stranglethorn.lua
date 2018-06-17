@@ -41,4 +41,3 @@ C The Stone Circle |N|The chest outside the hut.|
 ]]
 
 end)
-

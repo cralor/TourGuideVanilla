@@ -77,4 +77,3 @@ T Murdaloc |N|Back at Ironband's Excavation Site in Loch Modan (65,65). Skip the
 T Badlands Reagent Run |N|Back at Thelsamar, skip the follow-up.| |QID|2500|
 ]]
 end)
-

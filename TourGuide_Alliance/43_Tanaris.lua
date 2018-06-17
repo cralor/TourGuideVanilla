@@ -49,4 +49,3 @@ T WANTED: Caliph Scorpidsting |QID|2781|
 A Handle With Care |QID|3022|
 ]]
 end)
-

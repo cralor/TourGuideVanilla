@@ -32,4 +32,3 @@ H Stormwind City |QID|6186|
 T The Blightcaller Cometh |N|In Stormwind Keep. Skip the follow-up| |QID|6186|
 ]]
 end)
-

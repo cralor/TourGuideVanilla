@@ -11,7 +11,7 @@ N Liferoot |C|Warrior| |LV|30| |L|3357 8| |N|Acquire 8 Liferoot somehow.|
 N Thundering Charm |C|Warrior| |L|4480 8| |N|Can be skipped if you want farm them yourself.|
 N Cresting Charm |C|Warrior| |L|4481 8| |N|Can be skipped if you want farm them yourself.|
 N Burning |C|Warrior| |L|4479 8| |N|Can be skipped if you want farm them yourself.|
-f Ratchet |C|Warrior| 
+f Ratchet |C|Warrior|
 T The Islander |QID|1718| |C|Warrior| |LV|30| |Z|The Barrens| |N|(68.61, 49.16)|
 A The Affray |QID|1719| |C|Warrior| |LV|30| |Z|The Barrens|
 C The Affray |QID|1719| |C|Warrior| |LV|30| |Z|The Barrens|

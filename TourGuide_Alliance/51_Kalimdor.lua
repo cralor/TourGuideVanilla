@@ -34,4 +34,3 @@ T The Stone Circle |N|South of Gadget at the ruins (52.7, 45.9). Skip the follow
 ]]
 
 end)
-
