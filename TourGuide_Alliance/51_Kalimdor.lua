@@ -21,7 +21,7 @@ T Rescue OOX-17/TN! |O| |N|On the second level of the docks. Just up the ramp ne
 T Rescue OOX-22/FE! |O| |N|On the second level of the docks. Just up the ramp next to the hanging shark, in the first house after the small bridge (28.3,76.3)| |QID|2767|
 
 F Gadgetzan |QID|3444|
-T Sprinkle's Secret Ingredient |QID|2641| |NORAF|
+T Sprinkle's Secret Ingredient |QID|2641|
 A Delivery for Marin |QID|2661|
 T Delivery for Marin |QID|2661|
 A Noggenfogger Elixir |QID|2662|
@@ -30,7 +30,7 @@ A Super Sticky |QID|4504|
 T March of the Silithid |QID|4493|
 A Bungle in the Jungle |QID|4496|
 
-T The Stone Circle |N|South of Gadget at the ruins (52.7, 45.9).  Skip the follow-up.| |Z|Tanaris| |QID|3444|
+T The Stone Circle |N|South of Gadget at the ruins (52.7, 45.9). Skip the follow-up.| |Z|Tanaris| |QID|3444|
 ]]
 
 end)

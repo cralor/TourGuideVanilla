@@ -30,12 +30,12 @@ T The Hunt Continues |QID|750| |N|Back at Camp Narache (44.88, 77.22)|
 A The Battleboars |QID|780|
 A Break Sharptusk! |QID|3376|
 
-C Break Sharptusk! |QID|3376| |N|East inside Brambleblade Ravine.  Follow the torches to the large hut, the chief is inside (64.35, 77.55).|
+C Break Sharptusk! |QID|3376| |N|East inside Brambleblade Ravine. Follow the torches to the large hut, the chief is inside (64.35, 77.55).|
 A Attack on Camp Narache |QID|781| |U|4851| |N|South of the chief's hut, find the map on the floor of the cave (63.21, 82.75)|
 C Rite of Strength |QID|757| |N|Kill anthro boars for belts.|
 C The Battleboars |QID|780| |N|Kill any non-anthro boars for meat.|
 
-T The Battleboars |QID|780| |U|6948| |N|Back at Camp Narache (44.88, 77.22).  Hearth if you can.|
+T The Battleboars |QID|780| |U|6948| |N|Back at Camp Narache (44.88, 77.22). Hearth if you can.|
 T Break Sharptusk! |QID|3376|
 T Rite of Strength |QID|757|
 A Rites of the Earthmother (Part 2) |QID|763|
@@ -57,7 +57,7 @@ A Rite of Vision (Part 2) |QID|771|
 A Mazzranache |QID|766|
 
 N Kill Swoops... |N|Kill any Swoops you come across for "Swoop Hunting".|
-C Rite of Vision (Part 2) |QID|771| |N|Grab the well stones at the well.  Acorns can be found under the trees all over.|
+C Rite of Vision (Part 2) |QID|771| |N|Grab the well stones at the well. Acorns can be found under the trees all over.|
 C Sharing the Land |QID|745| |N|To the south by the cliffs (54,73).|
 C Dangers of the Windfury |QID|743| |N|To the east, south of the road (64,70).|
 A The Ravaged Caravan |QID|749| |N|Find Morin Cloudstalker patrolling along the road to the east.|
@@ -80,12 +80,12 @@ T The Ravaged Caravan |QID|751| |N|Back at Morin Cloudstalker|
 A The Venture Co. |QID|764|
 A Supervisor Fizsprocket |QID|765|
 
-C Winterhoof Cleansing |QID|754| |U|5411| |N|South of town at the well (53.55, 66.42).  Use the totem to cleanse it.|
+C Winterhoof Cleansing |QID|754| |U|5411| |N|South of town at the well (53.55, 66.42). Use the totem to cleanse it.|
 
 T Winterhoof Cleansing |QID|754| |N|Back at Bloodhoof Village (48.50, 60.52)|
 A Thunderhorn Totem |QID|756|
 
-C Dwarven Digging |QID|746| |U|4702| |N|Head south to the Bael'dun Digsite and work your way back to the forge (31.37, 49.78).  By the time you're there you should have 5 picks to break.  Use them at the forge.|
+C Dwarven Digging |QID|746| |U|4702| |N|Head south to the Bael'dun Digsite and work your way back to the forge (31.37, 49.78). By the time you're there you should have 5 picks to break. Use them at the forge.|
 
 T Rite of Vision (Part 3) |QID|772| |N|Follow the vision, or just run to the cave he's leading you to (32.82, 36.15)|
 A Rite of Wisdom |QID|773|
@@ -118,7 +118,7 @@ C Taming the Beast (Part 3) |C|Hunter| |N|East of town| |QID|6088|
 T Taming the Beast (Part 3) |C|Hunter| |QID|6088|
 A Training the Beast |C|Hunter| |QID|6089|
 
-C Thunderhorn Cleansing |QID|758| |U|5415| |N|North of town at the Thunderhorn Water Well (44.53, 45.69).  You know the drill, use the totem.|
+C Thunderhorn Cleansing |QID|758| |U|5415| |N|North of town at the Thunderhorn Water Well (44.53, 45.69). You know the drill, use the totem.|
 
 A Preparation for Ceremony |QID|744| |N|Follow the road north to Thunder Bluff (37.54, 60.15)|
 T Training the Beast |C|Hunter| |N|Over on Hunter Rise (to the south)| |QID|6089|
@@ -148,8 +148,8 @@ A Wildmane Totem |QID|759|
 T Supervisor Fizsprocket |QID|765| |N|Back at Morin Cloudstalker, patrolling along the road.|
 T The Venture Co. |QID|764|
 
-C Rites of the Earthmother (Part 3) |QID|776| |N|Kill Arra'chea to the east of Bluff.  If you cannot find him, he spawns at (49,19) and patrols clockwise.  He goes north to (52,10) and south to (54,35)|
-C Preparation for Ceremony |QID|744| |N|Kill harpies along the mountains northwest of Red Rocks (55,10).  You can also find groups northwest of the well (38,8) and due west of bluff (32,25).|
+C Rites of the Earthmother (Part 3) |QID|776| |N|Kill Arra'chea to the east of Bluff. If you cannot find him, he spawns at (49,19) and patrols clockwise. He goes north to (52,10) and south to (54,35)|
+C Preparation for Ceremony |QID|744| |N|Kill harpies along the mountains northwest of Red Rocks (55,10). You can also find groups northwest of the well (38,8) and due west of bluff (32,25).|
 C The Hunter's Way |QID|861| |N|Killing poor little kitties... you are a BAD cowman.|
 C Wildmane Totem |QID|759|
 
@@ -169,7 +169,7 @@ N Grind your way... |N|Then die on purpose. (47, 38)|
 D Die |N|Take Rez Sickness|
 T Wildmane Cleansing |QID|760| |N|Back at Bloodhoof Village (48.43, 60.35)|
 
-C Body and Heart |QID|6002| |C|Druid| |U|15710| |N|On the edge of the Barrens, just as you leave Mulgore, south of the road behind the hut (42.00, 60.89).  Use the dust, kill the boomkin, talk to him.| |Z|The Barrens|
+C Body and Heart |QID|6002| |C|Druid| |U|15710| |N|On the edge of the Barrens, just as you leave Mulgore, south of the road behind the hut (42.00, 60.89). Use the dust, kill the boomkin, talk to him.| |Z|The Barrens|
 
 A Journey to the Crossroads |QID|854| |N|Follow the road east to Camp Taurajo (44.87, 58.65).| |Z|The Barrens|
 f Get Flight Path

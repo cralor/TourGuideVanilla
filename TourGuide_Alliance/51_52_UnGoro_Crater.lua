@@ -2,7 +2,7 @@
 TourGuide:RegisterGuide("Un'Goro Crater (51-52)", "Felwood (53-54)", "Alliance", function()
 return [[
 R Un'Goro Crater |N|The entrance is in the soutwest corner of Tanaris. Look for two large stone pillars (27,58).| |Z|Tanaris| |QID|3844|
-N Look for loot... |N|There are many loot nodes scattered across this zone.  You'll need 7 of each color of power crystals.  Also loot any dirt piles or sprouts you find.| |QID|3781|
+N Look for loot... |N|There are many loot nodes scattered across this zone. You'll need 7 of each color of power crystals. Also loot any dirt piles or sprouts you find.| |QID|3781|
 
 A The Apes of Un'Goro |N|Tauren on the hill to the left of the ramp from Tanaris (69,77)| |QID|4289|
 A The Fare of Lar'korwi |QID|4290|
@@ -45,12 +45,12 @@ A The Western Pylon |QID|4288|
 
 N Kill stuff... |N|Kill any bloodpetals, diametradons, and pterrordaxes you come across| |QID|4141|
 
-C The Northern Pylon |N|Along the north edge of the zone to the east (56.46, 12.48).  Kill pterrordaxes here.| |QID|4285|
-T Chasing A-Me 01 |N|East in the gorilla cave (63,17).  Skip the follow-up.| |QID|4243|
+C The Northern Pylon |N|Along the north edge of the zone to the east (56.46, 12.48). Kill pterrordaxes here.| |QID|4285|
+T Chasing A-Me 01 |N|East in the gorilla cave (63,17). Skip the follow-up.| |QID|4243|
 C The Apes of Un'Goro |QID|4289|
 C Super Sticky |N|At the tarpits in the north half of the zone| |QID|4504|
 N Find [Crate of Foodstuffs] |N|At the abandoned camp in the east side of the zone (68.52, 36.59)| |L|11113| |QID|3881|
-C Muigin and Larion |N|Kill lasher around the camp area.  Also kill any diemetradons or pterrordaxes you come across| |QID|4141|
+C Muigin and Larion |N|Kill lasher around the camp area. Also kill any diemetradons or pterrordaxes you come across| |QID|4141|
 C The Eastern Pylon |N|To the east, of course (77.2,50)| |QID|4287|
 U Open Torwa's Pouch |U|11568| |QID|4292|
 U Place the meat |U|11569| |N|At the flat rock behind the east pylon (79.9, 49.9)| |QID|4292|
@@ -58,17 +58,17 @@ C The Bait for Lar'korwi |U|11570| |QID|4292| |N|Use the pheromone mixture, kill
 T The Apes of Un'Goro |N|Skip the follow-up| |QID|4289|
 T The Bait for Lar'korwi |QID|4292|
 
-C Alien Ecology |N|Down in the Slithering Scar (50,77).  Head left inside to the big room (48.62, 85.33), use the vial| |U|11132| |QID|3883|
+C Alien Ecology |N|Down in the Slithering Scar (50,77). Head left inside to the big room (48.62, 85.33), use the vial| |U|11132| |QID|3883|
 C Bungle in the Jungle |QID|4496|
-C Expedition Salvation |N|At camp to the west (38.5, 66.0).  Beware of the elite Stegodons.| |QID|3881|
+C Expedition Salvation |N|At camp to the west (38.5, 66.0). Beware of the elite Stegodons.| |QID|3881|
 C The Western Pylon |N|Up the hill, west of the camp (23.8, 59.1)| |QID|4288|
 A Finding the Source |N|From a goblin near the hot springs (30.9, 50.4)| |QID|974|
 
-C Roll the Bones |N|Scattered all over the west half of the zone and drop from diemetradons.  Kill pterrordaxes over here too.  There is usually a good stash of bones at a threshadon carcass to the southwest of the camp (31.27, 77.43).| |QID|3882|
-C Beware of Pterrordax |N|You can find the Frenzied Pterrordaxes all over the west half of the zone, more towards the northwest part.  Normal Pterrordaxes are in the south half of the zone, and a few near the North pylon.| |QID|4501|
+C Roll the Bones |N|Scattered all over the west half of the zone and drop from diemetradons. Kill pterrordaxes over here too. There is usually a good stash of bones at a threshadon carcass to the southwest of the camp (31.27, 77.43).| |QID|3882|
+C Beware of Pterrordax |N|You can find the Frenzied Pterrordaxes all over the west half of the zone, more towards the northwest part. Normal Pterrordaxes are in the south half of the zone, and a few near the North pylon.| |QID|4501|
 C Shizzle's Flyer |N|Kill diemetradons and pterrordaxes, all over the zone.| |QID|4503|
 
-C Finding the Source |N|At the volcano in the center of the zone.  Use the thermometer at the "Hot Spot" at the top of the mountain (49.75, 45.78).| |U|12472| |QID|974|
+C Finding the Source |N|At the volcano in the center of the zone. Use the thermometer at the "Hot Spot" at the top of the mountain (49.75, 45.78).| |U|12472| |QID|974|
 C Volcanic Activity |N|Kill elementals, mainly around the cave on the south side of the volcano.| |QID|4502|
 T Lost! |N|In the cave on the south side of the volcano (51,49)| |QID|4492|
 A A Little Help From My Friends |NODEBUG| |QID|4491|

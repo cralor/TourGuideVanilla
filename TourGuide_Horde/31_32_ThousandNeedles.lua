@@ -15,9 +15,9 @@ A Hardened Shells |QID|1105|
 A Load Lightening |QID|1176|
 A A Bump in the Road |QID|1175|
 
-K Saltstone Basilisk |Q|A Bump in the Road| |QO|Saltstone Basilisk slain: 10/10| |N|All over the northwest quadrant of the flats (73,57).  Kill all the other mobs you come across as well, and gather parts.|
+K Saltstone Basilisk |Q|A Bump in the Road| |QO|Saltstone Basilisk slain: 10/10| |N|All over the northwest quadrant of the flats (73,57). Kill all the other mobs you come across as well, and gather parts.|
 C Hardened Shells |QID|1105| |N|All over the northwest quadrant of the flats (73,57).|
-C Salt Flat Venom |QID|1104| |N|All over the northwest quadrant of the flats (73,57).  There is also a nice group due west of the raceway NPCs (72,75).|
+C Salt Flat Venom |QID|1104| |N|All over the northwest quadrant of the flats (73,57). There is also a nice group due west of the raceway NPCs (72,75).|
 C A Bump in the Road |QID|1175| |N|Kill basilisks at Tahonda Ruins, the little lake due south of the raceway (79,88).|
 C Rocket Car Parts |QID|1110|
 C Load Lightening |QID|1176| |N|There's a nice group of vultures around some bones on the southeast edge of the race track (84.52, 81.74).|

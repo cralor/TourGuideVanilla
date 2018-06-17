@@ -27,10 +27,10 @@ C Egg Hunt |QID|868| |N|Southwest of Camp Taurajo at the Field of Giants (43.5, 
 C Chen's Empty Keg |QID|822|
 K Washte Pawne |N|He drops Washte Pawne's Feather (43.1,80.9)|
 A Washte Pawne |QID|885|
-C Betrayal from Within (Part 1) |QID|879| |N|South at Blackthorn Ridge.  Kuz wanders around (44.06, 79.97), Lok is in a hut on the hill to the west (40.13, 80.55), and Nak wanders around to the south (43.74, 83.12).|
+C Betrayal from Within (Part 1) |QID|879| |N|South at Blackthorn Ridge. Kuz wanders around (44.06, 79.97), Lok is in a hut on the hill to the west (40.13, 80.55), and Nak wanders around to the south (43.74, 83.12).|
 C Weapons of Choice |QID|893| |N|Wand is dropped by the seers, shield by warfrenzies, and backstabber by stalkers (stealth) and pathfinders.|
 A Gann's Reclamation |QID|843| |N|Patrolling along Southern Gold Road (46.14, 79.57)|
-C Gann's Reclamation |QID|843| |N|Southeast at Bael Modan.  Kill Prospector Khazgorm (47.20, 85.18) for his journal, and a dozen or so dorfs for good measure.  If you can't find Khazgorm he may be stuck in a pillar.  Use '/target pros' to find him.|
+C Gann's Reclamation |QID|843| |N|Southeast at Bael Modan. Kill Prospector Khazgorm (47.20, 85.18) for his journal, and a dozen or so dorfs for good measure. If you can't find Khazgorm he may be stuck in a pillar. Use '/target pros' to find him.|
 T Gann's Reclamation |QID|843|
 A Revenge of Gann (Part 1) |QID|846|
 

@@ -26,7 +26,7 @@ A Night Web's Hollow |QID|380| |T|
 A Scavenging Deathknell |QID|3902| |T|
 
 C Night Web's Hollow |N|Cave to the north (27.5, 58.0)| |QID|380|
-K Samuel Fipps |L|16333| |N|Take the road north, then east.  Samuel's in a little camp just south of the road (36,62)|
+K Samuel Fipps |L|16333| |N|Take the road north, then east. Samuel's in a little camp just south of the road (36,62)|
 C Scavenging Deathknell |QID|3902| |N|Boxes all over Deathknell|
 C Marla's Last Wish |N|Bury Samuel's remains at Marla's Grave (31.17, 65.05)| |QID|6395| |T|
 
@@ -78,7 +78,7 @@ T Doom Weed |QID|5482|
 
 C Fields of Grief (Part 1) |N|At the farm north of Deathknell (35,50)| |QID|365|
 C At War With The Scarlet Crusade (Part 1) |QID|427| |NODEBUG| |N|West of the farm.|
-C A New Plague (Part 2) |QID|368| |N|Along the shore (60,29).  Murlocs.... joy.|
+C A New Plague (Part 2) |QID|368| |N|Along the shore (60,29). Murlocs.... joy.|
 
 H Brill |SZ|Gallows' End Tavern|
 A Deaths in the Family |QID|354|

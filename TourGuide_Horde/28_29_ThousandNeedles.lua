@@ -13,7 +13,7 @@ C Sacred Fire |QID|5062| |N|In and around the lake southeast of the Great Lift (
 C Steelsnap |QID|1131| |N|Patrols in a circle at the west end of the zone (17,27) (15,31) (12,25) (14,20)|
 C Wind Rider |QID|4767|
 
-A Homeward Bound |QID|4770| |N|Head to Highperch, southwest of Whitereach Post (14,33).  Escort starts at the far southeast edge of the area (17.86, 40.63).  Grab any eggs you come across along the way.|
+A Homeward Bound |QID|4770| |N|Head to Highperch, southwest of Whitereach Post (14,33). Escort starts at the far southeast edge of the area (17.86, 40.63). Grab any eggs you come across along the way.|
 C Homeward Bound |QID|4770|
 
 H Thunder Bluff
@@ -26,7 +26,7 @@ T Wind Rider |QID|4767| |N|Fly back to Freewind Post (44.91, 49.06)|
 h Freewind Post
 T The Sacred Flame (Part 3) |QID|1197|
 
-C Grimtotem Spying |QID|5064| |N|Take the path up onto the needles (31,36).  The notes are in boxes on each needle (31.90, 32.62) (33.80, 39.82) (39.25, 41.50)|
+C Grimtotem Spying |QID|5064| |N|Take the path up onto the needles (31,36). The notes are in boxes on each needle (31.90, 32.62) (33.80, 39.82) (39.25, 41.50)|
 C Arikara |QID|5088| |N|Light the fire on one of the needles (38.10, 35.42) and kill the summoned mob.|
 C Wanted - Arnak Grimtotem |QID|5147| |N|Take the bridges to the ledge to the north (38.07, 26.79).|
 A Free at Last |QID|4904| |N|Escort Lakota Windsong (38.03, 26.64)|

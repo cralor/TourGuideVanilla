@@ -5,7 +5,7 @@ A Stonetalon Standstill |QID|25|
 h Splintertree Post
 
 A Ashenvale Outrunners |QID|6503| |N|At the camp southwest of Splintertree Post (71.20, 68.08)|
-K Sharptalon |L|16305| |N|South of Splintertree Post (74,71).  He's level 31, so try kiting him to the guards at the nearby outpost.|
+K Sharptalon |L|16305| |N|South of Splintertree Post (74,71). He's level 31, so try kiting him to the guards at the nearby outpost.|
 A Sharptalon's Claw |QID|2| |U|16305|
 C Ashenvale Outrunners |QID|6503| |N|South of Splintertree Post (70,76), stealth mobs!|
 
@@ -43,7 +43,7 @@ C Vorsha the Lasher |QID|6641| |N|Follow the NPC, help him kill Vorsha (9.53, 27
 C Between a Rock and a Thistlefur |QID|216| |N|At the Thistlefur camp west of Astranaar (31.18, 45.31).|
 C Troll Charm |QID|6462| |N|In the cave at the back of the Thistlefur camp (38.55, 30.61).|
 
-A Freedom to Ruul |QID|6482|  |N|In the cave at the back of the Thistlefur camp (41.5, 34.6).|
+A Freedom to Ruul |QID|6482| |N|In the cave at the back of the Thistlefur camp (41.5, 34.6).|
 C Freedom to Ruul |QID|6482|
 
 T Vorsha the Lasher |QID|6641| |N|Back at Zoram'gar Outpost (12.17, 34.13)|
@@ -57,7 +57,7 @@ T Ashenvale Outrunners |QID|6503| |N|(71.18, 68.16)|
 P Bite (Rank 4) |C|Hunter| |N|Tame a Ghostpaw Alpha west of Splintertree Post, then abandon.|
 P Claw (Rank 4) |C|Hunter| |N|Tame an Elder Ashenvale Bear along the river|
 
-C Ordanus |QID|1088| |N|Fight to the top of the tower at Raynewood Retreat (62.07, 51.03).  Kill Ordanus, loot the head and jump out of there.|
+C Ordanus |QID|1088| |N|Fight to the top of the tower at Raynewood Retreat (62.07, 51.03). Kill Ordanus, loot the head and jump out of there.|
 R Splintertree Post
 N Get your cat |C|Hunter| |N|Abandon the bear|
 

@@ -1,11 +1,11 @@
 
 TourGuide:RegisterGuide("Western Plaguelands (57-59)", "Hellfire Peninsula (60-61)", "Horde", function()
 return [[
-T A Plague Upon Thee (Part 1) |QID|5901| |NORAF|
-A A Plague Upon Thee (Part 2) |QID|5902| |NORAF|
+T A Plague Upon Thee (Part 1) |QID|5901|
+A A Plague Upon Thee (Part 2) |QID|5902|
 
-T A Plague Upon Thee (Part 2) |QID|5902| |NORAF|
-A A Plague Upon Thee (Part 3) |QID|6390| |NORAF|
+T A Plague Upon Thee (Part 2) |QID|5902|
+A A Plague Upon Thee (Part 3) |QID|6390|
 
 A Unfinished Business (Part 1) |QID|6004| |N|(51,28)|
 
@@ -20,7 +20,7 @@ A Unfinished Business (Part 3) |QID|6025|
 C Unfinished Business (Part 3) |QID|6025|
 T Unfinished Business (Part 3) |QID|6025|
 
-T A Plague Upon Thee (Part 3) |QID|6390| |NORAF|
+T A Plague Upon Thee (Part 3) |QID|6390|
 T The So-Called Mark of the Lightbringer |QID|9443|
 A Defiling Uther's Tomb |QID|9444|
 
@@ -44,7 +44,7 @@ T The Annals of Darrowshire |QID|5154|
 A Brother Carlin |QID|5210|
 
 C Counting Out Time |QID|4973| |N|Find lunchboxes in the houses all around Andorhal.|
-C Skeletal Fragments |QID|964| |NORAF| |N|Kill undead all over Andorhal.|
+C Skeletal Fragments |QID|964| |N|Kill undead all over Andorhal.|
 
 T Counting Out Time |QID|4973|
 
@@ -52,7 +52,7 @@ H Light's Hope Chapel
 T Zaeldarr the Outcast |QID|6021|
 T Brother Carlin |QID|5210|
 
-T Skeletal Fragments |QID|964| |NORAF|
+T Skeletal Fragments |QID|964|
 T Defiling Uther's Tomb |QID|9444|
 T All Along the Watchtowers |QID|5098|
 ]]

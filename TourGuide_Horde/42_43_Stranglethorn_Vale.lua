@@ -34,7 +34,7 @@ T Split Bone Necklace |QID|598| |T|
 A Grim Message |QID|2932| |T|
 T Mok'thardin's Enchantment (Part 4) |QID|573| |T|
 
-C Big Game Hunter |QID|208| |N|On top of a small hill south-east of Grom'gol on the other side of the river.  Clear the tigers nearby first, otherwise they'll join in.  If you fail, skip this. (38.21,35.58)|
+C Big Game Hunter |QID|208| |N|On top of a small hill south-east of Grom'gol on the other side of the river. Clear the tigers nearby first, otherwise they'll join in. If you fail, skip this. (38.21,35.58)|
 T Big Game Hunter |QID|208| |N|Back at Nessingwary's Camp|
 
 H Booty Bay |SZ|The Salty Sailor Tavern|

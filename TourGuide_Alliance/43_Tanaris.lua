@@ -29,7 +29,7 @@ T Water Pouch Bounty |QID|1707|
 T Wastewander Justice |QID|1690|
 A More Wastewander Justice |QID|1691|
 
-C Gadgetzan Water Survey |N|To the west at a pool past the troll outpost (39,29).  Two big bugs spawn, be ready to run.| |U|8584| |QID|992|
+C Gadgetzan Water Survey |N|To the west at a pool past the troll outpost (39,29). Two big bugs spawn, be ready to run.| |U|8584| |QID|992|
 T Gadgetzan Water Survey |QID|992|
 A Noxious Lair Investigation |QID|82|
 C More Wastewander Justice |N|Around the western Wastewander camp (60,35).| |QID|1691|

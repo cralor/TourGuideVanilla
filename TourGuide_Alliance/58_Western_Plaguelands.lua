@@ -12,8 +12,8 @@ T A Strange Historian |N|In the inn in Andorhal (39.43, 66.81)| |QID|5153|
 A The Annals of Darrowshire |QID|5154|
 A A Matter of Time |QID|4971|
 
-C A Matter of Time |N|Find the blue glowy silos around the edges of Andorhal (45.05, 62.73).  Use horn.|  |U|12627| |QID|4971|
-C The Annals of Darrowshire |N|In the town hall (43.91, 69.22).  Loot books till you find it.| |QID|5154|
+C A Matter of Time |N|Find the blue glowy silos around the edges of Andorhal (45.05, 62.73). Use horn.| |U|12627| |QID|4971|
+C The Annals of Darrowshire |N|In the town hall (43.91, 69.22). Loot books till you find it.| |QID|5154|
 
 T A Matter of Time |N|Back at the inn| |QID|4971|
 A Counting Out Time |QID|4973|

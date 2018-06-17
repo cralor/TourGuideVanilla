@@ -22,7 +22,7 @@ local function MapPoint(zone, x, y, desc)
 	end
 
 	local opts = { title = "[TG] "..desc }
-	if TomTom then TomTom:AddMFWaypoint(zc, zi, x/100, y/100, opts) --AddZWaypoint(c,z,x,y,desc)  select(z, GetMapZones(c))
+	if TomTom then TomTom:AddMFWaypoint(zc, zi, x/100, y/100, opts) --AddZWaypoint(c,z,x,y,desc) select(z, GetMapZones(c))
 	elseif Cartographer_Waypoints then
 		local pt = NotePoint:new(zone, x/100, y/100, "[TG] "..desc)
 		Cartographer_Waypoints:AddWaypoint(pt)

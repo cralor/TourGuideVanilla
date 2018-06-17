@@ -49,7 +49,7 @@ end)
 -- T Spirits of Stonemaul Hold |T| |QID|11159|
 -- A Challenge to the Black Flight |T| |QID|11162|
 --
--- C Challenge to the Black Flight |N|East outside the entrance to Onyxia's Lair (52.06, 75.68).  Plant the banner and kill the dragon.  If you can't plant the banner, back out of the cave.| |U|33095| |QID|11162|
+-- C Challenge to the Black Flight |N|East outside the entrance to Onyxia's Lair (52.06, 75.68). Plant the banner and kill the dragon. If you can't plant the banner, back out of the cave.| |U|33095| |QID|11162|
 -- C Catch a Dragon by the Tail |N|Little round spore things, all over between Onyxia's Lair and Mudsprocket.| |QID|11217|
 --
 -- T Challenge to the Black Flight |T| |QID|11162|

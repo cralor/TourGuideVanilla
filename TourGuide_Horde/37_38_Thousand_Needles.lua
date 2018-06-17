@@ -7,11 +7,11 @@ h The Crossroads
 
 F Freewind Post
 N Stable Pet |C|Hunter|
-T The Swarm Grows (Part 2) |QID|1146|  |N|Follow the road east to the edge of the flats.  There's a little camp to the south (67.6, 64.0).|
+T The Swarm Grows (Part 2) |QID|1146| |N|Follow the road east to the edge of the flats. There's a little camp to the south (67.6, 64.0).|
 A The Swarm Grows (Part 3) |QID|1147|
 P Bite (Rank 5) |C|Hunter| |N|Tame a Sparkleshell Snapper (78,70)|
 
-T Parts for Kravel |QID|1112|  |N|At the Mirage Raceway (77.8, 77.2)|
+T Parts for Kravel |QID|1112| |N|At the Mirage Raceway (77.8, 77.2)|
 A Delivery to the Gnomes |QID|1114|
 T Delivery to the Gnomes |QID|1114|
 A Martek the Exiled |QID|1106|
@@ -23,13 +23,13 @@ A Razzeric's Tweaking |QID|1187|
 
 C The Swarm Grows |QID|1147|
 
-A Parts of the Swarm (Part 1) |QID|1148|  |U|5877| |N|Kill silithid to the south until the item drops to start this.|
+A Parts of the Swarm (Part 1) |QID|1148| |U|5877| |N|Kill silithid to the south until the item drops to start this.|
 C Parts of the Swarm (Part 1) |QID|1148|
 
 T The Swarm Grows |QID|1147|
 
 H The Crossroads
 N Abandon Pet |C|Hunter| |N|Get original pet back|
-T Parts of the Swarm (Part 1) |QID|1148|  |T|
-A Parts of the Swarm (Part 2) |QID|1184|  |T|
+T Parts of the Swarm (Part 1) |QID|1148| |T|
+A Parts of the Swarm (Part 2) |QID|1184| |T|
 ]]end)

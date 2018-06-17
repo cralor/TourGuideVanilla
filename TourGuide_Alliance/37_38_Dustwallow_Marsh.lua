@@ -21,7 +21,7 @@ A Discrediting the Deserters |T| |QID|11133|
 C Discrediting the Deserters |N|Hand out pamphlets to the guards| |T| |QID|11133|
 T Discrediting the Deserters |T| |QID|11133|
 A The End of the Deserters |T| |QID|11134|
-C The End of the Deserters |N|Out on boat to the southeast (76.58, 56.86).  Downstairs in the captain's quarters.| |QID|11134|
+C The End of the Deserters |N|Out on boat to the southeast (76.58, 56.86). Downstairs in the captain's quarters.| |QID|11134|
 T The End of the Deserters |N|Back in Theremore, of course.| |T| |QID|11134|
 
 h Theramore Isle |T| |QID|11142|
@@ -33,7 +33,7 @@ T The Missing Diplomat (Part 13) |T| |QID|1264|
 A The Missing Diplomat (Part 14) |T| |QID|1265|
 A A Disturbing Development |T| |QID|11136|
 
-T The Missing Diplomat (Part 14) |N|Inside the tower along road northwest of Theramore (59.7, 41.1).  If he is not there just wait, he'll be back.| |QID|1265|
+T The Missing Diplomat (Part 14) |N|Inside the tower along road northwest of Theramore (59.7, 41.1). If he is not there just wait, he'll be back.| |QID|1265|
 A The Missing Diplomat (Part 15) |QID|1266|
 T A Disturbing Development |QID|11136|
 A Defias in Dustwallow? |QID|11137|
@@ -74,7 +74,7 @@ T Raptor Captor |QID|11146|
 A Prisoners of the Grimtotems |QID|11145|
 A Unleash the Raptors |QID|11147|
 
-C Prisoners of the Grimtotems |N|Northwest in Blackhoof Village (41,12).  Kill Grimtotems for keys.| |QID|11145|
+C Prisoners of the Grimtotems |N|Northwest in Blackhoof Village (41,12). Kill Grimtotems for keys.| |QID|11145|
 C Unleash the Raptors |U|33070| |N|Place the bait near the windmill in the center of town (42,12)| |QID|11147|
 
 C Jarl Needs Eyes |N|Kill spiders to the southwest at Darkmist Cavern (35,21).| |QID|1206|
@@ -94,7 +94,7 @@ T Tabetha's Farm |QID|11212|
 A The Grimtotem Weapon |QID|11169|
 A The Reagent Thief |QID|11173|
 
-C The Grimtotem Weapon |N|Place the totem near crocs to the north and kill them.  If you have a pet you may not want to use it, you won't get credit if the croc is not targeting you when it dies.| |U|33101| |QID|11169|
+C The Grimtotem Weapon |N|Place the totem near crocs to the north and kill them. If you have a pet you may not want to use it, you won't get credit if the croc is not targeting you when it dies.| |U|33101| |QID|11169|
 C The Reagent Thief |N|Kill spiders southeast of the farm (48,62)| |QID|11173|
 
 C Direhorn Raiders |N|Kill Grimtotems north of the farm| |QID|11156|
@@ -110,7 +110,7 @@ T The Zeppelin Crash |N|To the east at Beezil's Wreck (54,56).| |QID|11172|
 A Corrosion Prevention |QID|11174|
 A Secure the Cargo! |QID|11207|
 
-C Corrosion Prevention |U|33108| |N|Make sure you have the "Energized" buff and use the [Ooze Buster] on the slimes.  Note that there is a bug with this quest which may allow you to complete it without leaving the questgiver: target a nearby ooze, use the buster... while it is channelling target a different ooze (at any range).| |QID|11174|
+C Corrosion Prevention |U|33108| |N|Make sure you have the "Energized" buff and use the [Ooze Buster] on the slimes. Note that there is a bug with this quest which may allow you to complete it without leaving the questgiver: target a nearby ooze, use the buster... while it is channelling target a different ooze (at any range).| |QID|11174|
 C Secure the Cargo! |QID|11207|
 
 T Corrosion Prevention |QID|11174|
@@ -119,7 +119,7 @@ A Delivery for Drazzit |QID|11208|
 
 T Is it Real? |N|On an island to the southeast (58.72, 60.18)| |QID|11194|
 A Nat's Bargain |QID|11209|
-C Nat's Bargain |N|Head to the ship wreckage to the southwest (57,63), use the fish paste, swim around until you're attacked by the shark.  You may have to use the paste more than once.| |U|33166| |QID|11209|
+C Nat's Bargain |N|Head to the ship wreckage to the southwest (57,63), use the fish paste, swim around until you're attacked by the shark. You may have to use the paste more than once.| |U|33166| |QID|11209|
 T Nat's Bargain |QID|11209|
 A Oh, It's Real |QID|11210|
 
@@ -137,7 +137,7 @@ T Bloodfen Feathers |T| |QID|11158|
 A Banner of the Stonemaul |T| |QID|11160|
 A The Essence of Enmity |T| |QID|11161|
 
-C Banner of the Stonemaul |N|Follow the road northwest to the Den of Flames (39,66).  Stay left unti you find the Stonemaul Clan Banner (38.13, 69.37).  Make sure you use the totem on the dragonkin after you kill them for "The Essence of Enmity".| |U|33088| |QID|11160|
+C Banner of the Stonemaul |N|Follow the road northwest to the Den of Flames (39,66). Stay left unti you find the Stonemaul Clan Banner (38.13, 69.37). Make sure you use the totem on the dragonkin after you kill them for "The Essence of Enmity".| |U|33088| |QID|11160|
 C The Essence of Enmity |U|33088| |N|Kill dragonkin, use the totem on their corpses.| |QID|11161|
 
 T Banner of the Stonemaul |N|Back at Mudsprocket| |T| |QID|11160|
@@ -149,7 +149,7 @@ C Spirits of Stonemaul Hold |N|North at Stonemaul Ruins, talk to the bones.| |QI
 T Spirits of Stonemaul Hold |T| |QID|11159|
 A Challenge to the Black Flight |T| |QID|11162|
 
-C Challenge to the Black Flight |N|East outside the entrance to Onyxia's Lair (52.06, 75.68).  Plant the banner and kill the dragon.  If you can't plant the banner, back out of the cave.| |U|33095| |QID|11162|
+C Challenge to the Black Flight |N|East outside the entrance to Onyxia's Lair (52.06, 75.68). Plant the banner and kill the dragon. If you can't plant the banner, back out of the cave.| |U|33095| |QID|11162|
 C Catch a Dragon by the Tail |N|Little round spore things, all over between Onyxia's Lair and Mudsprocket.| |QID|11217|
 
 T Challenge to the Black Flight |N|Back at Mudsprocket| |T| |QID|11162|
@@ -220,7 +220,7 @@ A Tabetha's Assistance |QID|11149|
 
 T Tabetha's Assistance |N|At her farm, of course (45,57)| |QID|11149|
 A Raze Direhorn Post! |QID|11150|
-C Raze Direhorn Post! |N|Burn the tents to the north of the farm.  North Tent (46.63, 46.14), Northeast Tent (47.16, 46.72), East Tent (47.35, 47.48)| |U|33072| |QID|11150|
+C Raze Direhorn Post! |N|Burn the tents to the north of the farm. North Tent (46.63, 46.14), Northeast Tent (47.16, 46.72), East Tent (47.35, 47.48)| |U|33072| |QID|11150|
 T Raze Direhorn Post! |QID|11150|
 A Justice for the Hyals |QID|11151|
 

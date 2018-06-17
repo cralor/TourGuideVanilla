@@ -69,7 +69,7 @@ A Gnarlpine Corruption |QID|476|
 C The Emerald Dreamcatcher |N|East of the questgiver in a house is a Dresser (68.01, 59.66)| |QID|2438|
 T Zenn's Bidding |QID|488|
 A Seek Redemption! |N|In front of the tower at Dolanaar| |QID|489|
-N Keep an eye out for Fel Cones |N|Needed for "Seek Redemption!".  Found at the bases of trees|
+N Keep an eye out for Fel Cones |N|Needed for "Seek Redemption!". Found at the bases of trees|
 
 T Denalan's Earth |N|South at the lake (60.90, 68.49)| |QID|997|
 A Timberling Seeds |QID|918|
@@ -89,29 +89,29 @@ A Ferocitas the Dream Eater |QID|2459|
 
 C Seek Redemption! |QID|489|
 T Seek Redemption! |N|East at Zenn Foulhoof| |QID|489|
-C Ferocitas the Dream Eater |N|North of Starbreeze.  Kill Ferocitas (69.37, 53.41) and open the necklace he drops for the jewel.| |U|8049| |QID|2459|
+C Ferocitas the Dream Eater |N|North of Starbreeze. Kill Ferocitas (69.37, 53.41) and open the necklace he drops for the jewel.| |U|8049| |QID|2459|
 
-C Twisted Hatred |N|North of Dolanaar (51.23, 50.79).  You can also wait until you're 10 to do this.| |QID|932|
+C Twisted Hatred |N|North of Dolanaar (51.23, 50.79). You can also wait until you're 10 to do this.| |QID|932|
 T Ferocitas the Dream Eater |QID|2459|
 T Twisted Hatred |QID|932|
 
 A The Road to Darnassus |N|From a mounted patrol on the road west of town| |QID|487|
 C The Road to Darnassus |N|Outside of Ban'ethil Hollow (46,52), south of the road where the NPC partrols.| |QID|487|
 
-N Rune of Nesting |N|Head down into the Ban'ethil Barrow Den (44.41, 57.87).  At the first set of bridges take the left bridge (44.40, 60.67).| |QID|483| |QO|Rune of Nesting: 1/1|
+N Rune of Nesting |N|Head down into the Ban'ethil Barrow Den (44.41, 57.87). At the first set of bridges take the left bridge (44.40, 60.67).| |QID|483| |QO|Rune of Nesting: 1/1|
 N Black Feather Quill |N|Across the other bridge (43.70, 61.22).| |QID|483| |QO|Black Feather Quill: 1/1|
 A The Sleeping Druid |N|Jump down and take the passage to the west, run across the bridge to Oben Rageclaw (44.94, 61,60).| |QID|2541|
 N Sapphire of Sky |N|Jump down and go south (44.70, 62.44).| |QID|483| |QO|Sapphire of Sky: 1/1|
-C The Relics of Wakening |N|The Raven Claw Talisman is north in the next room (the one with Rageclaw's body).  Run up onto the center pilar, take the bridge to the right and follow the path around to the left (45.65, 57.44).| |QID|483|
+C The Relics of Wakening |N|The Raven Claw Talisman is north in the next room (the one with Rageclaw's body). Run up onto the center pilar, take the bridge to the right and follow the path around to the left (45.65, 57.44).| |QID|483|
 C The Sleeping Druid |N|If the item didn't drop while you are collecting the relics, skip this and "Druid of the Claw"| |QID|2541|
 T The Sleeping Druid |QID|2541|
 A Druid of the Claw |QID|2561|
-C Druid of the Claw |N|Back in the room to the north.  Kill him, target his body and use the charm.| |U|8149| |QID|2561|
+C Druid of the Claw |N|Back in the room to the north. Kill him, target his body and use the charm.| |U|8149| |QID|2561|
 T Druid of the Claw |QID|2561|
 
 C Crown of the Earth (Part 4) |N|Moonwell at the Pools of Arlithrien (42.42, 67.08)| |U|5621| |QID|933|
 
-T Crown of the Earth (Part 4) |N|Back at Dolanaar, you can die and spirit rez.  Down by the moonwell.| |QID|933|
+T Crown of the Earth (Part 4) |N|Back at Dolanaar, you can die and spirit rez. Down by the moonwell.| |QID|933|
 A Crown of the Earth (Part 5) |QID|7383|
 T The Relics of Wakening |QID|483|
 A Ursal the Mauler |QID|486|
@@ -172,7 +172,7 @@ T Mist |QID|938|
 T The Enchanted Glade |QID|937|
 A Teldrassil |QID|940|
 
-C Tears of the Moon |N|North-northeast, near the edge of the tree.  Spawns in a few different spots (39,25) (41,25) (47,25)| |QID|2518|
+C Tears of the Moon |N|North-northeast, near the edge of the tree. Spawns in a few different spots (39,25) (41,25) (47,25)| |QID|2518|
 
 T Tumors |N|Back in Cenarion Enclave, Darnassus| |QID|923|
 A Return to Denalan |QID|2498|

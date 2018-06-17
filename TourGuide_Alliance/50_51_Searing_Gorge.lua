@@ -8,7 +8,7 @@ B 15 Silk Cloth |L|4306 15| |N|If you don't already have them, that is| |QID|444
 R Searing Gorge |N|Fly to Thelsamar, run down through the badlands to the west edge of the zone (1,62)| |Z|Badlands| |QID|4449|
 
 A Caught! |N|At an outhouse (65.58, 62.33)| |QID|4449|
-A Suntara Stones (Part 1) |N|Dorf down in the dig (63.8, 60.9).  This is another crummy escort.| |QID|3367|
+A Suntara Stones (Part 1) |N|Dorf down in the dig (63.8, 60.9). This is another crummy escort.| |QID|3367|
 T Suntara Stones (Part 1) |QID|3367|
 A Suntara Stones (Part 2) |N|Read the letter he dropped| |QID|3368|
 
@@ -43,7 +43,7 @@ A Proof of Deed |QID|3182|
 H City of Ironforge |QID|3182|
 T Proof of Deed |N|In the Hall of Explorers| |QID|3182|
 A At Last! |QID|3201|
-A A Little Slime Goes a Long Way |N|In the Hall of Explorers museum (75.82, 23.19)| |Z|Ironforge| |QID|4512| |NORAF|
+A A Little Slime Goes a Long Way |N|In the Hall of Explorers museum (75.82, 23.19)| |Z|Ironforge| |QID|4512|
 
 F Thelsamar |QID|3201|
 T At Last! |N|Valley of Kings again (18.18, 84.06)| |Z|Loch Modan| |QID|3201|
@@ -60,7 +60,7 @@ A Forging the Shaft |QID|3443|
 A The Key to Freedom |O| |U|11818| |QID|4451|
 T The Key to Freedom |O| |N|Back at the outhouse!| |QID|4451|
 
-T Dwarven Justice |N|Head down into the cauldren.  Enter the second cave from the west end (41,54), find the Dying Archaeologist (41.19, 25.72).  Kill DI Taskmasters and Slavers on the way, of course!| |QID|3371|
+T Dwarven Justice |N|Head down into the cauldren. Enter the second cave from the west end (41,54), find the Dying Archaeologist (41.19, 25.72). Kill DI Taskmasters and Slavers on the way, of course!| |QID|3371|
 A Release Them |QID|3372|
 C JOB OPPORTUNITY: Culling the Competition |N|Keep working your way towards the exit| |QID|7729|
 C WANTED: Overseer Maltorius |N|Up the top in the room to the right (40.76,35.7)| |QID|7701|
@@ -79,7 +79,7 @@ T What the Flux? |QID|7722|
 T Forging the Shaft |QID|3443|
 A The Flame's Casing |QID|3452|
 
-C Release Them |N|Run up the path to the east of the cave at the Twilight Hammer camp (24,32).  In the center of a lava pool is the Twilight Artifact (29.2, 25.9)| |QID|3372|
+C Release Them |N|Run up the path to the east of the cave at the Twilight Hammer camp (24,32). In the center of a lava pool is the Twilight Artifact (29.2, 25.9)| |QID|3372|
 A Prayer to Elune (Part 1) |N|From an NPC in a cage nearby (29.5, 26.5)| |QID|3377|
 T Prayer to Elune (Part 1) |QID|3377|
 A Prayer to Elune (Part 2) |QID|3378|
@@ -94,7 +94,7 @@ T The Torch of Retribution (Part 2) |N|Grab the torch he just made, duh.| |QID|3
 A Squire Maltrake |QID|3462|
 T Squire Maltrake |QID|3462|
 A Set Them Ablaze! |QID|3463|
-T Release Them |N|Head back down to the Dying Archaeologist (41.2, 25.7).  You can drop through the hole if you want (35.15,43.18).  Talk to the alter near him.  Don't accept the followup unless you have a group to help.| |QID|3372|
+T Release Them |N|Head back down to the Dying Archaeologist (41.2, 25.7). You can drop through the hole if you want (35.15,43.18). Talk to the alter near him. Don't accept the followup unless you have a group to help.| |QID|3372|
 C Set Them Ablaze! |N|Light the brazier at each tower (33,53) (36,60) (44,61) (50,54)| |U|10515| |QID|3463|
 
 T Set Them Ablaze! |N|Back at Thorium Point| |QID|3463|

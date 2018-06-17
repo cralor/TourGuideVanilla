@@ -9,11 +9,11 @@ T A Call to Arms: The Plaguelands! |QID|5094|
 A Scarlet Diversions |QID|5096|
 N Get a Flame in a Bottle |N|From the Box of Incendiaries| |L|12814|
 T The Everlook Report |QID|6029|
-N Get a Commission |N|Talk to the quartermaster and get a commission, you should have this equipped any time you are in the plaguelands.  Turn in any scourgestones you get when you are in town if you have a full stack.| |L|12846|
+N Get a Commission |N|Talk to the quartermaster and get a commission, you should have this equipped any time you are in the plaguelands. Turn in any scourgestones you get when you are in town if you have a full stack.| |L|12846|
 A The So-Called Mark of the Lightbringer |QID|9443|
-A A Plague Upon Thee (Part 1) |QID|5901| |NORAF|
+A A Plague Upon Thee (Part 1) |QID|5901|
 
-C Scarlet Diversions |QID|5096| |N|Burn the tent, plant the banner.  Note that if you have a partner he will not get credit, you must wait for the tent to respawn.|
+C Scarlet Diversions |QID|5096| |N|Burn the tent, plant the banner. Note that if you have a partner he will not get credit, you must wait for the tent to respawn.|
 
 T Scarlet Diversions |N|Back at the Bulwark| |QID|5096|
 A All Along the Watchtowers |QID|5098|
@@ -47,8 +47,8 @@ C Target: Dalson's Tears |QID|5231|
 T Target: Dalson's Tears |QID|5231|
 A Return to the Bulwark (Part 2) |QID|5232|
 
-N Read Mrs. Dalson's Diary |N|On the floor in the barn (47.8, 50.7).  Nothing to accept, just read the book.|
-K Wandering Skeleton |N|Patrols around the house and barn, you are looking for the outhouse key.  Scarlets might kill this mob.| |L|12738|
+N Read Mrs. Dalson's Diary |N|On the floor in the barn (47.8, 50.7). Nothing to accept, just read the book.|
+K Wandering Skeleton |N|Patrols around the house and barn, you are looking for the outhouse key. Scarlets might kill this mob.| |L|12738|
 K Farmer Dalson |N|Open the outhouse, get his key| |L|12739|
 N Open cabinet |N|Locked cabinet upstairs in the house.| |L|13474|
 
@@ -65,7 +65,7 @@ T The Wildlife Suffers Too (Part 1) |QID|4984|
 A The Wildlife Suffers Too (Part 2) |QID|4985|
 C The Wildlife Suffers Too (Part 2) |QID|4985|
 
-f New flight point! |N|There is now a flight point on the east end of the road (69.2, 49.7).  Zip over there and fly back to the WARK!|
+f New flight point! |N|There is now a flight point on the east end of the road (69.2, 49.7). Zip over there and fly back to the WARK!|
 T Return to the Bulwark (Part 3) |QID|5234|
 A Target: Gahrron's Withering |QID|5235|
 
@@ -78,6 +78,6 @@ T The Wildlife Suffers Too (Part 2) |QID|4985|
 T Return to the Bulwark (Part 4) |QID|5236|
 A Scholomance |QID|838|
 T Scholomance |QID|838|
-A Skeletal Fragments |QID|964| |NORAF|
+A Skeletal Fragments |QID|964|
 ]]
 end)
