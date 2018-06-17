@@ -7,7 +7,7 @@ F Orgrimmar
 h Orgrimmar
 
 A The Islander |QUD|1718| |C|Warrior| |LV|30| |Z|Orgimmar| |N|(80.39, 32.38)|
-N Liferoot |C|Warrior| |LV|30| |L|3357 8| |N|Aquire 8 Liferoot somehow.|
+N Liferoot |C|Warrior| |LV|30| |L|3357 8| |N|Acquire 8 Liferoot somehow.|
 N Thundering Charm |C|Warrior| |L|4480 8| |N|Can be skipped if you want farm them yourself.|
 N Cresting Charm |C|Warrior| |L|4481 8| |N|Can be skipped if you want farm them yourself.|
 N Burning |C|Warrior| |L|4479 8| |N|Can be skipped if you want farm them yourself.|

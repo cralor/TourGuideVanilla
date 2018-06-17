@@ -49,7 +49,7 @@ A Stone Is Better than Cloth |QID|716| |O| |L|2868|
 T Stone Is Better than Cloth |QID|716| |O|
 T Barbecued Buzzard Wings |QID|703|
 
-N Grind |LV41| |N|Get to lvl 41 from Scalding Whelps (70,53)|
+N Grind |LV|41| |N|Get to lvl 41 from Scalding Whelps (70,53)|
 
 H Grom'gol Base Camp
 A Nothing But The Truth (Part 1) |N|Follow the road north into Duskwood (87.8,35.7)| |Z|Duskwood| |QID|1372| |NODEBUG|
