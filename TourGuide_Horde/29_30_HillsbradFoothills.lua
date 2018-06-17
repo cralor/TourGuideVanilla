@@ -12,7 +12,7 @@ N Thundering Charm |C|Warrior| |L|4480 8| |N|Can be skipped if you want farm the
 N Cresting Charm |C|Warrior| |L|4481 8| |N|Can be skipped if you want farm them yourself.|
 N Burning |C|Warrior| |L|4479 8| |N|Can be skipped if you want farm them yourself.|
 f Ratchet |C|Warrior| 
-T The Islander |QUD|1718| |C|Warrior| |LV|30| |Z|The Barrens| |N|(68.61, 49.16)|
+T The Islander |QID|1718| |C|Warrior| |LV|30| |Z|The Barrens| |N|(68.61, 49.16)|
 A The Affray |QID|1719| |C|Warrior| |LV|30| |Z|The Barrens|
 C The Affray |QID|1719| |C|Warrior| |LV|30| |Z|The Barrens|
 T The Affray |QID|1719| |C|Warrior| |LV|30| |Z|The Barrens|
@@ -31,16 +31,16 @@ A Battle of Hillsbrad |QID|527|
 A Helcular's Revenge |QID|552|
 A Dangerous! |QID|567|
 
-T The WindWatcher |QID|1791| |C|Warrior| |N|(79.29, 6.99)
+T The WindWatcher |QID|1791| |C|Warrior| |N|(79.29, 6.99)|
 
 A Cyclonian |QID|1712| |C|Warrior| |N|This quest involves killing NPCs level 33-34, return to this quest when you feel comfortable.|
-A Essence of the Exile |QID|1714| |C|Warrior| |N|This quest involves killing NPCs level 38-39, return to this quest when you feel comfortable or purchase the required items from someone. Ideally work your way to Hammerfall while completing this.|
+A Essence of the Exile |QID|1714| |C|Warrior| |N|This quest involves killing NPCs level 38-39, return to this quest when you feel comfortable or purchase the required items from someone. Ideally working your way towards Hammerfall while completing this.|
 
 F Undercity |C|Warrior|
 F Grom'gol Base Camp |C|Warrior| |N|Take zeppelin to Grom'Gol|
 f Get the flight path |C|Warrior|
 
-K Bloodscalp Scout|QID|1712| |C|Warrior| |QO|Bloodscalp Tusk: 30/30| |N|Bloodscalp trolls (29.8, 21.6) (34.0, 16.8), purchase Liferoot if need be.| |Z|Stranglethorn Vale|
+K Bloodscalp Scout |QID|1712| |Q|Cyclonian| |C|Warrior| |QO|Bloodscalp Tusk: 30/30| |N|Bloodscalp trolls (29.8, 21.6) (34.0, 16.8).| |Z|Stranglethorn Vale|
 
 R Grom'gol |C|Warrior| |N|Take the zepplin inside Grom'gol to Undercity.|
 F Hillsbrad Foothills |C|Warrior|
@@ -76,8 +76,8 @@ A Elixir of Pain (Part 2) |QID|502|
 T Helcular's Revenge |QID|552|
 A Helcular's Revenge (Part 2) |QID|553|
 
-N Flame of Azel |QID|553| |Q|Helcular's Revenge (Part 2)| |QO|Flame of Azel charged|
-N Flame of Veraz |QID|553| |Q|Helcular's Revenge (Part 2)| |QO|Flame of Veraz charged|
+N Flame of Azel |QID|553| |Q|Helcular's Revenge| |QO|Flame of Azel charged|
+N Flame of Veraz |QID|553| |Q|Helcular's Revenge| |QO|Flame of Veraz charged|
 T Elixir of Pain (Part 2) |QID|502|
 
 C Battle of Hillsbrad |QID|527|

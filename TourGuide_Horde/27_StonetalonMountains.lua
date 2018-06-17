@@ -16,4 +16,3 @@ A The Sacred Flame (Part 2) |QID|1196|
 h Thunder Bluff
 ]]
 end)
-
