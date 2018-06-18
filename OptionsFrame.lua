@@ -21,6 +21,18 @@ frame:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
 frame:Hide()
 
 frame:SetScript("OnShow", function()
+	local quad, vhalf, hhalf = TourGuide.GetQuadrant(TourGuide.statusframe)
+	local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
+	this:ClearAllPoints()
+	this:SetPoint(quad, TourGuide.statusframe, anchpoint)
+	local title_point,title_anchor,title_x,title_y
+	if quad == "TOPLEFT" then
+		title_point,title_anchor,title_x,title_y = "BOTTOMRIGHT", "TOPRIGHT", -5, 0
+	else
+		title_point,title_anchor,title_x,title_y = "BOTTOMLEFT", "TOPLEFT", 5, 0
+	end
+	title:ClearAllPoints()
+	title:SetPoint(title_point,this,title_anchor,title_x,title_y)
 	this:SetAlpha(0)
 	this:SetScript("OnUpdate", ww.FadeIn)
 end)

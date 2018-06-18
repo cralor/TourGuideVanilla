@@ -239,6 +239,21 @@ function TourGuide.ColorGradient(perc)
 	return r1 + (r2-r1)*relperc, g1 + (g2-g1)*relperc, b1 + (b2-b1)*relperc
 end
 
+function TourGuide.GetQuadrant(frame)
+	local x,y = frame:GetCenter()
+	if not x or not y then return "BOTTOMLEFT", "BOTTOM", "LEFT" end
+	local hhalf = (x > UIParent:GetWidth()/2) and "RIGHT" or "LEFT"
+	local vhalf = (y > UIParent:GetHeight()/2) and "TOP" or "BOTTOM"
+	return vhalf..hhalf, vhalf, hhalf	
+end
+
+function TourGuide.GetUIParentAnchor(frame)
+	local w, h, x, y = UIParent:GetWidth(), UIParent:GetHeight(), frame:GetCenter()
+	local hhalf, vhalf = (x > w/2) and "RIGHT" or "LEFT", (y > h/2) and "TOP" or "BOTTOM"
+	local dx = hhalf == "RIGHT" and math.floor(frame:GetRight() + 0.5) - w or math.floor(frame:GetLeft() + 0.5)
+	local dy = vhalf == "TOP" and math.floor(frame:GetTop() + 0.5) - h or math.floor(frame:GetBottom() + 0.5)
+	return vhalf..hhalf, dx, dy
+end
 
 function TourGuide:DumpLoc()
 	if IsShiftKeyDown() then

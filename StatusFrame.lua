@@ -13,16 +13,6 @@ local FIXEDWIDTH = ICONSIZE + CHECKSIZE + GAP*4 - 4
 local TourGuide = TourGuide
 local ww = WidgetWarlock
 
-
-local function GetQuadrant(frame)
-	local x,y = frame:GetCenter()
-	if not x or not y then return "BOTTOMLEFT", "BOTTOM", "LEFT" end
-	local hhalf = (x > UIParent:GetWidth()/2) and "RIGHT" or "LEFT"
-	local vhalf = (y > UIParent:GetHeight()/2) and "TOP" or "BOTTOM"
-	return vhalf..hhalf, vhalf, hhalf
-end
-
-
 local f = CreateFrame("Button", nil, UIParent)
 TourGuide.statusframe = f
 f:SetPoint("BOTTOMRIGHT", QuestWatchFrame, "TOPRIGHT", -60, -15)
@@ -104,7 +94,7 @@ function TourGuide:SetText(i)
 		text:SetAlpha(0)
 		elapsed = 0
 		f2:SetWidth(f:GetWidth())
-		f2anchor = select(3, GetQuadrant(f))
+		f2anchor = select(3, self.GetQuadrant(f))
 		f2:ClearAllPoints()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
@@ -224,7 +214,7 @@ function TourGuide:UpdateStatusFrame()
 		text:SetAlpha(0)
 		elapsed = 0
 		f2:SetWidth(f:GetWidth())
-		f2anchor = select(3, GetQuadrant(f))
+		f2anchor = select(3, self.GetQuadrant(f))
 		f2:ClearAllPoints()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
@@ -252,9 +242,6 @@ end
 function TourGuide:PLAYER_REGEN_ENABLED()
 	if tex then
 		itemicon:SetTexture(tex)
-		-- SetAttribute applies only to SecureFrames, not in Vanilla yet...
-		--item:SetAttribute("type1", "item")
-		--item:SetAttribute("item1", "item:"..uitem)
 		item:Show()
 		tex = nil
 	else item:Hide() end
@@ -271,7 +258,7 @@ f:SetScript("OnClick", function()
 			if TourGuide.objectiveframe:IsVisible() then
 				HideUIPanel(TourGuide.objectiveframe)
 			else
-				local quad, vhalf, hhalf = GetQuadrant(self)
+				local quad, vhalf, hhalf = TourGuide.GetQuadrant(self)
 				local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
 				TourGuide.objectiveframe:ClearAllPoints()
 				TourGuide.objectiveframe:SetPoint(quad, self, anchpoint)
@@ -303,7 +290,7 @@ local function ShowTooltip()
 	local tip = TourGuide:GetObjectiveTag("N")
 	if not tip or tip == "" then return end
 	tip = tostring(tip)
-	local quad, vhalf, hhalf = GetQuadrant(self)
+	local quad, vhalf, hhalf = TourGuide.GetQuadrant(self)
 	--local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
 	local anchpoint = "ANCHOR_TOP"..hhalf
 	TourGuide:Debug(11, "Setting tooltip anchor", anchpoint)
@@ -321,32 +308,22 @@ end
 f:SetScript("OnLeave", HideTooltip)
 f:SetScript("OnEnter", ShowTooltip)
 
-
-local function GetUIParentAnchor(frame)
-	local w, h, x, y = UIParent:GetWidth(), UIParent:GetHeight(), frame:GetCenter()
-	local hhalf, vhalf = (x > w/2) and "RIGHT" or "LEFT", (y > h/2) and "TOP" or "BOTTOM"
-	local dx = hhalf == "RIGHT" and math.floor(frame:GetRight() + 0.5) - w or math.floor(frame:GetLeft() + 0.5)
-	local dy = vhalf == "TOP" and math.floor(frame:GetTop() + 0.5) - h or math.floor(frame:GetBottom() + 0.5)
-	return vhalf..hhalf, dx, dy
-end
-
-
 f:RegisterForDrag("LeftButton")
 f:SetMovable(true)
 f:SetClampedToScreen(true)
 f:SetScript("OnDragStart", function()
 	local frame = this
 	if TourGuide.objectiveframe:IsVisible() then HideUIPanel(TourGuide.objectiveframe) end
+	if TourGuide.optionsframe:IsVisible() then HideUIPanel(TourGuide.optionsframe) end
+	if TourGuide.guidelistframe:IsVisible() then HideUIPanel(TourGuide.guidelistframe) end
 	GameTooltip:Hide()
 	frame:StartMoving()
 end)
 f:SetScript("OnDragStop", function()
 	local frame = this
 	frame:StopMovingOrSizing()
-	TourGuide:Debug(1, "Status frame moved", GetUIParentAnchor(frame))
 	local _
 	TourGuide.db.profile.statusframepoint, _, _, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey = frame:GetPoint()
-	--TourGuide.db.profile.statusframepoint, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey = GetUIParentAnchor(frame)
 	frame:ClearAllPoints()
 	frame:SetPoint(TourGuide.db.profile.statusframepoint, TourGuide.db.profile.statusframex, TourGuide.db.profile.statusframey)
 	ShowTooltip(frame)
@@ -360,8 +337,6 @@ item:SetScript("OnDragStart", function() local frame = this frame:StartMoving() 
 item:SetScript("OnDragStop", function()
 	local frame = this
 	frame:StopMovingOrSizing()
-	TourGuide:Debug(1, "Item frame moved", GetUIParentAnchor(frame))
 	local _
 	TourGuide.db.profile.itemframepoint, _, _, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = frame:GetPoint()
-	--TourGuide.db.profile.itemframepoint, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = GetUIParentAnchor(frame)
 end)
