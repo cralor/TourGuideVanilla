@@ -1,0 +1,89 @@
+--[[
+  Some shims for Lua and WoW API not available in 1.12.x
+  -- Roadblock & rsheep
+]]
+local _G = getfenv(0)
+if not _G.select then
+  select = function(index,...)
+    assert(tonumber(index) or index=="#","Invalid argument #1 to select(). Usage: select(\"#\"|int,...)")
+    if index == "#" then
+      return tonumber(arg.n) or 0
+    end
+    for i=1,index-1 do
+      table.remove(arg,1)
+    end
+    return unpack(arg)
+  end
+  _G.select = select
+end
+if not string.join then
+  string.join = function(delimiter, list)
+    assert(type(delimiter)=="string" and type(list)=="table", "Invalid arguments to join(). Usage: string.join(delimiter, list)")
+    local len = getn(list)
+    if len == 0 then
+      return ""
+    end
+    local s = list[1]
+    for i = 2, len do
+      s = string.format("%s%s%s",s,delimiter,list[i])
+    end
+    return s
+  end
+end
+if not string.trim then
+  string.trim = function(s)
+    return (string.gsub(s,"^%s*(.-)%s*$", "%1"))
+  end
+end
+if not string.split then
+  string.split = function(...) -- separator, string
+    assert(arg.n>0 and type(arg[1])=="string", "Invalid arguments to split(). Usage: string.split([separator], subject)")
+    local sep, s = arg[1], arg[2]
+    if s == nil then
+      s, sep = sep, ":"
+    end
+    local fields = {}
+    local pattern = string.format("([^%s]+)", sep)
+    string.gsub(s, pattern, function(c) fields[table.getn(fields)+1] = c end)
+    return fields
+  end
+end
+if not math.modf then
+  math.modf = function(f)
+    if f > 0 then
+      return math.floor(f), math.mod(f,1)
+    end
+    return math.ceil(f), math.mod(f,1)
+  end
+end
+if not _G.InCombatLockdown then
+  InCombatLockdown = function()
+    return UnitAffectingCombat("player")
+  end
+  _G.InCombatLockdown = InCombatLockdown
+end
+if not _G.GetItemCount then
+  GetItemCount = function(itemID)
+    local itemInfoTexture = select(9, GetItemInfo(itemID))
+    if itemInfoTexture == nil then return 0 end
+    local totalItemCount = 0
+    for i=0,NUM_BAG_FRAMES do
+      local numSlots = GetContainerNumSlots(i)
+      if numSlots > 0 then
+        for k=1,numSlots do
+          local itemTexture, itemCount = GetContainerItemInfo(i, k)
+          if itemInfoTexture == itemTexture then
+            totalItemCount = totalItemCount + itemCount
+          end
+        end
+      end
+    end
+    return totalItemCount
+  end
+  _G.GetItemCount = GetItemCount
+end
+
+if not _G.print then
+  print = function(str) DEFAULT_CHAT_FRAME:AddMessage(tostring(str)) end
+  _G.print = print
+end
