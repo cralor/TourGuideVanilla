@@ -94,7 +94,7 @@ function TourGuide:SetText(i)
 		text:SetAlpha(0)
 		elapsed = 0
 		f2:SetWidth(f:GetWidth())
-		f2anchor = select(3, self.GetQuadrant(f))
+		f2anchor = TG.select(3, self.GetQuadrant(f))
 		f2:ClearAllPoints()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
@@ -217,7 +217,7 @@ function TourGuide:UpdateStatusFrame()
 		text:SetAlpha(0)
 		elapsed = 0
 		f2:SetWidth(f:GetWidth())
-		f2anchor = select(3, self.GetQuadrant(f))
+		f2anchor = TG.select(3, self.GetQuadrant(f))
 		f2:ClearAllPoints()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
@@ -232,7 +232,7 @@ function TourGuide:UpdateStatusFrame()
 	if not f2:IsVisible() then f:SetWidth(FIXEDWIDTH + text:GetWidth()) end
 	newsize = FIXEDWIDTH + text:GetWidth()
 
-	tex = useitem and select(9, GetItemInfo(tonumber(useitem)))
+	tex = useitem and TG.select(9, GetItemInfo(tonumber(useitem)))
 	uitem = useitem
 	item.uitem = tex and uitem or nil
 	if UnitAffectingCombat("player") then self:RegisterEvent("PLAYER_REGEN_ENABLED")

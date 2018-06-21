@@ -27,7 +27,7 @@ function TourGuide:GetObjectiveTag(tag, i)
 
 	if tag == "O" then return string.find(tags,"|O|")
 	elseif tag == "T" then return string.find(tags,"|T|")
-	elseif tag == "QID" then return select(3, string.find(tags, "|QID|(%d+)|"))
+	elseif tag == "QID" then return TG.select(3, string.find(tags, "|QID|(%d+)|"))
 	elseif tag == "L" then
 		local _, _, lootitem, lootqty = string.find(tags,"|L|(%d+)%s?(%d*)|")
 		lootqty = tonumber(lootqty) or 1
@@ -35,7 +35,7 @@ function TourGuide:GetObjectiveTag(tag, i)
 		return lootitem, lootqty
 	end
 
-	return select(3, string.find(tags,"|"..tag.."|([^|]*)|?"))
+	return TG.select(3, string.find(tags,"|"..tag.."|([^|]*)|?"))
 end
 
 
@@ -92,7 +92,7 @@ local function StepParse(guide)
 	local uniqueid = 1
 	local actions, quests, tags = {}, {}, {}
 	local i, haserrors = 1, false
-	local guidet = string.split("\n", guide)
+	local guidet = TG.split("\n", guide)
 
 	for _,text in pairs(guidet) do
 		local _, _, class = string.find(text,"|C|([^|]+)|")
@@ -100,7 +100,7 @@ local function StepParse(guide)
 		if text ~= "" and (not class or string.find(class, myclass)) and (not race or string.find(race,myrace)) then
 			local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
 			assert(actiontypes[action], "Unknown action: "..text)
-			quest = string.trim(quest)
+			quest = TG.trim(quest)
 			if not (action == "A" or action =="C" or action =="T") then
 				quest = quest.."@"..uniqueid.."@"
 				uniqueid = uniqueid + 1
@@ -139,12 +139,12 @@ function TourGuide:DebugGuideSequence(dumpquests)
 	local accepts, turnins, completes = {}, {}, {}
 	local function DebugParse(guide)
 		local uniqueid, haserrors = 1
-		local guidet = string.split("\n", guide)
+		local guidet = TG.split("\n", guide)
 		for _,text in pairs(guidet) do
 			if text ~= "" then
 				local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
 				if not actiontypes[action] then TourGuide:Debug(1, "Unknown action: "..text) end
-				quest = string.trim(quest)
+				quest = TG.trim(quest)
 				if not (action == "A" or action =="C" or action =="T") then
 					quest = quest.."@"..uniqueid.."@"
 					uniqueid = uniqueid + 1

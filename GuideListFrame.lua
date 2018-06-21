@@ -105,7 +105,7 @@ frame:SetScript("OnShow", function()
 	local quad, vhalf, hhalf = TourGuide.GetQuadrant(TourGuide.statusframe)
 	local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
 	this:ClearAllPoints()
-	this:SetPoint(quad, TourGuide.statusframe, anchpoint)	
+	this:SetPoint(quad, TourGuide.statusframe, anchpoint)
 	TourGuide:UpdateGuideListPanel()
 	this:SetAlpha(0)
 	this:SetScript("OnUpdate", ww.FadeIn)
