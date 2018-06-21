@@ -27,7 +27,7 @@ N Abandon Pet |C|Hunter| |N|Get original pet back|
 
 C Pool of Tears |N|Artifacts in the water around the big lake (65,54)| |QID|1424|
 C Lack of Surplus (Part 1) |N|Just north-east of Stonard| |QID|698|
-N Nothing But the Truth |N|Kill any Shadow Panthers you see| |QID|1383|
+N Nothing But the Truth (Part 2) |N|Kill any Shadow Panthers you see| |QID|1383|
 T Lack of Surplus (Part 1) |QID|698|
 A Lack of Surplus (Part 2) |QID|699|
 C Lack of Surplus (Part 2) |N|Sawtooth Snappers to the north east (81,20)| |QID|699|
@@ -50,7 +50,7 @@ A Threat From the Sea (Part 2) |QID|1426|
 
 C Threat From the Sea (Part 2) |N|Head to the shoreline| |QID|1426|
 C Fresh Meat |N|Monstrous Crawlers on the shoreline| |QID|1430|
-N Nothing But the Truth |N|Get remaining Hearts| |QID|1383| |Q|Nothing But the Truth| |QO|Shadow Panther Heart: 5/5|
+N Nothing But the Truth (Part 2) |N|Get remaining Hearts| |QID|1383| |Q|Nothing But the Truth| |QO|Shadow Panther Heart: 5/5|
 
 T Threat From the Sea (Part 2) |QID|1426|
 A Threat From the Sea (Part 3) |QID|1427|

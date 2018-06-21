@@ -1,8 +1,8 @@
-
 TourGuide:RegisterGuide("Azshara (50)", "The Hinterlands (50-51)", "Horde", function()
 return [[
 F Orgrimmar
 h Orgrimmar
+N [Box of Empty Vials] |N|Have this ready| |L|10695|
 
 F Azshara
 A Stealing Knowledge |QID|3517|

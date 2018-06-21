@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Azshara (46-47)", "Stranglethorn Vale (47)", "Horde", function()
+TourGuide:RegisterGuide("Azshara (46-47)", "Hinterlands (47)", "Horde", function()
 return [[
 F Splintertree Post |N|Ashenvale|
 R Azshara |N|Go east dur!|
@@ -11,7 +11,7 @@ T Spiritual Unrest |QID|5535|
 T A Land Filled with Hatred |QID|5536|
 
 R Valormok |N|North of the road, on the mountain's edge (21,52)|
-T Betrayed (Part 1) |QID|3504| |N|Skip the follow-up.|
+T Betrayed (Part 1) |QID|3504| |N|Skip the follow-up|
 
 H Orgrimmar
 F Undercity

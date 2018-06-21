@@ -13,7 +13,7 @@ A Coolant Heads Prevail |QID|713| |L|3829| |O|
 A Gyro... What? |QID|714| |L|4389| |O|
 
 R Kargath
-f Get the flight path |N|At (4,45)|
+f Flight Path |N|At (4,45)|
 A Coyote Thieves |QID|1419|
 A Report to Helgrum |QID|1420|
 A Broken Alliances |QID|782|

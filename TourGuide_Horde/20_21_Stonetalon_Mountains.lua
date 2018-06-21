@@ -35,7 +35,7 @@ A Further Instructions (Part 1) |QID|1094|
 T Arachnophobia |T| |QID|6284| |N|Back at Sun Rock Retreat|
 T Kaya's Alive |QID|6401|
 A Cycle of Rebirth |QID|1087|
-f Get the Flight Path
+f Flight Path
 
 A Boulderslide Ravine |T| |QID|6421|
 A Trouble in the Deeps |T| |QID|6562|

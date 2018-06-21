@@ -5,7 +5,7 @@ A Pacify the Centaur |QID|4841|
 A Wanted - Arnak Grimtotem |QID|5147|
 A Alien Egg |QID|4821|
 A Wind Rider |QID|4767|
-f Get the Flight Path
+f Flight Path
 
 C Pacify the Centaur |QID|4841| |N|Just north of Freewind|
 A Test of Faith |QID|1149| |N|In the Weathered Nook (53.97, 41.58), northeast of Freewind.|

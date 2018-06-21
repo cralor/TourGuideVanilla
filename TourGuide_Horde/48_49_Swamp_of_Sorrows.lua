@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Swamp of Sorrows (48-49)", "Tanaris (49-50)", "Horde", function()
+TourGuide:RegisterGuide("Swamp of Sorrows (48-49)", "Feralas (49)", "Horde", function()
 return [[
 F Stonard |N|Swamp of Sorrows|
 A Fall From Grace |QID|2784| |NODEBUG|
@@ -6,21 +6,35 @@ T Fall From Grace |QID|2784| |NODEBUG|
 A The Disgraced One |N|Talk to Fallen Hero of the Horde (34,66) until he gives you the quest| |QID|2621|
 T Cortello's Riddle (Part 1) |N|Under the bridge (22,48)| |QID|624|
 A Cortello's Riddle (Part 2) |QID|625|
+T Nothing But the Truth (Part 2) |QID|1383|
+A Nothing But the Truth (Part 3) |QID|1388|
+T Nothing But the Truth (Part 3) |QID|1388|
+A Nothing But the Turth (Part 4) |QID|1391|
 
-T The Disgraced One |N|Back at Stonard| |QID|2621|
-A The Missing Orders |QID|2622|
-T The Missing Orders |N|At the Inn| |QID|2622|
-A The Swamp Talker |QID|2623|
+H Stonard
+T Nothing But the Truth (Part 4) |T| |QID|1391|
+T The Disgraced One |T| |N|Back at Stonard| |QID|2621|
+A The Missing Orders |T| |QID|2622|
+T Return to Fel'Zerul |T| |N|Skip the follow-up| |QID|1444|
+T The Missing Orders |T| |N|At the Inn| |QID|2622|
+A The Swamp Talker |T| |QID|2623|
 
-C The Swamp Talker |N|At the cave at (65,78)| |QID|2623|
-K Jarquia |N|At around (94,50) or (92,65)|
+A Continued Threat |QID|1428|
+C Continued Threat |N|At the cave at (65,78)| |QID|1428|
+C The Swamp Talker |QID|2623|
 
-T The Swamp Talker |N|At Fallen Hero of the horde (34,66)| |QID|2623|
+T Continued Threat |QID|1428|
+K Jarquia |N|At around (94,50) or (92,65)| |L|11723|
+D Die
+
+T The Swamp Talker |N|Back in Stonard at Fallen Hero of the horde (34,66)| |QID|2623|
 A A Tale of Sorrow |N|Talk to him| |QID|2801|
-T A Tale of Sorrow |N|talk talk| |QID|2801|
+T A Tale of Sorrow |N|talk talk, skip the follow-up| |QID|2801|
 
-H The Salty Sailor Tavern |N|Booty Bay|
-F Brackenwall Village |N|Boat to Ratchet and fly down|
+F Booty Bay
+A Whiskey Slim's Lost Grog |T| |QID|580|
+
+F Brackenwall Village |T| |N|Boat to Ratchet and fly down|
 A The Brood of Onyxia |T| |QID|1172|
 
 N Get Overdue Package |N|From the zeppelin crash (54,55) for "Ledger from Tanaris"| |Z|Dustwallow Marsh| |L|11724|

@@ -7,6 +7,7 @@ local actiontypes = {
 	R = "RUN",
 	H = "HEARTH",
 	h = "SETHEARTH",
+	G = "GRIND",
 	F = "FLY",
 	f = "GETFLIGHTPOINT",
 	N = "NOTE",

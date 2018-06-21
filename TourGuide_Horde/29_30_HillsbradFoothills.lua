@@ -38,7 +38,7 @@ A Essence of the Exile |QID|1714| |C|Warrior| |N|This quest involves killing NPC
 
 F Undercity |C|Warrior|
 F Grom'gol Base Camp |C|Warrior| |N|Take zeppelin to Grom'Gol|
-f Get the flight path |C|Warrior|
+f Flight Path |C|Warrior|
 
 K Bloodscalp Scout |QID|1712| |Q|Cyclonian| |C|Warrior| |QO|Bloodscalp Tusk: 30/30| |N|Bloodscalp trolls (29.8, 21.6) (34.0, 16.8).| |Z|Stranglethorn Vale|
 

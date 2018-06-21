@@ -138,6 +138,8 @@ function TourGuide:UpdateStatusFrame()
 			local turnedin, logi, complete = self:GetObjectiveStatus(i)
 			local note, useitem, optional, prereq, lootitem, lootqty = self:GetObjectiveTag("N", i), self:GetObjectiveTag("U", i), self:GetObjectiveTag("O", i), self:GetObjectiveTag("PRE", i), self:GetObjectiveTag("L", i)
 			self:Debug(11, "UpdateStatusFrame", i, action, name, note, logi, complete, turnedin, quest, useitem, optional, lootitem, lootqty, lootitem and GetItemCount(lootitem) or 0)
+			local level = tonumber((self:GetObjectiveTag("LV", i)))
+			local needlevel = level and level > UnitLevel("player")
 			local hasuseitem = useitem and self:FindBagSlot(useitem)
 			local haslootitem = lootitem and GetItemCount(lootitem) >= lootqty
 			local prereqturnedin = prereq and self.turnedin[prereq]
@@ -168,6 +170,7 @@ function TourGuide:UpdateStatusFrame()
 			elseif action == "TURNIN" then incomplete = not optional or logi
 			elseif action == "COMPLETE" then incomplete = not complete and (not optional or logi)
 			elseif action == "NOTE" or action == "KILL" then incomplete = not optional or haslootitem
+			elseif action == "GRIND" then incomplete = needlevel
 			else incomplete = not logi end
 
 			if incomplete then nextstep = i end
@@ -265,9 +268,14 @@ f:SetScript("OnClick", function()
 				ShowUIPanel(TourGuide.objectiveframe)
 			end
 		else
-			local i = TourGuide:GetQuestLogIndexByName()
-			if i then SelectQuestLogEntry(i) end
-			ShowUIPanel(QuestLogFrame)
+			if QuestLogFrame:IsVisible() or (EQL3_QuestLogFrame and EQL3_QuestLogFrame:IsVisible()) then
+				HideUIPanel(QuestLogFrame)
+				HideUIPanel(EQL3_QuestLogFrame)
+			else
+				local i = TourGuide:GetQuestLogIndexByName()
+				if i then SelectQuestLogEntry(i) end
+				ShowUIPanel(QuestLogFrame)
+			end
 		end
 	end
 end)

@@ -31,5 +31,5 @@ A Goblin Sponsorship (Part 1) |QID|1178|
 T A Bump in the Road |QID|1175| |N|Back at the Mirage Raceway (81.61, 78.00)|
 
 R Gadgetzan |N|Due south out of the zone.|
-f Get the flight path
+f Flight Path
 ]] end)

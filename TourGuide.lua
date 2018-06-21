@@ -21,6 +21,7 @@ TourGuide.icons = setmetatable({
 	SETHEARTH = "Interface\\AddOns\\TourGuide\\resting.tga",
 	HEARTH = "Interface\\Icons\\INV_Misc_Rune_01",
 	NOTE = "Interface\\Icons\\INV_Misc_Note_01",
+	GRIND = "Interface\\Icons\\INV_Stone_GrindingStone_05",
 	USE = "Interface\\Icons\\INV_Misc_Bag_08",
 	BUY = "Interface\\Icons\\INV_Misc_Coin_01",
 	BOAT = "Interface\\Icons\\Ability_Druid_AquaticForm",
@@ -244,7 +245,7 @@ function TourGuide.GetQuadrant(frame)
 	if not x or not y then return "BOTTOMLEFT", "BOTTOM", "LEFT" end
 	local hhalf = (x > UIParent:GetWidth()/2) and "RIGHT" or "LEFT"
 	local vhalf = (y > UIParent:GetHeight()/2) and "TOP" or "BOTTOM"
-	return vhalf..hhalf, vhalf, hhalf	
+	return vhalf..hhalf, vhalf, hhalf
 end
 
 function TourGuide.GetUIParentAnchor(frame)
