@@ -11,6 +11,7 @@
 
 ## OptionalDeps: TomTom, pfQuest, LightHeaded
 
+libs\compat.lua
 libs\tg_compat.lua
 libs\Dongle.lua
 WidgetWarlock.lua

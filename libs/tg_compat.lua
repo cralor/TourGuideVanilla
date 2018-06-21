@@ -1,21 +1,16 @@
---[[
-  Some shims for Lua and WoW API not available in 1.12.x
-  -- Roadblock & rsheep
-]]
-local _G = getfenv(0)
-
 TG = {}
 
-TG.select = function(index,...)
-  assert(tonumber(index) or index=="#","Invalid argument #1 to select(). Usage: select(\"#\"|int,...)")
-  if index == "#" then
-    return tonumber(arg.n) or 0
-  end
-  for i=1,index-1 do
-    table.remove(arg,1)
-  end
-  return unpack(arg)
-end
+-- TG.select = function(index,...)
+--   assert(tonumber(index) or index=="#","Invalid argument #1 to select(). Usage: select(\"#\"|int,...)")
+--   if index == "#" then
+--     return tonumber(arg.n) or 0
+--   end
+--   for i=1,index-1 do
+--     table.remove(arg,1)
+--   end
+--   return unpack(arg)
+-- end
+-- TG.select = getfenv(0).select or TG.select
 
 TG.join = function(delimiter, list)
   assert(type(delimiter)=="string" and type(list)=="table", "Invalid arguments to join(). Usage: string.join(delimiter, list)")
@@ -51,30 +46,4 @@ TG.modf = function(f)
     return math.floor(f), math.mod(f,1)
   end
   return math.ceil(f), math.mod(f,1)
-end
-
-if not _G.GetItemCount then
-  GetItemCount = function(itemID)
-    local itemInfoTexture = TG.select(9, GetItemInfo(itemID))
-    if itemInfoTexture == nil then return 0 end
-    local totalItemCount = 0
-    for i=0,NUM_BAG_FRAMES do
-      local numSlots = GetContainerNumSlots(i)
-      if numSlots > 0 then
-        for k=1,numSlots do
-          local itemTexture, itemCount = GetContainerItemInfo(i, k)
-          if itemInfoTexture == itemTexture then
-            totalItemCount = totalItemCount + itemCount
-          end
-        end
-      end
-    end
-    return totalItemCount
-  end
-  _G.GetItemCount = GetItemCount
-end
-
-if not _G.print then
-  print = function(str) DEFAULT_CHAT_FRAME:AddMessage(tostring(str)) end
-  _G.print = print
 end
