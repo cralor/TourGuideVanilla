@@ -18,7 +18,7 @@ TourGuide.icons = setmetatable({
 	RUN = "Interface\\Icons\\Ability_Tracking",
 	MAP = "Interface\\Icons\\Ability_Spy",
 	FLY = "Interface\\Icons\\Ability_Rogue_Sprint",
-	SETHEARTH = "Interface\\AddOns\\TourGuide\\resting.tga",
+	SETHEARTH = "Interface\\AddOns\\TourGuide\\media\\resting.tga",
 	HEARTH = "Interface\\Icons\\INV_Misc_Rune_01",
 	NOTE = "Interface\\Icons\\INV_Misc_Note_01",
 	GRIND = "Interface\\Icons\\INV_Stone_GrindingStone_05",
@@ -27,7 +27,7 @@ TourGuide.icons = setmetatable({
 	BOAT = "Interface\\Icons\\Ability_Druid_AquaticForm",
 	GETFLIGHTPOINT = "Interface\\Icons\\Ability_Hunter_EagleEye",
 	PET = "Interface\\Icons\\Ability_Hunter_BeastCall02",
-	DIE = "Interface\\AddOns\\TourGuide\\dead.tga",
+	DIE = "Interface\\AddOns\\TourGuide\\media\\dead.tga",
 }, {__index = function() return "Interface\\Icons\\INV_Misc_QuestionMark" end})
 
 
