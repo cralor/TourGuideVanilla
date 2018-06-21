@@ -237,8 +237,8 @@ local function argcheck(value, num, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a
 		error(string.format(L["BAD_ARGUMENT"],2, "argcheck", "number", type(num)), 1)
 	end
 
-	for i=1,TG.select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
-		if type(value) == TG.select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then return end
+	for i=1,select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
+		if type(value) == select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then return end
 	end
 
 	local types = table.concat({a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20}, ", ")
@@ -767,8 +767,8 @@ local function initdb(parent, name, defaults, defaultProfile, olddb)
 	local player = UnitName("player")
 	local realm = GetRealmName()~=nil and GetRealmName() or GetCVar("realmName")
 	local char = string.format("%s - %s", player, realm)
-	local class = TG.select(2, UnitClass("player"))
-	local race = TG.select(2, UnitRace("player"))
+	local class = select(2, UnitClass("player"))
+	local race = select(2, UnitRace("player"))
 	local faction = UnitFactionGroup("player") or false
 	local factionrealm = faction and string.format("%s - %s", faction, realm) or false
 
@@ -1029,9 +1029,9 @@ function Dongle:InitializeSlashCommand(desc, name, a1,a2,a3,a4,a5,a6,a7,a8,a9,a1
 	assert(3, reg, string.format(L["MUST_CALLFROM_REGISTERED"], "InitializeSlashCommand"))
 	argcheck(desc, 1, "string")
 	argcheck(name, 2, "string")
-	argcheck(TG.select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20), 3, "string")
-	for i = 2,TG.select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
-		argcheck(TG.select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20), i+1, "string")
+	argcheck(select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20), 3, "string")
+	for i = 2,select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
+		argcheck(select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20), i+1, "string")
 	end
 
 	local cmd = {}
@@ -1045,8 +1045,8 @@ function Dongle:InitializeSlashCommand(desc, name, a1,a2,a3,a4,a5,a6,a7,a8,a9,a1
 
 	local genv = getfenv(0)
 
-	for i = 1,TG.select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
-		genv["SLASH_"..name..tostring(i)] = "/"..TG.select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
+	for i = 1,select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) do
+		genv["SLASH_"..name..tostring(i)] = "/"..select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	end
 
 	genv.SlashCmdList[name] = function(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) OnSlashCommand(cmd, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
@@ -1116,11 +1116,11 @@ local dbcommands = {
 function Dongle.InjectDBCommands(cmd, db, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	assert(3, commands[cmd], string.format(L["MUST_CALLFROM_SLASH"], "InjectDBCommands"))
 	assert(3, databases[db], string.format(L["BAD_ARGUMENT_DB"], 2, "InjectDBCommands"))
-	local argc = TG.select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
+	local argc = select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	assert(3, argc > 0, L["INJECTDB_USAGE"])
 
 	for i=1,argc do
-		local cmdname = string.lower(TG.select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20))
+		local cmdname = string.lower(select(i, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20))
 		local entry = dbcommands[cmdname]
 		assert(entry, L["INJECTDB_USAGE"])
 		local func = entry[3]

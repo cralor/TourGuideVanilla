@@ -1,17 +1,5 @@
 TG = {}
 
--- TG.select = function(index,...)
---   assert(tonumber(index) or index=="#","Invalid argument #1 to select(). Usage: select(\"#\"|int,...)")
---   if index == "#" then
---     return tonumber(arg.n) or 0
---   end
---   for i=1,index-1 do
---     table.remove(arg,1)
---   end
---   return unpack(arg)
--- end
--- TG.select = getfenv(0).select or TG.select
-
 TG.join = function(delimiter, list)
   assert(type(delimiter)=="string" and type(list)=="table", "Invalid arguments to join(). Usage: string.join(delimiter, list)")
   local len = getn(list)
