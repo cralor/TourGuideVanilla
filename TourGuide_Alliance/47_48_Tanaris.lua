@@ -21,7 +21,7 @@ N If you find Tooga... |QID|1560| |N|Accept his quest. He'll follow you, so you 
 C Noxious Lair Investigation |N|At the Noxious Lair (34,46)| |QID|82|
 T Tooga's Quest |O| |QID|1560|
 A Yuka Screwspigot |QID|4324| |N|Back at Steamwheedle Port|
-T Screecher Spirits |N|Skip the follow-up| |QID|3520|
+T Screecher Spirits |S| |N|Skip the follow-up| |QID|3520|
 
 T The Thirsty Goblin |QID|2605| |N|Back at Gadgetzan|
 A In Good Taste |QID|2606|

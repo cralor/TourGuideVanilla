@@ -15,7 +15,7 @@ T Identifying the Brood |T| |QID|1169|
 A The Brood of Onyxia (Part 1) |QID|1170| |T|
 T The Brood of Onyxia (Part 1) |QID|1170| |T|
 A The Brood of Onyxia (Part 2) |QID|1171| |T|
-T The Brood of Onyxia (Part 2) |QID|1171| |T| |N|Skip the follow-up|
+T The Brood of Onyxia (Part 2) |QID|1171| |T| |S| |N|Skip the follow-up|
 ]]
 end)
 

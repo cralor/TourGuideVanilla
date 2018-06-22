@@ -11,7 +11,7 @@ T Spiritual Unrest |QID|5535|
 T A Land Filled with Hatred |QID|5536|
 
 R Valormok |N|North of the road, on the mountain's edge (21,52)|
-T Betrayed (Part 1) |QID|3504| |N|Skip the follow-up|
+T Betrayed (Part 1) |QID|3504| |S| |N|Skip the follow-up|
 
 H Orgrimmar
 F Undercity

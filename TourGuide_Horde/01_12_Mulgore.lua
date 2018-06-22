@@ -185,7 +185,7 @@ T Journey to the Crossroads |QID|854| |N|Follow the road east out of town, north
 A Disrupt the Attacks |QID|871|
 A Supplies for the Crossroads |QID|5041|
 A Harpy Raiders |QID|867|
-T Meats to Orgrimmar |QID|6365| |N|Skip the follow-up quest|
+T Meats to Orgrimmar |QID|6365| |S| |N|Skip the follow-up quest|
 A Fungal Spores |QID|848|
 A Wharfmaster Dizzywig |QID|1492|
 A A Bundle of Hides |QID|6361| |N|In the forge at the north edge of town (51.20, 29.11)| |Z|The Barrens|

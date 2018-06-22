@@ -20,7 +20,7 @@ A Raptor Thieves |QID|869| |T|
 A Disrupt the Attacks |QID|871| |T|
 A Supplies for the Crossroads |QID|5041| |T|
 A Harpy Raiders |QID|867| |N|Up in the tower (51.64, 30.94)| |T|
-T Meats to Orgrimmar |QID|6365| |N|Skip Ride to Orgrimmar| |R|Orc, Troll| |T|
+T Meats to Orgrimmar |QID|6365| |S| |N|Skip "Ride to Orgrimmar"| |R|Orc, Troll| |T|
 A Fungal Spores |QID|848| |T|
 A Wharfmaster Dizzywig |QID|1492| |T|
 T Crossroads Conscription |QID|842| |N|Follow the road, taking left turn to the Crossroads (52.22, 30.97)| |R|Orc, Troll, Undead| |T|

@@ -3,7 +3,7 @@ return [[
 A Cenarius' Legacy |T| |QID|1087|
 A Harpies Threaten |T| |QID|6282|
 h Sun Rock Retreat |T|
-T Boulderslide Ravine |N|Skip the follow-up| |T| |QID|6421|
+T Boulderslide Ravine |S| |N|Skip the follow-up| |T| |QID|6421|
 A Elemental War |T| |QID|6393|
 
 C Cycle of Rebirth |N|Pick up seeds around Mirkfallon Lake (48,41)| |QID|6301|

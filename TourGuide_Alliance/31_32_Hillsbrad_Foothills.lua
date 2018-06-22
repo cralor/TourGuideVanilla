@@ -42,7 +42,7 @@ N Kill yetis |N|In the yeti cave (45.58, 31.40). Need [Yeti Fur] x10 for "Bartol
 T Encrypted Letter |QID|511|
 A Letter to Stormpike |QID|514|
 T Syndicate Assassins |QID|505|
-T Foreboding Plans |N|Skip the follow-up| |QID|510|
+T Foreboding Plans |S| |N|Skip the follow-up| |QID|510|
 T Soothing Turtle Bisque |QID|555|
 T Missing Crystals |QID|9435|
 T Costly Menace |QID|564|
@@ -69,7 +69,7 @@ B Bolt of Woolen Cloth |QID|565| |L|2997| |N|Buy from auction or a tailor.|
 H Southshore |QID|525|
 B Fine Thread |L|2321| |N|From vendor in Southshore (49.0, 55.1). Skip if you couldn't find a Hillman's Cloak.| |QID|565|
 T Bartolo's Yeti Fur Cloak |QID|565|
-T Further Mysteries |N|Skip the follow-up| |QID|525|
+T Further Mysteries |S| |N|Skip the follow-up| |QID|525|
 
 F Menethil Harbor |C|Warlock|
 C Tome of the Cabal (Part 3) |N|Kill Dragonmaw Bonewarders and Shadowwarders to the east (47,47)| |C|Warlock| |Z|Wetlands| |QID|1804|

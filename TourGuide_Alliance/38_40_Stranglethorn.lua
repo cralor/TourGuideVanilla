@@ -69,8 +69,8 @@ C Panther Mastery (Part 3) |N|Northeast of the raptors in a suspiciously "empty"
 C Excelsior |N|Travel north along the shore killing all the Saltwater Crocolisks you come across until an Elder Saltwater Crocolisks spawns| |QID|628|
 C Water Elementals |N|On the island (21,22)| |QID|601|
 
-T Panther Mastery (Part 3) |N|Back at Nesingwary's, skip the follow-up.| |QID|192|
-T Raptor Mastery (Part 3) |N|Skip the follow-up.| |QID|196|
+T Panther Mastery (Part 3) |S| |N|Back at Nesingwary's, skip the follow-up.| |QID|192|
+T Raptor Mastery (Part 3) |S| |N|Skip the follow-up.| |QID|196|
 T Chapter I |QID|339|
 T Chapter II |QID|340|
 T Chapter III |QID|341|

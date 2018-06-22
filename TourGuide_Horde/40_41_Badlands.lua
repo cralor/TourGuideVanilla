@@ -33,8 +33,8 @@ C Broken Alliances |QID|782| |N|If you haven't yet found him, kill Boss Tho'grun
 C Study of the Elements: Rock (Part 3) |QID|712| |N|Greaters (15,88)|
 
 T Coyote Thieves |QID|1419|
-T Broken Alliances |QID|782| |N|Skip the follow-up|
-T Badlands Reagent Run |QID|2258| |N|Skip the follow-up|
+T Broken Alliances |QID|782| |S| |N|Skip the follow-up|
+T Badlands Reagent Run |QID|2258| |S| |N|Skip the follow-up|
 T Study of the Elements: Rock (Part 3) |QID|712|
 A This Is Going to Be Hard |QID|734| |O| |PRE|Gyro... What?|
 T This Is Going to Be Hard |QID|734| |O| |PRE|Gyro... What?|

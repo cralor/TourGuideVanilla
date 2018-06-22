@@ -10,7 +10,7 @@ A Winterfall Activity |QID|8464|
 N Grab feathers you see |N|For "Moontouched Wildkin"| |QID|978|
 T The New Springs |N|To the south near the hot springs (31.27, 45.20)| |Z|Winterspring| |QID|980|
 A Strange Sources |QID|4842|
-T It's a Secret to Everybody (Part 3) |QID|3908| |N|Skip the follow-up.|
+T It's a Secret to Everybody (Part 3) |QID|3908| |S| |N|Skip the follow-up.|
 A Threat of the Winterfall |QID|5082|
 
 R Everlook |N|Follow the road east|
@@ -36,7 +36,7 @@ C Winterfall Activity |N|East of town (66,34)| |QID|8464|
 T To Winterspring! |QID|5249| |O|
 T Starfall |QID|5250| |O|
 A The Ruins of Kel'Theril |QID|5244|
-T Enraged Wildkin (Part 1) |N|Skip the follow-up| |QID|6604|
+T Enraged Wildkin (Part 1) |S| |N|Skip the follow-up| |QID|6604|
 T The Ruins of Kel'Theril |QID|5244|
 A Troubled Spirits of Kel'Theril |QID|5245|
 
@@ -56,7 +56,7 @@ A Mystery Goo |QID|5085|
 T Mystery Goo |N|Back in Winterspring. Skip the follow-up.| |QID|5085|
 
 F Rut'theran Village |QID|6762|
-T Moontouched Wildkin |N|Skip the follow-up| |QID|978|
+T Moontouched Wildkin |S| |N|Skip the follow-up| |QID|978|
 
 A The New Frontier (Part 1) |QID|1047| |N|From Herald Moonstalker in Darnassus, she wanders in a figure eight around town and across the bridge. From the bank run north and around coming back across the bridge, then south and around until you find her. She also walks behind the bank!|
 T The New Frontier (Part 1) |QID|1047|

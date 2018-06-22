@@ -14,7 +14,7 @@ C Kodo Roundup |QID|5561| |N|In the Kodo Graveyard|
 
 T The Kolkar of Desolace |QID|1362|
 A Khan Dez'hepah |QID|1365|
-A Gelkis Alliance |QID|1368| |N|Skip "Magram Alliance"|
+A Gelkis Alliance |QID|1368| |S| |N|Skip "Magram Alliance"|
 A Catch of the Day |QID|5386|
 T Alliance Relations (Part 2) |QID|1432| |N|Southwest at Ghost Walker Post (52.57, 54.25), you probably want to stick to the road.|
 A Alliance Relations (Part 3) |QID|1433|
@@ -73,7 +73,7 @@ T Book of the Ancients |QID|6027| |N|Back at Ethel Rethor (38.89, 27.25)|
 
 T The Corrupter (Part 3) |QID|1482| |N|Back at Ghost Walker Post (52.22, 53.56)|
 A The Corrupter (Part 4) |QID|1484|
-T The Corrupter (Part 4) |QID|1484| |N|Skip last follow-up|
+T The Corrupter (Part 4) |QID|1484| |S| |N|Skip last follow-up|
 
 C Bone Collector |QID|5501|
 C Centaur Bounty |QID|1366|
@@ -84,7 +84,7 @@ T Bone Collector |QID|5501| |N|Back at Bibbly F'utzbuckle.|
 
 H Shadowprey Village |QID|6143|
 N Stable Pet |C|Hunter|
-T Hand of Iruxos |QID|5381| |N|Skip the follow-up|
+T Hand of Iruxos |QID|5381| |S| |N|Skip the follow-up|
 T Other Fish to Fry |QID|6143|
 T Clam Bait |QID|6142|
 T Stealing Supplies |QID|1370|
@@ -101,7 +101,7 @@ T The Black Shield |QID|1251|
 A The Black Shield |QID|1321|
 T Suspicious Hoofprints |QID|1268|
 T Lieutenant Paval Reethe |QID|1269|
-T The Black Shield |QID|1321| |N|Skip the follow-up|
+T The Black Shield |QID|1321| |S| |N|Skip the follow-up|
 N Buy First Aid Books |N|From Balai Lok'Wein|
 
 F Ratchet

@@ -17,7 +17,7 @@ C Portals of the Legion |N|At Mannoroc Coven| |QID|5581|
 
 T Ghost-o-Plasm Round Up |QID|6134|
 T The Corrupter |QID|1488|
-T Khan Jehn |N|Skip the follow-up| |QID|1374|
+T Khan Jehn |N|Skip the follow-up| |S| |QID|1374|
 
 H Shadowprey Village
 T Portals of the Legion |T| |QID|5581|

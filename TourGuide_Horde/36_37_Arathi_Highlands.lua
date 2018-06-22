@@ -2,7 +2,7 @@ TourGuide:RegisterGuide("Arathi Highlands (36-37)", "Alterac Mountains (37)", "H
 return [[
 F Hammerfall
 h Hammerfall
-T Trollbane |N|Skip the follow-up| |QID|638|
+T Trollbane |S| |N|Skip the follow-up| |QID|638|
 A Foul Magics |QID|673|
 A Guile of the Raptor (Part 1) |QID|701|
 A The Princess Trapped |N|At the Shards of Myzrael west of Hammerfall (62.5, 33.8)| |QID|642|
@@ -36,6 +36,6 @@ A Guile of the Raptor (Part 3) |QID|847|
 T Guile of the Raptor (Part 3) |QID|847|
 
 C Call to Arms |QID|677| |N|Witherbark Village (67,64)|
-T Call to Arms |QID|677| |N|Skip the follow-up|
+T Call to Arms |QID|677| |S| |N|Skip the follow-up|
 ]]
 end)

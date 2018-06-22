@@ -45,7 +45,7 @@ C Boulderslide Ravine |N|Far south down the road, hidden little cave up in the m
 T Blood Feeders |QID|6461|
 T Goblin Invaders |QID|1062|
 A Shredding Machines |QID|1068|
-T Wenikee Boltbucket |QID|3921| |N|Skip Nugget Slugs|
-T Report to Kadrak |QID|6541| |N|Skip The Warsong Reports
+T Wenikee Boltbucket |QID|3921| |S| |N|Skip "Nugget Slugs"|
+T Report to Kadrak |QID|6541| |S| |N|Skip "The Warsong Reports"|
 ]]
 end)

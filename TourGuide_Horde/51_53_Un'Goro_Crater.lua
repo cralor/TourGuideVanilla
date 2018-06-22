@@ -53,7 +53,7 @@ C Larion and Muigin |N|Kill lasher around the camp area. Also kill any diemetrad
 C The Eastern Pylon |N|To the east, of course (76,51)|
 C The Bait for Lar'korwi |N|Use the meat and mixture at the flat rock behind the east pylon (79.9, 49.9)| |U|11568|
 T The Bait for Lar'korwi
-T The Apes of Un'Goro |N|Skip the follow-up|
+T The Apes of Un'Goro |S| |N|Skip the follow-up|
 
 C Alien Ecology |N|Down in the Slithering Scar (50,77). Head left inside to the big room (48.62, 85.33), use the vial| |U|11132|
 N Kill bugs for [Gorishi Scent Gland] |L|11837|
@@ -92,7 +92,7 @@ K Oozes |L|12235 30|
 R Silithus |N|Take the path up out of the crater in the northwest corner of the zone (29,22)|
 R Cenarion Hold |N|Follow the road|
 F Gadgetzan |N|FP is up the big hill|
-T Bungle in the Jungle |N|Skip the follow-up|
+T Bungle in the Jungle |S| |N|Skip the follow-up|
 T Super Sticky
 
 H Thunder Bluff

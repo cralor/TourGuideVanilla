@@ -41,10 +41,10 @@ H Everlook
 T Are We There, Yeti? (Part 2) |QID|977|
 
 F Bloodvenom Post
-T Wild Guardians |N|Skip the follow-up| |QID|4741|
+T Wild Guardians |S| |N|Skip the follow-up| |QID|4741|
 
 F Emerald Sanctuary
-T Collection of the Corrupt Water |N|Skip the follow-up| |QID|5157|
+T Collection of the Corrupt Water |S| |N|Skip the follow-up| |QID|5157|
 T Verifying the Corruption |QID|5156|
 T Cleansing Felwood |N|North along the road| |QID|4102|
 

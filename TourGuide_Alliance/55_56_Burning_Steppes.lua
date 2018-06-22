@@ -30,7 +30,7 @@ C FIFTY! YEP! |N|Kill orcs at Blackrock Stronghold (43,36) or Pillar of Ash (49,
 C Broodling Essence |N|Dragons to the northeast. Use the device on them, then kill them. Get help if you can.| |U|12284| |QID|4726|
 
 A A Taste of Flame |N|In the cave at Slither Rock (94,31)| |QID|4024|
-T A Taste of Flame |N|Skip the follow-up| |QID|4024|
+T A Taste of Flame |S| |N|Skip the follow-up| |QID|4024|
 
 T FIFTY! YEP! |N| Back at Morgan's Vigil (84,68)| |QID|4283|
 T Gor'tesh the Brute Lord |QID|3824|

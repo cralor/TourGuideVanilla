@@ -71,7 +71,7 @@ T Harpy Lieutenants |QID|875|
 A Serena Bloodfeather |QID|876|
 
 T Verog the Dervish |QID|851| |N|At the bunker to the west of the Crossroads (45.33, 28.45)|
-T Centaur Bracers |QID|855| |N|Skip Hezrul Bloodmark|
+T Centaur Bracers |QID|855| |S| |N|Skip "Hezrul Bloodmark"|
 
 C Serena Bloodfeather |N|Serena Bloodfeather - Northwest Barrens (38,11)| |QID|876|
 C Echeyakee |QID|881| |N|Located at (55.83, 17.08)|

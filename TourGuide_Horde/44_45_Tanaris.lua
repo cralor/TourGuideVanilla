@@ -1,7 +1,7 @@
 TourGuide:RegisterGuide("Tanaris (44-45)", "Feralas (45-46)", "Horde", function()
 return [[
 F Gadgetzan
-T Tran'rek |T| |QID|2864| |N|Skip the follow-up|
+T Tran'rek |T| |QID|2864| |S| |N|Skip the follow-up|
 A WANTED: Caliph Scorpidsting |N|Wanted poster in front of the cage| |T| |QID|2781|
 A WANTED: Andre Firebeard |T| |QID|2875|
 
@@ -23,7 +23,7 @@ A Rizzle's Schematics |QID|1194|
 T Rizzle's Schematics |N|At Pozzik| |QID|1194|
 
 H Gadgetzan
-T Safety First |N|Skip the follow-up| |T| |QID|1188|
+T Safety First |S| |N|Skip the follow-up| |T| |QID|1188|
 
 N Noonshade Ruins |N|Begin Wastewander Justice & Water Pouch Bounty (60,24)|
 
@@ -47,7 +47,7 @@ T Water Pouch Bounty |QID|1707|
 T Wastewander Justice |QID|1690|
 A More Wastewander Justice |QID|1691|
 C Gadgetzan Water Survey |N|Grind mobs along the way, at (38,29)| |QID|992|
-T Gadgetzan Water Survey |N|Skip the follow-up| |QID|992|
+T Gadgetzan Water Survey |S| |N|Skip the follow-up| |QID|992|
 
 T Pirate Hats Ahoy! |N|Back at Steamwheedle Port| |QID|8365|
 T Stoley's Shipment |QID|2873|

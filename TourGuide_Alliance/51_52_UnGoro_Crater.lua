@@ -55,7 +55,7 @@ C The Eastern Pylon |N|To the east, of course (77.2,50)| |QID|4287|
 U Open Torwa's Pouch |U|11568| |QID|4292|
 U Place the meat |U|11569| |N|At the flat rock behind the east pylon (79.9, 49.9)| |QID|4292|
 C The Bait for Lar'korwi |U|11570| |QID|4292| |N|Use the pheromone mixture, kill him!|
-T The Apes of Un'Goro |N|Skip the follow-up| |QID|4289|
+T The Apes of Un'Goro |S| |N|Skip the follow-up| |QID|4289|
 T The Bait for Lar'korwi |QID|4292|
 
 C Alien Ecology |N|Down in the Slithering Scar (50,77). Head left inside to the big room (48.62, 85.33), use the vial| |U|11132| |QID|3883|
@@ -76,7 +76,7 @@ C A Little Help From My Friends |NODEBUG| |N|Use the canteen on him if he faints
 T A Little Help From My Friends |NODEBUG| |QID|4491|
 T Beware of Pterrordax |QID|4501|
 T Shizzle's Flyer |QID|4503|
-T Muigin and Larion |N|Skip the follow-up| |QID|4141|
+T Muigin and Larion |S| |N|Skip the follow-up| |QID|4141|
 T Roll the Bones |QID|3882|
 T Alien Ecology |QID|3883|
 T Expedition Salvation |QID|3881|
@@ -92,7 +92,7 @@ A The New Springs |QID|980|
 R Silithus |N|Take the path up out of the crater in the northwest corner of the zone (29,22)| |QID|4504|
 R Cenarion Hold |N|Follow the road| |QID|4504|
 F Gadgetzan |N|Flightpoint is up the big hill|
-T Bungle in the Jungle |N|Skip the follow-up| |QID|4496|
+T Bungle in the Jungle |S| |N|Skip the follow-up| |QID|4496|
 T Super Sticky |QID|4504|
 
 F Ratchet |QID|4502|

@@ -27,7 +27,7 @@ C The Thirsty Goblin |N|At (28,65)| |QID|2605|
 A Tooga's Quest |QID|1560|
 C Tooga's Quest |QID|1560| |N|Long escort quest ends at Torta (66,25)|
 T Tooga's Quest |QID|1560|
-T Screecher Spirits |N|Skip the follow-up| |QID|3520|
+T Screecher Spirits |S| |N|Skip the follow-up| |QID|3520|
 
 H Gadgetzan
 T The Thirsty Goblin |T| |QID|2605|

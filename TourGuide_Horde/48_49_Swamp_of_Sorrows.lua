@@ -15,7 +15,7 @@ H Stonard
 T Nothing But the Truth (Part 4) |T| |QID|1391|
 T The Disgraced One |T| |N|Back at Stonard| |QID|2621|
 A The Missing Orders |T| |QID|2622|
-T Return to Fel'Zerul |T| |N|Skip the follow-up| |QID|1444|
+T Return to Fel'Zerul |T| |S| |N|Skip the follow-up| |QID|1444|
 T The Missing Orders |T| |N|At the Inn| |QID|2622|
 A The Swamp Talker |T| |QID|2623|
 

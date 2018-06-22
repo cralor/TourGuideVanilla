@@ -53,8 +53,8 @@ T Book of the Ancients |N|Back on shore at the tower| |QID|6027|
 C Reagents for Reclaimers Inc. (Part 2) |N|Get the last few reagents you need, you should have most by now.| |QID|1459|
 
 H Nijel's Point |QID|1440|
-T Reagents for Reclaimers Inc. (Part 2) |N|Skip the follow-up| |T| |QID|1459|
-T The Karnitol Shipwreck (Part 2) |N|Skip the follow-up| |T| |QID|1455|
+T Reagents for Reclaimers Inc. (Part 2) |S| |N|Skip the follow-up| |T| |QID|1459|
+T The Karnitol Shipwreck (Part 2) |S| |N|Skip the follow-up| |T| |QID|1455|
 T Centaur Bounty |T| |QID|1387|
 T Return to Vahlarriel |T| |QID|1440|
 ]]
