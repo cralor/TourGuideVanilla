@@ -11,8 +11,8 @@ F Camp Taurajo
 T Ken'zigla's Draught |QID|1511| |T| |C|Warlock|
 A Dogran's Captivity |QID|1515| |T| |C|Warlock|
 
-T Jorn Skyseer |QID|3261| |T| |O|
-A Ishamuhale |QID|882| |T| |O| |PRE|Jorn Skyseer|
+T Jorn Skyseer |QID|3261| |T|
+A Ishamuhale |QID|882| |T|
 A Melor Sends Word |QID|1130| |N|If you haven't grabbed it already|
 h Camp Taurajo |T|
 N Give Blood Shards |N|Gnoll in the cage (45, 59)|
@@ -44,11 +44,11 @@ F The Crossroads
 T Egg Hunt |QID|868| |T|
 T Betrayal from Within (Part 2) |QID|906| |N|Back at the Crossroads (51.53, 30.84)| |T|
 
-C Ishamuhale |QID|882| |N|Kill a Zhevra to get a carcas, then use it at the tree northwest of Ratchet (59.73, 29.86) to summon the raptor.| |O| |PRE|Jorn Skyseer| |U|10338|
+C Ishamuhale |QID|882| |N|Kill a Zhevra to get a carcas, then use it at the tree northwest of Ratchet (59.73, 29.86) to summon the raptor.| |U|10338|
 
 T Further Instructions (Part 1) |N|Down in Ratchet| |T| |QID|1094|
 A Further Instructions (Part 2) |T| |QID|1095|
-T Deepmoss Spider Eggs |O| |T| |QID|1069|
+T Deepmoss Spider Eggs |T| |QID|1069|
 T Chen's Empty Keg |QID|822|
 T The Guns of Northwatch |QID|891|
 

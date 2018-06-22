@@ -1,5 +1,5 @@
 
-TourGuide:RegisterGuide("Western Plaguelands (58-59)", "Hellfire Peninsula (60-62)", "Alliance", function()
+TourGuide:RegisterGuide("Western Plaguelands (58-59)", nil, "Alliance", function()
 return [[
 F Western Plaguelands |QID|5904|
 T A Plague Upon Thee (Part 1) |QID|5903|

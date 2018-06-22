@@ -11,7 +11,7 @@ A News of Dogran (Part 2) |QID|1510| |C|Warlock| |T|
 
 R Honor's Stand |N|Take the road west out of the Crossroads to the edge of Stonetalon Mountains|
 
-T Letter to Jin'Zil |O| |QID|1060|
+T Letter to Jin'Zil |QID|1060|
 A Jin'Zil's Forest Magic |QID|1058|
 A Blood Feeders |N|At Malaka'Jin (71,95)| |QID|6461|
 T News of Dogran |QID|1510| |C|Warlock|
@@ -26,7 +26,7 @@ A Super Reaper 6000 |QID|1093|
 
 C Super Reaper 6000 |QID|1093| |N|Kill operators on the broken down super reaper (62,53)|
 C Goblin Invaders |QID|1062|
-C Deepmoss Spider Eggs |O| |QID|1069|
+C Deepmoss Spider Eggs |QID|1069|
 
 T News of Dogran (Part 2) |QID|1510| |C|Warlock|
 T Super Reaper 6000 |QID|1093|

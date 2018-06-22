@@ -95,7 +95,7 @@ G Level 46 |LV|46| |N|Kill Hippogryphs and Yetis (54,59)|
 
 A Find OOX-22/FE! |O| |QID|2766| |U|8705|
 T Find OOX-22/FE! |O| |N|Cave at (51,57)| |QID|2766|
-A Rescue OOX-22/FE! |O| |N|Long escort, you can skip if interested| |QID|2767|
+A Rescue OOX-22/FE! |O| |N|Long escort, you can skip if interested| |PRE|Find OOX-22/FE!| |QID|2767|
 C Rescue OOX-22/FE! |O| |QID|2767|
 
 H Camp Mojache

@@ -10,7 +10,7 @@ T Reclaimers' Business in Desolace |T| |QID|1453|
 A Reagents for Reclaimers Inc. (Part 1) |T| |QID|1458|
 A The Karnitol Shipwreck (Part 1) |T| |QID|1454|
 h Nijel's Point |T| |QID|1440|
-T Brother Anton |T| |O| |QID|6141|
+T Brother Anton |T| |QID|6141|
 
 T Vahlarriel's Search (Part 1) |N|Find the chest in the broken down caravan to the west (56,17)| |QID|1437|
 A Vahlarriel's Search (Part 2) |QID|1465|

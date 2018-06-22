@@ -37,7 +37,7 @@ C The Scrimshank Redemption |N|To the south at The Gaping Chasm (55,70), go to t
 
 A Find OOX-17/TN! |O| |QID|351|
 T OOX-17/TN Distress Beacon |O| |N|Up in the hills north on the silithid at (60,64)| |QID|351|
-A Rescue OOX-17/TN! |O| |QID|648|
+A Rescue OOX-17/TN! |O| |PRE|Find OOX-17/TN!| |QID|648|
 C Rescue OOX-17/TN! |O| |QID|648|
 
 H Gadgetzan |QID|113|

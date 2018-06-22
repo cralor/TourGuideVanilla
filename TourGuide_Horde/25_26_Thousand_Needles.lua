@@ -21,10 +21,10 @@ A Serpent Wild |QID|4865|
 
 H Camp Taurajo
 T A New Ore Sample |QID|1153| |N|Back at Camp Taurajo (45.11, 57.75).| |Z|The Barrens|
-T Enraged Thunder Lizards |QID|907| |O|
-A Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|
-C Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards|
-T Cry of the Thunderhawk |QID|913| |O| |PRE|Enraged Thunder Lizards| |S| |N|Skip the follow-up|
+T Enraged Thunder Lizards |QID|907|
+A Cry of the Thunderhawk |QID|913|
+C Cry of the Thunderhawk |QID|913|
+T Cry of the Thunderhawk |QID|913| |S| |N|Skip the follow-up|
 
 N Get Cooking |N|If you haven't already, go to the trainer at (51, 53)| |Z|Thunder Bluff|
 

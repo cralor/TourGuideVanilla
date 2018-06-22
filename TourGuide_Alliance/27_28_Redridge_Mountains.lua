@@ -10,7 +10,7 @@ T The Binding |C|Warlock| |NODEBUG| |QID|1795|
 F Redridge Mountains |QID|34|
 A Blackrock Bounty |QID|128|
 A Blackrock Menace |QID|20| |N|From Marshal Marris across the bridge, he probably won't have an ! over his head.|
-T Messenger to Stormwind (Part 2) |QID|121| |O|
+T Messenger to Stormwind (Part 2) |QID|121|
 A Solomon's Law |QID|91| |N|In the town hall|
 A Wanted: Lieutenant Fangore |QID|180| |N|Poster in front of the inn|
 h Lakeshire |QID|180|
