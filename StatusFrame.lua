@@ -1,12 +1,3 @@
-
-local bg = {
-	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-	edgeSize = 16,
-	insets = {left = 5, right = 5, top = 5, bottom = 5},
-	tile = true, tileSize = 16,
-}
-
 local ICONSIZE, CHECKSIZE, GAP = 16, 16, 8
 local FIXEDWIDTH = ICONSIZE + CHECKSIZE + GAP*4 - 4
 
@@ -20,7 +11,7 @@ f:SetHeight(24)
 f:SetFrameStrata("LOW")
 f:EnableMouse(true)
 f:RegisterForClicks("LeftButtonUp","RightButtonUp")
-f:SetBackdrop(bg)
+f:SetBackdrop(ww.TooltipBorderBG)
 f:SetBackdropColor(0.09, 0.09, 0.19, 0.5)
 f:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
 

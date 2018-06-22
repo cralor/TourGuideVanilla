@@ -76,6 +76,7 @@ function TourGuide:Initialize()
 			showstatusframe = true,
 			showuseitem = true,
 			showuseitemcomplete = true,
+			skipfollowups = true,
 			petskills = {},
 		},
 	})
@@ -90,6 +91,7 @@ function TourGuide:Initialize()
 		self.initializeDone = true
 	end
 	self:PositionStatusFrame()
+	self:CreateConfigPanel()
 end
 
 

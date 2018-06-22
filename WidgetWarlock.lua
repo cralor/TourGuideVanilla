@@ -3,10 +3,11 @@ WidgetWarlock = {}
 
 
 WidgetWarlock.TooltipBorderBG = {
-	bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
+	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
 	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
 	edgeSize = 16,
-	insets = {left = 4, right = 4, top = 4, bottom = 4}
+	insets = {left = 5, right = 5, top = 5, bottom = 5},
+	tile = true, tileSize = 16,
 }
 
 

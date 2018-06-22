@@ -19,13 +19,7 @@ TourGuide.objectiveframe = frame
 frame:SetFrameStrata("DIALOG")
 frame:SetWidth(630) frame:SetHeight(305+28)
 frame:SetPoint("TOPRIGHT", TourGuide.statusframe, "BOTTOMRIGHT")
-frame:SetBackdrop({
-	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-	edgeSize = 16,
-	insets = {left = 5, right = 5, top = 5, bottom = 5},
-	tile = true, tileSize = 16,
-})
+frame:SetBackdrop(ww.TooltipBorderBG)
 frame:SetBackdropColor(0.09, 0.09, 0.19, 1)
 frame:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
 frame:Hide()
