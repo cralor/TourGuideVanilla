@@ -60,6 +60,7 @@ if loc == "deDE" then localized = {
 	["Map note coords even when LightHeaded provides coords."] = "Verwende Guide-Koordinaten auch dann, wenn LightHeaded Koordinaten anbietet.",
 	["Help"] = "Hilfe",
 	["Guides"] = "Guides",
+	["Hide minimap icon"] = "Hide minimap icon",
 } end
 
 
@@ -107,6 +108,7 @@ if loc == "frFR" then localized = {
 	["Map note coords even when LightHeaded provides coords."] = "Montrer les coordonn\195\169es trouv\195\169es dans les notes m\195\170me si LightHeaded les fournit.",
 	["Help"] = "Aide",
 	["Guides"] = "Guides",
+	["Hide minimap icon"] = "Hide minimap icon",
 } end
 
 
@@ -179,6 +181,7 @@ if loc == "koKR" then localized = {
 	[" |cff808080(Optional)"] = " |cff808080(임의 선택)",
 	["Cannot find zone %q, using current zone."] = "%q 지역을 찾을 수 없습니다. 현재 지역의 가이드를 사용하세요.",
 	["No zone provided, using current zone."] = "제공되는 지역이 없습니다. 현재 지역의 사용하세요.",
+	["Hide minimap icon"] = "Hide minimap icon",
 } end
 
 -- Metatable majicks... makes localized table fallback to engrish, or fallback to the index requested.

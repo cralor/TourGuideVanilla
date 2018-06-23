@@ -29,6 +29,8 @@ function TourGuide:CreateConfigPanel()
 	local qskipfollowups = ww.SummonCheckBox(22, qtrack, "TOPLEFT", 0, -20)
 	ww.SummonFontString(qskipfollowups, "OVERLAY", "GameFontNormalSmall", L["Automatically skip suggested follow-ups"], "LEFT", qskipfollowups, "RIGHT", 5, 0)
 	qskipfollowups:SetScript("OnClick", function() self.db.char.skipfollowups = not self.db.char.skipfollowups end)
+	frame.qtrack = qtrack
+	frame.qskipfollowups = qskipfollowups
 
 	local function OnShow(f)
 		f = f or this
@@ -45,8 +47,8 @@ function TourGuide:CreateConfigPanel()
 		title:ClearAllPoints()
 		title:SetPoint(title_point,f,title_anchor,title_x,title_y)
 
-		qtrack:SetChecked(self.db.char.trackquests)
-		qskipfollowups:SetChecked(self.db.char.skipfollowups)
+		f.qtrack:SetChecked(self.db.char.trackquests)
+		f.qskipfollowups:SetChecked(self.db.char.skipfollowups)
 		f:SetAlpha(0)
 		f:SetScript("OnUpdate", ww.FadeIn)
 	end

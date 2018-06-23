@@ -20,7 +20,7 @@ local icon = ww.SummonTexture(f, "ARTWORK", ICONSIZE, ICONSIZE, nil, "LEFT", che
 local text = ww.SummonFontString(f, "OVERLAY", "GameFontNormalSmall", nil, "RIGHT", -GAP-4, 0)
 text:SetPoint("LEFT", icon, "RIGHT", GAP-4, 0)
 
-local item = CreateFrame("Button", nil, UIParent)--, "SecureActionButtonTemplate")
+local item = CreateFrame("Button", nil, UIParent)
 item:SetFrameStrata("LOW")
 item:SetHeight(36)
 item:SetWidth(36)
@@ -59,6 +59,11 @@ f2:SetScript("OnUpdate", function()
 	end
 end)
 
+function TourGuide:HideStatusFrameChildren()
+	if TourGuide.objectiveframe:IsVisible() then HideUIPanel(TourGuide.objectiveframe) end
+	if TourGuide.optionsframe:IsVisible() then HideUIPanel(TourGuide.optionsframe) end
+	if TourGuide.guidelistframe:IsVisible() then HideUIPanel(TourGuide.guidelistframe) end	
+end
 
 function TourGuide:PositionStatusFrame()
 	if self.db.profile.statusframepoint then
@@ -73,7 +78,7 @@ function TourGuide:PositionStatusFrame()
 end
 
 
-function TourGuide:SetText(i)
+function TourGuide:SetStatusText(i)
 	self.current = i
 	local action, quest = self:GetObjectiveInfo(i)
 	local note = self:GetObjectiveTag("N")
@@ -85,7 +90,7 @@ function TourGuide:SetText(i)
 		text:SetAlpha(0)
 		elapsed = 0
 		f2:SetWidth(f:GetWidth())
-		f2anchor = select(3, self.GetQuadrant(f))
+		f2anchor = self.select(3, self.GetQuadrant(f))
 		f2:ClearAllPoints()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
@@ -111,11 +116,11 @@ end
 
 local lastmapped, lastmappedaction, tex, uitem
 function TourGuide:UpdateStatusFrame()
-	self:Debug(1, "UpdateStatusFrame", self.current)
+	self:Debug( "UpdateStatusFrame", self.current)
 
 	if self.updatedelay then
 		local _, logi = self:GetObjectiveStatus(self.updatedelay)
-		self:Debug(1, "Delayed update", self.updatedelay, logi)
+		self:Debug( "Delayed update", self.updatedelay, logi)
 		if logi then return end
 	end
 
@@ -128,11 +133,11 @@ function TourGuide:UpdateStatusFrame()
 			local action, name, quest = self:GetObjectiveInfo(i)
 			local turnedin, logi, complete = self:GetObjectiveStatus(i)
 			local note, useitem, optional, prereq, lootitem, lootqty = self:GetObjectiveTag("N", i), self:GetObjectiveTag("U", i), self:GetObjectiveTag("O", i), self:GetObjectiveTag("PRE", i), self:GetObjectiveTag("L", i)
-			self:Debug(11, "UpdateStatusFrame", i, action, name, note, logi, complete, turnedin, quest, useitem, optional, lootitem, lootqty, lootitem and GetItemCount(lootitem) or 0)
+			self:Debug( "UpdateStatusFrame", i, action, name, note, logi, complete, turnedin, quest, useitem, optional, lootitem, lootqty, lootitem and self.GetItemCount(lootitem) or 0)
 			local level = tonumber((self:GetObjectiveTag("LV", i)))
 			local needlevel = level and level > UnitLevel("player")
 			local hasuseitem = useitem and self:FindBagSlot(useitem)
-			local haslootitem = lootitem and GetItemCount(lootitem) >= lootqty
+			local haslootitem = lootitem and self.GetItemCount(lootitem) >= lootqty
 			local prereqturnedin = prereq and self.turnedin[prereq]
 
 			-- Test for completed objectives and mark them done
@@ -148,7 +153,7 @@ function TourGuide:UpdateStatusFrame()
 				if quest and questtext then
 					local qi = self:GetQuestLogIndexByName(quest)
 					for lbi=1,GetNumQuestLeaderBoards(qi) do
-						self:Debug(1, quest, questtext, qi, GetQuestLogLeaderBoard(lbi, qi))
+						self:Debug( quest, questtext, qi, GetQuestLogLeaderBoard(lbi, qi))
 						if GetQuestLogLeaderBoard(lbi, qi) == questtext then return self:SetTurnedIn(i, true) end
 					end
 				end
@@ -185,13 +190,13 @@ function TourGuide:UpdateStatusFrame()
 
 	if not nextstep then return end
 
-	self:SetText(nextstep)
+	self:SetStatusText(nextstep)
 	self.current = nextstep
 	local action, quest, fullquest = self:GetObjectiveInfo(nextstep)
 	local turnedin, logi, complete = self:GetObjectiveStatus(nextstep)
 	local note, useitem, optional, qid = self:GetObjectiveTag("N", nextstep), self:GetObjectiveTag("U", nextstep), self:GetObjectiveTag("O", nextstep), self:GetObjectiveTag("QID", nextstep)
 	local zonename = self:GetObjectiveTag("Z", nextstep) or self.zonename
-	self:DebugF(1, "Progressing to objective \"%s %s\"", action, quest)
+	self:Debug( string.format("Progressing to objective \"%s %s\"", action, quest))
 
 	-- Mapping
 	if (TomTom or Cartographer_Waypoints) and (lastmapped ~= quest or lastmappedaction ~= action) then
@@ -208,7 +213,7 @@ function TourGuide:UpdateStatusFrame()
 		text:SetAlpha(0)
 		elapsed = 0
 		f2:SetWidth(f:GetWidth())
-		f2anchor = select(3, self.GetQuadrant(f))
+		f2anchor = self.select(3, self.GetQuadrant(f))
 		f2:ClearAllPoints()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
@@ -223,7 +228,7 @@ function TourGuide:UpdateStatusFrame()
 	if not f2:IsVisible() then f:SetWidth(FIXEDWIDTH + text:GetWidth()) end
 	newsize = FIXEDWIDTH + text:GetWidth()
 
-	tex = useitem and select(9, GetItemInfo(tonumber(useitem)))
+	tex = useitem and self.select(9, GetItemInfo(tonumber(useitem)))
 	uitem = useitem
 	item.uitem = tex and uitem or nil
 	if UnitAffectingCombat("player") then self:RegisterEvent("PLAYER_REGEN_ENABLED")
@@ -239,7 +244,9 @@ function TourGuide:PLAYER_REGEN_ENABLED()
 		item:Show()
 		tex = nil
 	else item:Hide() end
-	self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+	if self:IsEventRegistered("PLAYER_REGEN_ENABLED") then
+		self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+	end
 end
 
 
@@ -263,9 +270,9 @@ f:SetScript("OnClick", function()
 				HideUIPanel(QuestLogFrame)
 				HideUIPanel(EQL3_QuestLogFrame)
 			else
-				local i = TourGuide:GetQuestLogIndexByName()
-				if i then SelectQuestLogEntry(i) end
-				ShowUIPanel(QuestLogFrame)
+			local i = TourGuide:GetQuestLogIndexByName()
+			if i then SelectQuestLogEntry(i) end
+			ShowUIPanel(QuestLogFrame)
 			end
 		end
 	end
@@ -292,7 +299,7 @@ local function ShowTooltip()
 	local quad, vhalf, hhalf = TourGuide.GetQuadrant(self)
 	--local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
 	local anchpoint = "ANCHOR_TOP"..hhalf
-	TourGuide:Debug(11, "Setting tooltip anchor", anchpoint)
+	TourGuide:Debug( "Setting tooltip anchor", anchpoint)
 	GameTooltip:SetOwner(self, anchpoint)
 	GameTooltip:SetText(tip,nil,nil,nil,nil,1)
 	GameTooltip:Show()
@@ -312,9 +319,7 @@ f:SetMovable(true)
 f:SetClampedToScreen(true)
 f:SetScript("OnDragStart", function()
 	local frame = this
-	if TourGuide.objectiveframe:IsVisible() then HideUIPanel(TourGuide.objectiveframe) end
-	if TourGuide.optionsframe:IsVisible() then HideUIPanel(TourGuide.optionsframe) end
-	if TourGuide.guidelistframe:IsVisible() then HideUIPanel(TourGuide.guidelistframe) end
+	TourGuide:HideStatusFrameChildren()
 	GameTooltip:Hide()
 	frame:StartMoving()
 end)
@@ -338,4 +343,8 @@ item:SetScript("OnDragStop", function()
 	frame:StopMovingOrSizing()
 	local _
 	TourGuide.db.profile.itemframepoint, _, _, TourGuide.db.profile.itemframex, TourGuide.db.profile.itemframey = frame:GetPoint()
+end)
+
+f:SetScript("OnHide", function()
+	TourGuide:HideStatusFrameChildren()
 end)
