@@ -369,6 +369,24 @@ function TourGuide.modf(f)
   return math.ceil(f), math.mod(f,1)
 end
 
+function TourGuide.GetItemCount(itemID)
+  local itemInfoTexture = select(9, GetItemInfo(itemID))
+  if itemInfoTexture == nil then return 0 end
+  local totalItemCount = 0
+  for i=0,NUM_BAG_FRAMES do
+    local numSlots = GetContainerNumSlots(i)
+    if numSlots > 0 then
+      for k=1,numSlots do
+        local itemTexture, itemCount = GetContainerItemInfo(i, k)
+        if itemInfoTexture == itemTexture then
+          totalItemCount = totalItemCount + itemCount
+        end
+      end
+    end
+  end
+  return totalItemCount
+end
+
 function TourGuide.ColorGradient(perc)
 	if perc >= 1 then return 0,1,0
 	elseif perc <= 0 then return 1,0,0 end

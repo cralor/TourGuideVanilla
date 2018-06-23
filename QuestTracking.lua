@@ -106,7 +106,7 @@ function TourGuide:CHAT_MSG_LOOT(event, msg)
 	self:Debug( event, action, quest, lootitem, lootqty, itemid, name)
 
 	if action == "BUY" and name and name == quest
-	or (action == "BUY" or action == "KILL" or action == "NOTE") and lootitem and itemid == lootitem and (GetItemCount(lootitem) + 1) >= lootqty then
+	or (action == "BUY" or action == "KILL" or action == "NOTE") and lootitem and itemid == lootitem and (self.GetItemCount(lootitem) + 1) >= lootqty then
 		return self:SetTurnedIn()
 	end
 end
