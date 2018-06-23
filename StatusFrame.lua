@@ -270,9 +270,9 @@ f:SetScript("OnClick", function()
 				HideUIPanel(QuestLogFrame)
 				HideUIPanel(EQL3_QuestLogFrame)
 			else
-			local i = TourGuide:GetQuestLogIndexByName()
-			if i then SelectQuestLogEntry(i) end
-			ShowUIPanel(QuestLogFrame)
+				local i = TourGuide:GetQuestLogIndexByName()
+				if i then SelectQuestLogEntry(i) end
+				ShowUIPanel(QuestLogFrame)
 			end
 		end
 	end
