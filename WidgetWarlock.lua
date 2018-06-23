@@ -15,7 +15,7 @@ function WidgetWarlock.SummonCheckBox(size, parent, a1,a2,a3,a4,a5,a6,a7,a8,a9,a
 	local check = CreateFrame("CheckButton", nil, parent)
 	check:SetWidth(size)
 	check:SetHeight(size)
-	if select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then check:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
+	if TourGuide.select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then check:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
 
 	check:SetNormalTexture("Interface\\Buttons\\UI-CheckBox-Up")
 	check:SetPushedTexture("Interface\\Buttons\\UI-CheckBox-Down")
@@ -32,7 +32,7 @@ function WidgetWarlock.SummonTexture(parent, layer, w, h, texture, a1,a2,a3,a4,a
 	if w then tex:SetWidth(w) end
 	if h then tex:SetHeight(h) end
 	tex:SetTexture(texture)
-	if select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then tex:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
+	if TourGuide.select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then tex:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
 	return tex
 end
 
@@ -40,7 +40,7 @@ end
 function WidgetWarlock.SummonFontString(parent, layer, inherit, text, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	local fs = parent:CreateFontString(nil, layer, inherit)
 	fs:SetText(text)
-	if select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then fs:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
+	if TourGuide.select(1, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) then fs:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
 	return fs
 end
 

@@ -21,7 +21,7 @@ end
 
 function TourGuide:PLAYER_LEVEL_UP(event, newlevel)
 	local level = tonumber((self:GetObjectiveTag("LV")))
-	self:Debug(1, "PLAYER_LEVEL_UP", newlevel, level)
+	self:Debug( "PLAYER_LEVEL_UP", newlevel, level)
 	if level and newlevel >= level then self:SetTurnedIn() end
 end
 
@@ -29,7 +29,7 @@ end
 function TourGuide:ZONE_CHANGED(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	local zonetext, subzonetext, subzonetag, action, quest = GetZoneText(), GetSubZoneText(), self:GetObjectiveTag("SZ"), self:GetObjectiveInfo()
 	if (action == "RUN" or action == "FLY" or action == "HEARTH" or action == "BOAT") and (subzonetext == quest or subzonetext == subzonetag or zonetext == quest or zonetext == subzonetag) then
-		self:DebugF(1, "Detected zone change %q - %q", action, quest)
+		self:Debug( string.format("Detected zone change %q - %q", action, quest))
 		self:SetTurnedIn()
 	end
 end
@@ -43,7 +43,7 @@ function TourGuide:CHAT_MSG_SYSTEM(event, msg)
 
 	local _, _, loc = string.find(msg,L["(.*) is now your home."])
 	if loc then
-		self:DebugF(1, "Detected setting hearth to %q", loc)
+		self:Debug( string.format("Detected setting hearth to %q", loc))
 		self.db.char.hearth = loc
 		return action == "SETHEARTH" and loc == quest and self:SetTurnedIn()
 	end
@@ -51,7 +51,7 @@ function TourGuide:CHAT_MSG_SYSTEM(event, msg)
 	if action == "ACCEPT" then
 		local _, _, text = string.find(msg,L["Quest accepted: (.*)"])
 		if text and string.gsub(quest,L.PART_GSUB, "") == text then
-			self:DebugF(1, "Detected quest accept %q", quest)
+			self:Debug( string.format("Detected quest accept %q", quest))
 			return self:UpdateStatusFrame()
 		end
 	end
@@ -61,7 +61,7 @@ function TourGuide:CHAT_MSG_SYSTEM(event, msg)
 		local nextEntry = table.getn(self.db.char.petskills) + 1
 		self.db.char.petskills[nextEntry] = text
 		if text and quest == text then
-			self:DebugF(1, "Detected pet skill train %q", quest)
+			self:Debug( string.format("Detected pet skill train %q", quest))
 			return self:SetTurnedIn()
 		end
 	end
@@ -77,7 +77,7 @@ function TourGuide:QUEST_LOG_UPDATE(event)
 	local action = self:GetObjectiveInfo()
 	local _, logi, complete = self:GetObjectiveStatus()
 
-	self:Debug(10, "QUEST_LOG_UPDATE", action, logi, complete)
+	self:Debug( "QUEST_LOG_UPDATE", action, logi, complete)
 
 	if (self.updatedelay and not logi) or action == "ACCEPT" or action == "COMPLETE" and complete then self:UpdateStatusFrame() end
 
@@ -103,7 +103,7 @@ function TourGuide:CHAT_MSG_LOOT(event, msg)
 	local action, quest = self:GetObjectiveInfo()
 	local lootitem, lootqty = self:GetObjectiveTag("L")
 	local _, _, itemid, name = string.find(msg,L["^You .*Hitem:(%d+).*(%[.+%])"])
-	self:Debug(10, event, action, quest, lootitem, lootqty, itemid, name)
+	self:Debug( event, action, quest, lootitem, lootqty, itemid, name)
 
 	if action == "BUY" and name and name == quest
 	or (action == "BUY" or action == "KILL" or action == "NOTE") and lootitem and itemid == lootitem and (GetItemCount(lootitem) + 1) >= lootqty then
@@ -114,7 +114,7 @@ end
 
 function TourGuide:PLAYER_DEAD()
 	if self:GetObjectiveInfo() == "DIE" then
-		self:Debug(1, "Player has died")
+		self:Debug( "Player has died")
 		self:SetTurnedIn()
 	end
 end
@@ -122,7 +122,7 @@ end
 
 function TourGuide:UI_INFO_MESSAGE(event, msg)
 	if msg == ERR_NEWTAXIPATH and self:GetObjectiveInfo() == "GETFLIGHTPOINT" then
-		self:Debug(1, "Discovered flight point")
+		self:Debug( "Discovered flight point")
 		self:SetTurnedIn()
 	end
 end
@@ -141,7 +141,7 @@ end
 local orig = GetQuestReward
 GetQuestReward = function(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	local quest = string.gsub(GetTitleText(), "%[%d*%??%]%s", "")
-	TourGuide:Debug(10, "GetQuestReward", quest)
+	TourGuide:Debug( "GetQuestReward", quest)
 	TourGuide:CompleteQuest(quest, true)
 
 	return orig(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)

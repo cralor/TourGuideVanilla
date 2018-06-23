@@ -23,7 +23,7 @@ frame:SetBackdrop(ww.TooltipBorderBG)
 frame:SetBackdropColor(0.09, 0.09, 0.19, 1)
 frame:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
 frame:Hide()
-frame:SetScript("OnShow", function() TourGuide:CreateObjectivePanel() end)
+frame:SetScript("OnShow", function() TourGuide:UpdateObjectivePanel() end)
 table.insert(UISpecialFrames, "TourGuideObjectives")
 
 
@@ -37,16 +37,14 @@ local function ResetScrollbar()
 	TourGuide:UpdateOHPanel()
 end
 
-local function OnShow()
-	local f = this
+local function OnShow(f)
+	local f = f or this
 	ResetScrollbar()
 	f:SetAlpha(0)
 	f:SetScript("OnUpdate", ww.FadeIn)
 
-	f = TourGuide.optionsframe
-	if f:IsVisible() then f:Hide() end
-	f = TourGuide.guidelistframe
-	if f:IsVisible() then f:Hide() end
+	if TourGuide.optionsframe:IsVisible() then HideUIPanel(TourGuide.optionsframe) end
+	if TourGuide.guidelistframe:IsVisible() then HideUIPanel(TourGuide.guidelistframe) end
 end
 
 
@@ -66,7 +64,7 @@ end
 
 local function CreateButton(parent, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)
 	local b = CreateFrame("Button", nil, parent)
-	if select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) > 0 then b:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
+	if TourGuide.select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) > 0 then b:SetPoint(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) end
 	b:SetWidth(80) b:SetHeight(22)
 
 	-- Fonts --
@@ -89,7 +87,8 @@ local function CreateButton(parent, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a
 end
 
 
-function TourGuide:CreateObjectivePanel()
+function TourGuide:UpdateObjectivePanel()
+	frame:SetScript("OnShow", nil)
 	local guidebutton = CreateButton(frame, "BOTTOMRIGHT", -6, 6)
 	guidebutton:SetText("Guides")
 	guidebutton:SetScript("OnClick", function() frame:Hide(); TourGuide.guidelistframe:Show() end)
@@ -230,7 +229,6 @@ function TourGuide:UpdateOHPanel(value)
 
 			if (TourGuide.current > (i + offset)) and optional and not checked then
 				row.text:SetTextColor(0.5, 0.5, 0.5)
---~ 				row.check:SetChecked(true)
 				row.check:Disable()
 			else
 				row.text:SetTextColor(1, 0.82, 0)

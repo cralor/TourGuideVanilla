@@ -20,7 +20,7 @@ local actiontypes = {
 
 
 function TourGuide:GetObjectiveTag(tag, i)
-	self:Debug(11, "GetObjectiveTag", tag, i)
+	self:Debug( "GetObjectiveTag", tag, i)
 	i = i or self.current
 	local tags = self.tags[i]
 	if not tags then return end
@@ -28,7 +28,7 @@ function TourGuide:GetObjectiveTag(tag, i)
 	if tag == "O" then return string.find(tags,"|O|")
 	elseif tag == "T" then return string.find(tags,"|T|")
 	elseif tag == "S" then return string.find(tags,"|S|")
-	elseif tag == "QID" then return select(3, string.find(tags, "|QID|(%d+)|"))
+	elseif tag == "QID" then return self.select(3, string.find(tags, "|QID|(%d+)|"))
 	elseif tag == "L" then
 		local _, _, lootitem, lootqty = string.find(tags,"|L|(%d+)%s?(%d*)|")
 		lootqty = tonumber(lootqty) or 1
@@ -36,14 +36,14 @@ function TourGuide:GetObjectiveTag(tag, i)
 		return lootitem, lootqty
 	end
 
-	return select(3, string.find(tags,"|"..tag.."|([^|]*)|?"))
+	return self.select(3, string.find(tags,"|"..tag.."|([^|]*)|?"))
 end
 
 
 local function DumpQuestDebug(accepts, turnins, completes)
-	for quest in pairs(accepts) do if not turnins[quest] then TourGuide:DebugF(1, "Quest has no 'turnin' objective: %s", quest) end end
-	for quest in pairs(turnins) do if not accepts[quest] then TourGuide:DebugF(1, "Quest has no 'accept' objective: %s", quest) end end
-	for quest in pairs(completes) do if not accepts[quest] and not turnins[quest] then TourGuide:DebugF(1, "Quest has no 'accept' and 'turnin' objectives: %s", quest) end end
+	for quest in pairs(accepts) do if not turnins[quest] then TourGuide:Debug( string.format("Quest has no 'turnin' objective: %s", quest)) end end
+	for quest in pairs(turnins) do if not accepts[quest] then TourGuide:Debug( string.format("Quest has no 'accept' objective: %s", quest)) end end
+	for quest in pairs(completes) do if not accepts[quest] and not turnins[quest] then TourGuide:Debug( string.format("Quest has no 'accept' and 'turnin' objectives: %s", quest)) end end
 end
 
 
@@ -52,7 +52,7 @@ local function DebugQuestObjective(text, action, quest, accepts, turnins, comple
 	local haserrors
 
 	if (action == "A" and accepts[quest] or action == "T" and turnins[quest] or action == "C" and completes[quest]) and not string.find(text, "|NODEBUG|") then
-		TourGuide:DebugF(1, "%s %s -- Duplicate objective", action, quest)
+		TourGuide:Debug( string.format("%s %s -- Duplicate objective", action, quest))
 		haserrors = true
 	end
 
@@ -66,20 +66,20 @@ local function DebugQuestObjective(text, action, quest, accepts, turnins, comple
 		-- Catch bad Title Case
 		for _,word in pairs(titlematches) do
 			if string.find(quest,"[^:]%s"..word.."%s") or string.find(quest,"[^:]%s"..word.."$") or string.find(quest,"[^:]%s"..word.."@") then
-				TourGuide:DebugF(1, "%s %s -- Contains bad title case", action, quest)
+				TourGuide:Debug( string.format("%s %s -- Contains bad title case", action, quest))
 				haserrors = true
 			end
 		end
 	end
 
 	if string.find(text,"[���]") then
-		TourGuide:DebugF(1, "%s %s -- Contains bad char", action, quest)
+		TourGuide:Debug( string.format("%s %s -- Contains bad char", action, quest))
 		haserrors = true
 	end
 
 	local _, _, comment = string.find(text, "(|[NLUC]V?|[^|]+)$") or string.find(text, "(|[NLUC]V?|[^|]+) |[NLUC]V?|")
 	if comment then
-		TourGuide:Debug(1, "Unclosed comment: ".. comment)
+		TourGuide:Debug( "Unclosed comment: ".. comment)
 		haserrors = true
 	end
 
@@ -93,7 +93,7 @@ local function StepParse(guide)
 	local uniqueid = 1
 	local actions, quests, tags = {}, {}, {}
 	local i, haserrors = 1, false
-	local guidet = TG.split("\n", guide)
+	local guidet = TourGuide.split("\n", guide)
 
 	for _,text in pairs(guidet) do
 		local _, _, class = string.find(text,"|C|([^|]+)|")
@@ -101,7 +101,7 @@ local function StepParse(guide)
 		if text ~= "" and (not class or string.find(class, myclass)) and (not race or string.find(race,myrace)) then
 			local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
 			assert(actiontypes[action], "Unknown action: "..text)
-			quest = TG.trim(quest)
+			quest = TourGuide.trim(quest)
 			if not (action == "A" or action =="C" or action =="T") then
 				quest = quest.."@"..uniqueid.."@"
 				uniqueid = uniqueid + 1
@@ -125,7 +125,7 @@ function TourGuide:LoadGuide(name, complete)
 
 	self.db.char.currentguide = self.guides[name] and name or self.guidelist[1]
 
-	self:DebugF(1, "Loading guide: %s", name)
+	self:Debug( string.format("Loading guide: %s", name))
 	self.guidechanged = true
 	local _, _, zonename = string.find(name,"^(.*) %(.*%)$")
 	self.zonename = zonename
@@ -140,12 +140,12 @@ function TourGuide:DebugGuideSequence(dumpquests)
 	local accepts, turnins, completes = {}, {}, {}
 	local function DebugParse(guide)
 		local uniqueid, haserrors = 1
-		local guidet = TG.split("\n", guide)
+		local guidet = TourGuide.split("\n", guide)
 		for _,text in pairs(guidet) do
 			if text ~= "" then
 				local _, _, action, quest, tag = string.find(text,"^(%a) ([^|]*)(.*)")
-				if not actiontypes[action] then TourGuide:Debug(1, "Unknown action: "..text) end
-				quest = TG.trim(quest)
+				if not actiontypes[action] then TourGuide:Debug( "Unknown action: "..text) end
+				quest = TourGuide.trim(quest)
 				if not (action == "A" or action =="C" or action =="T") then
 					quest = quest.."@"..uniqueid.."@"
 					uniqueid = uniqueid + 1
@@ -157,24 +157,24 @@ function TourGuide:DebugGuideSequence(dumpquests)
 		return haserrors
 	end
 
-	self:Debug(1, "------ Begin Full Debug ------")
+	self:Debug( "------ Begin Full Debug ------")
 
 	local name, lastzone = self.db.char.currentguide
 	repeat
 		if not self.guides[name] then
-			self:DebugF(1, "Cannot find guide %q", name)
+			self:Debug( string.format("Cannot find guide %q", name))
 			name, lastzone = nil, name
 		elseif DebugParse(self.guides[name]()) then
-			self:DebugF(1, "Errors in guide: %s", name)
-			self:Debug(1, "---------------------------")
+			self:Debug( string.format("Errors in guide: %s", name))
+			self:Debug( "---------------------------")
 		end
 		name, lastzone = self.nextzones[name], name
 	until not name
 
 	if dumpquests then
-		self:Debug(1, "------ Quest Continuity Debug ------")
+		self:Debug( "------ Quest Continuity Debug ------")
 		DumpQuestDebug(accepts, turnins, completes)
 	end
-	self:Debug(1, "Last zone loaded:", lastzone)
-	self:Debug(1, "------ End Full Debug ------")
+	self:Debug( "Last zone loaded:", lastzone)
+	self:Debug( "------ End Full Debug ------")
 end
