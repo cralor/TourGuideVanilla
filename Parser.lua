@@ -93,7 +93,7 @@ local function StepParse(guide)
 	local uniqueid = 1
 	local actions, quests, tags = {}, {}, {}
 	local i, haserrors = 1, false
-	local guidet = TourGuide.split("\n", guide)
+	local guidet = TourGuide.split("\r\n", guide)
 
 	for _,text in pairs(guidet) do
 		local _, _, class = string.find(text,"|C|([^|]+)|")
