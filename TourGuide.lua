@@ -55,19 +55,19 @@ local options = {
   handler = TourGuide,
   args =
 	{
-    TrackQuests = 
+    TrackQuests =
     {
       name = "Auto Track",
       desc = L["Automatically Track Quests"],
       type = "toggle",
       get  = function() return TourGuide.db.char.trackquests end,
-      set  = function(newValue) 
-        TourGuide.db.char.trackquests = newValue 
+      set  = function(newValue)
+        TourGuide.db.char.trackquests = newValue
         TourGuide.optionsframe.qtrack:SetChecked(TourGuide.db.char.trackquests)
       end,
-      order = 1,  		
+      order = 1,
     },
-    SkipFollowUps = 
+    SkipFollowUps =
     {
       name = "Auto Skip Followups",
       desc = L["Automatically skip suggested follow-ups"],
@@ -79,7 +79,7 @@ local options = {
       end,
       order = 2,
     },
-    StatusFrame = 
+    StatusFrame =
     {
       name = "Toggle Status",
       desc = "Show/Hide Status Frame",
@@ -136,7 +136,7 @@ function TourGuide:OnEnable() -- PLAYER_LOGIN (2)
 	else
 		self.db.char.currentguide = self.db.char.currentguide or self.guidelist[1]
 		self:LoadGuide(self.db.char.currentguide)
-		self.initializeDone = true    
+		self.initializeDone = true
 		for _,event in pairs(self.TrackEvents) do self:RegisterEvent(event) end
 		self:RegisterEvent("QUEST_COMPLETE", "UpdateStatusFrame")
 		self:RegisterEvent("QUEST_DETAIL", "UpdateStatusFrame")
@@ -147,7 +147,7 @@ function TourGuide:OnEnable() -- PLAYER_LOGIN (2)
 end
 
 function TourGuide:MigrateDongle()
-  if type(TourGuideAlphaDB.char)=="table" then  	
+  if type(TourGuideAlphaDB.char)=="table" then
   	for name, data in pairs(TourGuideAlphaDB.char) do
   		local name = string.gsub(name,"-", "of")
   		TourGuideAlphaDB.chars = TourGuideAlphaDB.chars or {}
@@ -155,8 +155,8 @@ function TourGuide:MigrateDongle()
   	end
   	TourGuideAlphaDB.char = nil
 	  if TourGuideAlphaDB.profiles then TourGuideAlphaDB.profiles = {} end
-	  if TourGuideAlphaDB.profileKeys then TourGuideAlphaDB.profileKeys = nil end   	
-  end	
+	  if TourGuideAlphaDB.profileKeys then TourGuideAlphaDB.profileKeys = nil end
+  end
 end
 
 function TourGuide:OnDisable()
@@ -164,7 +164,7 @@ function TourGuide:OnDisable()
 end
 
 function TourGuide:OnTooltipUpdate()
-  local hint = "\nRight-click for Options\nClick to show/hide the Status"
+  local hint = "\nClick to show/hide the Status\nRight-click for Options"
   T:SetHint(hint)
 end
 
@@ -401,7 +401,7 @@ function TourGuide.GetQuadrant(frame)
 	if not x or not y then return "BOTTOMLEFT", "BOTTOM", "LEFT" end
 	local hhalf = (x > UIParent:GetWidth()/2) and "RIGHT" or "LEFT"
 	local vhalf = (y > UIParent:GetHeight()/2) and "TOP" or "BOTTOM"
-	return vhalf..hhalf, vhalf, hhalf	
+	return vhalf..hhalf, vhalf, hhalf
 end
 
 function TourGuide.GetUIParentAnchor(frame)

@@ -20,7 +20,7 @@ local actiontypes = {
 
 
 function TourGuide:GetObjectiveTag(tag, i)
-	self:Debug( "GetObjectiveTag", tag, i)
+	--self:Debug( "GetObjectiveTag", tag, i)
 	i = i or self.current
 	local tags = self.tags[i]
 	if not tags then return end
@@ -93,7 +93,7 @@ local function StepParse(guide)
 	local uniqueid = 1
 	local actions, quests, tags = {}, {}, {}
 	local i, haserrors = 1, false
-	local guidet = TourGuide.split("\n", guide)
+	local guidet = TourGuide.split("\r\n", guide)
 
 	for _,text in pairs(guidet) do
 		local _, _, class = string.find(text,"|C|([^|]+)|")
@@ -112,7 +112,7 @@ local function StepParse(guide)
 		end
 	end
 	DumpQuestDebug(accepts, turnins, completes)
-	if haserrors and TourGuide:IsDebugEnabled() then TourGuide:Print("This guide contains errors") end
+	if haserrors and TourGuide:IsDebugging() then TourGuide:Print("This guide contains errors") end
 
 	return actions, quests, tags
 end

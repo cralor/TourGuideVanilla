@@ -1,6 +1,6 @@
 ## Interface: 11200
 
-## Title: TourGuide
+## Title: TourGuide |cff7fff7f -Ace2-|r
 ## Notes: Powerleveling guide framework
 ## Author: cralor
 ## Version: 1.0
