@@ -373,7 +373,7 @@ function TourGuide.modf(f)
 end
 
 function TourGuide.GetItemCount(itemID)
-  local itemInfoTexture = self.select(9, GetItemInfo(itemID))
+  local itemInfoTexture = TourGuide.select(9, GetItemInfo(itemID))
   if itemInfoTexture == nil then return 0 end
   local totalItemCount = 0
   for i=0,NUM_BAG_FRAMES do
@@ -394,8 +394,8 @@ function TourGuide.ColorGradient(perc)
 	if perc >= 1 then return 0,1,0
 	elseif perc <= 0 then return 1,0,0 end
 
-	local segment, relperc = self.modf(perc*2)
-	local r1, g1, b1, r2, g2, b2 = self.select((segment*3)+1, 1,0,0, 1,0.82,0, 0,1,0)
+	local segment, relperc = TourGuide.modf(perc*2)
+	local r1, g1, b1, r2, g2, b2 = TourGuide.select((segment*3)+1, 1,0,0, 1,0.82,0, 0,1,0)
 	return r1 + (r2-r1)*relperc, g1 + (g2-g1)*relperc, b1 + (b2-b1)*relperc
 end
 
