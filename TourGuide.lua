@@ -125,10 +125,13 @@ function TourGuide:OnEnable() -- PLAYER_LOGIN (2)
 	local _, title = GetAddOnInfo("TourGuide")
 	local author, version = GetAddOnMetadata("TourGuide", "Author"), GetAddOnMetadata("TourGuide", "Version")
 
-	if TourGuide.db.char.debug then
-		self:SetDebugging(true)
-	else
-		self:SetDebugging(false)
+	if self.db.char.debug then self:SetDebugging(true)
+	else self:SetDebugging(false)	end
+
+	if self.db.char.currentguide == "No Guide" and UnitLevel("player") == 1 and UnitXP("player") == 0 then
+		local startguides = {Orc = "Durotar (1-12)", Troll = "Durotar (1-12)", Tauren = "Mulgore (1-12)", Undead = "Tirisfal Glades (1-12)",
+			Dwarf = "Dun Morogh (1-11)", Gnome = "Dun Morogh (1-11)", Human = "Elwynn Forest (1-12)", NightElf = "Teldrassil (1-12)"}
+		self.db.char.currentguide = startguides[self.select(2, UnitRace("player"))] or self.guidelist[1]
 	end
 
 	if self.myfaction == nil then
@@ -370,7 +373,7 @@ function TourGuide.modf(f)
 end
 
 function TourGuide.GetItemCount(itemID)
-  local itemInfoTexture = select(9, GetItemInfo(itemID))
+  local itemInfoTexture = self.select(9, GetItemInfo(itemID))
   if itemInfoTexture == nil then return 0 end
   local totalItemCount = 0
   for i=0,NUM_BAG_FRAMES do
@@ -391,8 +394,8 @@ function TourGuide.ColorGradient(perc)
 	if perc >= 1 then return 0,1,0
 	elseif perc <= 0 then return 1,0,0 end
 
-	local segment, relperc = TourGuide.modf(perc*2)
-	local r1, g1, b1, r2, g2, b2 = TourGuide.select((segment*3)+1, 1,0,0, 1,0.82,0, 0,1,0)
+	local segment, relperc = self.modf(perc*2)
+	local r1, g1, b1, r2, g2, b2 = self.select((segment*3)+1, 1,0,0, 1,0.82,0, 0,1,0)
 	return r1 + (r2-r1)*relperc, g1 + (g2-g1)*relperc, b1 + (b2-b1)*relperc
 end
 
