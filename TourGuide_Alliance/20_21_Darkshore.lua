@@ -2,7 +2,6 @@ TourGuide:RegisterGuide("Darkshore (20-21)", "Ashenvale (22-24)", "Alliance", fu
 return [[
 H Auberdine
 A Journey to Astranaar |N|On the dock| |QID|1133|
-A Onward to Ashenvale |N|Northernmost building in Auberdine| |QID|10752|
 T Onu |N|South at Grove of the Ancients| |QID|948|
 A The Master's Glaive |QID|944|
 C The Master's Glaive |N|Southwest from Grove of the Ancients| |QID|944|
