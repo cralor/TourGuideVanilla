@@ -14,7 +14,7 @@ function TourGuide:CreateConfigPanel()
 	frame:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
 	frame:Hide()
 
-	closebutton = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
+	local closebutton = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
 	closebutton:SetPoint("TOPRIGHT", frame, "TOPRIGHT")
 
 	local title = ww.SummonFontString(frame, nil, "SubZoneTextFont", nil, "BOTTOMLEFT", frame, "TOPLEFT", 5, 0)
