@@ -15,7 +15,6 @@ T Bathran's Hair |QID|1010|
 A Orendil's Cure |QID|1020|
 T Therylune's Escape |QID|945|
 
-T Onward to Ashenvale |T| |QID|10752|
 A Raene's Cleansing (Part 1) |T| |QID|991|
 h Astranaar |T| |QID|1054|
 T Orendil's Cure |T| |QID|1020|
