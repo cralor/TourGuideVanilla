@@ -9,7 +9,7 @@ T The Absent Minded Prospector (Part 3) |T| |QID|741| |N|Outside the Temple of t
 A The Absent Minded Prospector (Part 4) |T| |QID|942|
 
 F Loch Modan |QID|455| |N|Boat to Stormwind, then fly to Loch Modan.|
-A The Alagaz Gauntlet |QID|455| |N|North at North Gate Pass (25.35, 10.43)|
+A The Alagaz Gauntlet |QID|455| |N|North at North Gate Pass (25.35, 10.43)| |Z|Loch Modan|
 C The Alagaz Gauntlet |QID|455|
 
 R Menethil Harbor |QID|455|
