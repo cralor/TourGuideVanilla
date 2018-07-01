@@ -38,7 +38,7 @@ TourGuide.MINIMAP_ZONE_CHANGED = TourGuide.ZONE_CHANGED
 TourGuide.ZONE_CHANGED_NEW_AREA = TourGuide.ZONE_CHANGED
 
 
-function TourGuide:CHAT_MSG_SYSTEM(event, msg)
+function TourGuide:CHAT_MSG_SYSTEM(msg)
 	local action, quest = self:GetObjectiveInfo()
 
 	local _, _, loc = string.find(msg,L["(.*) is now your home."])
