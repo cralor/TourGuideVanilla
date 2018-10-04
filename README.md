@@ -7,6 +7,8 @@ Highly Recommended Downloads: [**pfQuest**](https://gitlab.com/shagu/pfQuest#dow
 
 Optional Downloads: [TourGuide_Professions](https://github.com/cralor/TourGuide_Professions/releases/latest)
 
+https://wow.gamepedia.com/TourGuide/Guide_Creation
+
 **Features**
 * Automatic detection of objective completion
   * Detect quest accept, completion and turnin
