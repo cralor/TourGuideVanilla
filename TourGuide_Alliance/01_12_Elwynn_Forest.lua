@@ -144,7 +144,7 @@ A Westbrook Garrison Needs Help! |QID|239|
 A Elmore's Task |QID|1097|
 A A Warrior's Training |C|Warrior| |QID|1638| |R|Human|
 
-T The Escape |N|Back at the Maclure Vineyards| |QID|114|
+T The Escape |N|Back at the Maclure Vineyards (43,89)| |QID|114|
 T Goldtooth |N|Back at the Stonefield Farm| |QID|87|
 T Princess Must Die! |QID|88|
 
@@ -156,9 +156,9 @@ T Riverpaw Gnoll Bounty |QID|11|
 R Westfall
 A Furlbrow's Deed |U|1972| |O| |QID|184|
 T Furlbrow's Deed |O| |QID|184|
-A Report to Gryan Stoutmantle |QID|109|
-A Westfall Stew |QID|38|
-T Westfall Stew |N|Follow the road south to Saldean's Farm (56.41, 30.53)| |Z|Westfall| |QID|38|
+A Report to Gryan Stoutmantle |N|SHould be here not back anywhere else| |QID|109|
+A Westfall Stew |QID|36|
+T Westfall Stew |N|Follow the road south to Saldean's Farm (56.41, 30.53)| |Z|Westfall| |QID|36|
 T Report to Gryan Stoutmantle |N|South at Sentinel Hill, in front of the tower| |QID|109|
 A A Swift Message |N|Inside the tower| |R|Human| |QID|6181|
 T A Swift Message |R|Human| |QID|6181|
