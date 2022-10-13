@@ -233,16 +233,12 @@ function TourGuide:LoadNextGuide()
 end
 
 
-local firstcall = true
 function TourGuide:GetQuestLogIndexByName(name)
 	name = name or self.quests[self.current]
 	name = string.gsub(name,L.PART_GSUB, "")
 	for i=1,GetNumQuestLogEntries() do
 		local title, _, _, isHeader = GetQuestLogTitle(i)
-		if firstcall and not isHeader then
-			firstcall = nil
-			if string.sub(title, 1, 1) == "[" then self:Print("Another addon, most likely a \"Quest Level\" addon, is preventing TourGuide's quest detection from working correctly.") end
-		end
+		title = string.gsub(title, "%[[0-9%+%-]+]%s", "")
 		if not isHeader and title == name then return i end
 	end
 end
@@ -306,16 +302,14 @@ function TourGuide:CompleteQuest(name, noupdate)
 		return
 	end
 
-	local i = self.current
 	local action, quest
-	while not action do
+	for i in ipairs(self.actions) do
 		action, quest = self:GetObjectiveInfo(i)
 		self:Debug( string.format("Action %q Quest %q",action,quest))
 		if action == "TURNIN" and not self:GetObjectiveStatus(i) and name == string.gsub(quest,L.PART_GSUB, "") then
 			self:Debug( string.format("Saving quest turnin %q", quest))
 			return self:SetTurnedIn(i, true, noupdate)
 		end
-		i = i + 1
 	end
 	self:Debug( string.format("Quest %q not found!", name))
 end
