@@ -7,7 +7,7 @@ K Mountain Lion |L|5810| |N|Acquire Fresh Carcass from Mountain Lion, while head
 C Helcular's Revenge (Part 2) |QID|553| |N|Flame located at (41.7, 6.4)|
 C Frostmaw |N|(37,69) up north| |QID|1136|
 
-C Stone Tokens |N|At Dalaran (20,85)| |Z|Hillsbrad Foothills| |QID|556|
+C Stone Tokens |N|At Dalaran (20,85)| |QID|556|
 C Prison Break In |N|At (20,85)| |QID|544| |NODEBUG|
 
 T Helcular's Revenge (Part 2) |QID|553|
